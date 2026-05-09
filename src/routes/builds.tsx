@@ -85,10 +85,10 @@ function BuildsPage() {
                 return (
                   <li key={s.id}>
                     <button onClick={() => toggle(s)}
-                      className={`w-full text-left p-4 rounded-lg border transition flex items-start gap-4 ${
-                        picked ? "border-gold bg-gold/5 shadow-gold-glow" : "border-border hover:border-primary/50 hover:bg-accent/20"
+                      className={`w-full text-left p-4 rounded-lg border transition-all flex items-start gap-4 ${
+                        picked ? "border-gold bg-gold/5 shadow-gold-glow" : "border-border hover:border-primary/60 hover:bg-accent/20 hover:translate-x-1"
                       }`}>
-                      <div className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 ${
+                      <div className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 transition-transform ${picked ? "scale-110" : ""} ${
                         s.type === "Stigma" ? "bg-gradient-gold text-gold-foreground" :
                         s.type === "Active" ? "bg-gradient-arcane text-primary-foreground" : "bg-accent text-foreground"
                       }`}>
