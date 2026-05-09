@@ -89,12 +89,12 @@ function HomePage() {
 
       {/* Countdown */}
       <section className="container mx-auto px-4 -mt-16 relative z-10">
-        <div className="rune-border rounded-2xl p-8 shadow-elevated">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div className="rune-border rune-border-hover rounded-2xl p-8 shadow-elevated relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 w-60 h-60 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-gold/10 blur-3xl pointer-events-none" />
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
             <div>
-              <div className="flex items-center gap-2 text-gold text-xs tracking-widest mb-2">
-                <Calendar className="w-3.5 h-3.5" /> NEXT MAJOR PATCH
-              </div>
+              <Eyebrow><Calendar className="w-3.5 h-3.5" /> NEXT MAJOR PATCH</Eyebrow>
               <h2 className="font-display text-2xl md:text-3xl">Echoes of Beritra</h2>
               <p className="text-sm text-muted-foreground mt-1">New zone, raid tier, and stigma overhaul.</p>
             </div>
@@ -105,9 +105,9 @@ function HomePage() {
                 { v: minutes, l: "Minutes" },
                 { v: seconds, l: "Seconds" },
               ].map((u) => (
-                <div key={u.l} className="text-center bg-background/60 border border-border rounded-lg px-3 py-3 md:px-5 md:py-4 min-w-[64px]">
-                  <div className="font-display text-2xl md:text-4xl text-gradient-gold tabular-nums">{String(u.v).padStart(2, "0")}</div>
-                  <div className="text-[10px] md:text-xs tracking-widest text-muted-foreground mt-1">{u.l.toUpperCase()}</div>
+                <div key={u.l} className="text-center bg-background/70 border border-gold/20 rounded-lg px-3 py-3 md:px-5 md:py-4 min-w-[64px] hover:border-gold/50 transition-colors">
+                  <div className="font-display text-2xl md:text-4xl text-gradient-gold tabular-nums drop-shadow-[0_0_15px_oklch(0.82_0.15_85/0.4)]">{String(u.v).padStart(2, "0")}</div>
+                  <div className="text-[10px] md:text-xs tracking-[0.25em] text-muted-foreground mt-1">{u.l.toUpperCase()}</div>
                 </div>
               ))}
             </div>
