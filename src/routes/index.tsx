@@ -116,19 +116,28 @@ function HomePage() {
       </section>
 
       {/* Feature cards */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-24">
+        <RuneDivider className="mb-12" />
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { icon: Sword, title: "8 Iconic Classes", desc: "Detailed class breakdowns with role, difficulty, and signature skills.", to: "/classes" as const },
             { icon: Shield, title: "Builds That Win", desc: "Plan stigmas, share builds, and copy proven setups in one click.", to: "/builds" as const },
             { icon: Users, title: "Find Your Legion", desc: "Browse recruiting guilds across factions, regions, and play styles.", to: "/community" as const },
-          ].map((f) => (
-            <Link key={f.title} to={f.to} className="group rune-border rounded-xl p-6 hover:shadow-glow transition-all">
-              <f.icon className="w-8 h-8 text-gold mb-4" />
-              <h3 className="font-display text-xl mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground">{f.desc}</p>
-              <div className="mt-4 inline-flex items-center text-sm text-primary group-hover:translate-x-1 transition-transform">
-                Explore <ArrowRight className="ml-1 w-4 h-4" />
+          ].map((f, i) => (
+            <Link
+              key={f.title}
+              to={f.to}
+              className="group rune-border rune-border-hover rounded-xl p-7 animate-fade-up relative overflow-hidden"
+              style={{ animationDelay: `${i * 0.1}s` }}
+            >
+              <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-gold/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="w-12 h-12 rounded-lg bg-gradient-arcane flex items-center justify-center mb-5 shadow-glow group-hover:animate-pulse-glow">
+                <f.icon className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <h3 className="font-display text-xl mb-2 group-hover:text-gold transition-colors">{f.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              <div className="mt-5 inline-flex items-center text-sm text-primary group-hover:text-gold transition-colors">
+                Explore <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
           ))}
@@ -136,28 +145,35 @@ function HomePage() {
       </section>
 
       {/* Latest news */}
-      <section className="container mx-auto px-4 pb-20">
-        <div className="flex items-end justify-between mb-8">
+      <section className="container mx-auto px-4 pb-24">
+        <div className="flex items-end justify-between mb-10">
           <div>
-            <div className="text-gold text-xs tracking-widest mb-2">CHRONICLES</div>
+            <Eyebrow>CHRONICLES</Eyebrow>
             <h2 className="font-display text-3xl md:text-4xl">Latest Guides</h2>
           </div>
-          <Link to="/guides" className="text-sm text-primary hover:underline">View all →</Link>
+          <Link to="/guides" className="text-sm text-primary hover:text-gold transition-colors group">
+            View all <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
+          </Link>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {latest.map((g) => (
-            <article key={g.id} className="rune-border rounded-xl overflow-hidden flex flex-col hover:shadow-glow transition">
-              <div className="h-32 bg-gradient-arcane relative">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.85_0.15_85/0.3),transparent_60%)]" />
-                <span className="absolute top-3 left-3 px-2 py-1 text-[10px] tracking-widest bg-background/70 text-gold rounded">
+          {latest.map((g, i) => (
+            <article
+              key={g.id}
+              className="rune-border rune-border-hover rounded-xl overflow-hidden flex flex-col group cursor-pointer animate-fade-up"
+              style={{ animationDelay: `${i * 0.1}s` }}
+            >
+              <div className="h-36 bg-gradient-arcane relative overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.85_0.15_85/0.4),transparent_60%)] group-hover:scale-110 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,oklch(0.16_0.04_265/0.6))]" />
+                <span className="absolute top-3 left-3 px-2 py-1 text-[10px] tracking-[0.25em] bg-background/80 text-gold rounded border border-gold/30 backdrop-blur">
                   {g.category.toUpperCase()}
                 </span>
               </div>
               <div className="p-5 flex-1 flex flex-col">
-                <h3 className="font-display text-lg mb-2 leading-tight">{g.title}</h3>
-                <p className="text-sm text-muted-foreground flex-1">{g.excerpt}</p>
-                <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground">
-                  <span>By {g.author}</span>
+                <h3 className="font-display text-lg mb-2 leading-tight group-hover:text-gold transition-colors">{g.title}</h3>
+                <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{g.excerpt}</p>
+                <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between text-xs text-muted-foreground">
+                  <span>By <span className="text-foreground/80">{g.author}</span></span>
                   <span>{g.readTime} min read</span>
                 </div>
               </div>
@@ -167,20 +183,27 @@ function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="container mx-auto px-4 pb-20">
-        <div className="rune-border rounded-2xl p-10 md:p-14 text-center bg-gradient-to-br from-card to-background relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,oklch(0.72_0.18_240/0.25),transparent_60%)]" />
+      <section className="container mx-auto px-4 pb-24">
+        <div className="rune-border rounded-2xl p-10 md:p-16 text-center bg-gradient-to-br from-card to-background relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,oklch(0.72_0.18_240/0.3),transparent_60%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,oklch(0.82_0.15_85/0.15),transparent_60%)]" />
+          <svg className="absolute top-6 left-6 w-20 h-20 text-gold/15 animate-rune-spin" viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 5" />
+          </svg>
+          <svg className="absolute bottom-6 right-6 w-20 h-20 text-gold/15 animate-rune-spin" style={{ animationDirection: "reverse" }} viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 5" />
+          </svg>
           <div className="relative">
-            <Sparkles className="w-8 h-8 text-gold mx-auto mb-4" />
+            <Sparkles className="w-10 h-10 text-gold mx-auto mb-4 animate-float-slow" />
             <h2 className="font-display text-3xl md:text-5xl mb-4">Join {classes.length}+ Class Discussions</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+            <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
               Real-time theorycrafting, LFG channels for every dungeon, and weekly community events.
             </p>
             <a
               href="https://discord.gg/lovable-dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:opacity-90 transition"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all"
             >
               Join the Discord
               <ArrowRight className="w-4 h-4" />
