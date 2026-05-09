@@ -39,10 +39,12 @@ function BuildsPage() {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <header className="mb-10">
-        <div className="text-gold text-xs tracking-widest mb-2">THEORYCRAFTING</div>
+      <header className="mb-10 animate-fade-up">
+        <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
+          <span className="h-px w-6 bg-gold/60" />THEORYCRAFTING
+        </div>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Build Planner</h1>
-        <p className="text-muted-foreground max-w-2xl">Pick your class, assemble a stigma loadout, and share it with your legion.</p>
+        <p className="text-muted-foreground max-w-2xl leading-relaxed">Pick your class, assemble a stigma loadout, and share it with your legion.</p>
       </header>
 
       <div className="grid lg:grid-cols-[280px_1fr_320px] gap-6">
