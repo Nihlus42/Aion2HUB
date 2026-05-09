@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Sparkles, Sword, Shield, Users, ArrowRight, Calendar } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import { guides, classes } from "@/data/aion";
+import { RuneDivider, Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/")({
   head: () => ({
