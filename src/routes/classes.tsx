@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, useMemo } from "react";
 import { classes, type ClassRole, type ClassFaction } from "@/data/aion";
 import { Shield, Sword, Heart, Sparkles } from "lucide-react";
+import { Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/classes")({
   head: () => ({
