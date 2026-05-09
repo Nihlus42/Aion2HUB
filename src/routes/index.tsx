@@ -40,28 +40,46 @@ function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Aion 2 hero" width={1920} height={1024} className="w-full h-full object-cover opacity-60" />
+          <img src={heroImg} alt="Aion 2 hero" width={1920} height={1024} className="w-full h-full object-cover opacity-60 scale-105" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent" />
+          {/* Floating embers */}
+          {Array.from({ length: 12 }).map((_, i) => (
+            <span
+              key={i}
+              className="absolute bottom-0 w-1 h-1 rounded-full bg-gold/70 animate-ember"
+              style={{
+                left: `${(i * 8 + 5) % 100}%`,
+                animationDelay: `${(i * 0.4) % 4}s`,
+                animationDuration: `${4 + (i % 3)}s`,
+              }}
+            />
+          ))}
+          {/* Spinning rune accent */}
+          <svg className="absolute top-10 right-10 w-40 h-40 text-gold/15 animate-rune-spin hidden lg:block" viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 4" />
+            <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="0.5" />
+            <path d="M50 5 L52 45 L90 50 L52 55 L50 95 L48 55 L10 50 L48 45 Z" fill="currentColor" opacity="0.4" />
+          </svg>
         </div>
-        <div className="container mx-auto px-4 pt-20 pb-32 relative">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-card/60 border border-gold/30 mb-6">
-              <Sparkles className="w-3.5 h-3.5 text-gold" />
-              <span className="text-xs tracking-widest text-gold font-medium">DAEVAS UNITE</span>
+        <div className="container mx-auto px-4 pt-24 pb-36 relative">
+          <div className="max-w-2xl animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-card/60 border border-gold/30 mb-6 backdrop-blur">
+              <Sparkles className="w-3.5 h-3.5 text-gold animate-pulse" />
+              <span className="text-xs tracking-[0.3em] text-gold font-medium">DAEVAS UNITE</span>
             </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              Ascend in <span className="text-gradient-gold">Aion 2</span>
+              Ascend in <span className="shimmer-text">Aion 2</span>
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
               Class guides crafted by veterans. A live build planner. A guild finder that actually works.
               Everything you need to dominate Atreia — in one place.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/guides" className="px-6 py-3 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:opacity-90 transition inline-flex items-center gap-2">
-                Browse Guides <ArrowRight className="w-4 h-4" />
+              <Link to="/guides" className="px-6 py-3 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all inline-flex items-center gap-2">
+                Browse Guides <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/builds" className="px-6 py-3 rounded-md border border-gold/40 text-gold font-semibold hover:bg-gold/10 transition">
+              <Link to="/builds" className="px-6 py-3 rounded-md border border-gold/40 text-gold font-semibold hover:bg-gold/10 hover:border-gold transition-all">
                 Open Build Planner
               </Link>
             </div>
