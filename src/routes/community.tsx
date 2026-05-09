@@ -75,9 +75,14 @@ function CommunityPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-5">
-        {filtered.map((g) => (
-          <article key={g.id} className="rune-border rounded-xl p-6 hover:shadow-glow transition">
-            <div className="flex items-start justify-between mb-3">
+        {filtered.map((g, i) => (
+          <article
+            key={g.id}
+            className="rune-border rune-border-hover rounded-xl p-6 group relative overflow-hidden animate-fade-up"
+            style={{ animationDelay: `${Math.min(i, 8) * 0.05}s` }}
+          >
+            <div className="absolute -top-16 -left-16 w-40 h-40 rounded-full bg-primary/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="flex items-start justify-between mb-3 relative">
               <div>
                 <h3 className="font-display text-2xl mb-1">{g.name}</h3>
                 <p className="text-xs italic text-muted-foreground">"{g.motto}"</p>
