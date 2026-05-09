@@ -30,11 +30,13 @@ function CommunityPage() {
   ), [focus, faction, q, recruitingOnly]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <header className="mb-10">
-        <div className="text-gold text-xs tracking-widest mb-2">FORGE BONDS</div>
+    <div className="container mx-auto px-4 py-14">
+      <header className="mb-10 animate-fade-up">
+        <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
+          <span className="h-px w-6 bg-gold/60" />FORGE BONDS
+        </div>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Guild Finder</h1>
-        <p className="text-muted-foreground max-w-2xl">Aion is better with allies. Find a legion that matches your schedule and ambition.</p>
+        <p className="text-muted-foreground max-w-2xl leading-relaxed">Aion is better with allies. Find a legion that matches your schedule and ambition.</p>
       </header>
 
       <div className="rune-border rounded-xl p-5 mb-8 grid gap-3">
@@ -73,9 +75,14 @@ function CommunityPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-5">
-        {filtered.map((g) => (
-          <article key={g.id} className="rune-border rounded-xl p-6 hover:shadow-glow transition">
-            <div className="flex items-start justify-between mb-3">
+        {filtered.map((g, i) => (
+          <article
+            key={g.id}
+            className="rune-border rune-border-hover rounded-xl p-6 group relative overflow-hidden animate-fade-up"
+            style={{ animationDelay: `${Math.min(i, 8) * 0.05}s` }}
+          >
+            <div className="absolute -top-16 -left-16 w-40 h-40 rounded-full bg-primary/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="flex items-start justify-between mb-3 relative">
               <div>
                 <h3 className="font-display text-2xl mb-1">{g.name}</h3>
                 <p className="text-xs italic text-muted-foreground">"{g.motto}"</p>

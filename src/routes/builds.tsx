@@ -39,10 +39,12 @@ function BuildsPage() {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <header className="mb-10">
-        <div className="text-gold text-xs tracking-widest mb-2">THEORYCRAFTING</div>
+      <header className="mb-10 animate-fade-up">
+        <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
+          <span className="h-px w-6 bg-gold/60" />THEORYCRAFTING
+        </div>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Build Planner</h1>
-        <p className="text-muted-foreground max-w-2xl">Pick your class, assemble a stigma loadout, and share it with your legion.</p>
+        <p className="text-muted-foreground max-w-2xl leading-relaxed">Pick your class, assemble a stigma loadout, and share it with your legion.</p>
       </header>
 
       <div className="grid lg:grid-cols-[280px_1fr_320px] gap-6">
@@ -83,10 +85,10 @@ function BuildsPage() {
                 return (
                   <li key={s.id}>
                     <button onClick={() => toggle(s)}
-                      className={`w-full text-left p-4 rounded-lg border transition flex items-start gap-4 ${
-                        picked ? "border-gold bg-gold/5 shadow-gold-glow" : "border-border hover:border-primary/50 hover:bg-accent/20"
+                      className={`w-full text-left p-4 rounded-lg border transition-all flex items-start gap-4 ${
+                        picked ? "border-gold bg-gold/5 shadow-gold-glow" : "border-border hover:border-primary/60 hover:bg-accent/20 hover:translate-x-1"
                       }`}>
-                      <div className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 ${
+                      <div className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 transition-transform ${picked ? "scale-110" : ""} ${
                         s.type === "Stigma" ? "bg-gradient-gold text-gold-foreground" :
                         s.type === "Active" ? "bg-gradient-arcane text-primary-foreground" : "bg-accent text-foreground"
                       }`}>
