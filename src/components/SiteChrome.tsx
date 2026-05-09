@@ -40,7 +40,7 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href="https://discord.gg/lovable-dev"
+          href="/community"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold shadow-glow hover:opacity-90 transition"
@@ -66,7 +66,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href="https://discord.gg/lovable-dev"
+            href="/community"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold text-center"
@@ -104,7 +104,7 @@ export function SiteFooter() {
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">COMMUNITY</h4>
           <p className="text-sm text-muted-foreground mb-3">Join thousands of Daevas in our Discord.</p>
-          <a href="https://discord.gg/lovable-dev" target="_blank" rel="noopener noreferrer"
+          <a href="/community" target="_blank" rel="noopener noreferrer"
              className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
             Join Discord
           </a>

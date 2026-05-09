@@ -200,7 +200,7 @@ function HomePage() {
               Real-time theorycrafting, LFG channels for every dungeon, and weekly community events.
             </p>
             <a
-              href="https://discord.gg/lovable-dev"
+              href="/community"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all"
