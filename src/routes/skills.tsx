@@ -6,6 +6,8 @@ import {
   cleanSkillText,
   getSkillDisplayName,
   getSkillDisplayDescription,
+  getSkillDisplayPveUse,
+  getSkillDisplayPvpUse,
   normalizeSkillClassSlug,
   type SkillCategory,
   type Skill,
@@ -160,8 +162,8 @@ function SkillsPage() {
               </p>
               <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE :</span> {cleanSkillText(skill.pveUseFr)}</p>
-                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(skill.pvpUseFr)}</p>
+                <p><span className="text-gold">PvE :</span> {cleanSkillText(getSkillDisplayPveUse(skill))}</p>
+                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(getSkillDisplayPvpUse(skill))}</p>
               </div>
             </article>
           ))}

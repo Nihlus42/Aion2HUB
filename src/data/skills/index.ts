@@ -550,15 +550,50 @@ export const getSkillBySlug = (slug: string) =>
   skills.find((skill) => skill.slug === slug);
 
 export const getSkillDisplayName = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? skill.nameFr : skill.name;
+  locale === "fr" ? toFrenchUiText(skill.nameFr || skill.name) : skill.name;
 
 export const getSkillDisplayDescription = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? skill.descriptionFr : skill.description;
+  locale === "fr" ? toFrenchUiText(skill.descriptionFr || skill.description) : skill.description;
+
+export const getSkillDisplayPveUse = (skill: Skill, locale: "fr" | "en" = "fr") =>
+  locale === "fr" ? toFrenchUiText(skill.pveUseFr || skill.pveUse) : skill.pveUse;
+
+export const getSkillDisplayPvpUse = (skill: Skill, locale: "fr" | "en" = "fr") =>
+  locale === "fr" ? toFrenchUiText(skill.pvpUseFr || skill.pvpUse) : skill.pvpUse;
+
+export const getSkillDisplayCooldown = (skill: Skill, locale: "fr" | "en" = "fr") =>
+  locale === "fr" ? toFrenchUiText(skill.estimatedCooldown) : skill.estimatedCooldown;
 
 export const cleanSkillText = (value: string) =>
   value
     .replace(/\{se_dmg:[^}]+\}/g, "damage")
     .replace(/\s+/g, " ")
+    .trim();
+
+export const toFrenchUiText = (value: string) =>
+  cleanSkillText(value)
+    .replace(/\bUnknown\b/gi, "Inconnu")
+    .replace(/\bUndeveloped\b/gi, "Non final")
+    .replace(/\bDeals\b/gi, "Inflige")
+    .replace(/\bdamage\b/gi, "degats")
+    .replace(/\bto up to\b/gi, "jusqu a")
+    .replace(/\benemies\b/gi, "ennemis")
+    .replace(/\bwithin\b/gi, "dans")
+    .replace(/\bincreases\b/gi, "augmente")
+    .replace(/\bRestores\b/gi, "restaure")
+    .replace(/\bCooldown\b/gi, "Recharge")
+    .replace(/\bCritical Hit\b/gi, "Coup critique")
+    .replace(/\bextra\b/gi, "supplementaires")
+    .replace(/\bwhen\b/gi, "quand")
+    .replace(/\blanding an attack\b/gi, "lors d une attaque")
+    .replace(/\bfor\b/gi, "pendant")
+    .replace(/\bbecomes available\b/gi, "devient disponible")
+    .replace(/\bRecover\b/gi, "Recupere")
+    .replace(/\bDivine Power\b/gi, "Puissance divine")
+    .replace(/\bHold the W Key\b/gi, "Maintenez la touche W")
+    .replace(/\bforward\b/gi, "vers l avant")
+    .replace(/\brapidly\b/gi, "rapidement")
+    .replace(/\bMouph\b/gi, "Transmutation")
     .trim();
 
 export const toLiteralFrench = (value: string) => value;

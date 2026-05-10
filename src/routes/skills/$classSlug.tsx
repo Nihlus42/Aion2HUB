@@ -1,6 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
-import { classes, skills, cleanSkillText, getSkillDisplayName, getSkillDisplayDescription, normalizeSkillClassSlug } from "@/data";
+import {
+  classes,
+  skills,
+  cleanSkillText,
+  getSkillDisplayName,
+  getSkillDisplayDescription,
+  getSkillDisplayPveUse,
+  getSkillDisplayPvpUse,
+  normalizeSkillClassSlug,
+} from "@/data";
 import { Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/skills/$classSlug")({
@@ -97,8 +106,8 @@ function ClassSkillsPage() {
               </p>
               <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE :</span> {cleanSkillText(skill.pveUseFr)}</p>
-                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(skill.pvpUseFr)}</p>
+                <p><span className="text-gold">PvE :</span> {cleanSkillText(getSkillDisplayPveUse(skill))}</p>
+                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(getSkillDisplayPvpUse(skill))}</p>
               </div>
             </article>
           ))}

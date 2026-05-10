@@ -1,6 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { classes, skills, cleanSkillText, getSkillDisplayName, getSkillDisplayDescription, normalizeSkillClassSlug } from "@/data";
+import {
+  classes,
+  skills,
+  cleanSkillText,
+  getSkillDisplayName,
+  getSkillDisplayDescription,
+  getSkillDisplayCooldown,
+  normalizeSkillClassSlug,
+} from "@/data";
 import { Trash2, Plus, Check, RotateCcw } from "lucide-react";
 
 export const Route = createFileRoute("/builds")({
@@ -131,7 +139,7 @@ function BuildsPage() {
                       </div>
                       <div className="text-right shrink-0">
                         <div className="text-xs text-gold tracking-widest">RECHARGE</div>
-                        <div className="font-display text-sm">{skill.estimatedCooldown}</div>
+                        <div className="font-display text-sm">{getSkillDisplayCooldown(skill)}</div>
                       </div>
                     </button>
                   </li>
@@ -169,7 +177,7 @@ function BuildsPage() {
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-medium truncate">{getSkillDisplayName(skill)}</div>
                     <div className="text-[10px] text-muted-foreground">
-                      {categoryLabel[skill.category]} - {skill.estimatedCooldown}
+                      {categoryLabel[skill.category]} - {getSkillDisplayCooldown(skill)}
                     </div>
                   </div>
                   <button onClick={() => toggleSkill(skill.slug)} className="p-1 text-muted-foreground hover:text-destructive">
