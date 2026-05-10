@@ -108,7 +108,7 @@ export const cleanItemForDisplay = (item: Item): DisplayItem => {
     icon: item.icon ?? "",
     name: normalizeUnknown(item.nameFr || item.name, "Inconnu"),
     category: normalizeUnknown(item.categoryFr || item.category),
-    subCategory: normalizeUnknown(item.subCategoryFr || item.subCategory),
+    subCategory: normalizeUnknown(item.subCategory || item.subCategoryFr),
     rarity: normalizeUnknown(item.rarityFr || item.rarity),
     quality: normalizeUnknown(item.qualityFr || item.quality),
     description,
@@ -135,7 +135,8 @@ export const cleanItemForDisplay = (item: Item): DisplayItem => {
 export const getItemDisplayName = (item: Item) => cleanItemForDisplay(item).name;
 export const getItemDisplayDescription = (item: Item) => cleanItemForDisplay(item).description ?? "Description indisponible.";
 export const getItemCategoryLabel = (item: Item) => cleanItemForDisplay(item).category;
-export const getItemSubCategoryLabel = (item: Item) => cleanItemForDisplay(item).subCategory;
+export const getItemSubCategoryLabel = (item: Item) =>
+  normalizeUnknown(item.subCategory || item.subCategoryFr);
 export const getItemRarityLabel = (item: Item) => cleanItemForDisplay(item).rarity;
 export const getItemQualityLabel = (item: Item) => cleanItemForDisplay(item).quality;
 export const getItemCooldownLabel = (item: Item) => cleanItemForDisplay(item).cooldown ?? "Inconnu";
