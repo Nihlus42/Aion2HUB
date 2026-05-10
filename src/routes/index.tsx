@@ -109,7 +109,7 @@ function HomePage() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { icon: Sword, title: "8 classes iconiques", desc: "Details des classes avec role, difficulte et competences signatures.", to: "/classes" as const },
-            { icon: Shield, title: "Builds qui gagnent", desc: "Planifie les competences et compare tes options rapidement.", to: "/builds" as const },
+            { icon: Shield, title: "Planificateur Daevanion", desc: "Construit ton plateau, gere les points et optimise tes noeuds.", to: "/daevanion-planner" as const },
             { icon: Calendar, title: "Suivi des updates", desc: "Reste cale sur les annonces officielles et infos verifiees.", to: "/updates" as const },
           ].map((f, i) => (
             <Link
