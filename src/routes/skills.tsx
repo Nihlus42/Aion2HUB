@@ -36,6 +36,13 @@ const targetTypes: ("All" | Skill["targetType"])[] = [
   "Unknown",
 ];
 
+function cleanSkillText(value: string) {
+  return value
+    .replace(/\{se_dmg:[^}]+\}/g, "damage")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function SkillsPage() {
   const [query, setQuery] = useState("");
   const [classSlug, setClassSlug] = useState("All");
@@ -56,7 +63,7 @@ function SkillsPage() {
       const textMatch =
         normalizedQuery.length === 0 ||
         skill.name.toLowerCase().includes(normalizedQuery) ||
-        skill.description.toLowerCase().includes(normalizedQuery);
+        cleanSkillText(skill.description).toLowerCase().includes(normalizedQuery);
 
       return (
         textMatch &&
@@ -119,10 +126,10 @@ function SkillsPage() {
               <p className="text-xs text-muted-foreground mt-1">
                 {skill.category} • {skill.targetType} • {skill.damageType}
               </p>
-              <p className="text-sm text-muted-foreground mt-3">{skill.description}</p>
+              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(skill.description)}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE:</span> {skill.pveUse}</p>
-                <p className="mt-1"><span className="text-gold">PvP:</span> {skill.pvpUse}</p>
+                <p><span className="text-gold">PvE:</span> {cleanSkillText(skill.pveUse)}</p>
+                <p className="mt-1"><span className="text-gold">PvP:</span> {cleanSkillText(skill.pvpUse)}</p>
               </div>
             </article>
           ))}

@@ -16,6 +16,13 @@ export const Route = createFileRoute("/skills/$classSlug")({
   component: ClassSkillsPage,
 });
 
+function cleanSkillText(value: string) {
+  return value
+    .replace(/\{se_dmg:[^}]+\}/g, "damage")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function ClassSkillsPage() {
   const { classSlug } = Route.useParams();
   const klass = classes.find((c) => c.slug === classSlug);
@@ -64,10 +71,10 @@ function ClassSkillsPage() {
               <p className="text-xs text-muted-foreground mt-1">
                 {skill.category} • {skill.targetType} • {skill.damageType}
               </p>
-              <p className="text-sm text-muted-foreground mt-3">{skill.description}</p>
+              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(skill.description)}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE:</span> {skill.pveUse}</p>
-                <p className="mt-1"><span className="text-gold">PvP:</span> {skill.pvpUse}</p>
+                <p><span className="text-gold">PvE:</span> {cleanSkillText(skill.pveUse)}</p>
+                <p className="mt-1"><span className="text-gold">PvP:</span> {cleanSkillText(skill.pvpUse)}</p>
               </div>
             </article>
           ))}
