@@ -16,12 +16,12 @@ function NotFoundComponent() {
     <div className="flex min-h-[60vh] items-center justify-center px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-7xl font-bold text-gradient-gold">404</h1>
-        <h2 className="mt-4 text-xl font-semibold">Lost in the Abyss</h2>
+        <h2 className="mt-4 text-xl font-semibold">Perdu dans l Abyss</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          This page has drifted into the rift. Return to safer skies.
+          Cette page a derape dans la faille. Reviens vers une zone sure.
         </p>
         <Link to="/" className="mt-6 inline-flex items-center justify-center rounded-md bg-gradient-arcane px-4 py-2 text-sm font-semibold text-primary-foreground">
-          Return Home
+          Retour accueil
         </Link>
       </div>
     </div>
@@ -34,13 +34,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-[60vh] items-center justify-center px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-display text-2xl">A rift has opened</h1>
+        <h1 className="font-display text-2xl">Une faille s est ouverte</h1>
         <p className="mt-2 text-sm text-muted-foreground">{error.message}</p>
         <button
           onClick={() => { router.invalidate(); reset(); }}
           className="mt-6 inline-flex items-center justify-center rounded-md bg-gradient-arcane px-4 py-2 text-sm font-semibold text-primary-foreground"
         >
-          Try again
+          Reessayer
         </button>
       </div>
     </div>
@@ -52,10 +52,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aion 2 Hub — Guides, Builds & Timers" },
-      { name: "description", content: "The premier fan hub for Aion 2 — class guides, build planner, and event timers." },
+      { title: "Aion 2 Hub - Guides, builds et timers" },
+      { name: "description", content: "Le hub fan de reference Aion 2 - guides de classes, planificateur de build et timers." },
       { property: "og:title", content: "Aion 2 Hub" },
-      { property: "og:description", content: "Class guides, build planner, and event timers for Aion 2." },
+      { property: "og:description", content: "Guides de classes, planificateur de build et timers pour Aion 2." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -69,7 +69,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head><HeadContent /></head>
       <body>
         {children}

@@ -6,8 +6,8 @@ import { Calendar, ExternalLink } from "lucide-react";
 export const Route = createFileRoute("/updates")({
   head: () => ({
     meta: [
-      { title: "Updates - Aion 2 Hub" },
-      { name: "description", content: "Latest placeholder patch notes, news, events, and maintenance updates." },
+      { title: "Actualites - Aion 2 Hub" },
+      { name: "description", content: "Dernieres patch notes, actus, evenements et maintenances (placeholders)." },
     ],
   }),
   component: UpdatesPage,
@@ -20,6 +20,22 @@ const categories: ("All" | UpdateCategory)[] = [
   "Events",
   "Maintenance",
 ];
+const categoryLabel: Record<UpdateCategory, string> = {
+  "Patch Notes": "Notes de patch",
+  News: "Actualites",
+  Events: "Evenements",
+  Maintenance: "Maintenance",
+};
+const statusLabel: Record<"confirmed" | "expected" | "placeholder", string> = {
+  confirmed: "confirme",
+  expected: "attendu",
+  placeholder: "provisoire",
+};
+const regionLabel: Record<"KR" | "Global" | "EU", string> = {
+  KR: "KR",
+  Global: "Global",
+  EU: "EU",
+};
 
 function sourceStatusClass(status: "confirmed" | "expected" | "placeholder") {
   if (status === "confirmed") return "bg-gold/20 text-gold border border-gold/40";
@@ -45,11 +61,11 @@ function UpdatesPage() {
     <div className="container mx-auto px-4 py-14">
       <header className="mb-10 animate-fade-up">
         <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
-          <span className="h-px w-6 bg-gold/60" />INTEL FEED
+          <span className="h-px w-6 bg-gold/60" />FLUX D INFORMATIONS
         </div>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">Updates & Patch Notes</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Actualites et notes de patch</h1>
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
-          Placeholder update stream for future official ingestion.
+          Flux provisoire en attendant les sources officielles.
         </p>
       </header>
 
@@ -65,7 +81,7 @@ function UpdatesPage() {
                   : "border-border text-muted-foreground hover:text-foreground hover:border-primary/40"
               }`}
             >
-              {cat.toUpperCase()}
+              {(cat === "All" ? "Tous" : categoryLabel[cat]).toUpperCase()}
             </button>
           ))}
         </div>
@@ -83,13 +99,13 @@ function UpdatesPage() {
             <div className="relative">
               <div className="flex flex-wrap items-center gap-2 mb-3">
                 <span className="text-[10px] tracking-[0.2em] px-2 py-1 rounded bg-gradient-arcane text-primary-foreground">
-                  {item.category.toUpperCase()}
+                  {categoryLabel[item.category].toUpperCase()}
                 </span>
                 <span className={`text-[10px] tracking-[0.2em] px-2 py-1 rounded ${regionClass(item.region)}`}>
-                  {item.region}
+                  {regionLabel[item.region]}
                 </span>
                 <span className={`text-[10px] tracking-[0.2em] px-2 py-1 rounded ${sourceStatusClass(item.sourceStatus)}`}>
-                  {item.sourceStatus.toUpperCase()}
+                  {statusLabel[item.sourceStatus].toUpperCase()}
                 </span>
               </div>
 
@@ -99,7 +115,7 @@ function UpdatesPage() {
               <div className="flex items-center justify-between gap-3 pt-4 border-t border-border/50">
                 <div className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Calendar className="w-3.5 h-3.5" />
-                  Updated {item.lastUpdated}
+                  Mis a jour {item.lastUpdated}
                 </div>
                 {item.sourceUrl ? (
                   <a

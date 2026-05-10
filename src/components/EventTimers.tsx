@@ -99,9 +99,9 @@ export function EventTimers() {
   return (
     <section className="container mx-auto px-4 py-10">
       <div className="flex items-center justify-between gap-4 mb-4">
-        <h2 className="font-display text-2xl md:text-3xl">Event Timers</h2>
+        <h2 className="font-display text-2xl md:text-3xl">Timers d evenements</h2>
         <span className="text-[11px] tracking-[0.2em] text-gold/90 uppercase">
-          Schedules are placeholders and may change
+          Horaires provisoires et susceptibles de changer
         </span>
       </div>
 

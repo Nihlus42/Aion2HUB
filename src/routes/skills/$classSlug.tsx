@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
-import { classes, skills } from "@/data";
+import { classes, skills, cleanSkillText, getSkillDisplayName, getSkillDisplayDescription, normalizeSkillClassSlug } from "@/data";
 import { Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/skills/$classSlug")({
@@ -8,20 +8,43 @@ export const Route = createFileRoute("/skills/$classSlug")({
     const klass = classes.find((c) => c.slug === params.classSlug);
     return {
       meta: [
-        { title: `${klass?.name ?? "Class"} Skills - Aion 2 Hub` },
-        { name: "description", content: "Class-focused skills page based on gameplay analysis." },
+        { title: `${klass?.name ?? "Classe"} - Competences - Aion 2 Hub` },
+        { name: "description", content: "Page de competences par classe basee sur des analyses de gameplay." },
       ],
     };
   },
   component: ClassSkillsPage,
 });
 
-function cleanSkillText(value: string) {
-  return value
-    .replace(/\{se_dmg:[^}]+\}/g, "damage")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+const categoryLabel = {
+  "Basic Attack": "Attaque de base",
+  Combo: "Combo",
+  AoE: "Zone",
+  Burst: "Rafale",
+  Mobility: "Mobilite",
+  "Crowd Control": "Controle",
+  Defensive: "Defensif",
+  Utility: "Utilitaire",
+  Unknown: "Inconnu",
+} as const;
+
+const targetTypeLabel = {
+  "Single Target": "Cible unique",
+  AoE: "Zone",
+  Cone: "Cone",
+  Line: "Ligne",
+  Self: "Soi",
+  Unknown: "Inconnu",
+} as const;
+
+const damageTypeLabel = {
+  Physical: "Physique",
+  Magical: "Magique",
+  Hybrid: "Hybride",
+  Unknown: "Inconnu",
+} as const;
+
+const roleLabel = { Tank: "TANK", DPS: "DPS", Healer: "SOIGNEUR", Support: "SUPPORT" } as const;
 
 function ClassSkillsPage() {
   const { classSlug } = Route.useParams();
@@ -31,50 +54,51 @@ function ClassSkillsPage() {
     return (
       <div className="container mx-auto px-4 py-14">
         <div className="rune-border rounded-xl p-10 text-center">
-          <h1 className="font-display text-4xl mb-3">Class not found</h1>
-          <p className="text-muted-foreground mb-6">No class matches this URL.</p>
+          <h1 className="font-display text-4xl mb-3">Classe introuvable</h1>
+          <p className="text-muted-foreground mb-6">Aucune classe ne correspond a cette URL.</p>
           <Link to="/classes" className="inline-flex items-center gap-2 rounded-md bg-gradient-arcane px-4 py-2 text-primary-foreground font-semibold">
             <ArrowLeft className="w-4 h-4" />
-            Back to Classes
+            Retour aux classes
           </Link>
         </div>
       </div>
     );
   }
 
-  const classSkills = skills.filter((s) => s.classSlug === classSlug);
+  const classSkills = skills.filter((s) => s.classSlug === normalizeSkillClassSlug(classSlug));
 
   return (
     <div className="container mx-auto px-4 py-14">
       <Link to="/classes" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-gold transition-colors mb-6">
         <ArrowLeft className="w-4 h-4" />
-        Back to Classes
+        Retour aux classes
       </Link>
 
       <header className="mb-10 animate-fade-up">
-        <Eyebrow>{klass.role.toUpperCase()}</Eyebrow>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">{klass.name} Skills</h1>
+        <Eyebrow>{roleLabel[klass.role]}</Eyebrow>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Competences {klass.name}</h1>
         <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-          Gameplay analysis / Subject to change
+          Analyse gameplay / Sujet a changement
         </span>
       </header>
 
       {classSkills.length === 0 ? (
         <div className="rune-border rounded-xl p-10 text-center text-muted-foreground">
-          Skill data coming soon
+          Donnees de competences a venir
         </div>
       ) : (
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {classSkills.map((skill) => (
             <article key={skill.id} className="rune-border rounded-xl p-5">
-              <h2 className="font-display text-2xl">{skill.name}</h2>
+              <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
+              <p className="text-[11px] text-amber-300/90 mt-1">Traduction litterale non finale</p>
               <p className="text-xs text-muted-foreground mt-1">
-                {skill.category} • {skill.targetType} • {skill.damageType}
+                {categoryLabel[skill.category]} - {targetTypeLabel[skill.targetType]} - {damageTypeLabel[skill.damageType]}
               </p>
-              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(skill.description)}</p>
+              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE:</span> {cleanSkillText(skill.pveUse)}</p>
-                <p className="mt-1"><span className="text-gold">PvP:</span> {cleanSkillText(skill.pvpUse)}</p>
+                <p><span className="text-gold">PvE :</span> {cleanSkillText(skill.pveUseFr)}</p>
+                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(skill.pvpUseFr)}</p>
               </div>
             </article>
           ))}

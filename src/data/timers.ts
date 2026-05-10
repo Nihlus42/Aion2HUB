@@ -24,8 +24,8 @@ export interface EventTimerDefinition {
 export const eventTimers: EventTimerDefinition[] = [
   {
     id: "rift-window",
-    title: "Rift Window",
-    description: "Placeholder: opens daily at 20:00 UTC.",
+    title: "Fenetre de faille",
+    description: "Provisoire : ouverture chaque jour a 20:00 UTC.",
     icon: "rift",
     schedule: { type: "daily", hourUtc: 20, minuteUtc: 0 },
     sourceStatus: "placeholder",
@@ -33,8 +33,8 @@ export const eventTimers: EventTimerDefinition[] = [
   },
   {
     id: "daily-reset",
-    title: "Daily Reset",
-    description: "Placeholder: resets daily at 09:00 UTC.",
+    title: "Reset quotidien",
+    description: "Provisoire : reset chaque jour a 09:00 UTC.",
     icon: "daily",
     schedule: { type: "daily", hourUtc: 9, minuteUtc: 0 },
     sourceStatus: "placeholder",
@@ -42,8 +42,8 @@ export const eventTimers: EventTimerDefinition[] = [
   },
   {
     id: "weekly-reset",
-    title: "Weekly Reset",
-    description: "Placeholder: resets Wednesday at 09:00 UTC.",
+    title: "Reset hebdomadaire",
+    description: "Provisoire : reset le mercredi a 09:00 UTC.",
     icon: "weekly",
     schedule: { type: "weekly", weekdayUtc: 3, hourUtc: 9, minuteUtc: 0 },
     sourceStatus: "placeholder",
@@ -51,8 +51,8 @@ export const eventTimers: EventTimerDefinition[] = [
   },
   {
     id: "shugo-event",
-    title: "Shugo Event",
-    description: "Placeholder: starts Saturday at 18:00 UTC.",
+    title: "Evenement Shugo",
+    description: "Provisoire : debut le samedi a 18:00 UTC.",
     icon: "shugo",
     schedule: { type: "weekly", weekdayUtc: 6, hourUtc: 18, minuteUtc: 0 },
     sourceStatus: "placeholder",

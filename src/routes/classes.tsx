@@ -7,8 +7,8 @@ import { Eyebrow } from "@/components/Ornament";
 export const Route = createFileRoute("/classes")({
   head: () => ({
     meta: [
-      { title: "Classes — Aion 2 Hub" },
-      { name: "description", content: "Browse all Aion 2 classes with role, faction and difficulty filters." },
+      { title: "Classes - Aion 2 Hub" },
+      { name: "description", content: "Parcours toutes les classes Aion 2 avec filtres role, faction et difficulte." },
     ],
   }),
   component: ClassesPage,
@@ -20,6 +20,8 @@ const roleIcon: Record<ClassRole, typeof Shield> = {
 
 const roles: ("All" | ClassRole)[] = ["All", "Tank", "DPS", "Healer", "Support"];
 const factions: ("All" | ClassFaction)[] = ["All", "Elyos", "Asmodian", "Both"];
+const roleLabel: Record<ClassRole, string> = { Tank: "Tank", DPS: "DPS", Healer: "Soigneur", Support: "Support" };
+const factionLabel: Record<ClassFaction, string> = { Elyos: "Elyos", Asmodian: "Asmodien", Both: "Les deux" };
 
 function ClassesPage() {
   const [role, setRole] = useState<(typeof roles)[number]>("All");
@@ -35,9 +37,9 @@ function ClassesPage() {
   return (
     <div className="container mx-auto px-4 py-14">
       <header className="mb-12 animate-fade-up">
-        <Eyebrow>CHOOSE YOUR PATH</Eyebrow>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">Classes of Atreia</h1>
-        <p className="text-muted-foreground max-w-2xl leading-relaxed">Eight unique paths await. Filter by role, faction, or search to find your calling.</p>
+        <Eyebrow>CHOISIS TA VOIE</Eyebrow>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Classes d Atreia</h1>
+        <p className="text-muted-foreground max-w-2xl leading-relaxed">Huit voies uniques t attendent. Filtre par role, faction, ou recherche pour trouver ton style.</p>
       </header>
 
       {/* Filters */}
@@ -45,7 +47,7 @@ function ClassesPage() {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search class..."
+          placeholder="Rechercher une classe..."
           className="bg-background/60 border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:border-gold/60 focus:ring-1 focus:ring-gold/40 transition"
         />
         <div className="flex gap-1 flex-wrap">
@@ -82,7 +84,7 @@ function ClassesPage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-arcane flex items-center justify-center shadow-glow group-hover:animate-pulse-glow">
                   <Icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <div className="flex gap-1" title={`Difficulty ${c.difficulty}/5`}>
+                <div className="flex gap-1" title={`Difficulte ${c.difficulty}/5`}>
                   {[1, 2, 3, 4, 5].map((i) => (
                     <span key={i} className={`w-1.5 h-4 rounded-sm transition-colors ${i <= c.difficulty ? "bg-gradient-gold" : "bg-border"}`} />
                   ))}
@@ -91,12 +93,12 @@ function ClassesPage() {
               <h3 className="font-display text-2xl mb-1 group-hover:text-gold transition-colors">{c.name}</h3>
               <div className="mb-3">
                 <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-                  Community info / Subject to change
+                  Infos communaute / Sujet a changement
                 </span>
               </div>
               <div className="flex gap-2 mb-4">
-                <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-primary/15 text-primary border border-primary/20">{c.role.toUpperCase()}</span>
-                <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/20">{c.faction.toUpperCase()}</span>
+                <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-primary/15 text-primary border border-primary/20">{roleLabel[c.role].toUpperCase()}</span>
+                <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/20">{factionLabel[c.faction].toUpperCase()}</span>
               </div>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{c.description}</p>
               <div className="border-t border-border/60 pt-3 text-xs text-muted-foreground">
@@ -108,7 +110,7 @@ function ClassesPage() {
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-16 text-muted-foreground">No classes match your filters.</div>
+        <div className="text-center py-16 text-muted-foreground">Aucune classe ne correspond a tes filtres.</div>
       )}
     </div>
   );

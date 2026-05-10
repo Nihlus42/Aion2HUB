@@ -3,12 +3,12 @@ import { useState } from "react";
 import { Menu, X, Swords } from "lucide-react";
 
 const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/updates", label: "Updates" },
+  { to: "/", label: "Accueil" },
+  { to: "/updates", label: "Actualites" },
   { to: "/classes", label: "Classes" },
-  { to: "/skills", label: "Skills" },
+  { to: "/skills", label: "Competences" },
   { to: "/guides", label: "Guides" },
-  { to: "/builds", label: "Build Planner" },
+  { to: "/builds", label: "Planificateur" },
 ];
 
 export function SiteHeader() {
@@ -44,10 +44,10 @@ export function SiteHeader() {
           to="/guides"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold shadow-glow hover:opacity-90 transition"
         >
-          Start Reading
+          Commencer la lecture
         </Link>
 
-        <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Ouvrir le menu">
           {open ? <X /> : <Menu />}
         </button>
       </div>
@@ -69,7 +69,7 @@ export function SiteHeader() {
             onClick={() => setOpen(false)}
             className="mt-2 px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold text-center"
           >
-            Start Reading
+            Commencer la lecture
           </Link>
         </nav>
       )}
@@ -87,29 +87,29 @@ export function SiteFooter() {
             <span className="font-display tracking-widest text-gradient-gold">AION 2</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            The unofficial fan hub for Aion 2. Guides, builds, and planning tools for the next generation of Daevas.
+            Hub fan non officiel pour Aion 2. Guides, builds et outils de planification pour la nouvelle generation de Daevas.
           </p>
         </div>
         <div>
-          <h4 className="text-gold text-sm tracking-widest mb-3">EXPLORE</h4>
+          <h4 className="text-gold text-sm tracking-widest mb-3">EXPLORER</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
-            <li><Link to="/skills" className="hover:text-foreground">Skills</Link></li>
+            <li><Link to="/skills" className="hover:text-foreground">Competences</Link></li>
             <li><Link to="/guides" className="hover:text-foreground">Guides</Link></li>
-            <li><Link to="/builds" className="hover:text-foreground">Build Planner</Link></li>
+            <li><Link to="/builds" className="hover:text-foreground">Planificateur</Link></li>
           </ul>
         </div>
         <div>
-          <h4 className="text-gold text-sm tracking-widest mb-3">TOOLS</h4>
-          <p className="text-sm text-muted-foreground mb-3">Plan builds, check timers, and optimize your next run.</p>
+          <h4 className="text-gold text-sm tracking-widest mb-3">OUTILS</h4>
+          <p className="text-sm text-muted-foreground mb-3">Planifie tes builds, verifie les timers et optimise ta prochaine session.</p>
           <Link to="/builds"
              className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
-            Open Build Planner
+            Ouvrir le planificateur
           </Link>
         </div>
       </div>
       <div className="border-t border-border/50 py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Aion 2 Hub — Fan-made site, not affiliated with NCSOFT.
+        � {new Date().getFullYear()} Aion 2 Hub - Site fan non affilie a NCSOFT.
       </div>
     </footer>
   );

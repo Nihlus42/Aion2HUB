@@ -9,8 +9,8 @@ import { EventTimers } from "@/components/EventTimers";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aion 2 Hub — Dark Fantasy MMORPG Utility Hub" },
-      { name: "description", content: "Class guides, build planner, and event timers for Aion 2 players." },
+      { title: "Aion 2 Hub - Hub utilitaire MMORPG dark fantasy" },
+      { name: "description", content: "Guides de classes, planificateur de build et timers d evenements pour les joueurs Aion 2." },
     ],
   }),
   component: HomePage,
@@ -67,21 +67,21 @@ function HomePage() {
           <div className="max-w-2xl animate-fade-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-card/60 border border-gold/30 mb-6 backdrop-blur">
               <Sparkles className="w-3.5 h-3.5 text-gold animate-pulse" />
-              <span className="text-xs tracking-[0.3em] text-gold font-medium">DAEVAS UNITE</span>
+              <span className="text-xs tracking-[0.3em] text-gold font-medium">UNION DES DAEVAS</span>
             </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              Ascend in <span className="shimmer-text">Aion 2</span>
+              Eleve-toi dans <span className="shimmer-text">Aion 2</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Class guides crafted by veterans. A live build planner. Event timers and tools that actually help.
+              Guides de classes rediges par des veterans. Planificateur de build en direct. Timers et outils vraiment utiles.
               Everything you need to dominate Atreia — in one place.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/guides" className="px-6 py-3 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all inline-flex items-center gap-2">
-                Browse Guides <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                Parcourir les guides <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link to="/builds" className="px-6 py-3 rounded-md border border-gold/40 text-gold font-semibold hover:bg-gold/10 hover:border-gold transition-all">
-                Open Build Planner
+                Ouvrir le planificateur
               </Link>
             </div>
           </div>
@@ -97,16 +97,16 @@ function HomePage() {
           <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-gold/10 blur-3xl pointer-events-none" />
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
             <div>
-              <Eyebrow><Calendar className="w-3.5 h-3.5" /> NEXT MAJOR NEWS</Eyebrow>
-              <h2 className="font-display text-2xl md:text-3xl">Summer Game Fest - June 5</h2>
-              <p className="text-sm text-muted-foreground mt-1">Expected announcement window for upcoming Aion 2 news.</p>
+              <Eyebrow><Calendar className="w-3.5 h-3.5" /> PROCHAINE GRANDE ACTU</Eyebrow>
+              <h2 className="font-display text-2xl md:text-3xl">Summer Game Fest - 5 juin</h2>
+              <p className="text-sm text-muted-foreground mt-1">Fenetre d annonce attendue pour les prochaines infos Aion 2.</p>
             </div>
             <div className="grid grid-cols-4 gap-3 md:gap-4">
               {[
-                { v: days, l: "Days" },
-                { v: hours, l: "Hours" },
+                { v: days, l: "Jours" },
+                { v: hours, l: "Heures" },
                 { v: minutes, l: "Minutes" },
-                { v: seconds, l: "Seconds" },
+                { v: seconds, l: "Secondes" },
               ].map((u) => (
                 <div key={u.l} className="text-center bg-background/70 border border-gold/20 rounded-lg px-3 py-3 md:px-5 md:py-4 min-w-[64px] hover:border-gold/50 transition-colors">
                   <div className="font-display text-2xl md:text-4xl text-gradient-gold tabular-nums drop-shadow-[0_0_15px_oklch(0.82_0.15_85/0.4)]">{String(u.v).padStart(2, "0")}</div>
@@ -123,9 +123,9 @@ function HomePage() {
         <RuneDivider className="mb-12" />
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: Sword, title: "8 Iconic Classes", desc: "Detailed class breakdowns with role, difficulty, and signature skills.", to: "/classes" as const },
-            { icon: Shield, title: "Builds That Win", desc: "Plan stigmas, share builds, and copy proven setups in one click.", to: "/builds" as const },
-            { icon: Calendar, title: "Track Event Timers", desc: "Keep your runs on schedule with live placeholder reset timers.", to: "/builds" as const },
+            { icon: Sword, title: "8 classes iconiques", desc: "Details des classes avec role, difficulte et competences signatures.", to: "/classes" as const },
+            { icon: Shield, title: "Builds qui gagnent", desc: "Planifie les stigmas, partage les builds et copie des setups valides en un clic.", to: "/builds" as const },
+            { icon: Calendar, title: "Suivi des timers", desc: "Reste cale sur le planning avec des timers de reset en direct.", to: "/builds" as const },
           ].map((f, i) => (
             <Link
               key={f.title}
@@ -140,7 +140,7 @@ function HomePage() {
               <h3 className="font-display text-xl mb-2 group-hover:text-gold transition-colors">{f.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
               <div className="mt-5 inline-flex items-center text-sm text-primary group-hover:text-gold transition-colors">
-                Explore <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Explorer <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
           ))}
@@ -152,10 +152,10 @@ function HomePage() {
         <div className="flex items-end justify-between mb-10">
           <div>
             <Eyebrow>CHRONICLES</Eyebrow>
-            <h2 className="font-display text-3xl md:text-4xl">Latest Guides</h2>
+            <h2 className="font-display text-3xl md:text-4xl">Derniers guides</h2>
           </div>
           <Link to="/guides" className="text-sm text-primary hover:text-gold transition-colors group">
-            View all <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
+            Voir tout <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -176,8 +176,8 @@ function HomePage() {
                 <h3 className="font-display text-lg mb-2 leading-tight group-hover:text-gold transition-colors">{g.title}</h3>
                 <p className="text-sm text-muted-foreground flex-1 leading-relaxed">{g.excerpt}</p>
                 <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between text-xs text-muted-foreground">
-                  <span>By <span className="text-foreground/80">{g.author}</span></span>
-                  <span>{g.readTime} min read</span>
+                  <span>Par <span className="text-foreground/80">{g.author}</span></span>
+                  <span>{g.readTime} min de lecture</span>
                 </div>
               </div>
             </article>
@@ -198,15 +198,15 @@ function HomePage() {
           </svg>
           <div className="relative">
             <Sparkles className="w-10 h-10 text-gold mx-auto mb-4 animate-float-slow" />
-            <h2 className="font-display text-3xl md:text-5xl mb-4">Join {classes.length}+ Class Discussions</h2>
+            <h2 className="font-display text-3xl md:text-5xl mb-4">Rejoins {classes.length}+ discussions de classes</h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-              Theorycraft faster with curated guides, practical build planning, and always-visible timer tools.
+              Theorycraft plus vite avec des guides tries, un planificateur pratique et des timers visibles en permanence.
             </p>
             <Link
               to="/guides"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all"
             >
-              Browse Guides
+              Parcourir les guides
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

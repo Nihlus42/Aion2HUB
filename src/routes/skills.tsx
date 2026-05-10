@@ -1,13 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
-import { classes, skills, type SkillCategory, type Skill } from "@/data";
+import {
+  classes,
+  skills,
+  cleanSkillText,
+  getSkillDisplayName,
+  getSkillDisplayDescription,
+  normalizeSkillClassSlug,
+  type SkillCategory,
+  type Skill,
+} from "@/data";
 import { Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
-      { title: "Skills Database - Aion 2 Hub" },
-      { name: "description", content: "Community-driven Aion 2 skills database from gameplay analysis." },
+      { title: "Base de competences - Aion 2 Hub" },
+      { name: "description", content: "Base de competences Aion 2 basee sur des analyses de gameplay communautaires." },
     ],
   }),
   component: SkillsPage,
@@ -26,6 +35,18 @@ const categories: ("All" | SkillCategory)[] = [
   "Unknown",
 ];
 
+const categoryLabel: Record<SkillCategory, string> = {
+  "Basic Attack": "Attaque de base",
+  Combo: "Combo",
+  AoE: "Zone",
+  Burst: "Rafale",
+  Mobility: "Mobilite",
+  "Crowd Control": "Controle",
+  Defensive: "Defensif",
+  Utility: "Utilitaire",
+  Unknown: "Inconnu",
+};
+
 const targetTypes: ("All" | Skill["targetType"])[] = [
   "All",
   "Single Target",
@@ -36,12 +57,21 @@ const targetTypes: ("All" | Skill["targetType"])[] = [
   "Unknown",
 ];
 
-function cleanSkillText(value: string) {
-  return value
-    .replace(/\{se_dmg:[^}]+\}/g, "damage")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+const targetTypeLabel: Record<Skill["targetType"], string> = {
+  "Single Target": "Cible unique",
+  AoE: "Zone",
+  Cone: "Cone",
+  Line: "Ligne",
+  Self: "Soi",
+  Unknown: "Inconnu",
+};
+
+const damageTypeLabel: Record<Skill["damageType"], string> = {
+  Physical: "Physique",
+  Magical: "Magique",
+  Hybrid: "Hybride",
+  Unknown: "Inconnu",
+};
 
 function SkillsPage() {
   const [query, setQuery] = useState("");
@@ -60,14 +90,15 @@ function SkillsPage() {
   const filtered = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     return skills.filter((skill) => {
+      const normalizedClass = normalizeSkillClassSlug(classSlug);
       const textMatch =
         normalizedQuery.length === 0 ||
-        skill.name.toLowerCase().includes(normalizedQuery) ||
-        cleanSkillText(skill.description).toLowerCase().includes(normalizedQuery);
+        getSkillDisplayName(skill).toLowerCase().includes(normalizedQuery) ||
+        getSkillDisplayDescription(skill).toLowerCase().includes(normalizedQuery);
 
       return (
         textMatch &&
-        (classSlug === "All" || skill.classSlug === classSlug) &&
+        (classSlug === "All" || skill.classSlug === normalizedClass) &&
         (category === "All" || skill.category === category) &&
         (targetType === "All" || skill.targetType === targetType)
       );
@@ -77,10 +108,10 @@ function SkillsPage() {
   return (
     <div className="container mx-auto px-4 py-14">
       <header className="mb-10 animate-fade-up">
-        <Eyebrow>COMBAT ARCHIVES</Eyebrow>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">Skills Database</h1>
+        <Eyebrow>ARCHIVES DE COMBAT</Eyebrow>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Base de competences</h1>
         <p className="text-sm text-muted-foreground max-w-2xl">
-          Early database based on community gameplay analysis, not official documentation.
+          Base preliminaire issue de la communaute, ce n est pas une documentation officielle.
         </p>
       </header>
 
@@ -88,30 +119,30 @@ function SkillsPage() {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by name or description..."
+          placeholder="Rechercher par nom ou description..."
           className="bg-background/60 border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:border-gold/60"
         />
         <select value={classSlug} onChange={(e) => setClassSlug(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-          <option value="All">Class</option>
+          <option value="All">Classe</option>
           {classes.map((c) => (
             <option key={c.slug} value={c.slug}>{c.name}</option>
           ))}
         </select>
         <select value={category} onChange={(e) => setCategory(e.target.value as (typeof categories)[number])} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
           {categories.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Category" : item}</option>
+            <option key={item} value={item}>{item === "All" ? "Categorie" : categoryLabel[item]}</option>
           ))}
         </select>
         <select value={targetType} onChange={(e) => setTargetType(e.target.value as (typeof targetTypes)[number])} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
           {targetTypes.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Target Type" : item}</option>
+            <option key={item} value={item}>{item === "All" ? "Type de cible" : targetTypeLabel[item]}</option>
           ))}
         </select>
       </section>
 
       {filtered.length === 0 ? (
         <div className="rune-border rounded-xl p-10 text-center text-muted-foreground">
-          Skill data coming soon
+          Donnees de competences a venir
         </div>
       ) : (
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -119,17 +150,18 @@ function SkillsPage() {
             <article key={skill.id} className="rune-border rounded-xl p-5">
               <div className="mb-3">
                 <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-                  Gameplay analysis / Subject to change
+                  Analyse gameplay / Sujet a changement
                 </span>
               </div>
-              <h2 className="font-display text-2xl">{skill.name}</h2>
+              <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
+              <p className="text-[11px] text-amber-300/90 mt-1">Traduction litterale non finale</p>
               <p className="text-xs text-muted-foreground mt-1">
-                {skill.category} • {skill.targetType} • {skill.damageType}
+                {categoryLabel[skill.category]} - {targetTypeLabel[skill.targetType]} - {damageTypeLabel[skill.damageType]}
               </p>
-              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(skill.description)}</p>
+              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE:</span> {cleanSkillText(skill.pveUse)}</p>
-                <p className="mt-1"><span className="text-gold">PvP:</span> {cleanSkillText(skill.pvpUse)}</p>
+                <p><span className="text-gold">PvE :</span> {cleanSkillText(skill.pveUseFr)}</p>
+                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(skill.pvpUseFr)}</p>
               </div>
             </article>
           ))}
