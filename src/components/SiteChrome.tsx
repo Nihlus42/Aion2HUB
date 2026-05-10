@@ -8,8 +8,8 @@ const navItems = [
   { to: "/classes", label: "Classes" },
   { to: "/skills", label: "Competences" },
   { to: "/items", label: "Objets" },
+  { to: "/planificateur-equipement", label: "Equipement" },
   { to: "/daevanion-planner", label: "Daevanion" },
-  { to: "/builds", label: "Planificateur" },
 ];
 
 export function SiteHeader() {
@@ -98,14 +98,13 @@ export function SiteFooter() {
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
             <li><Link to="/skills" className="hover:text-foreground">Competences</Link></li>
             <li><Link to="/items" className="hover:text-foreground">Objets</Link></li>
-            <li><Link to="/builds" className="hover:text-foreground">Planificateur</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">OUTILS</h4>
           <p className="text-sm text-muted-foreground mb-3">Planifie tes builds, verifie les timers et optimise ta prochaine session.</p>
-          <Link to="/builds" className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
-            Ouvrir le planificateur
+          <Link to="/daevanion-planner" className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
+            Ouvrir les outils
           </Link>
         </div>
       </div>
