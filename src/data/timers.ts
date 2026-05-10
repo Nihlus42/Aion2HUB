@@ -24,7 +24,7 @@ export interface EventTimerDefinition {
 export const eventTimers: EventTimerDefinition[] = [
   {
     id: "rift-window",
-    title: "Fenetre de faille",
+    title: "Rift",
     description: "Provisoire : ouverture chaque jour a 20:00 UTC.",
     icon: "rift",
     schedule: { type: "daily", hourUtc: 20, minuteUtc: 0 },
