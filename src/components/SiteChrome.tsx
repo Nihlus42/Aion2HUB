@@ -10,6 +10,7 @@ const navItems = [
   { to: "/items", label: "Objets" },
   { to: "/planificateur-equipement", label: "Equipement" },
   { to: "/daevanion-planner", label: "Daevanion" },
+  { to: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -98,6 +99,7 @@ export function SiteFooter() {
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
             <li><Link to="/skills" className="hover:text-foreground">Competences</Link></li>
             <li><Link to="/items" className="hover:text-foreground">Objets</Link></li>
+            <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
           </ul>
         </div>
         <div>

@@ -1,4 +1,4 @@
-import type { ParsedStats } from "@/lib/aion2/gear/statParser";
+﻿import { groupStats, type ParsedStats } from "@/lib/aion2/gear/statParser";
 
 type Props = {
   title: string;
@@ -6,20 +6,32 @@ type Props = {
 };
 
 export function GearStatsPanel({ title, stats }: Props) {
-  const entries = Object.entries(stats).filter(([, v]) => Number.isFinite(v) && v !== 0);
+  const grouped = groupStats(stats);
+  const hasAny = Object.values(grouped).some((arr) => arr.length > 0);
+
   return (
     <section className="rune-border rounded-xl p-4">
       <h3 className="font-display text-xl mb-3">{title}</h3>
-      {entries.length === 0 ? (
-        <p className="text-sm text-muted-foreground">Aucune statistique calculable.</p>
+      {!hasAny ? (
+        <p className="text-sm text-muted-foreground">Aucune statistique calculable pour le moment.</p>
       ) : (
-        <div className="space-y-1.5">
-          {entries.map(([k, v]) => (
-            <div key={k} className="flex justify-between text-sm">
-              <span className="text-muted-foreground">{k}</span>
-              <span>{v}</span>
-            </div>
-          ))}
+        <div className="space-y-3">
+          {Object.entries(grouped).map(([group, entries]) => {
+            if (entries.length === 0) return null;
+            return (
+              <div key={group}>
+                <h5 className="text-xs text-gold tracking-wider mb-1">{group}</h5>
+                <div className="space-y-1">
+                  {entries.map(([label, value]) => (
+                    <div key={label} className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">{label}</span>
+                      <span>{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
     </section>

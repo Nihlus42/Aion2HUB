@@ -1,33 +1,58 @@
-import { cleanItemForDisplay, type ItemLight } from "@/data";
+﻿import { cleanItemForDisplay, type ItemLight } from "@/data";
 
 type Props = {
-  label: string;
+  slotLabel: string;
   item: ItemLight | null;
-  onChange: () => void;
+  enchantLevel: number;
+  onSelect: () => void;
   onRemove: () => void;
 };
 
-export function GearSlot({ label, item, onChange, onRemove }: Props) {
+export function GearSlot({ slotLabel, item, enchantLevel, onSelect, onRemove }: Props) {
   const view = item ? cleanItemForDisplay(item) : null;
+
   return (
-    <article className="rune-border rounded-xl p-3">
-      <div className="text-xs text-muted-foreground mb-2">{label}</div>
+    <div
+      role="button"
+      tabIndex={0}
+      onClick={onSelect}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onSelect();
+      }}
+      className="group relative w-full h-[82px] rounded-xl border border-border/70 bg-background/60 hover:border-gold/50 transition p-2 text-left cursor-pointer"
+      title={view ? view.name : slotLabel}
+    >
       {!view ? (
-        <div className="text-sm text-muted-foreground min-h-16 flex items-center">Aucun equipement</div>
+        <div className="h-full flex flex-col justify-center">
+          <div className="text-[11px] text-muted-foreground">{slotLabel}</div>
+          <div className="text-sm">Vide</div>
+        </div>
       ) : (
-        <div className="flex gap-3 min-h-16">
-          {view.image ? <img src={view.image} alt={view.name} className="w-12 h-12 rounded border border-border object-cover" loading="lazy" /> : <div className="w-12 h-12 rounded border border-border bg-accent/20" />}
-          <div className="min-w-0">
-            <div className="text-sm font-medium truncate">{view.name}</div>
-            <div className="text-xs text-muted-foreground">{view.gradeFr ?? "Inconnu"} {view.minLevelRequirement ? `- Niv. ${view.minLevelRequirement}` : ""}</div>
-            <div className="text-[11px] text-muted-foreground truncate">{view.optionsFr.slice(0, 2).join(" | ")}</div>
+        <div className="h-full flex gap-2">
+          {view.image ? (
+            <img src={view.image} alt={view.name} className="w-11 h-11 rounded-md border border-border object-cover shrink-0" loading="lazy" />
+          ) : (
+            <div className="w-11 h-11 rounded-md border border-border bg-accent/20 shrink-0" />
+          )}
+          <div className="min-w-0 flex-1">
+            <div className="text-[11px] text-muted-foreground truncate">{slotLabel}</div>
+            <div className="text-sm font-medium truncate">{enchantLevel > 0 ? `+${enchantLevel} ` : ""}{view.name}</div>
+            <div className="text-[11px] text-muted-foreground truncate">{view.gradeFr ?? "-"}</div>
           </div>
         </div>
       )}
-      <div className="mt-3 flex gap-2">
-        <button onClick={onChange} className="px-2.5 py-1.5 rounded border border-gold/40 text-gold text-xs hover:bg-gold/10">Changer</button>
-        <button onClick={onRemove} className="px-2.5 py-1.5 rounded border border-border text-xs hover:bg-accent/20">Retirer</button>
-      </div>
-    </article>
+
+      {view && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onRemove();
+          }}
+          className="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition text-[10px] px-1.5 py-0.5 rounded border border-border bg-card"
+        >
+          Retirer
+        </button>
+      )}
+    </div>
   );
 }

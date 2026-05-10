@@ -14,6 +14,7 @@ import { Route as SkillsRouteImport } from './routes/skills'
 import { Route as PlanificateurEquipementRouteImport } from './routes/planificateur-equipement'
 import { Route as ItemsRouteImport } from './routes/items'
 import { Route as DaevanionPlannerRouteImport } from './routes/daevanion-planner'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ClassesRouteImport } from './routes/classes'
 import { Route as BuildsRouteImport } from './routes/builds'
 import { Route as IndexRouteImport } from './routes/index'
@@ -44,6 +45,11 @@ const ItemsRoute = ItemsRouteImport.update({
 const DaevanionPlannerRoute = DaevanionPlannerRouteImport.update({
   id: '/daevanion-planner',
   path: '/daevanion-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ClassesRoute = ClassesRouteImport.update({
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRouteWithChildren
+  '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRouteWithChildren
+  '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRouteWithChildren
+  '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/'
     | '/builds'
     | '/classes'
+    | '/contact'
     | '/daevanion-planner'
     | '/items'
     | '/planificateur-equipement'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/'
     | '/builds'
     | '/classes'
+    | '/contact'
     | '/daevanion-planner'
     | '/items'
     | '/planificateur-equipement'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/builds'
     | '/classes'
+    | '/contact'
     | '/daevanion-planner'
     | '/items'
     | '/planificateur-equipement'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BuildsRoute: typeof BuildsRoute
   ClassesRoute: typeof ClassesRouteWithChildren
+  ContactRoute: typeof ContactRoute
   DaevanionPlannerRoute: typeof DaevanionPlannerRoute
   ItemsRoute: typeof ItemsRouteWithChildren
   PlanificateurEquipementRoute: typeof PlanificateurEquipementRoute
@@ -205,6 +218,13 @@ declare module '@tanstack/react-router' {
       path: '/daevanion-planner'
       fullPath: '/daevanion-planner'
       preLoaderRoute: typeof DaevanionPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/classes': {
@@ -288,6 +308,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BuildsRoute: BuildsRoute,
   ClassesRoute: ClassesRouteWithChildren,
+  ContactRoute: ContactRoute,
   DaevanionPlannerRoute: DaevanionPlannerRoute,
   ItemsRoute: ItemsRouteWithChildren,
   PlanificateurEquipementRoute: PlanificateurEquipementRoute,

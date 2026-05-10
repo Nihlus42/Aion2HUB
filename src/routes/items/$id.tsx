@@ -58,7 +58,14 @@ function ItemDetailPage() {
   }
 
   const view = cleanItemForDisplay(item);
-  const detailOptions = (item.optionsFr ?? view.optionsFr).filter((opt) => isValidText(opt)).map((opt) => normalizeUnknown(opt));
+  const rawOptions = Array.isArray(item.optionsFr)
+    ? item.optionsFr
+    : Array.isArray(view.optionsFr)
+      ? view.optionsFr
+      : typeof item.optionsFr === "string"
+        ? [item.optionsFr]
+        : [];
+  const detailOptions = rawOptions.filter((opt) => isValidText(opt)).map((opt) => normalizeUnknown(opt));
   const detailSources = view.sourceFr;
 
   return (

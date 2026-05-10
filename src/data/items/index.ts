@@ -18,6 +18,25 @@ const fixMojibake = (value: string) => {
 };
 
 const cleanText = (value: string) => fixMojibake(value).replace(/\s+/g, " ").trim();
+const toStringArray = (value: unknown): string[] => {
+  if (Array.isArray(value)) {
+    return value
+      .filter((v) => v !== null && v !== undefined)
+      .map((v) => String(v).trim())
+      .filter(Boolean);
+  }
+  if (typeof value === "string") {
+    const trimmed = value.trim();
+    return trimmed ? [trimmed] : [];
+  }
+  if (value && typeof value === "object") {
+    return Object.values(value)
+      .filter((v) => v !== null && v !== undefined)
+      .map((v) => String(v).trim())
+      .filter(Boolean);
+  }
+  return [];
+};
 
 export const isValidText = (value: unknown): value is string => {
   if (typeof value !== "string") return false;
@@ -56,7 +75,7 @@ const toDisplayItem = (item: ItemLight | ItemFull): DisplayItem => {
   const descriptionCandidate = (item as ItemFull).descriptionFr;
   const descriptionFr = isValidText(descriptionCandidate) ? cleanText(descriptionCandidate) : null;
 
-  const optionsFr = (item.optionsFr ?? item.topOptionsFr ?? [])
+  const optionsFr = toStringArray(item.optionsFr ?? item.topOptionsFr ?? [])
     .filter((it): it is string => isValidText(it))
     .map((it) => cleanText(it));
 

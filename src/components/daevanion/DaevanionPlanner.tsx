@@ -103,16 +103,13 @@ export function DaevanionPlanner() {
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 });
 
   const viewportRef = useRef<HTMLDivElement | null>(null);
-  const interactionRef = useRef({
-    active: false,
-    pointerId: -1,
-    startX: 0,
-    startY: 0,
-    startPanX: 0,
-    startPanY: 0,
-    moved: false,
-  });
-  const suppressClickUntilRef = useRef(0);
+  const isPointerDownRef = useRef(false);
+  const isDraggingRef = useRef(false);
+  const wasDraggingRef = useRef(false);
+  const dragStartRef = useRef({ x: 0, y: 0 });
+  const panStartRef = useRef({ x: 0, y: 0 });
+  const activePointerIdRef = useRef<number | null>(null);
+  const hasCaptureRef = useRef(false);
 
   const classBoards = useMemo(() => daevanionBoards.filter((board) => board.class === selectedClass).sort((a, b) => a.order - b.order), [selectedClass]);
 
@@ -236,7 +233,7 @@ export function DaevanionPlanner() {
   };
 
   const toggleNode = (nodeId: number) => {
-    if (Date.now() < suppressClickUntilRef.current) return;
+    if (wasDraggingRef.current) return;
     if (!selectedBoard) return;
     const node = selectedBoard.nodes.find((it) => it.id === nodeId);
     if (!node || node.type === "None" || node.auto_learn) return;
@@ -273,42 +270,49 @@ export function DaevanionPlanner() {
 
   const onPointerDown: React.PointerEventHandler<HTMLDivElement> = (e) => {
     if (e.pointerType === "mouse" && e.button !== 0) return;
-    interactionRef.current = {
-      active: true,
-      pointerId: e.pointerId,
-      startX: e.clientX,
-      startY: e.clientY,
-      startPanX: panPosition.x,
-      startPanY: panPosition.y,
-      moved: false,
-    };
-    e.currentTarget.setPointerCapture(e.pointerId);
+    isPointerDownRef.current = true;
+    isDraggingRef.current = false;
+    dragStartRef.current = { x: e.clientX, y: e.clientY };
+    panStartRef.current = { x: panPosition.x, y: panPosition.y };
+    activePointerIdRef.current = e.pointerId;
   };
 
   const onPointerMove: React.PointerEventHandler<HTMLDivElement> = (e) => {
-    const s = interactionRef.current;
-    if (!s.active || s.pointerId !== e.pointerId) return;
-    const dx = e.clientX - s.startX;
-    const dy = e.clientY - s.startY;
-    if (!s.moved && Math.hypot(dx, dy) >= DRAG_THRESHOLD) {
-      s.moved = true;
+    if (!isPointerDownRef.current) return;
+    if (activePointerIdRef.current !== e.pointerId) return;
+    const dx = e.clientX - dragStartRef.current.x;
+    const dy = e.clientY - dragStartRef.current.y;
+    if (!isDraggingRef.current && Math.hypot(dx, dy) >= DRAG_THRESHOLD) {
+      isDraggingRef.current = true;
       setIsPanning(true);
+      if (!hasCaptureRef.current) {
+        e.currentTarget.setPointerCapture(e.pointerId);
+        hasCaptureRef.current = true;
+      }
     }
-    if (s.moved) {
-      setPanPosition({ x: s.startPanX + dx, y: s.startPanY + dy });
+    if (isDraggingRef.current) {
+      setPanPosition({ x: panStartRef.current.x + dx, y: panStartRef.current.y + dy });
     }
   };
 
   const onPointerUp: React.PointerEventHandler<HTMLDivElement> = (e) => {
-    const s = interactionRef.current;
-    if (!s.active || s.pointerId !== e.pointerId) return;
-    if (s.moved) suppressClickUntilRef.current = Date.now() + 120;
-    interactionRef.current.active = false;
+    if (!isPointerDownRef.current) return;
+    if (activePointerIdRef.current !== e.pointerId) return;
+    wasDraggingRef.current = isDraggingRef.current;
+    setTimeout(() => {
+      wasDraggingRef.current = false;
+    }, 0);
+    isPointerDownRef.current = false;
+    isDraggingRef.current = false;
+    activePointerIdRef.current = null;
     setIsPanning(false);
-    try {
-      e.currentTarget.releasePointerCapture(e.pointerId);
-    } catch {
-      // noop
+    if (hasCaptureRef.current) {
+      try {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      } catch {
+        // noop
+      }
+      hasCaptureRef.current = false;
     }
   };
 
@@ -408,7 +412,7 @@ export function DaevanionPlanner() {
                         if (rect) setTooltipPos({ x: e.clientX - rect.left + 12, y: e.clientY - rect.top + 12 });
                       }}
                       onMouseLeave={() => setHoveredNodeId(null)}
-                      className={`rounded-md border transition p-1 ${borderClass} ${typeClass} hover:translate-y-[-1px] ${picked ? "ring-1 ring-gold/70" : ""} ${showText ? "text-left" : "text-center"}`}
+                      className={`rounded-md border transition p-1 cursor-pointer ${borderClass} ${typeClass} hover:translate-y-[-1px] ${picked ? "ring-1 ring-gold/70" : ""} ${showText ? "text-left" : "text-center"}`}
                       style={{ gridColumn: cell.col, gridRow: cell.row }}
                     >
                       <div className="h-full flex flex-col items-center justify-center">
