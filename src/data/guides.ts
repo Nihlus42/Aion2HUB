@@ -1,3 +1,5 @@
+import type { SourceStatus } from "./classes";
+
 export type GuideCategory = "beginner" | "leveling" | "pvp" | "pve";
 
 export interface Guide {
@@ -7,6 +9,9 @@ export interface Guide {
   category: GuideCategory;
   readTime: number;
   author: string;
+  sourceStatus: SourceStatus;
+  lastUpdated?: string;
+  sourceUrl?: string;
 }
 
 export const guides: Guide[] = [
@@ -18,6 +23,8 @@ export const guides: Guide[] = [
     category: "beginner",
     readTime: 6,
     author: "Lumiel",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "2",
@@ -27,6 +34,8 @@ export const guides: Guide[] = [
     category: "beginner",
     readTime: 4,
     author: "Lumiel",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "3",
@@ -36,6 +45,8 @@ export const guides: Guide[] = [
     category: "leveling",
     readTime: 12,
     author: "Kahrun",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "4",
@@ -45,6 +56,8 @@ export const guides: Guide[] = [
     category: "leveling",
     readTime: 7,
     author: "Kahrun",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "5",
@@ -54,6 +67,8 @@ export const guides: Guide[] = [
     category: "pvp",
     readTime: 9,
     author: "Veille",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "6",
@@ -63,6 +78,8 @@ export const guides: Guide[] = [
     category: "pvp",
     readTime: 11,
     author: "Veille",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "7",
@@ -72,6 +89,8 @@ export const guides: Guide[] = [
     category: "pve",
     readTime: 10,
     author: "Sariel",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
   {
     id: "8",
@@ -81,6 +100,7 @@ export const guides: Guide[] = [
     category: "pve",
     readTime: 8,
     author: "Sariel",
+    sourceStatus: "placeholder",
+    lastUpdated: "2026-05-10",
   },
 ];
-

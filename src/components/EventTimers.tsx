@@ -5,52 +5,7 @@ import {
   ShugoIcon,
   WeeklyResetIcon,
 } from "@/components/EventTimerIcons";
-
-type TimerScheduleType = "daily" | "weekly";
-
-type EventTimerConfig = {
-  id: string;
-  title: string;
-  description: string;
-  icon: "rift" | "daily" | "weekly" | "shugo";
-  schedule: {
-    type: TimerScheduleType;
-    hourUtc: number;
-    minuteUtc: number;
-    weekdayUtc?: number;
-  };
-};
-
-const TIMER_CONFIG: EventTimerConfig[] = [
-  {
-    id: "rift-window",
-    title: "Rift Window",
-    description: "Placeholder: opens daily at 20:00 UTC.",
-    icon: "rift",
-    schedule: { type: "daily", hourUtc: 20, minuteUtc: 0 },
-  },
-  {
-    id: "daily-reset",
-    title: "Daily Reset",
-    description: "Placeholder: resets daily at 09:00 UTC.",
-    icon: "daily",
-    schedule: { type: "daily", hourUtc: 9, minuteUtc: 0 },
-  },
-  {
-    id: "weekly-reset",
-    title: "Weekly Reset",
-    description: "Placeholder: resets Wednesday at 09:00 UTC.",
-    icon: "weekly",
-    schedule: { type: "weekly", weekdayUtc: 3, hourUtc: 9, minuteUtc: 0 },
-  },
-  {
-    id: "shugo-event",
-    title: "Shugo Event",
-    description: "Placeholder: starts Saturday at 18:00 UTC.",
-    icon: "shugo",
-    schedule: { type: "weekly", weekdayUtc: 6, hourUtc: 18, minuteUtc: 0 },
-  },
-];
+import { eventTimers, type EventTimerDefinition } from "@/data";
 
 type Countdown = {
   totalMs: number;
@@ -60,7 +15,7 @@ type Countdown = {
   seconds: number;
 };
 
-function getNextOccurrence(now: Date, cfg: EventTimerConfig["schedule"]): Date {
+function getNextOccurrence(now: Date, cfg: EventTimerDefinition["schedule"]): Date {
   if (cfg.type === "daily") {
     const next = new Date(
       Date.UTC(
@@ -115,7 +70,7 @@ function pad2(value: number): string {
   return String(value).padStart(2, "0");
 }
 
-function getTimerIcon(name: EventTimerConfig["icon"]) {
+function getTimerIcon(name: EventTimerDefinition["icon"]) {
   if (name === "rift") return RiftIcon;
   if (name === "daily") return DailyResetIcon;
   if (name === "weekly") return WeeklyResetIcon;
@@ -132,7 +87,7 @@ export function EventTimers() {
 
   const timers = useMemo(
     () =>
-      TIMER_CONFIG.map((cfg) => {
+      eventTimers.map((cfg) => {
         const now = new Date(nowMs);
         const target = getNextOccurrence(now, cfg.schedule);
         const countdown = getCountdown(nowMs, target);
