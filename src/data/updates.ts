@@ -8,6 +8,8 @@ export interface UpdateEntry {
   title: string;
   excerpt: string;
   summary: string;
+  watchlist?: string[];
+  tags?: string[];
   category: UpdateCategory;
   region: UpdateRegion;
   publishDate: string;
@@ -16,9 +18,44 @@ export interface UpdateEntry {
   sourceStatus: SourceStatus;
   lastUpdated: string;
   sourceUrl?: string;
+  sourceUrls?: Array<{ label: string; url: string }>;
 }
 
 export const updates: UpdateEntry[] = [
+  {
+    id: "summer-game-fest-2026-trailer-2026-06-05",
+    title: "AION 2 sera present au Summer Game Fest avec un nouveau trailer",
+    excerpt:
+      "AION 2 sera presente pendant le Summer Game Fest 2026 avec un nouveau trailer. L evenement pourrait apporter de nouvelles informations sur la version globale du MMORPG.",
+    summary:
+      "NCSoft confirme la presence d AION 2 au Summer Game Fest 2026.\n\nUn nouveau trailer est attendu le 5 juin, avec davantage d informations sur le MMORPG nouvelle generation. Cette apparition devrait permettre d en apprendre plus sur la version globale du jeu, son univers, ses systemes et les prochaines etapes de communication.\n\nPour le moment, il faut rester prudent : aucune date de sortie globale precise ne doit etre consideree comme confirmee tant qu elle n est pas annoncee officiellement par NCSoft ou les canaux officiels AION 2.\n\nLe Summer Game Fest 2026 aura lieu le 5 juin a 2 PM PT / 5 PM ET, soit 23h en France et en Slovaquie.\n\nAion2HUB suivra les annonces et mettra a jour les informations disponibles apres la diffusion du trailer.",
+    watchlist: [
+      "Nouveau trailer",
+      "Informations sur la version globale",
+      "Eventuelle fenetre de sortie",
+      "Plateformes confirmees",
+      "Details sur les classes, le contenu ou le modele economique",
+    ],
+    tags: ["Global", "Confirme", "Trailer"],
+    category: "Events",
+    region: "Global",
+    publishDate: "2026-06-05",
+    coverImage: "/images/updates/summer-game-fest-2026.jpg",
+    isOfficialSource: true,
+    sourceStatus: "confirmed",
+    lastUpdated: "2026-05-11",
+    sourceUrl: "https://www.summergamefest.com/events/summer-game-fest",
+    sourceUrls: [
+      {
+        label: "Summer Game Fest officiel",
+        url: "https://www.summergamefest.com/events/summer-game-fest",
+      },
+      {
+        label: "AION 2 officiel",
+        url: "https://x.com/AION2Official/status/2052550581206827421",
+      },
+    ],
+  },
   {
     id: "steam-aion2-announcement-2026-05-09",
     title: "AION 2 arrive sur Steam : annonce officielle et ouverture de la wishlist",

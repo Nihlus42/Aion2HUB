@@ -23,11 +23,11 @@ const categories: ("All" | UpdateCategory)[] = [
 const categoryLabel: Record<UpdateCategory, string> = {
   "Patch Notes": "Notes de patch",
   News: "Actualites",
-  Events: "Evenements",
+  Events: "Événements",
   Maintenance: "Maintenance",
 };
 const statusLabel: Record<"confirmed" | "expected" | "placeholder", string> = {
-  confirmed: "confirme",
+  confirmed: "confirmé",
   expected: "attendu",
   placeholder: "provisoire",
 };
@@ -107,11 +107,26 @@ function UpdatesPage() {
                 <span className={`text-[10px] tracking-[0.2em] px-2 py-1 rounded ${sourceStatusClass(item.sourceStatus)}`}>
                   {statusLabel[item.sourceStatus].toUpperCase()}
                 </span>
+                {(item.tags ?? []).map((tag) => (
+                  <span key={`${item.id}-${tag}`} className="text-[10px] tracking-[0.2em] px-2 py-1 rounded border border-border text-muted-foreground">
+                    {tag.toUpperCase()}
+                  </span>
+                ))}
               </div>
 
               <h2 className="font-display text-2xl mb-2">{item.title}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-2">{item.excerpt}</p>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">{item.summary}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4 whitespace-pre-line">{item.summary}</p>
+              {(item.watchlist?.length ?? 0) > 0 && (
+                <div className="mb-4 rounded-lg border border-border/60 bg-background/50 p-3">
+                  <div className="text-[10px] tracking-[0.2em] text-muted-foreground mb-2">A SURVEILLER</div>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    {item.watchlist!.map((point) => (
+                      <li key={`${item.id}-${point}`}>- {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div className="mb-4 rounded-lg border border-border/60 bg-background/50 p-3">
                 <div className="text-[10px] tracking-[0.2em] text-muted-foreground mb-2">VISUEL DE COUVERTURE</div>
@@ -146,7 +161,18 @@ function UpdatesPage() {
                       SOURCE OFFICIELLE
                     </span>
                   ) : null}
-                  {item.sourceUrl ? (
+                  {(item.sourceUrls ?? []).map((source) => (
+                    <a
+                      key={`${item.id}-${source.url}`}
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-border text-xs text-muted-foreground hover:text-foreground hover:border-primary/40 transition"
+                    >
+                      {source.label} <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  ))}
+                  {item.sourceUrl && !(item.sourceUrls?.length) ? (
                     <a
                       href={item.sourceUrl}
                       target="_blank"
