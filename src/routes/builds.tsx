@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { classes, skillsByClass } from "@/data";
+import { classes, skills } from "@/data";
 import { Trash2, Plus, Check, RotateCcw } from "lucide-react";
 
 export const Route = createFileRoute("/builds")({
@@ -15,25 +15,25 @@ export const Route = createFileRoute("/builds")({
 
 function BuildsPage() {
   const [classId, setClassId] = useState<string>(classes[0].id);
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
-  const skills = skillsByClass[classId] ?? [];
   const klass = classes.find((c) => c.id === classId)!;
-  const selectedSkills = skills.filter((s) => selectedIds.includes(s.id));
-  const totalCost = selectedSkills.reduce((sum, skill) => sum + skill.cost, 0);
+  const classSkills = skills.filter((s) => s.classSlug === klass.slug);
+  const selectedSkills = classSkills.filter((s) => selectedSlugs.includes(s.slug));
+  const totalCost = selectedSkills.length;
 
-  const toggleSkill = (skillId: string) => {
-    setSelectedIds((prev) =>
-      prev.includes(skillId) ? prev.filter((id) => id !== skillId) : [...prev, skillId],
+  const toggleSkill = (skillSlug: string) => {
+    setSelectedSlugs((prev) =>
+      prev.includes(skillSlug) ? prev.filter((id) => id !== skillSlug) : [...prev, skillSlug],
     );
   };
 
   const changeClass = (nextClassId: string) => {
     setClassId(nextClassId);
-    setSelectedIds([]);
+    setSelectedSlugs([]);
   };
 
-  const resetBuild = () => setSelectedIds([]);
+  const resetBuild = () => setSelectedSlugs([]);
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -61,12 +61,12 @@ function BuildsPage() {
                     : "hover:bg-accent/30 text-muted-foreground hover:text-foreground"
                 }`}
               >
-                <div className="font-display">{c.name}</div>
-                <div className="text-[10px] opacity-75">
+              <div className="font-display">{c.name}</div>
+              <div className="text-[10px] opacity-75">
                   {c.role} - {c.faction}
-                </div>
-              </button>
-            ))}
+              </div>
+            </button>
+          ))}
           </div>
         </aside>
 
@@ -74,23 +74,23 @@ function BuildsPage() {
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="font-display text-2xl">{klass.name} Skills</h2>
-              <p className="text-xs text-muted-foreground">{klass.tagline}</p>
+              <p className="text-xs text-muted-foreground">{klass.combatStyle}</p>
             </div>
-            <span className="text-xs text-muted-foreground">{skills.length} skills available</span>
+            <span className="text-xs text-muted-foreground">{classSkills.length} skills available</span>
           </div>
 
-          {skills.length === 0 ? (
+          {classSkills.length === 0 ? (
             <div className="text-center py-12 text-sm text-muted-foreground border border-dashed border-border rounded-lg">
               Skill data for {klass.name} coming soon.
             </div>
           ) : (
             <ul className="space-y-2">
-              {skills.map((skill) => {
-                const picked = selectedIds.includes(skill.id);
+              {classSkills.map((skill) => {
+                const picked = selectedSlugs.includes(skill.slug);
                 return (
-                  <li key={skill.id}>
+                  <li key={skill.slug}>
                     <button
-                      onClick={() => toggleSkill(skill.id)}
+                      onClick={() => toggleSkill(skill.slug)}
                       className={`w-full text-left p-4 rounded-lg border transition-all flex items-start gap-4 ${
                         picked
                           ? "border-gold bg-gold/5 shadow-gold-glow"
@@ -98,12 +98,8 @@ function BuildsPage() {
                       }`}
                     >
                       <div
-                        className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 transition-transform ${picked ? "scale-110" : ""} ${
-                          skill.type === "Stigma"
-                            ? "bg-gradient-gold text-gold-foreground"
-                            : skill.type === "Active"
-                              ? "bg-gradient-arcane text-primary-foreground"
-                              : "bg-accent text-foreground"
+                        className={`w-10 h-10 rounded-md flex items-center justify-center shrink-0 transition-transform ${
+                          picked ? "scale-110 bg-gradient-arcane text-primary-foreground" : "bg-accent text-foreground"
                         }`}
                       >
                         {picked ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
@@ -112,14 +108,14 @@ function BuildsPage() {
                         <div className="flex items-center gap-2 mb-1">
                           <span className="font-display">{skill.name}</span>
                           <span className="text-[10px] tracking-widest px-1.5 py-0.5 rounded bg-accent/40 text-muted-foreground">
-                            {skill.type.toUpperCase()}
+                            {skill.category.toUpperCase()}
                           </span>
                         </div>
                         <p className="text-xs text-muted-foreground">{skill.description}</p>
                       </div>
                       <div className="text-right shrink-0">
-                        <div className="text-xs text-gold tracking-widest">COST</div>
-                        <div className="font-display text-lg">{skill.cost}</div>
+                        <div className="text-xs text-gold tracking-widest">COOLDOWN</div>
+                        <div className="font-display text-sm">{skill.estimatedCooldown}</div>
                       </div>
                     </button>
                   </li>
@@ -141,7 +137,7 @@ function BuildsPage() {
             <div className="h-1.5 bg-background rounded overflow-hidden">
               <div
                 className="h-full bg-gradient-gold transition-all"
-                style={{ width: `${skills.length === 0 ? 0 : Math.min(100, (selectedSkills.length / skills.length) * 100)}%` }}
+                style={{ width: `${classSkills.length === 0 ? 0 : Math.min(100, (selectedSkills.length / classSkills.length) * 100)}%` }}
               />
             </div>
           </div>
@@ -153,14 +149,14 @@ function BuildsPage() {
               </div>
             ) : (
               selectedSkills.map((skill) => (
-                <div key={skill.id} className="flex items-center gap-2 p-2 rounded bg-background/60 border border-border">
+                <div key={skill.slug} className="flex items-center gap-2 p-2 rounded bg-background/60 border border-border">
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-medium truncate">{skill.name}</div>
                     <div className="text-[10px] text-muted-foreground">
-                      {skill.type} - {skill.cost} pts
+                      {skill.category} - {skill.estimatedCooldown}
                     </div>
                   </div>
-                  <button onClick={() => toggleSkill(skill.id)} className="p-1 text-muted-foreground hover:text-destructive">
+                  <button onClick={() => toggleSkill(skill.slug)} className="p-1 text-muted-foreground hover:text-destructive">
                     <Trash2 className="w-3.5 h-3.5" />
                   </button>
                 </div>

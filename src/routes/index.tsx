@@ -31,8 +31,8 @@ function useCountdown(target: Date) {
 }
 
 function HomePage() {
-  // Countdown to a future patch / launch event
-  const target = new Date(Date.UTC(2026, 11, 1, 17, 0, 0));
+  // Countdown to Summer Game Fest news window
+  const target = new Date(Date.UTC(2026, 5, 5, 21, 0, 0));
   const { days, hours, minutes, seconds } = useCountdown(target);
   const latest = guides.slice(0, 3);
 
@@ -97,9 +97,9 @@ function HomePage() {
           <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-gold/10 blur-3xl pointer-events-none" />
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
             <div>
-              <Eyebrow><Calendar className="w-3.5 h-3.5" /> NEXT MAJOR PATCH</Eyebrow>
-              <h2 className="font-display text-2xl md:text-3xl">Echoes of Beritra</h2>
-              <p className="text-sm text-muted-foreground mt-1">New zone, raid tier, and stigma overhaul.</p>
+              <Eyebrow><Calendar className="w-3.5 h-3.5" /> NEXT MAJOR NEWS</Eyebrow>
+              <h2 className="font-display text-2xl md:text-3xl">Summer Game Fest - June 5</h2>
+              <p className="text-sm text-muted-foreground mt-1">Expected announcement window for upcoming Aion 2 news.</p>
             </div>
             <div className="grid grid-cols-4 gap-3 md:gap-4">
               {[

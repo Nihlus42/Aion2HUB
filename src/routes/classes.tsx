@@ -71,9 +71,10 @@ function ClassesPage() {
         {filtered.map((c, i) => {
           const Icon = roleIcon[c.role];
           return (
-            <article
-              key={c.id}
-              className="rune-border rune-border-hover rounded-xl p-6 group relative overflow-hidden animate-fade-up"
+            <a
+              key={c.slug}
+              href={`/skills?classSlug=${c.slug}`}
+              className="block h-full rune-border rune-border-hover rounded-xl p-6 group relative overflow-hidden animate-fade-up"
               style={{ animationDelay: `${Math.min(i, 8) * 0.05}s` }}
             >
               <div className="absolute -top-16 -right-16 w-40 h-40 rounded-full bg-gold/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -88,23 +89,20 @@ function ClassesPage() {
                 </div>
               </div>
               <h3 className="font-display text-2xl mb-1 group-hover:text-gold transition-colors">{c.name}</h3>
-              <p className="text-sm text-muted-foreground italic mb-3">{c.tagline}</p>
+              <div className="mb-3">
+                <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
+                  Community info / Subject to change
+                </span>
+              </div>
               <div className="flex gap-2 mb-4">
                 <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-primary/15 text-primary border border-primary/20">{c.role.toUpperCase()}</span>
                 <span className="text-[10px] tracking-[0.2em] px-2 py-0.5 rounded bg-gold/10 text-gold border border-gold/20">{c.faction.toUpperCase()}</span>
               </div>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{c.description}</p>
-              <div className="border-t border-border/60 pt-3">
-                <div className="text-[10px] text-gold tracking-[0.25em] mb-2">SIGNATURE SKILLS</div>
-                <ul className="text-sm space-y-1">
-                  {c.signatureSkills.map((s) => (
-                    <li key={s} className="text-muted-foreground flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-gold" />{s}
-                    </li>
-                  ))}
-                </ul>
+              <div className="border-t border-border/60 pt-3 text-xs text-muted-foreground">
+                PvE {c.pveRating}/5 • PvP {c.pvpRating}/5 • {c.combatStyle}
               </div>
-            </article>
+            </a>
           );
         })}
       </div>

@@ -6,6 +6,7 @@ const navItems = [
   { to: "/", label: "Home" },
   { to: "/updates", label: "Updates" },
   { to: "/classes", label: "Classes" },
+  { to: "/skills", label: "Skills" },
   { to: "/guides", label: "Guides" },
   { to: "/builds", label: "Build Planner" },
 ];
@@ -93,6 +94,7 @@ export function SiteFooter() {
           <h4 className="text-gold text-sm tracking-widest mb-3">EXPLORE</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
+            <li><Link to="/skills" className="hover:text-foreground">Skills</Link></li>
             <li><Link to="/guides" className="hover:text-foreground">Guides</Link></li>
             <li><Link to="/builds" className="hover:text-foreground">Build Planner</Link></li>
           </ul>

@@ -10,14 +10,22 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UpdatesRouteImport } from './routes/updates'
+import { Route as SkillsRouteImport } from './routes/skills'
 import { Route as GuidesRouteImport } from './routes/guides'
 import { Route as ClassesRouteImport } from './routes/classes'
 import { Route as BuildsRouteImport } from './routes/builds'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SkillsClassSlugRouteImport } from './routes/skills/$classSlug'
+import { Route as ClassesSlugRouteImport } from './routes/classes/$slug'
 
 const UpdatesRoute = UpdatesRouteImport.update({
   id: '/updates',
   path: '/updates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SkillsRoute = SkillsRouteImport.update({
+  id: '/skills',
+  path: '/skills',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GuidesRoute = GuidesRouteImport.update({
@@ -40,42 +48,87 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SkillsClassSlugRoute = SkillsClassSlugRouteImport.update({
+  id: '/$classSlug',
+  path: '/$classSlug',
+  getParentRoute: () => SkillsRoute,
+} as any)
+const ClassesSlugRoute = ClassesSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ClassesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
-  '/classes': typeof ClassesRoute
+  '/classes': typeof ClassesRouteWithChildren
   '/guides': typeof GuidesRoute
+  '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
+  '/classes/$slug': typeof ClassesSlugRoute
+  '/skills/$classSlug': typeof SkillsClassSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
-  '/classes': typeof ClassesRoute
+  '/classes': typeof ClassesRouteWithChildren
   '/guides': typeof GuidesRoute
+  '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
+  '/classes/$slug': typeof ClassesSlugRoute
+  '/skills/$classSlug': typeof SkillsClassSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
-  '/classes': typeof ClassesRoute
+  '/classes': typeof ClassesRouteWithChildren
   '/guides': typeof GuidesRoute
+  '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
+  '/classes/$slug': typeof ClassesSlugRoute
+  '/skills/$classSlug': typeof SkillsClassSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/builds' | '/classes' | '/guides' | '/updates'
+  fullPaths:
+    | '/'
+    | '/builds'
+    | '/classes'
+    | '/guides'
+    | '/skills'
+    | '/updates'
+    | '/classes/$slug'
+    | '/skills/$classSlug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/builds' | '/classes' | '/guides' | '/updates'
-  id: '__root__' | '/' | '/builds' | '/classes' | '/guides' | '/updates'
+  to:
+    | '/'
+    | '/builds'
+    | '/classes'
+    | '/guides'
+    | '/skills'
+    | '/updates'
+    | '/classes/$slug'
+    | '/skills/$classSlug'
+  id:
+    | '__root__'
+    | '/'
+    | '/builds'
+    | '/classes'
+    | '/guides'
+    | '/skills'
+    | '/updates'
+    | '/classes/$slug'
+    | '/skills/$classSlug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BuildsRoute: typeof BuildsRoute
-  ClassesRoute: typeof ClassesRoute
+  ClassesRoute: typeof ClassesRouteWithChildren
   GuidesRoute: typeof GuidesRoute
+  SkillsRoute: typeof SkillsRouteWithChildren
   UpdatesRoute: typeof UpdatesRoute
 }
 
@@ -86,6 +139,13 @@ declare module '@tanstack/react-router' {
       path: '/updates'
       fullPath: '/updates'
       preLoaderRoute: typeof UpdatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/skills': {
+      id: '/skills'
+      path: '/skills'
+      fullPath: '/skills'
+      preLoaderRoute: typeof SkillsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/guides': {
@@ -116,14 +176,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/skills/$classSlug': {
+      id: '/skills/$classSlug'
+      path: '/$classSlug'
+      fullPath: '/skills/$classSlug'
+      preLoaderRoute: typeof SkillsClassSlugRouteImport
+      parentRoute: typeof SkillsRoute
+    }
+    '/classes/$slug': {
+      id: '/classes/$slug'
+      path: '/$slug'
+      fullPath: '/classes/$slug'
+      preLoaderRoute: typeof ClassesSlugRouteImport
+      parentRoute: typeof ClassesRoute
+    }
   }
 }
+
+interface ClassesRouteChildren {
+  ClassesSlugRoute: typeof ClassesSlugRoute
+}
+
+const ClassesRouteChildren: ClassesRouteChildren = {
+  ClassesSlugRoute: ClassesSlugRoute,
+}
+
+const ClassesRouteWithChildren =
+  ClassesRoute._addFileChildren(ClassesRouteChildren)
+
+interface SkillsRouteChildren {
+  SkillsClassSlugRoute: typeof SkillsClassSlugRoute
+}
+
+const SkillsRouteChildren: SkillsRouteChildren = {
+  SkillsClassSlugRoute: SkillsClassSlugRoute,
+}
+
+const SkillsRouteWithChildren =
+  SkillsRoute._addFileChildren(SkillsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BuildsRoute: BuildsRoute,
-  ClassesRoute: ClassesRoute,
+  ClassesRoute: ClassesRouteWithChildren,
   GuidesRoute: GuidesRoute,
+  SkillsRoute: SkillsRouteWithChildren,
   UpdatesRoute: UpdatesRoute,
 }
 export const routeTree = rootRouteImport
