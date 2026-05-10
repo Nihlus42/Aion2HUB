@@ -80,6 +80,11 @@ function ItemDetailPage() {
               <span className={`text-[10px] tracking-[0.12em] px-2 py-1 rounded border ${view.tradable ? "border-emerald-400/35 bg-emerald-400/10 text-emerald-300" : "border-rose-400/35 bg-rose-400/10 text-rose-300"}`}>
                 {view.tradable ? "Échangeable" : "Lié"}
               </span>
+              {view.minLevelRequirement !== null ? (
+                <span className="text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-border/60 bg-background/40 text-muted-foreground">
+                  Niv. min {view.minLevelRequirement}
+                </span>
+              ) : null}
             </div>
           </div>
         </div>

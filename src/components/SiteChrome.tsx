@@ -8,6 +8,7 @@ const navItems = [
   { to: "/classes", label: "Classes" },
   { to: "/skills", label: "Competences" },
   { to: "/items", label: "Objets" },
+  { to: "/daevanion-planner", label: "Daevanion" },
   { to: "/builds", label: "Planificateur" },
 ];
 

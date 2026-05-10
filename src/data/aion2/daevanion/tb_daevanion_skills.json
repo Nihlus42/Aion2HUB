@@ -1,0 +1,1700 @@
+{
+  "Assassin": [
+    {
+      "name": "Quick Slice",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4.5m and restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\n-X [Insignia Explosion] Cooldown on hit\nIgnores Block and Evasion and lands as a Critical Hit",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_as_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Savage Roar",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and engraves 1 Insignia for X. 2 Stagger Gauge Damage",
+      "specialty": "-20% MP consumed\n+20% Skill Speed\nMax +12% damage when there are less targets hit\n-X [Shadowstrike] Cooldown on hit\nPulls nearby targets on using [Savage Smash]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_as_skill_009.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Shadowstrike",
+      "type": "Active",
+      "desc": "Moves behind a target within 20m and deals X damage and Rotates and inflicts Stun for X. 10 Stagger Gauge Damage",
+      "specialty": "+1s Stun duration\n+X% Own Critical Damage Boost for X on hit\nX% chance to inflict Seal for X on hit\nX MP damage on hit\nChanges to AoE Skill",
+      "tags": [],
+      "image": "icon_as_skill_007.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Heightened Sixth Sense",
+      "type": "Passive",
+      "desc": "Increases the caster's Evasion by X, Max HP by X%, and restores X HP on a successful Evasion. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Ambush",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 4m. If attacking from behind, damage is increased by 50%. 7 Stagger Gauge Damage",
+      "specialty": "Engraves 2 Insignias for X on landing Back Attack\nAbsorbs X% of damage as HP\n+20% Skill Speed\n50% chance to activate [Whirlwind Slice] on hit\n+3 Consecutive Cast(s)",
+      "tags": [],
+      "image": "icon_as_skill_006.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Heart Gore",
+      "type": "Active",
+      "desc": "Activates on landing a Critical Hit, dealing X damage to up to 4 enemies within 4m and restores 100 MP. 5 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\nEngraves 1 Insignia for X on hit\nMax +20% Critical Hit when there are less targets hit\nChanges to mobile skill\nResets [Heart Gore] Cooldown on landing a Critical Hit",
+      "tags": [],
+      "image": "icon_as_skill_035.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Storm Rampage",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 4m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP on hit\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X all skill cooldowns on hit",
+      "tags": [],
+      "image": "icon_as_skill_034.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Exploit Weakness",
+      "type": "Passive",
+      "desc": "Increases caster's Critical Hit by X. Has a X% chance to summon up to 5 Doppelgangers on landing a Critical Hit. Each Doppelganger deals X damage and inflicts Insignia that last for X. (Max 5 stacks) Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Whirlwind Slice",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 4m with a X% chance to Rotate and inflict Stun for X on a successful Evasion. 100% to land Stun on NPC targets. 7 Stagger Gauge Damage",
+      "specialty": "+50% Multi-Hit on hit\nChanges to AoE damage\n+16m Range\n+20% Stun Chance\n25% chance to reset Cooldown on Evasion",
+      "tags": [],
+      "image": "icon_as_skill_019.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Flash Slice",
+      "type": "Active",
+      "desc": "Moves behind a target within 4m and deals X damage to up to 4 enemies, with a X% chance to inflict Blind for X. 100% chance to land Blind on NPC targets. 7 Stagger Gauge Damage",
+      "specialty": "+2s Blind duration\n+6m Range\nMax +20% damage when there are more targets hit\n+2 Consecutive Cast(s)\nX% chance to Rotate and Stun for X on hitting a Blind target",
+      "tags": [],
+      "image": "icon_as_skill_005.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Apply Poison",
+      "type": "Passive",
+      "desc": "Has a X% chance to inflict Poison on the target on hit, taking Damage over Time of X every 1s for X.",
+      "specialty": "",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_as_skill_014.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Infiltrate",
+      "type": "Active",
+      "desc": "After using [Dodge], moves to the rear of a target within 10m and deals X damage with a X% chance to inflict Blind for X. 100% chance to land Blind on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "Restores X Stamina on landing [Infiltrate]\n+10m [Infiltrate] range\nBreaks Shields on landing [Infiltrate]\nAdds [Dark Strike] Chain Skill\n+20% [Infiltrate] Blind Chance",
+      "tags": [],
+      "image": "icon_as_skill_036.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Rear Smite",
+      "type": "Passive",
+      "desc": "Increases caster's Back Attack Damage Boost by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_004.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Shadow Fall",
+      "type": "Active",
+      "desc": "Deals X damage to a Stun target within 4m and inflicts Knockdown for X.",
+      "specialty": "Absorbs X% of damage as HP\nEngraves 3 Insignias for X on hit\nX% chance to activate on attacking an Incapacitated Immune target\n+1s Knockdown duration\nChanges to AoE Skill",
+      "tags": [],
+      "image": "icon_as_skill_020.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Assault Stance",
+      "type": "Passive",
+      "desc": "Increases caster's Critical Damage Boost by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_006.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Insignia Explosion",
+      "type": "Active",
+      "desc": "Select a target within 20m to deal X damage to up to 4 enemies 4m around that target, then inflicts Stun for X. Applies double Stun chance to NPC targets. \nDamage and Stun chance increases based on Insignia stacks. \n1 stack: X damage, X% Stun chance \n2 stacks: X damage, X% Stun chance \n3 stacks: X damage, X% Stun chance \n4 stacks: X damage, X% Stun chance \n5 stacks: X damage, X% Stun chance \n\n7 Stagger Gauge Damage",
+      "specialty": "Adds Rotate Effect\n+50% Multi-Hit on hit\nMaintain 2 stacks of Insignias after [Insignia Explosion]\n+1s Stun duration\n-3s Cooldown",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_as_skill_013.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Impact Hit",
+      "type": "Passive",
+      "desc": "Increases the caster's Impact-type Chance(s) by X% and Smite by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_006.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Ambush Stance",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage when landing an attack on a target afflicted with Stun or Blind. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_007.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Defense Break",
+      "type": "Passive",
+      "desc": "Reduces target Defense by X% for X when landing an attack on a target afflicted with Stagger or an Impact-type status. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_008.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Revitalization Contract",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Determination",
+      "type": "Passive",
+      "desc": "Deals X damage when landing an attack on a target with X% HP or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_010.webp",
+      "unlocked": 25
+    }
+  ],
+  "Chanter": [
+    {
+      "name": "Onslaught",
+      "type": "Active",
+      "desc": "Deals X damage to up to X enemies within 4m and restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\n-X [Spinning Strike] cooldown on hit\nAdds [Storm Chain] Chain Skill",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_ch_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Incandescent Blow",
+      "type": "Active",
+      "desc": "Deals X damage to up to X enemies within 4m. X Stagger Gauge Damage",
+      "specialty": "-20% MP consumed\n+X Block while using skill\nMax +12% damage when there are less targets hit\n-X enemy Accuracy for X on landing Bursting Blow\nX% chance to inflict Stun for X on landing [Bursting Blow]",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_ch_skill_004.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Rushing Smash",
+      "type": "Active",
+      "desc": "Rushes at a target within 20m and deals X damage to up to X enemies. X Stagger Gauge Damage",
+      "specialty": "Removes MP Consumed and restores 200 MP\nChanges to Charge Skill and increases damage by up to 60%\n50% chance to activate [Heat Wave Blow] on landing [Rushing Smash]\n-5s cooldown\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tags": [],
+      "image": "icon_ch_skill_009.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Blessing of Life",
+      "type": "Passive",
+      "desc": "Increases the caster's Max HP by X% and Heal Boost by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_012.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Impactful Crush",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m with a X% chance to inflict Stun for X. 100% chance to inflict Stun on NPC targets. X Stagger Gauge Damage",
+      "specialty": "Changes to AoE damage\n+1s [Impactful Crush] Stun duration\nChanges to mobile skill\nAdds [Crushing Blow] Chain Skill, which lands as Guaranteed Multi-Hit on hitting a Stun target\n+20% [Impactful Crush] Stun Chance",
+      "tags": [],
+      "image": "icon_ch_skill_006.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Dark Crush",
+      "type": "Active",
+      "desc": "Deals X damage to a target afflicted with Stun, Knockdown, or Airborne within 20m.",
+      "specialty": "Absorbs X% of damage as HP\nChanges to AoE Skill\nX% chance to activate on attacking an Incapacitated Immune target\nAdds [Piercing Strike] Chain Skill\nRemoves [Dark Crush] cooldown",
+      "tags": [],
+      "image": "icon_ch_skill_010.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Gust Rampage",
+      "type": "Active",
+      "desc": "Deals X damage to a target afflicted with Stagger within 4m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X all skill cooldowns on hit",
+      "tags": [],
+      "image": "icon_ch_skill_030.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Crossguard",
+      "type": "Passive",
+      "desc": "Increases the caster's Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Heat Wave Blow",
+      "type": "Active",
+      "desc": "Select a target within 4m and deal X damage to up to X enemies within 4m with a X% chance to inflict Seal for X on successful Block. 100% chance to land Seal on NPC targets. X Stagger Gauge Damage",
+      "specialty": "X% chance to inflict Stun for X\n+20% Seal Chance\nMax +20% damage when there are more targets hit\nIgnores Block and Evasion and lands as Multi-Hit\nX% chance to reset [Heat Wave Blow] cooldown on successful Block",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_ch_skill_015.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Recuperation",
+      "type": "Active",
+      "desc": "Immediately restores X HP and regenerates X HP every X for X for the caster and party members within 25m.",
+      "specialty": "-3s [Recuperation] cooldown\nRestores X MP\n+4s [Recuperation] duration\nChanges to mobile skill\nRestores extra X% of Max HP",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_ch_skill_013.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Protection Circle",
+      "type": "Passive",
+      "desc": "Receives a Protection Circle that lasts for X upon landing an attack. Removes the Protection Circle at 20 stacks and imbues the caster and party members with Divine Barrier, which blocks X damage for X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_001.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Tremor Crush",
+      "type": "Active",
+      "desc": "After using [Dodge], moves to a target within 10m and deals X damage with a X% chance to inflict Stun for X. 100% chance to land Stun on NPC targets. X Stagger Gauge Damage",
+      "specialty": "Restores X Stamina on hit\n+10m [Tremor Crush] range\n+50% Multi-Hit on hit\nAdds [Surging Strike] Chain Skill\n+25% [Tremor Crush] Stun Chance",
+      "tags": [],
+      "image": "icon_ch_skill_021.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Inspiring Spell",
+      "type": "Passive",
+      "desc": "Increases the caster's Critical Hit by X and Perfect by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_011.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Wave Blow",
+      "type": "Active",
+      "desc": "Deals X damage to a target afflicted with Stun within 4m and inflicts Knockdown for X.",
+      "specialty": "Guaranteed Multi-Hit on hit\n+6m Range\nX% chance to activate on attacking an Incapacitated Immunity target\n+1s Knockdown duration\nChanges to AoE skill on down strike",
+      "tags": [],
+      "image": "icon_ch_skill_008.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Attack Preparation",
+      "type": "Passive",
+      "desc": "Increases the caster's Attack by X% and Defense by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_005.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Spinning Strike",
+      "type": "Active",
+      "desc": "Deals X damage to up to X enemies within a 4m radius, centered 2m in front of the caster. X Stagger Gauge Damage",
+      "specialty": "Restores 50 MP on landing a Critical Hit\n+30% Skill Speed\nMax +20% damage when there are more targets hit\nX% chance to inflict Seal for X\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tags": [],
+      "image": "icon_ch_skill_029.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Impact Hit",
+      "type": "Passive",
+      "desc": "Increases the caster's Impact-type Chance(s) by X% and Smite by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_006.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Raging Spell",
+      "type": "Passive",
+      "desc": "Deals X extra damage to targets afflicted with Stagger or an Impact-type status. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_007.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Earth's Promise",
+      "type": "Passive",
+      "desc": "Reduces the target's Combat Speed by X% for X on a successful Block. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_010.webp"
+    },
+    {
+      "name": "Survival Willpower",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Wind's Promise",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage to the target on landing a Critical Hit. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ch_skill_passive_008.webp"
+    }
+  ],
+  "Cleric": [
+    {
+      "name": "Earth's Retribution",
+      "type": "Active",
+      "desc": "Deals X Earth damage to a target within 20m and restores 110 MP.",
+      "specialty": "+20% MP restored\n+15% [Discharge] Chain Skill activation chance\n+50% Multi-Hit on hit\n-X [Bolt] Cooldown on landing [Discharge]\nChange [Discharge] to AoE Skill",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Judgment Thunder",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. X Stagger Gauge Damage",
+      "specialty": "-20% MP Cost\nMax +12% damage when there are less targets hit\n-X% Combat Speed on landing [Divine Punishment] for X\nX% chance to inflict Root for X on landing [Divine Punishment]\nActivates 1 additional [Divine Punishment]",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_004.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Debilitating Mark",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. Reduces enemies' Wind Tolerance by X%, and deals X Damage over Time every X for X. X Stagger Gauge Damage",
+      "specialty": "Removes MP Cost and restores 150 MP\n-X% Defense\nX% chance to inflict Stun for X\nChanges [Debilitating Mark] effects to All Element Tolerance reduction\n-50% Damage over Time Intervals",
+      "tags": [],
+      "image": "icon_cl_skill_008.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Warm Benediction",
+      "type": "Passive",
+      "desc": "Increases the caster's Max HP by X% and Max MP by X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Divine Aura",
+      "type": "Active",
+      "desc": "Summons Divine Aura near the caster. The Aura is stationary and deals X Earth damage every 1s to a target within 20m designated by the caster. The Aura maintains for 10s, and consumes the caster's HP upon landing an attack.",
+      "specialty": "Select a target within 4m of Divine Aura and reduce Move Speed of up to X nearby enemies by X% for X.\nChanges to AoE Skill\n+100% [Divine Aura] Shooting Speed\n+3s [Divine Aura] duration\n-5s Cooldown",
+      "tags": [],
+      "image": "icon_cl_skill_015.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Chain of Torment",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Earth damage to up to X enemies within 4m of the target. Reduces enemies' Earth Tolerance by X% and deals X Damage over Time every X for X. X Stagger Gauge Damage",
+      "specialty": "Inflicts Slowed\n+3s [Chain of Torment] effect duration\nX% chance to inflict Stumble for X\nChanges [Chain of Torment] effects to All Element Tolerance reduction\n-50% Damage over Time Intervals",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_007.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Lightning Strike Scattershot",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 20m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X All Skill Cooldown on landing [Scattershot]",
+      "tags": [],
+      "image": "icon_cl_skill_037.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Empyrean Lords' Benediction",
+      "type": "Passive",
+      "desc": "Increases the caster's Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Light of Regeneration",
+      "type": "Active",
+      "desc": "Restores X HP of the caster and party members within 25m every X for X.",
+      "specialty": "+X Defense\n+X Attack\n+X Block, X Evasion\n+X Critical Hit\n+X% Damage Tolerance",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_009.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Condemnation",
+      "type": "Active",
+      "desc": "Select a Chain of Torment target within 20m and deal X Earth damage to up to X enemies within 4m of the target. X Stagger Gauge Damage",
+      "specialty": "Restores 100 MP on hit\n+50% Multi-Hit on hit\nChanges to mobile skill\n50% chance to reset [Condemnation] Cooldown on landing [Condemnation]\nX% chance to inflict Root for X",
+      "tags": [],
+      "image": "icon_cl_skill_035.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Empyrean Lord's Grace",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage on landing an attack on a target taking Damage over Time. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_012.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Healing Light",
+      "type": "Active",
+      "desc": "Restores X HP to the caster and the party member within 25m with the lowest HP. Can be used while Light of Regeneration is in effect.",
+      "specialty": "Removes MP Cost\n+25% Regen if the healing target's max HP is under 50%\nX% chance to remove 1 debuff\n+20% Skill Speed\n-2s Cooldown",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_010.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Healing Enhancement",
+      "type": "Passive",
+      "desc": "Increases the caster's Heal Boost by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_003.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Radiant Recovery",
+      "type": "Active",
+      "desc": "Restores HP of the caster and party members within 25m by X. Restores X when fully charged. Max 1 Charge Level",
+      "specialty": "Removes up to X debuffs on max charge\n+20% Skill Speed\nChanges to mobile skill\n+X% Incoming Heal for X at max charge\nRestores extra X% of Max HP when fully charged",
+      "tags": [
+        "Nontarget",
+        "Charge"
+      ],
+      "image": "icon_cl_skill_012.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Immortal Veil",
+      "type": "Passive",
+      "desc": "Increases the caster's Defense by X% and Critical Hit Resist by X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_011.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Bolt",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. Max 3 Charge Level X Stagger Gauge Damage",
+      "specialty": "X% chance to inflict Stun for X on max Charge\nChanges to mobile skill\n+30% Skill Speed\nMax +20% damage when more targets hit\nReset [Bolt] Cooldown on defeating an enemy with [Bolt]",
+      "tags": [
+        "Charge"
+      ],
+      "image": "icon_cl_skill_006.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Heal Block",
+      "type": "Passive",
+      "desc": "Has a X% chance to reduce the target's Incoming Heal by X% for X on landing an attack.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_005.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Prayer of Concentration",
+      "type": "Passive",
+      "desc": "Forms a Protective Shield which blocks X damage and increases the caster's Heal Boost by X% for X when HP is 50% or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_006.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Earth's Grace",
+      "type": "Passive",
+      "desc": "Increases Attack of the caster and party members within 40m by X% for X on landing an attack while HP is 75% or more. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_008.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Survival Willpower",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Radiant Benediction",
+      "type": "Passive",
+      "desc": "Has a X% chance to restore X HP to the caster and party members within 40m on landing an attack. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_cl_skill_passive_007.webp",
+      "unlocked": 25
+    }
+  ],
+  "Elementalist": [
+    {
+      "name": "Cold Shock",
+      "type": "Active",
+      "desc": "Deals X Water damage to a target within 20m and restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs 7% of damage as HP\n+50% Multi-Hit on hit\n+X% Attack on landing [Earth Tremor] (Max 5 stacks)\nX% chance to remove 1 buff on landing [Earth Tremor]",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Combustion",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Fire damage to up to 4 enemies within 4m of the target. 3 Stagger Gauge Damage",
+      "specialty": "-20% MP consumed\nMax +12% damage when there are less targets hit\nChanges to mobile skill\n+20% Skill Speed\nAdds [Ashy Call] Chain Skill",
+      "tags": [],
+      "image": "icon_el_skill_004.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Summon: Fire Spirit",
+      "type": "Active",
+      "desc": "Summons a Fire Spirit. The Fire Spirit rushes towards a target within 20m and uses a skill which deals X damage to up to 4 enemies within 5m. After using the skill, it continues fighting using basic attacks and is dismissed upon selecting the summon icon. Each skill level increases the Fire Spirit's Attack and Defense by 12%. 7 Stagger Gauge Damage",
+      "specialty": "-50% MP Cost\n+X% Fire Spirit Critical Hit Damage\n10% chance to activate Skill on landing Fire Spirit attack\nX% chance to inflict Knockdown for X on landing Fire Spirit attack\nFire Spirit Stats 20% increase",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_010.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Spirit Strike",
+      "type": "Passive",
+      "desc": "Increases X% of own Attack, and X% of Spirit's Attack.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_008.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Summon: Water Spirit",
+      "type": "Active",
+      "desc": "Summons a Water Spirit. The Water Spirit uses a skill which deals X Water damage to a target within 20m. After using the skill, it continues fighting using basic attacks and restores the Elementalist's MP by X. It is dismissed upon selecting the summon icon. Each skill level increases the Water Spirit's Attack and Critical Hit by 1%. 7 Stagger Gauge Damage",
+      "specialty": "-50% MP Cost\nWater Spirit Attack X% Increase\n10% chance to activate Skill on landing Water Spirit attack\nX% chance to inflict Root for X on landing Water Spirit attack\n+20% Water Spirit Stats",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_011.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Jointstrike: Curse",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and inflict Curse for X, which deals X Damage over Time every 1s. The Spirit joins for a coordinated assault. Fire: X AoE damage Water: X damage Earth: X damage, -X% enemy Status Effect Resist Wind: X AoE damage, X Damage over Time, -X% enemy Critical Damage Tolerance Ancient: X AoE damage 10 Stagger Gauge Damage",
+      "specialty": "+2s Curse duration\n+50% Multi-Hit on hit\n+X% MP consumed during Curse\n-2s Cooldown\n-X% Damage to Spirit during Curse",
+      "tags": [],
+      "image": "icon_el_skill_014.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Rapid Scattershot",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 20m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X All Skill Cooldown on hit",
+      "tags": [],
+      "image": "icon_el_skill_034.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Spirit Protection",
+      "type": "Active",
+      "desc": "Receives Spirit Protection, increasing the same Element Tolerance as the summoned Spirit by X% for X, and resists 1 Skill Attack. Can only be used while a Spirit is summoned.",
+      "specialty": "Removes \"Root\" Status\n+X% Move Speed for the duration\nUsing skill Pushes Back nearby targets by 5m\n+X% Move Speed for the duration when \"Root\" is removed\nMove Speed increase during skill effectX%, Using the skill Pushes Back nearby targets by 5m\nUsing skill Pushes Back nearby targets by 5m, Removes Rooted state",
+      "tags": [],
+      "image": "icon_el_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Summon: Earth Spirit",
+      "type": "Active",
+      "desc": "Summons an Earth Spirit. The Earth Spirit uses a skill which deals X Earth damage to a target within 20m and increases Enmity by X. Has a X% chance to inflict Taunt for X if the target is a PC. Continues fighting using basic attacks and increases Enmity each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Earth Spirit's Defense and HP by 1%. 7 Stagger Gauge Damage",
+      "specialty": "-50% MP Cost\n+X% Earth Spirit Damage Tolerance\n10% chance to activate Skill on landing Earth Spirit attack\nX% chance to restore X% of Spirit HP when landing Earth Spirit attack\n+20% Earth Spirit Stats",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_013.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Dimensional Control",
+      "type": "Active",
+      "desc": "A skill that is activated for a short while after using a Spirit summoning skill. Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and inflicts Slowed that reduces Move Speed by X% for X. Restores 100 MP. 5 Stagger Gauge Damage",
+      "specialty": "+20% Slowed Effect\n+2s Slowed duration\n+50% Multi-Hit chance on hit\nPull in nearby targets\nX% chance to inflict Root for X on hit",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_033.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Spirit's Descent",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage whenever the Elementalist’s attacks land within 10 seconds after a Spirit is summoned.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_003.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Summon: Wind Spirit",
+      "type": "Active",
+      "desc": "Summons a Wind Spirit. The Wind Spirit selects a target within 20m and deals X Wind damage to up to 4 enemies within 5m of the target, then uses a skill that restores X HP of the Elementalist. After using a skill, continues fighting with basic attacks, restoring X% of the Elementalist's HP each time an attack lands. Is dismissed upon selecting the summon icon. Each skill level increases the Wind Spirit's Accuracy and Critical Hit by 1%. 7 Stagger Gauge Damage",
+      "specialty": "-50% MP Cost\n+X% Wind Spirit Critical Hit\n10% chance to activate Skill when a Wind Spirit attacks\nX% chance to reduce Attack Speed by X% for X on Wind Spirit Attack\n+20% Wind Spirit Stats",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_012.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Corrode",
+      "type": "Passive",
+      "desc": "Increases Critical Hit by X and has a X% chance to deal X Damage over Time every 1s for X on a Critical Hit.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_012.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Soul's Cry",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m with a X% chance to inflict Fear for X. 100% chance to land Fear on NPC targets. 15 Stagger Gauge Damage",
+      "specialty": "Reduces the target's Defense by X% for X on hit\nRoot for X\nChanges to mobile skill\n-10s Cooldown\n+2s Fear duration",
+      "tags": [],
+      "image": "icon_el_skill_007.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Spirit Revitalization",
+      "type": "Passive",
+      "desc": "Immediately heals the Spirit for X% of its Max HP when its HP is 50% or less. Cooldown: 30s",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_011.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Elemental Fusion",
+      "type": "Active",
+      "desc": "Each time upon summoning a Spirit, the Elementalist obtains an element. Upon the element reaching 4 stacks, enters the 4 Element Status and is able to use the [Elemental Fusion] skill. [Elemental Fusion] can only be used upon obtaining the 4 Element effect, and using [Elemental Fusion] will immediately remove the 4 Elements. Deals X damage to a target within 20m. 10 Stagger Gauge Damage",
+      "specialty": "Changes to AoE Skill\nExtra damage after X on hit\n-X% All Element Resist on hit\nChanges to Charge Skill, max +60% damage\n25% chance to regain 4 Element status",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_030.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Mental Focus",
+      "type": "Passive",
+      "desc": "Increases Mental-type Chance(s) by X% and Smite by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_006.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Consecutive Countercurrent",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage when landing an attack on a target taking Damage over Time.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_013.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Spirit Communion",
+      "type": "Passive",
+      "desc": "Has a X% chance to restore the caster and Spirit's HP by X when landing an attack.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_007.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Revitalization Contract",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Element Unification",
+      "type": "Passive",
+      "desc": "Deals X Damage over Time every 1s for X when landing a Summon skill attack.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_el_skill_passive_008.webp",
+      "unlocked": 25
+    }
+  ],
+  "Gladiator": [
+    {
+      "name": "Survival Stance",
+      "type": "Active",
+      "desc": "Increases Max HP by X% and Natural HP Regen by X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Leaping Slam",
+      "type": "Active",
+      "desc": "Leaps to a target within 20m and deals X damage. 10 Stagger Gauge Damage",
+      "specialty": "Prepare for Battle effect on the caster for X\n50% chance to activate [Ankle Slice] on landing [Leaping Slam]\n[Leaping Slam] Cooldown Reset on defeating the enemy\n+20% Damage Tolerance increase for X\nChanges to AoE skill and pulls in enemies",
+      "tags": [],
+      "image": "icon_gl_skill_019.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Rending Blow",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and increases Enmity. 2 Stagger Gauge Damage",
+      "specialty": "-20% MP consumed\n+200 Block while using skill\nChanges to mobile skill\nMax +12% damage when there are less targets hit\nRestores 50 MP on landing a Critical Hit",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_gl_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Keen Strike",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\n-X [Ruinous Blow] Cooldown on hit\nAdds [Reckless Strike] Chain Skill",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_gl_skill_003.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Mocking Blade",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 4m and inflicts Knockdown for X. Changes motion to Incapacitated Immunity targets. 15 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\nChanges to AoE damage on down strike\nAdds 2 additional strikes\n+1s Knockdown duration\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tags": [],
+      "image": "icon_gl_skill_028.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Overhead Slam",
+      "type": "Active",
+      "desc": "Deals X damage to a Knockdown target within 4m.",
+      "specialty": "Absorbs X% of damage as HP\nChanges to AoE Skill\n7% chance to activate on attacking an Incapacitated Immune target\nGuaranteed Crit on hit\nRemove Cooldown",
+      "tags": [],
+      "image": "icon_gl_skill_017.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Sword Aura Rampage",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 4m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-3s All Skills Cooldown on landing [Sword Aura Rampage]",
+      "tags": [],
+      "image": "icon_gl_skill_026.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Protection Armor",
+      "type": "Passive",
+      "desc": "Increases Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Ankle Slice",
+      "type": "Active",
+      "desc": "On a successful Block, select a target within 4m and deal X damage to up to 4 enemies within 4m with a X% chance to inflict Root for X. 100% chance to land Root on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "30% chance to inflict Knockdown for 3s on landing [Ankle Slice]\nAdds [Ankle Smash] Chain Skill\n+16m [Ankle Slice] range\nIgnores Block and Evasion and lands as Multi-Hit\n25% chance to reset [Ankle Slice] Cooldown on a successful Block",
+      "tags": [],
+      "image": "icon_gl_skill_020.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Crushing Wave",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 5m of self. 5 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\nRestores 50 MP on landing a Critical Hit\n+20% damage when there are more targets hit\nReset Cooldown on landing a Critical Hit\nPull",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_gl_skill_005.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Blood Absorption",
+      "type": "Active",
+      "desc": "Grants a Lifesteal effect on the caster for X.",
+      "specialty": "",
+      "tags": [
+        "HP Regen"
+      ],
+      "image": "icon_gl_skill_passive_003.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Rush Strike",
+      "type": "Active",
+      "desc": "After using [Dodge], moves to a target within 10m and deals X damage with a X% chance to inflict Knockdown for X. 100% chance to land Knockdown on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "Restores 300 Stamina on hit\n+10m Range\nChanges to Charge Skill, AoE damage\n-10s [Rush Strike] Cooldown\n+25% Knockdown Chance",
+      "tags": [],
+      "image": "icon_gl_skill_036.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Identify Weakness",
+      "type": "Passive",
+      "desc": "Increases Critical Hit by X, Perfect by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_004.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Aerial Snare",
+      "type": "Active",
+      "desc": "Deals X damage to a Knockdown target within 4m with a X% chance to inflict Airborne for X. 100% chance to land Airborne on NPC targets.",
+      "specialty": "Guaranteed Multi-Hit on hit\n[Aerial Snare] +25% Airborne Chance\n5% chance to activate on attacking Incapacitated Immune target\nAdds [Forced Fall] Chain Skill\n-50% [Aerial Snare] Cooldown",
+      "tags": [],
+      "image": "icon_gl_skill_015.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Ruinous Blow",
+      "type": "Active",
+      "desc": "Rushes at a target within 7.5m to deal X damage and enters Prepare for Battle Status for X. Deals damage to up to X enemies when fully charged. Prepare for Battle: +X% Damage Boost, +X Critical Hit Max 1 Charge Level 15 Stagger Gauge Damage",
+      "specialty": "+20% Skill Speed\n+12.5m Range\nChanges to mobile skill\n+5s Prepare for Battle duration\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tags": [
+        "Charge"
+      ],
+      "image": "icon_gl_skill_010.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Impact Hit",
+      "type": "Passive",
+      "desc": "Increases the caster's Impact-type Chance(s) by X% and Smite by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_006.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Destructive Impulse",
+      "type": "Passive",
+      "desc": "Deals X extra damage to targets afflicted with Stagger or an Impact-type status.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_007.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Experienced Counterstrike",
+      "type": "Passive",
+      "desc": "Increases Attack by X% for X on a successful Block.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_008.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Survival Willpower",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Murderous Burst",
+      "type": "Passive",
+      "desc": "Receive a stack of Menace for X when landing an attack. Remove Menace at 10 stacks and deal X damage to up to 4 enemies within 5m.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_010.webp",
+      "unlocked": 25
+    }
+  ],
+  "Ranger": [
+    {
+      "name": "Vigilant Eye",
+      "type": "Passive",
+      "desc": "Increases Evasion by 7%, Max HP by X%, and immediately restores X HP on a successful Evasion. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_004.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Snare Shot",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and inflict Slowed that reduces Move Speed by X% for X. 10 Stagger Gauge Damage",
+      "specialty": "+20% [Snare Shot] Move Speed reduction\n+20% Skill Speed\nChanges to mobile skill\nAdds [Shackling Arrow] Chain Skill\n+2s Slowed and Root duration",
+      "tags": [],
+      "image": "icon_ra_skill_013.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Tempest Shot",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target. 1 Stagger Gauge Damage",
+      "specialty": "-20% MP Cost\n+10% Skill Critical Hit\nMax +12% damage when there are less targets hit\nX% chance to inflict Knock Back on hit\n+20% Skill Speed",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_ra_skill_034.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Snipe",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m and restores 120 MP.",
+      "specialty": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\n-X [Deadshot] Cooldown on hit\nAdds [Tempest Arrow] to No.4 Skill",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_ra_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Marking Shot",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m and moves in the entered direction. The target is inflicted with Mark for 5s, which reduces Critical Hit Resist by X%. 7 Stagger Gauge Damage",
+      "specialty": "-19% Defense on hit\nX% chance to inflict Knock Back on hit\n+2s Mark duration\n+1 Consecutive Cast(s)\n-3072 MP damage on hit",
+      "tags": [],
+      "image": "icon_ra_skill_031.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Drill Dart",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and restores 100 MP on a successful Critical Hit. Inflicts Bleed on the target which deals X damage per second for 5s. 5 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\n+5s Bleed duration\nChanges to mobile skill\nIgnores Block and Evasion and lands as Multi-Hit\n50% chance to reset Cooldown on a Critical Hit with [Drill Dart]",
+      "tags": [],
+      "image": "icon_ra_skill_005.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Arrow Scattershot",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 20m.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP on hit\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X All Cooldown on hit",
+      "tags": [],
+      "image": "icon_ra_skill_033.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Concentrated Fire",
+      "type": "Passive",
+      "desc": "Has a 50% chance to deal X damage to a target taking Damage over Time. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_003.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Gale Arrow",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m. 10 Stagger Gauge Damage",
+      "specialty": "Max +20% damage when there are more targets hit\n+30% Skill Speed\nChanges to mobile skill\nInflicts Knock Back on hit\n-10s Cooldown",
+      "tags": [
+        "Charge"
+      ],
+      "image": "icon_ra_skill_011.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Explosion Trap",
+      "type": "Active",
+      "desc": "Sets an Explosion Trap 2m ahead, which lasts for 10s, and moves back by 3m.The trap explodes when an enemy approaches, dealing X damage with a X% chance to inflict Stun to up to 4 enemies within 5m for 6s. 100% chance to land Stun on NPC targets.",
+      "specialty": "Pulls enemies on explosion\n+1s Stun duration\nInflicts Delayed Damage on explosion\n+20% Stun Chance\n+1 Consecutive Cast(s)",
+      "tags": [],
+      "image": "icon_ra_skill_017.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Wind Vigor",
+      "type": "Passive",
+      "desc": "When attacked, increases Move Speed by X% for X. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_006.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Burst Arrow",
+      "type": "Active",
+      "desc": "Select a Slowed or Root target within 20m and deal X damage to up to 4 enemies within 4m of the target. 15 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\n+50% Multi-Hit on hit\nChanges to mobile skill\nDamage over Time for X\n25% chance to reset Cooldown on landing [Burst Arrow]",
+      "tags": [],
+      "image": "icon_ra_skill_008.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Focused Eye",
+      "type": "Passive",
+      "desc": "Increases Accuracy by X and Attack by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_020.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Suppressing Arrow",
+      "type": "Active",
+      "desc": "Deals X damage to a Mark target within 20m with a X% chance to inflict Stun for X. 100% chance to land Stun on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "+50% Multi-Hit on hit\n+1s Stun duration\n+20% Skill Speed\n+20% Stun Chance\n25% chance to reset Cooldown on landing [Suppressing Arrow]",
+      "tags": [],
+      "image": "icon_ra_skill_007.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Hunter's Resolve",
+      "type": "Passive",
+      "desc": "Increases Critical Damage Boost by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_011.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Deadshot",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m. Increases damage by 25% to Mark targets. Max 3 Charge Levels 10 Stagger Gauge Damage",
+      "specialty": "+50% Multi-Hit on hit\n+30% Skill Speed\nChanges to mobile skill\nIgnores Block and Evasion and lands as Multi-Hit when fully charged\nX% chance for Stun for X when fully charged",
+      "tags": [
+        "Charge"
+      ],
+      "image": "icon_ra_skill_002.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Unyielding Resolve",
+      "type": "Passive",
+      "desc": "Increases Ailment-type Resist(s) by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_012.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Rooting Eye",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X damage when landing an attack on a Slowed, Root target. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_008.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Melee Fire",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X extra damage when landing an attack on a target within 10m. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_013.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Revitalization Contract",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Hunter's Soul",
+      "type": "Passive",
+      "desc": "Has a X% chance to deal X damage on a Critical Hit. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_ra_skill_passive_007.webp",
+      "unlocked": 25
+    }
+  ],
+  "Sorcerer": [
+    {
+      "name": "Fire Mark",
+      "type": "Active",
+      "desc": "Has a X% chance to inflict Fire Mark for X on landing a Fire attack. Fire Mark: Reduces Attack by X%. Has a X% chance to take X extra damage when taking Fire damage while afflicted with Fire Mark. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_029.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Firestorm",
+      "type": "Active",
+      "desc": "Deals X Fire damage to a target within 20m. 5 Stagger Gauge Damage",
+      "specialty": "-50% MP Cost\n+20% Skill Speed\nChanges to mobile skill\n-1s [Hellfire] Cooldown per Fireball\n+10% Damage per fireball",
+      "tags": [],
+      "image": "icon_so_skill_004.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Ice Chain",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Water damage to up to 4 enemies within 4m of the target and inflicts Slowed which reduces Move Speed by 40% for X. 2 Stagger Gauge Damage",
+      "specialty": "-20% MP Cost\n+2s Slowed duration\nMax +12% damage when there are less targets hit\n-1s Cooldown on [Winter's Shackles] on hit\n5% chance to inflict Frost for 2s on landing [Cold Wave]",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_009.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Flame Arrow",
+      "type": "Active",
+      "desc": "Deals X Fire damage to a target within 20m and restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\nInflicts Fire Mark for 5s on landing [Pyroclasm]\nReset [Blaze] Cooldown on landing [Pyroclasm]",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_020.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Bittercold Wind",
+      "type": "Active",
+      "desc": "Select a target within 20m and summon Bittercold Wind which lasts for 2s. Bittercold Wind deals X Water damage to up to 4 enemies within 4m of the caster with a X% chance to inflict Root for X. 100% chance to land Root on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "+1s [Bittercold Wind] Summoning duration\n-X% Water Tolerance for X\nPull Effect\nIgnores Block and Evasion and lands as Multi-Hit\n25% chance to inflict Frost for 2s on landing last attack",
+      "tags": [],
+      "image": "icon_so_skill_025.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Blaze",
+      "type": "Active",
+      "desc": "Deals X Fire damage to a Fire Mark target within 20m and restores 100 MP. 7 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\n+50% MP restored\nDelayed Damage after X\nChanges to mobile skill\n-3s [Wish of Concentration] Cooldown on hit",
+      "tags": [],
+      "image": "icon_so_skill_005.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Flame Scattershot",
+      "type": "Active",
+      "desc": "Deals X Fire damage to a target within 20m afflicted with Stagger.",
+      "specialty": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-3s All Skills Cooldown on hit",
+      "tags": [],
+      "image": "icon_so_skill_001.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Robe of Earth",
+      "type": "Passive",
+      "desc": "Increases Max MP by X% and MP Regen by X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_006.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Frost",
+      "type": "Active",
+      "desc": "Select a target within 20m and deal X Water damage to up to 4 enemies within 4m of the target and has a X% chance to inflict Frost on the target for X. 100% chance to land Frost on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "Restores 200 MP\n-5s Cooldown\nReset [Frost Burst] Cooldown on landing Frost\n+20% PC target Frost Chance\n+1s Frost duration",
+      "tags": [],
+      "image": "icon_so_skill_015.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Winter's Shackles",
+      "type": "Active",
+      "desc": "Deals X Water damage to up to 4 enemies within 5m and inflicts Slowed for X.",
+      "specialty": "+2s [Winter's Shackles] Slowed duration\n30% chance to inflict Frost on landing [Winter's Shackles]\n-20% Damage Tolerance for 5s on landing [Winter's Shackles]\nAdds [Winter's Illusion] Chain Skill\n-15s [Winter's Shackles] Cooldown on hit",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_so_skill_011.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Cold Snap",
+      "type": "Active",
+      "desc": "Deals X Water damage to a Stagger target within 20m.",
+      "specialty": "",
+      "tags": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_passive_003.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Frost Burst",
+      "type": "Active",
+      "desc": "Select a Frost target within 20m and deal X Water damage to up to 4 enemies within 4m of the target. 7 Stagger Gauge Damage",
+      "specialty": "Absorbs X% of damage as HP\nSlowed for X on target\n7% chance to activate on attacking an Incapacitated Immune target\n300 MP damage on hit\n25% chance to reinflict Frost to target for 3s on hit",
+      "tags": [],
+      "image": "icon_so_skill_022.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Robe of Flame",
+      "type": "Passive",
+      "desc": "Increases Accuracy by X and Attack by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_004.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Wish of Concentration",
+      "type": "Active",
+      "desc": "Increases the caster's Attack by X%, Accuracy by X for X.",
+      "specialty": "-10% Skill MP Cost\n+5% Additional Attack\n+500 Max MP\n+10% Combat Speed\n-10 All Skills Cooldown",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_so_skill_028.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Absorb Essence",
+      "type": "Passive",
+      "desc": "Restores X MP when landing an attack.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_001.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Hellfire",
+      "type": "Active",
+      "desc": "Deals X Fire damage to a target within 20m. Max 3 Charge Levels 20 Stagger Gauge Damage",
+      "specialty": "Inflicts Fire Mark when fully charged\nSummon Flame Zone when fully charged\nChanges to mobile skill\nIgnores Block and Evasion and lands as Multi-Hit when fully charged\n-15s Cooldown",
+      "tags": [
+        "Charge"
+      ],
+      "image": "icon_so_skill_006.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Grace of Resistance",
+      "type": "Passive",
+      "desc": "Increases the caster's Mental-type Resist and Impact-type Resist by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_038.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Robe of Cold",
+      "type": "Passive",
+      "desc": "Inflicts Slow when struck by an enemy, which reduces target's Move Speed by X% for X. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_003.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Grace of Enhancement",
+      "type": "Passive",
+      "desc": "Increases Attack by X% when MP is X% or more.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_007.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Revitalization Contract",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Vitality Evaporation",
+      "type": "Passive",
+      "desc": "Deals X damage on hit if the target's HP is more than X% .",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_so_skill_passive_008.webp",
+      "unlocked": 25
+    }
+  ],
+  "Templar": [
+    {
+      "name": "Enhance Health",
+      "type": "Passive",
+      "desc": "Increases Max HP by X% and Incoming Heal by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Poach",
+      "type": "Active",
+      "desc": "Deals X damage to a target within 20m and pulls them in front of the caster, with a X% chance to inflict Root for X. 100% chance to land Root on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "Moves to the target if target is Incapacitated Immune\n- X Accuracy for X on hit\nReset Cooldown on defeating enemy\nX% of Max HP as Protective Shield\nX% chance to Stun for X",
+      "tags": [],
+      "image": "icon_te_skill_013.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Pummel",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and increases Enmity. 2 Stagger Gauge Damage",
+      "specialty": "-20% MP Cost\nAbsorbs 15% of [Punishing Strike] Damage as HP\nMax +12% damage when there are more targets hit\n-X [Punishing Strike] Cooldown on landing [Strike of Punishment]\n1 Additional [Punishing Strike] activation",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_te_skill_006.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Ferocious Strike",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+      "specialty": "+20% MP restored\nAbsorbs 7% of damage as HP\n+50% Multi-Hit on hit\n-X [Warding Strike] Cooldown on hit\nAdds [Threatening Blow] Chain Skill",
+      "tags": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_te_skill_001.webp",
+      "unlocked": 1
+    },
+    {
+      "name": "Shield Smite",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m. X% chance to inflict Stun on target for X. 100% chance to land Stun on NPC targets. 10 Stagger Gauge Damage",
+      "specialty": "+1s Stun duration\nRemoves MP Cost and restores 200 MP on hit\n50% chance to activate [Debilitating Smash] on hit\n-2s Cooldown\nAoE Stun",
+      "tags": [],
+      "image": "icon_te_skill_010.webp",
+      "unlocked": 3
+    },
+    {
+      "name": "Judgment",
+      "type": "Active",
+      "desc": "Deals X damage to a Stun or Knockdown target within 4m.",
+      "specialty": "Absorbs 30% of damage as HP\nChanges to AoE Skill\n7% chance to activate on attacking an Incapacitated Immune target\nDamage Bonus on hit\nRemove Cooldown",
+      "tags": [],
+      "image": "icon_te_skill_004.webp",
+      "unlocked": 4
+    },
+    {
+      "name": "Flash Rampage",
+      "type": "Active",
+      "desc": "Deals X damage to a Stagger target within 4m and increases Enmity.",
+      "specialty": "Absorbs 10% of damage as HP\nRestores 120 MP on hit\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-3s All Cooldown on hit",
+      "tags": [],
+      "image": "icon_gl_skill_027.webp",
+      "unlocked": 5
+    },
+    {
+      "name": "Warding Shield",
+      "type": "Passive",
+      "desc": "Increases Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_002.webp",
+      "unlocked": 6
+    },
+    {
+      "name": "Debilitating Smash",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 4m and inflicts Debilitate for X on a successful Block. [Debilitate]: -X% Defense 10 Stagger Gauge Damage",
+      "specialty": "X% chance to inflict Stun for X\n+3s Debilitate duration\n-X% Recovery during Debilitate\nIgnores Block and Evasion and lands as Multi-Hit\nX% chance to reset Cooldown on successful Block",
+      "tags": [],
+      "image": "icon_te_skill_025.webp",
+      "unlocked": 7
+    },
+    {
+      "name": "Warding Strike",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 5m. Immediately restores X HP of the caster instantly and apply Warding to self for X. Warding: +X% Damage Tolerance",
+      "specialty": "+5s Warding duration\n+100 Block during Warding\nHoT during Warding\nDamage Tolerance increase when there are more targets hit\n+X% Damage Tolerance of a party member on skill use",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_te_skill_035.webp",
+      "unlocked": 8
+    },
+    {
+      "name": "Punishing Benediction",
+      "type": "Passive",
+      "desc": "Receive Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a X% chance to deal X extra damage to the target when landing an attack. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_003.webp",
+      "unlocked": 9
+    },
+    {
+      "name": "Shield Rush",
+      "type": "Active",
+      "desc": "After using [Dodge], rushes to a target within 10m and deals X damage. X% chance to inflict Stun for X. 100% chance to inflict Stun on NPC targets. 20 Stagger Gauge Damage",
+      "specialty": "Restores X Stamina on hit\n+10m Range\nChanges to Charge Skill, AoE Attack when charged\n-10s Cooldown\n+25% Stun Chance",
+      "tags": [],
+      "image": "icon_te_skill_015.webp",
+      "unlocked": 10
+    },
+    {
+      "name": "Ironclad Defense",
+      "type": "Passive",
+      "desc": "Increases Defense by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_004.webp",
+      "unlocked": 11
+    },
+    {
+      "name": "Annihilate",
+      "type": "Active",
+      "desc": "Deals X damage to a Stun or Knockdown target within 4m with a X% chance to inflict Knockdown for X. 100% chance to land Knockdown on NPC targets.",
+      "specialty": "+50% Multi-Hit on hit\n+20% Knockdown Chance\n5% chance to activate on attacking Incapacitated Immune target\n-10s Cooldown\nChanges to AoE Skill",
+      "tags": [],
+      "image": "icon_te_skill_028.webp",
+      "unlocked": 12
+    },
+    {
+      "name": "Guarding Seal",
+      "type": "Passive",
+      "desc": "When HP is 50% or less, receive Guarding Seal, which blocks X damage for X. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_005.webp",
+      "unlocked": 13
+    },
+    {
+      "name": "Punishment",
+      "type": "Active",
+      "desc": "Deals X damage to up to 4 enemies within 5m. Max 3 Charge Levels 15 Stagger Gauge Damage",
+      "specialty": "Absorbs 10% of damage as HP\nInflicts Damage over Time to target on hit\n+30% Skill Speed\nChanges to mobile skill\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tags": [
+        "Nontarget",
+        "Charge"
+      ],
+      "image": "icon_te_skill_009.webp",
+      "unlocked": 14
+    },
+    {
+      "name": "Impact Hit",
+      "type": "Passive",
+      "desc": "Increases the caster's Impact-type Chance(s) by X% and Smite by X%.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_006.webp",
+      "unlocked": 15
+    },
+    {
+      "name": "Defiance",
+      "type": "Active",
+      "desc": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialty": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tags": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "unlocked": 16
+    },
+    {
+      "name": "Insulting Roar",
+      "type": "Passive",
+      "desc": "Increases the caster's Enmity Boost by X% and on a successful Block, deals X damage to the target and increases Enmity by a large amount. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_007.webp",
+      "unlocked": 17
+    },
+    {
+      "name": "Fury",
+      "type": "Active",
+      "desc": "Empowered by refined aura, increases Physical Attack Boost by X% for X.",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_008.webp",
+      "unlocked": 21
+    },
+    {
+      "name": "Survival Willpower",
+      "type": "Passive",
+      "desc": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "unlocked": 23
+    },
+    {
+      "name": "Block Pain",
+      "type": "Passive",
+      "desc": "Receive Block Pain for X when struck by an enemy. Remove Block Pain at 10 stacks and receive Resilience. Resilience: Increases Damage Tolerance by X% for X",
+      "specialty": "",
+      "tags": [],
+      "image": "icon_te_skill_passive_010.webp",
+      "unlocked": 25
+    }
+  ]
+}

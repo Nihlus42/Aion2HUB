@@ -135,7 +135,7 @@ function HomePage() {
         <div className="rune-border rounded-2xl p-10 md:p-16 text-center bg-gradient-to-br from-card to-background relative overflow-hidden">
           <div className="relative">
             <Sparkles className="w-10 h-10 text-gold mx-auto mb-4 animate-float-slow" />
-            <h2 className="font-display text-3xl md:text-5xl mb-4">Rejoins {classes.length}+ discussions de classes</h2>
+            <h2 className="font-display text-3xl md:text-5xl mb-4">Explore les skills des classes</h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
               Theorycraft plus vite avec les classes, competences, updates et un planificateur pratique.
             </p>

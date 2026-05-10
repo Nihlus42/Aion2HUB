@@ -3,6 +3,7 @@
 import lightJson from "@/data/aion2/items/aion2hub_clean_json/aion2hub_items_fr_light.json";
 import byIdJson from "@/data/aion2/items/aion2hub_clean_json/aion2hub_items_fr_by_id.json";
 import metaJson from "@/data/aion2/items/aion2hub_clean_json/aion2hub_items_fr_meta.json";
+import prodItemsJson from "@/data/items/json/aion2hub_items_production_all.json";
 import type { DisplayItem, ItemFull, ItemLight, ItemsMeta } from "./types";
 
 const fixMojibake = (value: string) => {
@@ -34,12 +35,19 @@ export const normalizeUnknown = (value: unknown, fallback = "Inconnu") => {
 const lightRaw = lightJson as ItemLight[];
 const byIdRaw = byIdJson as Record<string, ItemFull>;
 const metaRaw = metaJson as ItemsMeta;
+const prodRaw = prodItemsJson as { records?: Array<{ id: string; minLevelRequirement?: number | null }> };
 
 export const itemsLight: ItemLight[] = Array.isArray(lightRaw) ? lightRaw : [];
 export const itemsById: Record<string, ItemFull> = byIdRaw ?? {};
 export const itemsMeta: ItemsMeta = metaRaw ?? {};
 
 export const items = itemsLight;
+const minLevelById = new Map<string, number>();
+for (const rec of prodRaw.records ?? []) {
+  if (typeof rec?.id === "string" && typeof rec?.minLevelRequirement === "number" && Number.isFinite(rec.minLevelRequirement)) {
+    minLevelById.set(rec.id, rec.minLevelRequirement);
+  }
+}
 
 const toDisplayItem = (item: ItemLight | ItemFull): DisplayItem => {
   const nameFr = isValidText(item.nameFr) ? cleanText(item.nameFr) : null;
@@ -70,11 +78,14 @@ const toDisplayItem = (item: ItemLight | ItemFull): DisplayItem => {
     id: item.id,
     name: nameFr ?? nameEn ?? "Inconnu",
     nameEn: nameEn && nameEn !== nameFr ? nameEn : null,
+    minLevelRequirement: minLevelById.get(item.id) ?? null,
     image: isValidText(item.image) ? item.image : null,
     mainCategory: isValidText(item.mainCategory) ? item.mainCategory : null,
     mainCategoryFr: isValidText(item.mainCategoryFr) ? cleanText(item.mainCategoryFr) : null,
     categoryEn: isValidText(item.categoryEn) ? cleanText(item.categoryEn) : null,
     categoryFr: isValidText(item.categoryFr) ? cleanText(item.categoryFr) : null,
+    subCategory: isValidText(item.subCategory) ? cleanText(item.subCategory) : null,
+    subCategoryFr: isValidText(item.subCategoryFr) ? cleanText(item.subCategoryFr) : null,
     gradeEn: isValidText(item.gradeNameEn) ? cleanText(item.gradeNameEn) : null,
     gradeFr: isValidText(item.gradeFr) ? cleanText(item.gradeFr) : null,
     tradable: typeof item.tradable === "boolean" ? item.tradable : null,
@@ -95,8 +106,10 @@ export const getItemDetailDisplayById = (id: string): DisplayItem | null => {
   return cleanItemForDisplay(item);
 };
 
-const normalizeFilterPairs = (pairs: Array<[string, string]> | undefined) =>
-  (pairs ?? []).map(([value, label]) => [value, normalizeUnknown(label)] as const);
+const normalizeFilterPairs = (pairs: string[][] | undefined) =>
+  (pairs ?? [])
+    .filter((pair): pair is [string, string] => Array.isArray(pair) && pair.length >= 2)
+    .map(([value, label]) => [value, normalizeUnknown(label)] as const);
 
 export const itemFilterOptions = {
   mainCategories: normalizeFilterPairs(itemsMeta.filters?.mainCategories),
@@ -108,7 +121,8 @@ export const itemFilterOptions = {
 export const getItemDisplayName = (item: ItemLight | ItemFull) => cleanItemForDisplay(item).name;
 export const getItemDisplayDescription = (item: ItemLight | ItemFull) => cleanItemForDisplay(item).descriptionFr ?? "Description indisponible.";
 export const getItemCategoryLabel = (item: ItemLight | ItemFull) => cleanItemForDisplay(item).categoryFr ?? "Inconnu";
-export const getItemSubCategoryLabel = (item: ItemLight | ItemFull) => cleanItemForDisplay(item).categoryFr ?? "Inconnu";
+export const getItemSubCategoryLabel = (item: ItemLight | ItemFull) =>
+  cleanItemForDisplay(item).subCategory ?? cleanItemForDisplay(item).subCategoryFr ?? cleanItemForDisplay(item).categoryEn ?? "Inconnu";
 export const getItemRarityLabel = (item: ItemLight | ItemFull) => cleanItemForDisplay(item).gradeFr ?? "Inconnu";
 export const getItemQualityLabel = (_item: ItemLight | ItemFull) => "Inconnu";
 export const getItemCooldownLabel = (_item: ItemLight | ItemFull) => "Inconnu";

@@ -8,6 +8,8 @@
   mainCategoryFr?: string | null;
   categoryEn?: string | null;
   categoryFr?: string | null;
+  subCategory?: string | null;
+  subCategoryFr?: string | null;
   gradeNameEn?: string | null;
   gradeFr?: string | null;
   tradable?: boolean;
@@ -41,10 +43,10 @@ export type ItemFull = ItemLight & {
 export type ItemsMeta = {
   total?: number;
   filters?: {
-    mainCategories?: Array<[string, string]>;
-    categories?: Array<[string, string]>;
-    grades?: Array<[string, string]>;
-    sources?: Array<[string, string]>;
+    mainCategories?: string[][];
+    categories?: string[][];
+    grades?: string[][];
+    sources?: string[][];
   };
 };
 
@@ -52,11 +54,14 @@ export type DisplayItem = {
   id: string;
   name: string;
   nameEn: string | null;
+  minLevelRequirement: number | null;
   image: string | null;
   mainCategory: string | null;
   mainCategoryFr: string | null;
   categoryEn: string | null;
   categoryFr: string | null;
+  subCategory: string | null;
+  subCategoryFr: string | null;
   gradeEn: string | null;
   gradeFr: string | null;
   tradable: boolean | null;
