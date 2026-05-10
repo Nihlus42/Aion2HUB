@@ -1,9 +1,9 @@
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { cloudflare } from "@cloudflare/vite-plugin";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import { nitro } from "nitro/vite";
 
 export default defineConfig(({ mode }) => ({
   plugins: [
@@ -14,8 +14,10 @@ export default defineConfig(({ mode }) => ({
       customViteReactPlugin: true,
       server: { entry: "server" },
     }),
+    nitro({
+      preset: "vercel",
+    }),
     react(),
     tailwindcss(),
-    ...(mode === "production" ? [cloudflare()] : []),
   ],
 }));
