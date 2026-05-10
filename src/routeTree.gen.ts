@@ -10,7 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GuidesRouteImport } from './routes/guides'
-import { Route as CommunityRouteImport } from './routes/community'
 import { Route as ClassesRouteImport } from './routes/classes'
 import { Route as BuildsRouteImport } from './routes/builds'
 import { Route as IndexRouteImport } from './routes/index'
@@ -18,11 +17,6 @@ import { Route as IndexRouteImport } from './routes/index'
 const GuidesRoute = GuidesRouteImport.update({
   id: '/guides',
   path: '/guides',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CommunityRoute = CommunityRouteImport.update({
-  id: '/community',
-  path: '/community',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ClassesRoute = ClassesRouteImport.update({
@@ -45,14 +39,12 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRoute
-  '/community': typeof CommunityRoute
   '/guides': typeof GuidesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRoute
-  '/community': typeof CommunityRoute
   '/guides': typeof GuidesRoute
 }
 export interface FileRoutesById {
@@ -60,22 +52,20 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/builds': typeof BuildsRoute
   '/classes': typeof ClassesRoute
-  '/community': typeof CommunityRoute
   '/guides': typeof GuidesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/builds' | '/classes' | '/community' | '/guides'
+  fullPaths: '/' | '/builds' | '/classes' | '/guides'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/builds' | '/classes' | '/community' | '/guides'
-  id: '__root__' | '/' | '/builds' | '/classes' | '/community' | '/guides'
+  to: '/' | '/builds' | '/classes' | '/guides'
+  id: '__root__' | '/' | '/builds' | '/classes' | '/guides'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BuildsRoute: typeof BuildsRoute
   ClassesRoute: typeof ClassesRoute
-  CommunityRoute: typeof CommunityRoute
   GuidesRoute: typeof GuidesRoute
 }
 
@@ -86,13 +76,6 @@ declare module '@tanstack/react-router' {
       path: '/guides'
       fullPath: '/guides'
       preLoaderRoute: typeof GuidesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/community': {
-      id: '/community'
-      path: '/community'
-      fullPath: '/community'
-      preLoaderRoute: typeof CommunityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/classes': {
@@ -123,7 +106,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BuildsRoute: BuildsRoute,
   ClassesRoute: ClassesRoute,
-  CommunityRoute: CommunityRoute,
   GuidesRoute: GuidesRoute,
 }
 export const routeTree = rootRouteImport

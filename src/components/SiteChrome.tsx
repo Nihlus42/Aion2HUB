@@ -7,7 +7,6 @@ const navItems = [
   { to: "/classes", label: "Classes" },
   { to: "/guides", label: "Guides" },
   { to: "/builds", label: "Build Planner" },
-  { to: "/community", label: "Community" },
 ];
 
 export function SiteHeader() {
@@ -39,14 +38,12 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <a
-          href="/community"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to="/guides"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold shadow-glow hover:opacity-90 transition"
         >
-          Join Discord
-        </a>
+          Start Reading
+        </Link>
 
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
@@ -65,14 +62,13 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <a
-            href="/community"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/guides"
+            onClick={() => setOpen(false)}
             className="mt-2 px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold text-center"
           >
-            Join Discord
-          </a>
+            Start Reading
+          </Link>
         </nav>
       )}
     </header>
@@ -89,7 +85,7 @@ export function SiteFooter() {
             <span className="font-display tracking-widest text-gradient-gold">AION 2</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            The unofficial fan hub for Aion 2. Guides, builds, and community for the next generation of Daevas.
+            The unofficial fan hub for Aion 2. Guides, builds, and planning tools for the next generation of Daevas.
           </p>
         </div>
         <div>
@@ -98,16 +94,15 @@ export function SiteFooter() {
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
             <li><Link to="/guides" className="hover:text-foreground">Guides</Link></li>
             <li><Link to="/builds" className="hover:text-foreground">Build Planner</Link></li>
-            <li><Link to="/community" className="hover:text-foreground">Community</Link></li>
           </ul>
         </div>
         <div>
-          <h4 className="text-gold text-sm tracking-widest mb-3">COMMUNITY</h4>
-          <p className="text-sm text-muted-foreground mb-3">Join thousands of Daevas in our Discord.</p>
-          <a href="/community" target="_blank" rel="noopener noreferrer"
+          <h4 className="text-gold text-sm tracking-widest mb-3">TOOLS</h4>
+          <p className="text-sm text-muted-foreground mb-3">Plan builds, check timers, and optimize your next run.</p>
+          <Link to="/builds"
              className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
-            Join Discord
-          </a>
+            Open Build Planner
+          </Link>
         </div>
       </div>
       <div className="border-t border-border/50 py-4 text-center text-xs text-muted-foreground">

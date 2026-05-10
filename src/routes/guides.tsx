@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { guides, type GuideCategory } from "@/data/aion";
+import { guides, type GuideCategory } from "@/data";
 import { BookOpen, Zap, Swords, Skull, Clock } from "lucide-react";
 
 export const Route = createFileRoute("/guides")({
@@ -88,3 +88,4 @@ function GuidesPage() {
     </div>
   );
 }
+

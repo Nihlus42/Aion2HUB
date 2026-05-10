@@ -52,10 +52,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aion 2 Hub — Guides, Builds & Community" },
-      { name: "description", content: "The premier fan hub for Aion 2 — class guides, build planner, and guild community." },
+      { title: "Aion 2 Hub — Guides, Builds & Timers" },
+      { name: "description", content: "The premier fan hub for Aion 2 — class guides, build planner, and event timers." },
       { property: "og:title", content: "Aion 2 Hub" },
-      { property: "og:description", content: "Class guides, build planner, and guild community for Aion 2." },
+      { property: "og:description", content: "Class guides, build planner, and event timers for Aion 2." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -91,3 +91,5 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
+

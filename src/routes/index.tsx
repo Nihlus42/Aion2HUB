@@ -1,15 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Sparkles, Sword, Shield, Users, ArrowRight, Calendar } from "lucide-react";
+import { Sparkles, Sword, Shield, ArrowRight, Calendar } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
-import { guides, classes } from "@/data/aion";
+import { guides, classes } from "@/data";
 import { RuneDivider, Eyebrow } from "@/components/Ornament";
+import { EventTimers } from "@/components/EventTimers";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aion 2 Hub — Dark Fantasy MMORPG Community" },
-      { name: "description", content: "Class guides, build planner, and guild finder for Aion 2 players." },
+      { title: "Aion 2 Hub — Dark Fantasy MMORPG Utility Hub" },
+      { name: "description", content: "Class guides, build planner, and event timers for Aion 2 players." },
     ],
   }),
   component: HomePage,
@@ -72,7 +73,7 @@ function HomePage() {
               Ascend in <span className="shimmer-text">Aion 2</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Class guides crafted by veterans. A live build planner. A guild finder that actually works.
+              Class guides crafted by veterans. A live build planner. Event timers and tools that actually help.
               Everything you need to dominate Atreia — in one place.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -86,6 +87,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <EventTimers />
 
       {/* Countdown */}
       <section className="container mx-auto px-4 -mt-16 relative z-10">
@@ -122,7 +125,7 @@ function HomePage() {
           {[
             { icon: Sword, title: "8 Iconic Classes", desc: "Detailed class breakdowns with role, difficulty, and signature skills.", to: "/classes" as const },
             { icon: Shield, title: "Builds That Win", desc: "Plan stigmas, share builds, and copy proven setups in one click.", to: "/builds" as const },
-            { icon: Users, title: "Find Your Legion", desc: "Browse recruiting guilds across factions, regions, and play styles.", to: "/community" as const },
+            { icon: Calendar, title: "Track Event Timers", desc: "Keep your runs on schedule with live placeholder reset timers.", to: "/builds" as const },
           ].map((f, i) => (
             <Link
               key={f.title}
@@ -197,20 +200,20 @@ function HomePage() {
             <Sparkles className="w-10 h-10 text-gold mx-auto mb-4 animate-float-slow" />
             <h2 className="font-display text-3xl md:text-5xl mb-4">Join {classes.length}+ Class Discussions</h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-              Real-time theorycrafting, LFG channels for every dungeon, and weekly community events.
+              Theorycraft faster with curated guides, practical build planning, and always-visible timer tools.
             </p>
-            <a
-              href="/community"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/guides"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all"
             >
-              Join the Discord
+              Browse Guides
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
     </>
   );
 }
+
+
