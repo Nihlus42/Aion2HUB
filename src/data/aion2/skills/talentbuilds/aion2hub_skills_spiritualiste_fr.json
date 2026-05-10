@@ -1,0 +1,1475 @@
+{
+  "dataset": "talentbuilds-aion2-skills-spiritmaster-fr",
+  "source": "https://talentbuilds.com/aion2/skills",
+  "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+  "classFr": "Spiritualiste",
+  "classEn": "Elementalist",
+  "classSlug": "spiritmaster",
+  "classSlugFr": "spiritualiste",
+  "total": 22,
+  "records": [
+    {
+      "id": "16010000",
+      "nameFr": "Choc froid",
+      "nameEn": "Cold Shock",
+      "slug": "cold-shock",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X d’eau dégâts à une cible à moins de 20 m et restaure 100 PM.",
+      "descriptionEn": "Deals X Water damage to a target within 20m and restores 100 MP.",
+      "specialtyFr": "+20 % de PM restaurés\nAbsorbe 7 % des dégâts sous forme de PV\n+50 % de multi-coup à l’impact\n+X % Attaque en touchant avec [Earth Tremor] (Max 5 cumuls)\nX % chance de remove 1 bonus en touchant avec [Earth Tremor]",
+      "specialtyEn": "+20% MP restored\nAbsorbs 7% of damage as HP\n+50% Multi-Hit on hit\n+X% Attack on landing [Earth Tremor] (Max 5 stacks)\nX% chance to remove 1 buff on landing [Earth Tremor]",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_001.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510131",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520063",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530118",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540192",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "choc froid cold shock spiritualiste actif inflige x d’eau dégâts à une cible à moins de 20 m et restaure 100 pm. +20 % de pm restaurés\nabsorbe 7 % des dégâts sous forme de pv\n+50 % de multi-coup à l’impact\n+x % attaque en touchant avec [earth tremor] (max 5 cumuls)\nx % chance de remove 1 bonus en touchant avec [earth tremor] mobile"
+    },
+    {
+      "id": "16040000",
+      "nameFr": "Combustion",
+      "nameEn": "Combustion",
+      "slug": "combustion",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X de feu dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible. 3 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Fire damage to up to 4 enemies within 4m of the target. 3 Stagger Gauge Damage",
+      "specialtyFr": "-20 % de PM consommés\nMax +12% dégâts quand there are moins de cibles impact\nDevient utilisable en déplacement\n+20 % de vitesse de compétence\nAjoute la compétence enchaînée [Ashy Call]",
+      "specialtyEn": "-20% MP consumed\nMax +12% damage when there are less targets hit\nChanges to mobile skill\n+20% Skill Speed\nAdds [Ashy Call] Chain Skill",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_004.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_004.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510095",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520103",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530155",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540042",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "combustion combustion spiritualiste actif sélectionne une cible à moins de 20 m et inflige x de feu dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible. 3 dégâts de jauge de déséquilibre -20 % de pm consommés\nmax +12% dégâts quand there are moins de cibles impact\ndevient utilisable en déplacement\n+20 % de vitesse de compétence\najoute la compétence enchaînée [ashy call]"
+    },
+    {
+      "id": "16100000",
+      "nameFr": "Invocation : Esprit de feu",
+      "nameEn": "Summon: Fire Spirit",
+      "slug": "summon-fire-spirit",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Invoque a Esprit de feu. The Esprit de feu se rue towards une cible à moins de 20 m et uses a compétence which inflige X dégâts à jusqu’à 4 ennemis à moins de 5 m. After en utilisant the compétence, it continue de combattre en utilisant attaques de base et is renvoyé lors de sélectionnant l’icône d’invocation. Chaque compétence level augmente the Esprit de feu's Attaque et Défense de 12%. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Summons a Fire Spirit. The Fire Spirit rushes towards a target within 20m and uses a skill which deals X damage to up to 4 enemies within 5m. After using the skill, it continues fighting using basic attacks and is dismissed upon selecting the summon icon. Each skill level increases the Fire Spirit's Attack and Defense by 12%. 7 Stagger Gauge Damage",
+      "specialtyFr": "-50 % de coût en PM\n+X % Esprit de feu Coup critique Dégâts\n10% chance de activer compétence en touchant avec Esprit de feu attack\nX % de chances d’infliger Renversement pendant X en touchant avec Esprit de feu attack\nEsprit de feu Stats 20% increase",
+      "specialtyEn": "-50% MP Cost\n+X% Fire Spirit Critical Hit Damage\n10% chance to activate Skill on landing Fire Spirit attack\nX% chance to inflict Knockdown for X on landing Fire Spirit attack\nFire Spirit Stats 20% increase",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_010.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_010.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510068",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520069",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530064",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540184",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "invocation : esprit de feu summon: fire spirit spiritualiste actif invoque a esprit de feu. the esprit de feu se rue towards une cible à moins de 20 m et uses a compétence which inflige x dégâts à jusqu’à 4 ennemis à moins de 5 m. after en utilisant the compétence, it continue de combattre en utilisant attaques de base et is renvoyé lors de sélectionnant l’icône d’invocation. chaque compétence level augmente the esprit de feu's attaque et défense de 12%. 7 dégâts de jauge de déséquilibre -50 % de coût en pm\n+x % esprit de feu coup critique dégâts\n10% chance de activer compétence en touchant avec esprit de feu attack\nx % de chances d’infliger renversement pendant x en touchant avec esprit de feu attack\nesprit de feu stats 20% increase mobile"
+    },
+    {
+      "id": "16710000",
+      "nameFr": "Frappe spirituelle",
+      "nameEn": "Spirit Strike",
+      "slug": "spirit-strike",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente X % de propre Attaque, et X % de Esprit's Attaque.",
+      "descriptionEn": "Increases X% of own Attack, and X% of Spirit's Attack.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_008.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510063",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510189",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530035",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540161",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "frappe spirituelle spirit strike spiritualiste passif augmente x % de propre attaque, et x % de esprit's attaque."
+    },
+    {
+      "id": "16110000",
+      "nameFr": "Invocation : Esprit d’eau",
+      "nameEn": "Summon: Water Spirit",
+      "slug": "summon-water-spirit",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Invoque a Esprit d’eau. The Esprit d’eau uses a compétence which inflige X dégâts d’eau à une cible à moins de 20 m. After en utilisant the compétence, it continue de combattre en utilisant attaques de base et restaure the Elementalist's PM de X. It is renvoyé lors de sélectionnant l’icône d’invocation. Chaque compétence level augmente the Esprit d’eau's Attaque et Coup critique de 1%. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Summons a Water Spirit. The Water Spirit uses a skill which deals X Water damage to a target within 20m. After using the skill, it continues fighting using basic attacks and restores the Elementalist's MP by X. It is dismissed upon selecting the summon icon. Each skill level increases the Water Spirit's Attack and Critical Hit by 1%. 7 Stagger Gauge Damage",
+      "specialtyFr": "-50 % de coût en PM\nEsprit d’eau Attaque X % Increase\n10% chance de activer compétence en touchant avec Esprit d’eau attack\nX % de chances d’infliger Immobilisation pendant X en touchant avec Esprit d’eau attack\n+20% Esprit d’eau Stats",
+      "specialtyEn": "-50% MP Cost\nWater Spirit Attack X% Increase\n10% chance to activate Skill on landing Water Spirit attack\nX% chance to inflict Root for X on landing Water Spirit attack\n+20% Water Spirit Stats",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_011.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_011.webp",
+      "unlocked": 3,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510158",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520095",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530159",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540034",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "invocation : esprit d’eau summon: water spirit spiritualiste actif invoque a esprit d’eau. the esprit d’eau uses a compétence which inflige x dégâts d’eau à une cible à moins de 20 m. after en utilisant the compétence, it continue de combattre en utilisant attaques de base et restaure the elementalist's pm de x. it is renvoyé lors de sélectionnant l’icône d’invocation. chaque compétence level augmente the esprit d’eau's attaque et coup critique de 1%. 7 dégâts de jauge de déséquilibre -50 % de coût en pm\nesprit d’eau attaque x % increase\n10% chance de activer compétence en touchant avec esprit d’eau attack\nx % de chances d’infliger immobilisation pendant x en touchant avec esprit d’eau attack\n+20% esprit d’eau stats mobile"
+    },
+    {
+      "id": "16140000",
+      "nameFr": "Attaque conjointe : Malédiction",
+      "nameEn": "Jointstrike: Curse",
+      "slug": "jointstrike-curse",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et infliger Malédiction pendant X, which inflige X Dégâts sur la durée toutes les 1 s. The Esprit joins pendant a coordinated assault. Fire: X dégâts de zone Water: X dégâts Earth: X dégâts, -X % ennemi Résistance aux altérations Wind: X dégâts de zone, X Dégâts sur la durée, -X % ennemi Résistance aux dégâts critiques Ancient: X dégâts de zone 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and inflict Curse for X, which deals X Damage over Time every 1s. The Spirit joins for a coordinated assault. Fire: X AoE damage Water: X damage Earth: X damage, -X% enemy Status Effect Resist Wind: X AoE damage, X Damage over Time, -X% enemy Critical Damage Tolerance Ancient: X AoE damage 10 Stagger Gauge Damage",
+      "specialtyFr": "+2 s Malédiction durée\n+50 % de multi-coup à l’impact\n+X % PM consumed pendant Malédiction\n-2 s Temps de recharge\n-X % Dégâts to Esprit pendant Malédiction",
+      "specialtyEn": "+2s Curse duration\n+50% Multi-Hit on hit\n+X% MP consumed during Curse\n-2s Cooldown\n-X% Damage to Spirit during Curse",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_014.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_014.webp",
+      "unlocked": 4,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510050",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520185",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530101",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540130",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "attaque conjointe : malédiction jointstrike: curse spiritualiste actif sélectionne une cible à moins de 20 m et inflige x dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et infliger malédiction pendant x, which inflige x dégâts sur la durée toutes les 1 s. the esprit joins pendant a coordinated assault. fire: x dégâts de zone water: x dégâts earth: x dégâts, -x % ennemi résistance aux altérations wind: x dégâts de zone, x dégâts sur la durée, -x % ennemi résistance aux dégâts critiques ancient: x dégâts de zone 10 dégâts de jauge de déséquilibre +2 s malédiction durée\n+50 % de multi-coup à l’impact\n+x % pm consumed pendant malédiction\n-2 s temps de recharge\n-x % dégâts to esprit pendant malédiction"
+    },
+    {
+      "id": "16340000",
+      "nameFr": "Salve rapide",
+      "nameEn": "Rapid Scattershot",
+      "slug": "rapid-scattershot",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible en déséquilibre à moins de 20 m.",
+      "descriptionEn": "Deals X damage to a Stagger target within 20m.",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRestaure 120 PM\nDevient utilisable en déplacement\nMulti-coup garanti à l’impact\n-X au temps de recharge de toutes les compétences à l’impact",
+      "specialtyEn": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X All Skill Cooldown on hit",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_034.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_034.webp",
+      "unlocked": 5,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510118",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520037",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530038",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540062",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "salve rapide rapid scattershot spiritualiste actif inflige x dégâts à une cible en déséquilibre à moins de 20 m. absorbe x % des dégâts sous forme de pv\nrestaure 120 pm\ndevient utilisable en déplacement\nmulti-coup garanti à l’impact\n-x au temps de recharge de toutes les compétences à l’impact"
+    },
+    {
+      "id": "16720000",
+      "nameFr": "Protection spirituelle",
+      "nameEn": "Spirit Protection",
+      "slug": "spirit-protection",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Receives Protection spirituelle, increasing the même tolérance élémentaire as the summoned Esprit de X % pendant X, et resists 1 compétence Attaque. Can only be used pendant a Esprit is summoned.",
+      "descriptionEn": "Receives Spirit Protection, increasing the same Element Tolerance as the summoned Spirit by X% for X, and resists 1 Skill Attack. Can only be used while a Spirit is summoned.",
+      "specialtyFr": "Retire \"Immobilisation\" Status\n+X % Vitesse de déplacement pendant the durée\nUsing compétence Pushes Back cibles proches de 5 m\n+X % Vitesse de déplacement pendant the durée quand \"Immobilisation\" is removed\nVitesse de déplacement increase pendant compétence effectX %, Using the compétence Pushes Back cibles proches de 5 m\nUsing compétence Pushes Back cibles proches de 5 m, Retire état Immobilisé",
+      "specialtyEn": "Removes \"Root\" Status\n+X% Move Speed for the duration\nUsing skill Pushes Back nearby targets by 5m\n+X% Move Speed for the duration when \"Root\" is removed\nMove Speed increase during skill effectX%, Using the skill Pushes Back nearby targets by 5m\nUsing skill Pushes Back nearby targets by 5m, Removes Rooted state",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_002.webp",
+      "unlocked": 6,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510037",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510163",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530191",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540065",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "protection spirituelle spirit protection spiritualiste actif receives protection spirituelle, increasing the même tolérance élémentaire as the summoned esprit de x % pendant x, et resists 1 compétence attaque. can only be used pendant a esprit is summoned. retire \"immobilisation\" status\n+x % vitesse de déplacement pendant the durée\nusing compétence pushes back cibles proches de 5 m\n+x % vitesse de déplacement pendant the durée quand \"immobilisation\" is removed\nvitesse de déplacement increase pendant compétence effectx %, using the compétence pushes back cibles proches de 5 m\nusing compétence pushes back cibles proches de 5 m, retire état immobilisé"
+    },
+    {
+      "id": "16130000",
+      "nameFr": "Invocation : Esprit de terre",
+      "nameEn": "Summon: Earth Spirit",
+      "slug": "summon-earth-spirit",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Invoque an Esprit de terre. The Esprit de terre uses a compétence which inflige X dégâts de terre à une cible à moins de 20 m et augmente hostilité de X. A X % de chances d’infliger Taunt pendant X if the cible is a joueur. Continues fighting en utilisant attaques de base et augmente hostilité each time an attack lands. It is renvoyé lors de sélectionnant l’icône d’invocation. Chaque compétence level augmente the Esprit de terre's Défense et PV de 1%. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Summons an Earth Spirit. The Earth Spirit uses a skill which deals X Earth damage to a target within 20m and increases Enmity by X. Has a X% chance to inflict Taunt for X if the target is a PC. Continues fighting using basic attacks and increases Enmity each time an attack lands. It is dismissed upon selecting the summon icon. Each skill level increases the Earth Spirit's Defense and HP by 1%. 7 Stagger Gauge Damage",
+      "specialtyFr": "-50 % de coût en PM\n+X % Esprit de terre Réduction des dégâts subis\n10% chance de activer compétence en touchant avec Esprit de terre attack\nX % chance de restore X % de Esprit PV quand en touchant Esprit de terre attack\n+20% Esprit de terre Stats",
+      "specialtyEn": "-50% MP Cost\n+X% Earth Spirit Damage Tolerance\n10% chance to activate Skill on landing Earth Spirit attack\nX% chance to restore X% of Spirit HP when landing Earth Spirit attack\n+20% Earth Spirit Stats",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_013.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_013.webp",
+      "unlocked": 7,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510176",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520163",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530108",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540156",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "invocation : esprit de terre summon: earth spirit spiritualiste actif invoque an esprit de terre. the esprit de terre uses a compétence which inflige x dégâts de terre à une cible à moins de 20 m et augmente hostilité de x. a x % de chances d’infliger taunt pendant x if the cible is a joueur. continues fighting en utilisant attaques de base et augmente hostilité each time an attack lands. it is renvoyé lors de sélectionnant l’icône d’invocation. chaque compétence level augmente the esprit de terre's défense et pv de 1%. 7 dégâts de jauge de déséquilibre -50 % de coût en pm\n+x % esprit de terre réduction des dégâts subis\n10% chance de activer compétence en touchant avec esprit de terre attack\nx % chance de restore x % de esprit pv quand en touchant esprit de terre attack\n+20% esprit de terre stats mobile"
+    },
+    {
+      "id": "16330000",
+      "nameFr": "Contrôle dimensionnel",
+      "nameEn": "Dimensional Control",
+      "slug": "dimensional-control",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "A compétence qui is activated pendant a short pendant après en utilisant a Esprit summoning compétence. Sélectionne une cible à moins de 20 m et inflige X dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et inflige Ralentissement qui réduit Vitesse de déplacement de X % pendant X. Restaure 100 PM. 5 dégâts de jauge de déséquilibre",
+      "descriptionEn": "A skill that is activated for a short while after using a Spirit summoning skill. Select a target within 20m and deal X damage to up to 4 enemies within 4m of the target and inflicts Slowed that reduces Move Speed by X% for X. Restores 100 MP. 5 Stagger Gauge Damage",
+      "specialtyFr": "+20% Ralentissement Effect\n+2 s Ralentissement durée\n+50% Multi-coup chance à l’impact\nPull in cibles proches\nX % de chances d’infliger Immobilisation pendant X à l’impact",
+      "specialtyEn": "+20% Slowed Effect\n+2s Slowed duration\n+50% Multi-Hit chance on hit\nPull in nearby targets\nX% chance to inflict Root for X on hit",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_033.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_033.webp",
+      "unlocked": 8,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510071",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520123",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530071",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540096",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "contrôle dimensionnel dimensional control spiritualiste actif a compétence qui is activated pendant a short pendant après en utilisant a esprit summoning compétence. sélectionne une cible à moins de 20 m et inflige x dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et inflige ralentissement qui réduit vitesse de déplacement de x % pendant x. restaure 100 pm. 5 dégâts de jauge de déséquilibre +20% ralentissement effect\n+2 s ralentissement durée\n+50% multi-coup chance à l’impact\npull in cibles proches\nx % de chances d’infliger immobilisation pendant x à l’impact mobile"
+    },
+    {
+      "id": "16730000",
+      "nameFr": "Descente de l’esprit",
+      "nameEn": "Spirit's Descent",
+      "slug": "spirit-s-descent",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de deal X supplémentaires dégâts à chaque fois que the Elementalist’s attacks appliquer à moins de 10 seconds après a Esprit is summoned.",
+      "descriptionEn": "Has a X% chance to deal X extra damage whenever the Elementalist’s attacks land within 10 seconds after a Spirit is summoned.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_003.webp",
+      "unlocked": 9,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510041",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510185",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530040",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540152",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "descente de l’esprit spirit's descent spiritualiste passif a x % chance de deal x supplémentaires dégâts à chaque fois que the elementalist’s attacks appliquer à moins de 10 seconds après a esprit is summoned."
+    },
+    {
+      "id": "16120000",
+      "nameFr": "Invocation : Esprit du vent",
+      "nameEn": "Summon: Wind Spirit",
+      "slug": "summon-wind-spirit",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Invoque a Esprit du vent. The Esprit du vent selects une cible à moins de 20 m et inflige X dégâts de vent à jusqu’à 4 ennemis à moins de 5 m de lune cible, then uses a compétence qui restaure X PV de la Elementalist. After en utilisant a compétence, continue de combattre avec attaques de base, restoring X % de la Elementalist's PV each time an attack lands. Is renvoyé lors de sélectionnant l’icône d’invocation. Chaque compétence level augmente the Esprit du vent's Précision et Coup critique de 1%. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Summons a Wind Spirit. The Wind Spirit selects a target within 20m and deals X Wind damage to up to 4 enemies within 5m of the target, then uses a skill that restores X HP of the Elementalist. After using a skill, continues fighting with basic attacks, restoring X% of the Elementalist's HP each time an attack lands. Is dismissed upon selecting the summon icon. Each skill level increases the Wind Spirit's Accuracy and Critical Hit by 1%. 7 Stagger Gauge Damage",
+      "specialtyFr": "-50 % de coût en PM\n+X % Esprit du vent Coup critique\n10% chance de activer compétence quand a Esprit du vent attacks\nX % chance de réduire Vitesse d’attaque de X % pendant X sur Esprit du vent Attaque\n+20% Esprit du vent Stats",
+      "specialtyEn": "-50% MP Cost\n+X% Wind Spirit Critical Hit\n10% chance to activate Skill when a Wind Spirit attacks\nX% chance to reduce Attack Speed by X% for X on Wind Spirit Attack\n+20% Wind Spirit Stats",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_012.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_012.webp",
+      "unlocked": 10,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510155",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520157",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530162",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540070",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "invocation : esprit du vent summon: wind spirit spiritualiste actif invoque a esprit du vent. the esprit du vent selects une cible à moins de 20 m et inflige x dégâts de vent à jusqu’à 4 ennemis à moins de 5 m de lune cible, then uses a compétence qui restaure x pv de la elementalist. after en utilisant a compétence, continue de combattre avec attaques de base, restoring x % de la elementalist's pv each time an attack lands. is renvoyé lors de sélectionnant l’icône d’invocation. chaque compétence level augmente the esprit du vent's précision et coup critique de 1%. 7 dégâts de jauge de déséquilibre -50 % de coût en pm\n+x % esprit du vent coup critique\n10% chance de activer compétence quand a esprit du vent attacks\nx % chance de réduire vitesse d’attaque de x % pendant x sur esprit du vent attaque\n+20% esprit du vent stats mobile"
+    },
+    {
+      "id": "16740000",
+      "nameFr": "Corrosion",
+      "nameEn": "Corrode",
+      "slug": "corrode",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Coup critique de X et a X % chance de deal X Dégâts sur la durée toutes les 1 s pendant X sur un coup critique.",
+      "descriptionEn": "Increases Critical Hit by X and has a X% chance to deal X Damage over Time every 1s for X on a Critical Hit.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_012.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_012.webp",
+      "unlocked": 11,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510073",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510126",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530186",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540074",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "corrosion corrode spiritualiste passif augmente coup critique de x et a x % chance de deal x dégâts sur la durée toutes les 1 s pendant x sur un coup critique."
+    },
+    {
+      "id": "16070000",
+      "nameFr": "Cri de l’âme",
+      "nameEn": "Soul's Cry",
+      "slug": "soul-s-cry",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible à moins de 20 m avec une X % de chances d’infliger Peur pendant X. 100 % de chances d’appliquer Peur aux cibles PNJ. 15 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X damage to a target within 20m with a X% chance to inflict Fear for X. 100% chance to land Fear on NPC targets. 15 Stagger Gauge Damage",
+      "specialtyFr": "Réduit the cible's Défense de X % pendant X à l’impact\nImmobilisation pendant X\nDevient utilisable en déplacement\n-10 s Temps de recharge\n+2 s Peur durée",
+      "specialtyEn": "Reduces the target's Defense by X% for X on hit\nRoot for X\nChanges to mobile skill\n-10s Cooldown\n+2s Fear duration",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_007.webp",
+      "unlocked": 12,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510039",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520131",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530067",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540107",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "cri de l’âme soul's cry spiritualiste actif inflige x dégâts à une cible à moins de 20 m avec une x % de chances d’infliger peur pendant x. 100 % de chances d’appliquer peur aux cibles pnj. 15 dégâts de jauge de déséquilibre réduit the cible's défense de x % pendant x à l’impact\nimmobilisation pendant x\ndevient utilisable en déplacement\n-10 s temps de recharge\n+2 s peur durée"
+    },
+    {
+      "id": "16750000",
+      "nameFr": "Revitalisation de l’esprit",
+      "nameEn": "Spirit Revitalization",
+      "slug": "spirit-revitalization",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Immediately heals the Esprit pendant X % de its PV max quand its PV is 50% ou less. Temps de recharge : 30 s",
+      "descriptionEn": "Immediately heals the Spirit for X% of its Max HP when its HP is 50% or less. Cooldown: 30s",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_011.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_011.webp",
+      "unlocked": 13,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510100",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510153",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530073",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540124",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "revitalisation de l’esprit spirit revitalization spiritualiste passif immediately heals the esprit pendant x % de its pv max quand its pv is 50% ou less. temps de recharge : 30 s"
+    },
+    {
+      "id": "16300000",
+      "nameFr": "Fusion élémentaire",
+      "nameEn": "Elemental Fusion",
+      "slug": "elemental-fusion",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Chaque time lors de summoning a Esprit, the Elementalist obtains an element. Upon the element reaching 4 cumuls, enters the 4 Element Status et is able to use the [Fusion élémentaire] compétence. [Fusion élémentaire] can only be used lors de obtaining the 4 Element effect, et en utilisant [Fusion élémentaire] will immédiatement remove the 4 Elements. Inflige X dégâts à une cible à moins de 20 m. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Each time upon summoning a Spirit, the Elementalist obtains an element. Upon the element reaching 4 stacks, enters the 4 Element Status and is able to use the [Elemental Fusion] skill. [Elemental Fusion] can only be used upon obtaining the 4 Element effect, and using [Elemental Fusion] will immediately remove the 4 Elements. Deals X damage to a target within 20m. 10 Stagger Gauge Damage",
+      "specialtyFr": "Devient une compétence de zone\nExtra dégâts après X à l’impact\n-X % Tous Element Resist à l’impact\nChanges to compétence chargée, max +60% dégâts\n25% chance de regain 4 Element status",
+      "specialtyEn": "Changes to AoE Skill\nExtra damage after X on hit\n-X% All Element Resist on hit\nChanges to Charge Skill, max +60% damage\n25% chance to regain 4 Element status",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_el_skill_030.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_030.webp",
+      "unlocked": 14,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510187",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520041",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530125",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540119",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "fusion élémentaire elemental fusion spiritualiste actif chaque time lors de summoning a esprit, the elementalist obtains an element. upon the element reaching 4 cumuls, enters the 4 element status et is able to use the [fusion élémentaire] compétence. [fusion élémentaire] can only be used lors de obtaining the 4 element effect, et en utilisant [fusion élémentaire] will immédiatement remove the 4 elements. inflige x dégâts à une cible à moins de 20 m. 10 dégâts de jauge de déséquilibre devient une compétence de zone\nextra dégâts après x à l’impact\n-x % tous element resist à l’impact\nchanges to compétence chargée, max +60% dégâts\n25% chance de regain 4 element status mobile"
+    },
+    {
+      "id": "16760000",
+      "nameFr": "Concentration mentale",
+      "nameEn": "Mental Focus",
+      "slug": "mental-focus",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Mental-type Chance(s) de X % et Frappe de X %.",
+      "descriptionEn": "Increases Mental-type Chance(s) by X% and Smite by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_006.webp",
+      "unlocked": 15,
+      "boardReferences": [
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520039",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520187",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530142",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540039",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "concentration mentale mental focus spiritualiste passif augmente mental-type chance(s) de x % et frappe de x %."
+    },
+    {
+      "id": "16200000",
+      "nameFr": "Défi",
+      "nameEn": "Defiance",
+      "slug": "defiance",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Retire Étourdissement, Renversement, et Projection de the lanceur et grants Ténacité pendant X. Ténacité: X % Étourdissement, Renversement, Projection Resist",
+      "descriptionEn": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialtyFr": "+X % Réduction des dégâts subis pendant Ténacité durée\nX % Dégâts Reflection pendant Ténacité durée\nRestaure X % PV sur casting [Défi]\n+2 s Ténacité durée\n25% chance de reset Temps de recharge sur casting [Défi]",
+      "specialtyEn": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_co_skill_002.webp",
+      "unlocked": 16,
+      "boardReferences": [
+        {
+          "boardId": 51,
+          "boardTitle": "Nezekan",
+          "nodeId": "510108",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520189",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530188",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540164",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "défi defiance spiritualiste actif retire étourdissement, renversement, et projection de the lanceur et grants ténacité pendant x. ténacité: x % étourdissement, renversement, projection resist +x % réduction des dégâts subis pendant ténacité durée\nx % dégâts reflection pendant ténacité durée\nrestaure x % pv sur casting [défi]\n+2 s ténacité durée\n25% chance de reset temps de recharge sur casting [défi] sans cible"
+    },
+    {
+      "id": "16800000",
+      "nameFr": "Contre-courant successif",
+      "nameEn": "Consecutive Countercurrent",
+      "slug": "consecutive-countercurrent",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de deal X supplémentaires dégâts quand en touchant an attack sur une cible subissant Dégâts sur la durée.",
+      "descriptionEn": "Has a X% chance to deal X extra damage when landing an attack on a target taking Damage over Time.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_013.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_013.webp",
+      "unlocked": 17,
+      "boardReferences": [
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520100",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520154",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530153",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540102",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "contre-courant successif consecutive countercurrent spiritualiste passif a x % chance de deal x supplémentaires dégâts quand en touchant an attack sur une cible subissant dégâts sur la durée."
+    },
+    {
+      "id": "16770000",
+      "nameFr": "Communion spirituelle",
+      "nameEn": "Spirit Communion",
+      "slug": "spirit-communion",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de restore the lanceur et Esprit's PV de X quand en touchant an attack.",
+      "descriptionEn": "Has a X% chance to restore the caster and Spirit's HP by X when landing an attack.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_007.webp",
+      "unlocked": 21,
+      "boardReferences": [
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520082",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520176",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530084",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540187",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "communion spirituelle spirit communion spiritualiste passif a x % chance de restore the lanceur et esprit's pv de x quand en touchant an attack."
+    },
+    {
+      "id": "16790000",
+      "nameFr": "Contrat de revitalisation",
+      "nameEn": "Revitalization Contract",
+      "slug": "revitalization-contract",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Résistance aux altérations du lanceur de X et immédiatement restaure X PV quand the lanceur's PV is 10% ou less. Temps de recharge : X",
+      "descriptionEn": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_as_skill_passive_009.webp",
+      "unlocked": 23,
+      "boardReferences": [
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520072",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520126",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530096",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540189",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "contrat de revitalisation revitalization contract spiritualiste passif augmente résistance aux altérations du lanceur de x et immédiatement restaure x pv quand the lanceur's pv is 10% ou less. temps de recharge : x"
+    },
+    {
+      "id": "16780000",
+      "nameFr": "Unification élémentaire",
+      "nameEn": "Element Unification",
+      "slug": "element-unification",
+      "classFr": "Spiritualiste",
+      "classEn": "Elementalist",
+      "classSlug": "spiritmaster",
+      "classSlugFr": "spiritualiste",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Inflige X Dégâts sur la durée toutes les 1 s pendant X quand en touchant a Invoquer compétence attack.",
+      "descriptionEn": "Deals X Damage over Time every 1s for X when landing a Summon skill attack.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_el_skill_passive_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_el_skill_passive_008.webp",
+      "unlocked": 25,
+      "boardReferences": [
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520050",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 52,
+          "boardTitle": "Zikel",
+          "nodeId": "520144",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 53,
+          "boardTitle": "Vaizel",
+          "nodeId": "530130",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 54,
+          "boardTitle": "Triniel",
+          "nodeId": "540037",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "unification élémentaire element unification spiritualiste passif inflige x dégâts sur la durée toutes les 1 s pendant x quand en touchant a invoquer compétence attack."
+    }
+  ],
+  "notes": "Traduction française automatique/rule-based pour Aion2HUB. Conserver nameEn/descriptionEn comme référence interne, mais afficher les champs FR côté UI."
+}

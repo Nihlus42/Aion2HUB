@@ -1,0 +1,70 @@
+{
+  "dataset": "aion2hub-skills-fr-meta",
+  "totalSkills": 175,
+  "classes": [
+    {
+      "file": "talentbuilds_skills_assassin.json",
+      "classEn": "Assassin",
+      "classFr": "Assassin",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_chanter.json",
+      "classEn": "Chanter",
+      "classFr": "Aède",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_cleric.json",
+      "classEn": "Cleric",
+      "classFr": "Clerc",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_gladiator.json",
+      "classEn": "Gladiator",
+      "classFr": "Gladiateur",
+      "records": 21
+    },
+    {
+      "file": "talentbuilds_skills_ranger.json",
+      "classEn": "Ranger",
+      "classFr": "Rôdeur",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_sorcerer.json",
+      "classEn": "Sorcerer",
+      "classFr": "Sorcier",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_spiritmaster.json",
+      "classEn": "Elementalist",
+      "classFr": "Spiritualiste",
+      "records": 22
+    },
+    {
+      "file": "talentbuilds_skills_templar.json",
+      "classEn": "Templar",
+      "classFr": "Templier",
+      "records": 22
+    }
+  ],
+  "types": [
+    "Actif",
+    "Passif"
+  ],
+  "tags": [
+    "Charge",
+    "Mobile",
+    "Régénération PV",
+    "Sans cible"
+  ],
+  "boards": [
+    "Nezekan",
+    "Triniel",
+    "Vaizel",
+    "Zikel"
+  ]
+}

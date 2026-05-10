@@ -1,131 +1,90 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
-import {
-  classes,
-  skills,
-  cleanSkillText,
-  getSkillDisplayName,
-  getSkillDisplayDescription,
-  getSkillDisplayPveUse,
-  getSkillDisplayPvpUse,
-  getSkillDisplayCooldown,
-  getSkillCategoryLabel,
-  getSkillTargetTypeLabel,
-  getSkillDamageTypeLabel,
-  getSkillRangeLabel,
-  normalizeSkillClassSlug,
-  type Skill,
-} from "@/data";
+﻿import { createFileRoute } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
+import { classes, getNormalizedSkills, normalizeClassSlug, type NormalizedSkill } from "@/data";
 import { Eyebrow } from "@/components/Ornament";
 
 export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
       { title: "Base de competences - Aion 2 Hub" },
-      { name: "description", content: "Base de competences Aion 2 basee sur des analyses de gameplay communautaires." },
+      { name: "description", content: "Base de competences Aion 2 en francais." },
     ],
   }),
   component: SkillsPage,
 });
 
 function SkillsPage() {
+  const allSkills = useMemo(() => getNormalizedSkills(), []);
   const [query, setQuery] = useState("");
-  const [classSlug, setClassSlug] = useState("All");
-  const [category, setCategory] = useState<string>("All");
-  const [targetType, setTargetType] = useState<string>("All");
-  const categories = useMemo(() => ["All", ...Array.from(new Set(skills.map((s) => s.category)))], []);
-  const targetTypes = useMemo(() => ["All", ...Array.from(new Set(skills.map((s) => s.targetType)))], []);
+  const [classSlug, setClassSlug] = useState("all");
+  const [typeFr, setTypeFr] = useState("all");
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const classFromQuery = params.get("classSlug");
-    if (classFromQuery && classes.some((c) => c.slug === classFromQuery)) {
-      setClassSlug(classFromQuery);
-    }
-  }, []);
+  const types = useMemo(
+    () => ["all", ...Array.from(new Set(allSkills.map((s) => s.typeFr).filter(Boolean)))],
+    [allSkills],
+  );
 
   const filtered = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-    return skills.filter((skill) => {
-      const normalizedClass = normalizeSkillClassSlug(classSlug);
-      const textMatch =
-        normalizedQuery.length === 0 ||
-        getSkillDisplayName(skill).toLowerCase().includes(normalizedQuery) ||
-        getSkillDisplayDescription(skill).toLowerCase().includes(normalizedQuery);
-
-      return (
-        textMatch &&
-        (classSlug === "All" || skill.classSlug === normalizedClass) &&
-        (category === "All" || skill.category === category) &&
-        (targetType === "All" || skill.targetType === targetType)
-      );
+    const q = query.trim().toLowerCase();
+    return allSkills.filter((skill) => {
+      const classMatch = classSlug === "all" || normalizeClassSlug(skill.classSlug) === normalizeClassSlug(classSlug);
+      const typeMatch = typeFr === "all" || skill.typeFr === typeFr;
+      const text = [skill.nameFr, skill.descriptionFr ?? "", skill.classFr, ...(skill.tagsFr ?? [])].join(" ").toLowerCase();
+      const queryMatch = q.length === 0 || text.includes(q);
+      return classMatch && typeMatch && queryMatch;
     });
-  }, [query, classSlug, category, targetType]);
+  }, [allSkills, classSlug, typeFr, query]);
 
   return (
     <div className="container mx-auto px-4 py-14">
       <header className="mb-10 animate-fade-up">
         <Eyebrow>ARCHIVES DE COMBAT</Eyebrow>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Base de competences</h1>
-        <p className="text-sm text-muted-foreground max-w-2xl">
-          Base preliminaire issue de la communaute, ce n est pas une documentation officielle.
-        </p>
+        <p className="text-sm text-muted-foreground max-w-2xl">Source principale Talentbuilds FR. Fallback Questlog en interne.</p>
       </header>
 
       <section className="rune-border rounded-xl p-5 mb-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Rechercher par nom ou description..."
-          className="bg-background/60 border border-border rounded-md px-4 py-2 text-sm focus:outline-none focus:border-gold/60"
-        />
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher..." className="bg-background/60 border border-border rounded-md px-4 py-2 text-sm" />
         <select value={classSlug} onChange={(e) => setClassSlug(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-          <option value="All">Classe</option>
+          <option value="all">Classe</option>
           {classes.map((c) => (
             <option key={c.slug} value={c.slug}>{c.name}</option>
           ))}
         </select>
-        <select value={category} onChange={(e) => setCategory(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-          {categories.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Categorie" : cleanSkillText(item)}</option>
-          ))}
-        </select>
-        <select value={targetType} onChange={(e) => setTargetType(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-          {targetTypes.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Type de cible" : cleanSkillText(item)}</option>
+        <select value={typeFr} onChange={(e) => setTypeFr(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
+          {types.map((t) => (
+            <option key={t} value={t}>{t === "all" ? "Type" : t}</option>
           ))}
         </select>
       </section>
 
       {filtered.length === 0 ? (
-        <div className="rune-border rounded-xl p-10 text-center text-muted-foreground">
-          Donnees de competences a venir
-        </div>
+        <div className="rune-border rounded-xl p-10 text-center text-muted-foreground">Aucune competence trouvee.</div>
       ) : (
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((skill) => (
-            <article key={skill.id} className="rune-border rounded-xl p-5">
-              <div className="mb-3">
-                <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-                  Analyse gameplay / Sujet a changement
-                </span>
+          {filtered.map((skill: NormalizedSkill) => (
+            <article key={`${skill.source}-${skill.id}`} className="rune-border rounded-xl p-5">
+              <div className="mb-3"><span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">Base communautaire / Sujet a changement</span></div>
+              <div className="flex items-start gap-3">
+                {skill.imageUrl ? (
+                  <img src={skill.imageUrl} alt={skill.nameFr} className="w-12 h-12 rounded border border-border object-cover" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+                ) : (
+                  <div className="w-12 h-12 rounded border border-border bg-accent/20" />
+                )}
+                <div className="min-w-0 flex-1">
+                  <h2 className="font-display text-2xl leading-tight">{skill.nameFr}</h2>
+                  <p className="text-xs text-muted-foreground mt-1">{skill.classFr} - {skill.typeFr}</p>
+                  {typeof skill.unlocked === "number" && <p className="text-xs text-muted-foreground">Deblocage niveau {skill.unlocked}</p>}
+                </div>
               </div>
-              <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
-              <p className="text-[11px] text-amber-300/90 mt-1">Traduction litterale non finale</p>
-              <p className="text-xs text-muted-foreground mt-1">
-                {getSkillCategoryLabel(skill)} - {getSkillTargetTypeLabel(skill)} - {getSkillDamageTypeLabel(skill)}
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                <span className="text-gold">Recharge :</span> {getSkillDisplayCooldown(skill)}
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                <span className="text-gold">Distance :</span> {getSkillRangeLabel(skill)}
-              </p>
-              <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
-              <div className="mt-4 text-xs text-muted-foreground">
-                <p><span className="text-gold">PvE :</span> {cleanSkillText(getSkillDisplayPveUse(skill))}</p>
-                <p className="mt-1"><span className="text-gold">PvP :</span> {cleanSkillText(getSkillDisplayPvpUse(skill))}</p>
-              </div>
+              <p className="text-sm text-muted-foreground mt-3">{skill.descriptionFr || "Description indisponible"}</p>
+              {(skill.tagsFr?.length ?? 0) > 0 && (
+                <div className="flex flex-wrap gap-1 mt-3">
+                  {skill.tagsFr!.map((tag) => (
+                    <span key={`${skill.id}-${tag}`} className="text-[10px] px-2 py-0.5 rounded border border-border bg-accent/20">{tag}</span>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </section>
@@ -133,3 +92,4 @@ function SkillsPage() {
     </div>
   );
 }
+

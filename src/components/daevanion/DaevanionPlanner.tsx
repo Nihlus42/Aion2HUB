@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
-import { daevanionBoards, daevanionClasses, daevanionSkillsByClass, translateClassName } from "@/lib/aion2/daevanion/translate";
+﻿import { useEffect, useMemo, useState } from "react";
+import { daevanionBoards, daevanionClasses, translateClassName } from "@/lib/aion2/daevanion/translate";
+import { getSkillForDaevanionNode, getSkillsByClass, normalizeClassSlug, type NormalizedSkill } from "@/data";
 
 type PlannerBuild = {
   class: string;
@@ -8,17 +9,15 @@ type PlannerBuild = {
 };
 
 const STORAGE_KEY = "aion2hub_daevanion_build";
+const GRID_SIZE = 15;
 
 const gradeClassMap: Record<string, string> = {
   Commun: "border-slate-500/70",
   Rare: "border-blue-400/80",
   Unique: "border-violet-400/80",
-  "Legendaire": "border-amber-400/80",
-  "Légendaire": "border-amber-400/80",
-  "Epique": "border-rose-400/80",
-  "Épique": "border-rose-400/80",
-  "Heroique": "border-red-500/80",
-  "Héroïque": "border-red-500/80",
+  Legendaire: "border-amber-400/80",
+  Epique: "border-rose-400/80",
+  Heroique: "border-red-500/80",
 };
 
 const statShortMap: Record<string, string> = {
@@ -28,10 +27,11 @@ const statShortMap: Record<string, string> = {
   "Max MP": "PM",
   Attack: "Attaque",
   "Attack Bonus": "Attaque",
-  Defense: "Défense",
-  "Defense Bonus": "Défense",
+  Defense: "Defense",
+  "Defense Bonus": "Defense",
   "Critical Hit": "Critique",
-  Accuracy: "Précision",
+  "Critical Hit Resist": "Resist critique",
+  Accuracy: "Precision",
   "Combat Speed": "Vitesse",
   Evasion: "Esquive",
   Block: "Blocage",
@@ -49,29 +49,25 @@ const safeParse = (value: string): PlannerBuild | null => {
   }
 };
 
-const getNodeDisplayTitle = (node: any) => {
-  if (node.type === "Start") return "Départ";
-  if (node.type === "SkillLevel") {
-    return node.effect?.skill_name ? node.effect.skill_name : node.titleFr || "Compétence";
-  }
+const getNodeDisplayTitle = (node: any, skill?: NormalizedSkill | null) => {
+  if (node.type === "Start") return "Depart";
+  if (node.type === "SkillLevel") return skill?.nameFr || "Competence inconnue";
   if (node.type === "Stat") {
     const stat = statShortMap[node.effect?.stat ?? ""] ?? node.effect?.stat ?? "Stat";
     const amount = Number(node.effect?.amount ?? 0);
-    const value = Number.isFinite(amount) ? amount : 0;
-    return `+${value} ${stat}`;
+    return `+${Number.isFinite(amount) ? amount : 0} ${stat}`;
   }
-  return "Case vide";
+  return "";
 };
 
 const getNodeDisplaySubtitle = (node: any) => {
   if (node.type === "Start") return "Node initial";
-  if (node.type === "SkillLevel") return "Compétence";
+  if (node.type === "SkillLevel") return "Competence";
   if (node.type === "Stat") return "Stat";
   return "";
 };
 
 const getNodeDisplayCost = (node: any) => `${node.cost_points ?? 0} pt${(node.cost_points ?? 0) > 1 ? "s" : ""}`;
-const GRID_SIZE = 15;
 
 const getBoardNodeAtPosition = (nodes: any[], row: number, col: number) =>
   nodes.find((node) => node.row === row && node.col === col) ?? null;
@@ -92,7 +88,6 @@ export function DaevanionPlanner() {
   const [selectedNodeIds, setSelectedNodeIds] = useState<number[]>([]);
   const [focusedNodeId, setFocusedNodeId] = useState<number | null>(null);
   const [importText, setImportText] = useState("");
-  const [compactMode] = useState(true);
 
   const classBoards = useMemo(
     () => daevanionBoards.filter((board) => board.class === selectedClass).sort((a, b) => a.order - b.order),
@@ -138,9 +133,6 @@ export function DaevanionPlanner() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
   }, [selectedClass, selectedBoardId, selectedNodeIds]);
 
-  const skillList = useMemo(() => daevanionSkillsByClass[selectedClass] ?? [], [selectedClass]);
-  const skillsByName = useMemo(() => new Map(skillList.map((s) => [s.nameEn, s])), [skillList]);
-
   const selectedNode = useMemo(
     () => selectedBoard?.nodes.find((node) => node.id === focusedNodeId) ?? null,
     [selectedBoard, focusedNodeId],
@@ -148,11 +140,17 @@ export function DaevanionPlanner() {
 
   const selectedNodeSkill = useMemo(() => {
     if (!selectedNode || selectedNode.type !== "SkillLevel") return null;
-    const name = selectedNode.effect?.skill_name;
-    if (!name) return null;
-    return skillsByName.get(name) ?? null;
-  }, [selectedNode, skillsByName]);
+    return getSkillForDaevanionNode(selectedNode);
+  }, [selectedNode]);
+
   const boardCells = useMemo(() => buildBoardGrid(selectedBoard?.nodes ?? []), [selectedBoard]);
+
+  const skillsByClass = useMemo(
+    () => getSkillsByClass(normalizeClassSlug(selectedClass)),
+    [selectedClass],
+  );
+
+  const skillById = useMemo(() => new Map(skillsByClass.map((skill) => [skill.id, skill])), [skillsByClass]);
 
   const summary = useMemo(() => {
     if (!selectedBoard) return { pointsUsed: 0, totalCost: 0, refundGold: 0, crystalType: "Cristal" };
@@ -206,7 +204,7 @@ export function DaevanionPlanner() {
       <header className="mb-6">
         <p className="text-xs tracking-[0.2em] text-gold mb-2">THEORIECRAFT</p>
         <h1 className="font-display text-4xl mb-2">Planificateur Daevanion</h1>
-        <p className="text-sm text-muted-foreground">Version compacte active, informations essentielles dans chaque node.</p>
+        <p className="text-sm text-muted-foreground">Source skills prioritaire: Talentbuilds FR.</p>
       </header>
 
       <section className="rune-border rounded-xl p-4 grid gap-3 md:grid-cols-4 mb-5">
@@ -223,40 +221,24 @@ export function DaevanionPlanner() {
               const node = cell.node;
               const hidden = !node || node.type === "None";
               if (hidden) {
-                return (
-                  <div
-                    key={`empty-${cell.row}-${cell.col}`}
-                    className="h-[82px] w-[82px] rounded-md border border-transparent bg-transparent opacity-20"
-                    style={{ gridColumn: cell.col, gridRow: cell.row }}
-                  />
-                );
+                return <div key={`empty-${cell.row}-${cell.col}`} className="h-[82px] w-[82px] rounded-md border border-transparent bg-transparent opacity-10" style={{ gridColumn: cell.col, gridRow: cell.row }} />;
               }
               const picked = selectedNodeIds.includes(node.id);
               const borderClass = gradeClassMap[node.gradeFr] ?? "border-border/60";
               const typeClass = node.type === "Start" ? "bg-gold/15 shadow-gold-glow" : node.type === "SkillLevel" ? "bg-indigo-500/10" : "bg-background/60";
+              const nodeSkill = node.type === "SkillLevel" ? getSkillForDaevanionNode(node) ?? skillById.get(String(node.effect?.skill_id ?? "")) ?? null : null;
               return (
-                <button
-                  key={`node-${node.id}-${cell.row}-${cell.col}`}
-                  onClick={() => toggleNode(node.id)}
-                  onFocus={() => setFocusedNodeId(node.id)}
-                  className={`h-[82px] w-[82px] rounded-md border text-left transition p-1.5 ${borderClass} ${typeClass} hover:translate-y-[-1px] ${picked ? "ring-1 ring-gold/70" : ""}`}
-                  title={getNodeDisplayTitle(node)}
-                  style={{ gridColumn: cell.col, gridRow: cell.row }}
-                >
+                <button key={`node-${node.id}-${cell.row}-${cell.col}`} onClick={() => toggleNode(node.id)} onFocus={() => setFocusedNodeId(node.id)} className={`h-[82px] w-[82px] rounded-md border text-left transition p-1.5 ${borderClass} ${typeClass} hover:translate-y-[-1px] ${picked ? "ring-1 ring-gold/70" : ""}`} style={{ gridColumn: cell.col, gridRow: cell.row }}>
                   <div className="h-full flex flex-col">
-                    <div className="text-[11px] font-semibold leading-tight line-clamp-2">{getNodeDisplayTitle(node)}</div>
+                    {nodeSkill?.imageUrl ? <img src={nodeSkill.imageUrl} alt={nodeSkill.nameFr} className="w-5 h-5 rounded border border-border object-cover mb-0.5" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} /> : null}
+                    <div className="text-[11px] font-semibold leading-tight line-clamp-2">{getNodeDisplayTitle(node, nodeSkill)}</div>
                     <div className="text-[10px] text-muted-foreground mt-0.5">{getNodeDisplaySubtitle(node)}</div>
-                    <div className="mt-auto">
-                      <span className="inline-flex text-[9px] px-1 py-0.5 rounded border border-border bg-background/70 text-muted-foreground">
-                        {getNodeDisplayCost(node)}
-                      </span>
-                    </div>
+                    <div className="mt-auto"><span className="inline-flex text-[9px] px-1 py-0.5 rounded border border-border bg-background/70 text-muted-foreground">{getNodeDisplayCost(node)}</span></div>
                   </div>
                 </button>
               );
             })}
           </div>
-          {compactMode && <p className="text-[11px] text-muted-foreground mt-3">Mode compact actif: grille reduite, infos clés visibles immédiatement.</p>}
         </section>
 
         <aside className="rune-border rounded-xl p-4 space-y-3 h-fit">
@@ -265,18 +247,19 @@ export function DaevanionPlanner() {
             <p className="text-sm text-muted-foreground">Aucun node selectionne</p>
           ) : (
             <div className="space-y-1.5 text-sm">
-              <p><span className="text-gold">Nom :</span> {getNodeDisplayTitle(selectedNode)}</p>
+              {selectedNodeSkill?.imageUrl ? <img src={selectedNodeSkill.imageUrl} alt={selectedNodeSkill.nameFr} className="w-16 h-16 rounded border border-border object-cover" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} /> : null}
+              <p><span className="text-gold">Nom :</span> {getNodeDisplayTitle(selectedNode, selectedNodeSkill)}</p>
               <p><span className="text-gold">Type :</span> {getNodeDisplaySubtitle(selectedNode)}</p>
               <p><span className="text-gold">Grade :</span> {selectedNode.gradeFr}</p>
               <p><span className="text-gold">Niveau requis :</span> {selectedNode.required_level}</p>
-              <p><span className="text-gold">Coût :</span> {getNodeDisplayCost(selectedNode)}</p>
+              <p><span className="text-gold">Cout :</span> {getNodeDisplayCost(selectedNode)}</p>
               <p><span className="text-gold">Remboursement en Kinah :</span> {selectedNode.refund_gold}</p>
-              <p><span className="text-gold">Effet complet :</span> {selectedNode.effectFr}</p>
+              <p><span className="text-gold">Effet :</span> {selectedNode.type === "SkillLevel" && selectedNodeSkill ? `${selectedNodeSkill.nameFr} +${selectedNode.effect?.levels ?? 1} niveau` : selectedNode.effectFr}</p>
               {selectedNodeSkill && (
                 <>
-                  <p><span className="text-gold">Description compétence :</span> {selectedNodeSkill.descFr}</p>
-                  {selectedNodeSkill.specialtyFr && <p><span className="text-gold">Spécialités :</span> {selectedNodeSkill.specialtyFr}</p>}
-                  {selectedNodeSkill.tagsFr.length > 0 && <p><span className="text-gold">Tags :</span> {selectedNodeSkill.tagsFr.join(", ")}</p>}
+                  <p><span className="text-gold">Description :</span> {selectedNodeSkill.descriptionFr || "Description indisponible"}</p>
+                  {(selectedNodeSkill.specialtyFr?.length ?? 0) > 0 && <p><span className="text-gold">Specialites :</span> {selectedNodeSkill.specialtyFr!.join(" | ")}</p>}
+                  {(selectedNodeSkill.tagsFr?.length ?? 0) > 0 && <p><span className="text-gold">Tags :</span> {selectedNodeSkill.tagsFr!.join(", ")}</p>}
                 </>
               )}
             </div>
@@ -305,3 +288,4 @@ export function DaevanionPlanner() {
     </div>
   );
 }
+

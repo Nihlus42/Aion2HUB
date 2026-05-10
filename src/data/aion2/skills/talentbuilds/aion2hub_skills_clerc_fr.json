@@ -1,0 +1,1481 @@
+{
+  "dataset": "talentbuilds-aion2-skills-cleric-fr",
+  "source": "https://talentbuilds.com/aion2/skills",
+  "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+  "classFr": "Clerc",
+  "classEn": "Cleric",
+  "classSlug": "cleric",
+  "classSlugFr": "clerc",
+  "total": 22,
+  "records": [
+    {
+      "id": "17010000",
+      "nameFr": "Rétribution de la terre",
+      "nameEn": "Earth's Retribution",
+      "slug": "earth-s-retribution",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X de terre dégâts à une cible à moins de 20 m et restaure 110 PM.",
+      "descriptionEn": "Deals X Earth damage to a target within 20m and restores 110 MP.",
+      "specialtyFr": "+20 % de PM restaurés\n+15% [Discharge] compétence enchaînée activation chance\n+50 % de multi-coup à l’impact\n-X [Éclair] Temps de recharge en touchant avec [Discharge]\nTransforme [Discharge] en compétence de zone",
+      "specialtyEn": "+20% MP restored\n+15% [Discharge] Chain Skill activation chance\n+50% Multi-Hit on hit\n-X [Bolt] Cooldown on landing [Discharge]\nChange [Discharge] to AoE Skill",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_001.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710131",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720063",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730118",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740192",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "rétribution de la terre earth's retribution clerc actif inflige x de terre dégâts à une cible à moins de 20 m et restaure 110 pm. +20 % de pm restaurés\n+15% [discharge] compétence enchaînée activation chance\n+50 % de multi-coup à l’impact\n-x [éclair] temps de recharge en touchant avec [discharge]\ntransforme [discharge] en compétence de zone mobile"
+    },
+    {
+      "id": "17040000",
+      "nameFr": "Tonnerre du jugement",
+      "nameEn": "Judgment Thunder",
+      "slug": "judgment-thunder",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X de vent dégâts à jusqu’à X ennemis dans un rayon de 4 m autour de lune cible. X dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. X Stagger Gauge Damage",
+      "specialtyFr": "-20 % de coût en PM\nMax +12% dégâts quand there are moins de cibles impact\n-X % Vitesse de combat en touchant avec [Divine Châtiment] pendant X\nX % de chances d’infliger Immobilisation pendant X en touchant avec [Divine Châtiment]\nActive 1 supplémentaire [Divine Châtiment]",
+      "specialtyEn": "-20% MP Cost\nMax +12% damage when there are less targets hit\n-X% Combat Speed on landing [Divine Punishment] for X\nX% chance to inflict Root for X on landing [Divine Punishment]\nActivates 1 additional [Divine Punishment]",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_004.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_004.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710095",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720103",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730155",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740042",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "tonnerre du jugement judgment thunder clerc actif sélectionne une cible à moins de 20 m et inflige x de vent dégâts à jusqu’à x ennemis dans un rayon de 4 m autour de lune cible. x dégâts de jauge de déséquilibre -20 % de coût en pm\nmax +12% dégâts quand there are moins de cibles impact\n-x % vitesse de combat en touchant avec [divine châtiment] pendant x\nx % de chances d’infliger immobilisation pendant x en touchant avec [divine châtiment]\nactive 1 supplémentaire [divine châtiment] mobile"
+    },
+    {
+      "id": "17080000",
+      "nameFr": "Marque affaiblissante",
+      "nameEn": "Debilitating Mark",
+      "slug": "debilitating-mark",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X de vent dégâts à jusqu’à X ennemis dans un rayon de 4 m autour de lune cible. Réduit ennemis' tolérance au vent de X %, et inflige X Dégâts sur la durée toutes les X pendant X. X dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. Reduces enemies' Wind Tolerance by X%, and deals X Damage over Time every X for X. X Stagger Gauge Damage",
+      "specialtyFr": "Supprime le coût en PM et restaure 150 PM\n-X % Défense\nX % de chances d’infliger Étourdissement pendant X\nChanges [Marque affaiblissante] effects to tolérance à tous les éléments reduction\n-50% Dégâts sur la durée Intervals",
+      "specialtyEn": "Removes MP Cost and restores 150 MP\n-X% Defense\nX% chance to inflict Stun for X\nChanges [Debilitating Mark] effects to All Element Tolerance reduction\n-50% Damage over Time Intervals",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_008.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710068",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720069",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730064",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740184",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "marque affaiblissante debilitating mark clerc actif sélectionne une cible à moins de 20 m et inflige x de vent dégâts à jusqu’à x ennemis dans un rayon de 4 m autour de lune cible. réduit ennemis' tolérance au vent de x %, et inflige x dégâts sur la durée toutes les x pendant x. x dégâts de jauge de déséquilibre supprime le coût en pm et restaure 150 pm\n-x % défense\nx % de chances d’infliger étourdissement pendant x\nchanges [marque affaiblissante] effects to tolérance à tous les éléments reduction\n-50% dégâts sur la durée intervals"
+    },
+    {
+      "id": "17710000",
+      "nameFr": "Bénédiction chaleureuse",
+      "nameEn": "Warm Benediction",
+      "slug": "warm-benediction",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente PV max du lanceur de X et PM max de X.",
+      "descriptionEn": "Increases the caster's Max HP by X% and Max MP by X.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_001.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710063",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710189",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730035",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740161",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "bénédiction chaleureuse warm benediction clerc passif augmente pv max du lanceur de x et pm max de x."
+    },
+    {
+      "id": "17150000",
+      "nameFr": "Aura divine",
+      "nameEn": "Divine Aura",
+      "slug": "divine-aura",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Invoque Aura divine near the lanceur. The Aura is stationary et inflige X dégâts de terre toutes les 1 s à une cible à moins de 20 m designated de the lanceur. The Aura maintains pendant 10 s, et consomme the lanceur's PV lors de en touchant an attack.",
+      "descriptionEn": "Summons Divine Aura near the caster. The Aura is stationary and deals X Earth damage every 1s to a target within 20m designated by the caster. The Aura maintains for 10s, and consumes the caster's HP upon landing an attack.",
+      "specialtyFr": "Sélectionne une cible à moins de 4 m de Aura divine et réduire Vitesse de déplacement de jusqu’à X nearby ennemis de X % pendant X.\nDevient une compétence de zone\n+100% [Aura divine] Shooting Speed\n+3 s [Aura divine] durée\n-5 s Temps de recharge",
+      "specialtyEn": "Select a target within 4m of Divine Aura and reduce Move Speed of up to X nearby enemies by X% for X.\nChanges to AoE Skill\n+100% [Divine Aura] Shooting Speed\n+3s [Divine Aura] duration\n-5s Cooldown",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_015.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_015.webp",
+      "unlocked": 3,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710158",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720095",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730159",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740034",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "aura divine divine aura clerc actif invoque aura divine near the lanceur. the aura is stationary et inflige x dégâts de terre toutes les 1 s à une cible à moins de 20 m designated de the lanceur. the aura maintains pendant 10 s, et consomme the lanceur's pv lors de en touchant an attack. sélectionne une cible à moins de 4 m de aura divine et réduire vitesse de déplacement de jusqu’à x nearby ennemis de x % pendant x.\ndevient une compétence de zone\n+100% [aura divine] shooting speed\n+3 s [aura divine] durée\n-5 s temps de recharge"
+    },
+    {
+      "id": "17070000",
+      "nameFr": "Chaîne du tourment",
+      "nameEn": "Chain of Torment",
+      "slug": "chain-of-torment",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X de terre dégâts à jusqu’à X ennemis dans un rayon de 4 m autour de lune cible. Réduit ennemis' tolérance à la terre de X % et inflige X Dégâts sur la durée toutes les X pendant X. X dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Earth damage to up to X enemies within 4m of the target. Reduces enemies' Earth Tolerance by X% and deals X Damage over Time every X for X. X Stagger Gauge Damage",
+      "specialtyFr": "Inflige Ralentissement\n+3 s [Chaîne du tourment] effect durée\nX % de chances d’infliger Stumble pendant X\nChanges [Chaîne du tourment] effects to tolérance à tous les éléments reduction\n-50% Dégâts sur la durée Intervals",
+      "specialtyEn": "Inflicts Slowed\n+3s [Chain of Torment] effect duration\nX% chance to inflict Stumble for X\nChanges [Chain of Torment] effects to All Element Tolerance reduction\n-50% Damage over Time Intervals",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_007.webp",
+      "unlocked": 4,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710050",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720185",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730101",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740130",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "chaîne du tourment chain of torment clerc actif sélectionne une cible à moins de 20 m et inflige x de terre dégâts à jusqu’à x ennemis dans un rayon de 4 m autour de lune cible. réduit ennemis' tolérance à la terre de x % et inflige x dégâts sur la durée toutes les x pendant x. x dégâts de jauge de déséquilibre inflige ralentissement\n+3 s [chaîne du tourment] effect durée\nx % de chances d’infliger stumble pendant x\nchanges [chaîne du tourment] effects to tolérance à tous les éléments reduction\n-50% dégâts sur la durée intervals mobile"
+    },
+    {
+      "id": "17370000",
+      "nameFr": "Salve de foudre",
+      "nameEn": "Lightning Strike Scattershot",
+      "slug": "lightning-strike-scattershot",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible en déséquilibre à moins de 20 m.",
+      "descriptionEn": "Deals X damage to a Stagger target within 20m.",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRestaure 120 PM\nDevient utilisable en déplacement\nMulti-coup garanti à l’impact\n-X au temps de recharge de toutes les compétences en touchant avec [Scattershot]",
+      "specialtyEn": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-X All Skill Cooldown on landing [Scattershot]",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_037.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_037.webp",
+      "unlocked": 5,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710118",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720037",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730038",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740062",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "salve de foudre lightning strike scattershot clerc actif inflige x dégâts à une cible en déséquilibre à moins de 20 m. absorbe x % des dégâts sous forme de pv\nrestaure 120 pm\ndevient utilisable en déplacement\nmulti-coup garanti à l’impact\n-x au temps de recharge de toutes les compétences en touchant avec [scattershot]"
+    },
+    {
+      "id": "17720000",
+      "nameFr": "Bénédiction des Seigneurs Empyréens",
+      "nameEn": "Empyrean Lords' Benediction",
+      "slug": "empyrean-lords-benediction",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Blocage du lanceur de X et restaure X PV lors d’un blocage réussi. Temps de recharge : X",
+      "descriptionEn": "Increases the caster's Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_002.webp",
+      "unlocked": 6,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710037",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710163",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730191",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740065",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "bénédiction des seigneurs empyréens empyrean lords' benediction clerc passif augmente blocage du lanceur de x et restaure x pv lors d’un blocage réussi. temps de recharge : x"
+    },
+    {
+      "id": "17090000",
+      "nameFr": "Lumière de régénération",
+      "nameEn": "Light of Regeneration",
+      "slug": "light-of-regeneration",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Restaure X PV de la lanceur et membres du groupe à moins de 25 m toutes les X pendant X.",
+      "descriptionEn": "Restores X HP of the caster and party members within 25m every X for X.",
+      "specialtyFr": "+X Défense\n+X Attaque\n+X Blocage, X Esquive\n+X Coup critique\n+X % Réduction des dégâts subis",
+      "specialtyEn": "+X Defense\n+X Attack\n+X Block, X Evasion\n+X Critical Hit\n+X% Damage Tolerance",
+      "tagsFr": [
+        "Sans cible",
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_009.webp",
+      "unlocked": 7,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710176",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720163",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730108",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740156",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "lumière de régénération light of regeneration clerc actif restaure x pv de la lanceur et membres du groupe à moins de 25 m toutes les x pendant x. +x défense\n+x attaque\n+x blocage, x esquive\n+x coup critique\n+x % réduction des dégâts subis sans cible mobile"
+    },
+    {
+      "id": "17350000",
+      "nameFr": "Condamnation",
+      "nameEn": "Condemnation",
+      "slug": "condemnation",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne a Chaîne du tourment cible à moins de 20 m et deal X dégâts de terre à jusqu’à X ennemis à moins de 4 m de lune cible. X dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a Chain of Torment target within 20m and deal X Earth damage to up to X enemies within 4m of the target. X Stagger Gauge Damage",
+      "specialtyFr": "Restaure 100 PM à l’impact\n+50 % de multi-coup à l’impact\nDevient utilisable en déplacement\n50% chance de reset [Condamnation] Temps de recharge en touchant avec [Condamnation]\nX % de chances d’infliger Immobilisation pendant X",
+      "specialtyEn": "Restores 100 MP on hit\n+50% Multi-Hit on hit\nChanges to mobile skill\n50% chance to reset [Condemnation] Cooldown on landing [Condemnation]\nX% chance to inflict Root for X",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_035.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_035.webp",
+      "unlocked": 8,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710071",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720123",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730071",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740096",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "condamnation condemnation clerc actif sélectionne a chaîne du tourment cible à moins de 20 m et deal x dégâts de terre à jusqu’à x ennemis à moins de 4 m de lune cible. x dégâts de jauge de déséquilibre restaure 100 pm à l’impact\n+50 % de multi-coup à l’impact\ndevient utilisable en déplacement\n50% chance de reset [condamnation] temps de recharge en touchant avec [condamnation]\nx % de chances d’infliger immobilisation pendant x"
+    },
+    {
+      "id": "17730000",
+      "nameFr": "Grâce du Seigneur Empyréen",
+      "nameEn": "Empyrean Lord's Grace",
+      "slug": "empyrean-lord-s-grace",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de deal X supplémentaires dégâts en touchant avec an attack sur une cible subissant Dégâts sur la durée. Temps de recharge : X",
+      "descriptionEn": "Has a X% chance to deal X extra damage on landing an attack on a target taking Damage over Time. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_012.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_012.webp",
+      "unlocked": 9,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710041",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710185",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730040",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740152",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "grâce du seigneur empyréen empyrean lord's grace clerc passif a x % chance de deal x supplémentaires dégâts en touchant avec an attack sur une cible subissant dégâts sur la durée. temps de recharge : x"
+    },
+    {
+      "id": "17100000",
+      "nameFr": "Lumière de soin",
+      "nameEn": "Healing Light",
+      "slug": "healing-light",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Restaure X PV to the lanceur et the party member à moins de 25 m avec the lowest PV. Can be used pendant Lumière de régénération is in effect.",
+      "descriptionEn": "Restores X HP to the caster and the party member within 25m with the lowest HP. Can be used while Light of Regeneration is in effect.",
+      "specialtyFr": "Supprime le coût en PM\n+25% Regen if the healing cible's max PV is under 50%\nX % chance de remove 1 malus\n+20 % de vitesse de compétence\n-2 s Temps de recharge",
+      "specialtyEn": "Removes MP Cost\n+25% Regen if the healing target's max HP is under 50%\nX% chance to remove 1 debuff\n+20% Skill Speed\n-2s Cooldown",
+      "tagsFr": [
+        "Sans cible",
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_cl_skill_010.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_010.webp",
+      "unlocked": 10,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710155",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720157",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730162",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740070",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "lumière de soin healing light clerc actif restaure x pv to the lanceur et the party member à moins de 25 m avec the lowest pv. can be used pendant lumière de régénération is in effect. supprime le coût en pm\n+25% regen if the healing cible's max pv is under 50%\nx % chance de remove 1 malus\n+20 % de vitesse de compétence\n-2 s temps de recharge sans cible mobile"
+    },
+    {
+      "id": "17740000",
+      "nameFr": "Amélioration des soins",
+      "nameEn": "Healing Enhancement",
+      "slug": "healing-enhancement",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Bonus de soins du lanceur de X.",
+      "descriptionEn": "Increases the caster's Heal Boost by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_003.webp",
+      "unlocked": 11,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710073",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710126",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730186",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740074",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "amélioration des soins healing enhancement clerc passif augmente bonus de soins du lanceur de x."
+    },
+    {
+      "id": "17120000",
+      "nameFr": "Récupération radieuse",
+      "nameEn": "Radiant Recovery",
+      "slug": "radiant-recovery",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Restaure PV de la lanceur et membres du groupe à moins de 25 m de X. Restaure X quand fully charged. Max 1 Charge Level",
+      "descriptionEn": "Restores HP of the caster and party members within 25m by X. Restores X when fully charged. Max 1 Charge Level",
+      "specialtyFr": "Retire jusqu’à X debuffs sur max charge\n+20 % de vitesse de compétence\nDevient utilisable en déplacement\n+X % Soins reçus pendant X at max charge\nRestaure supplémentaires X % de PV max quand fully charged",
+      "specialtyEn": "Removes up to X debuffs on max charge\n+20% Skill Speed\nChanges to mobile skill\n+X% Incoming Heal for X at max charge\nRestores extra X% of Max HP when fully charged",
+      "tagsFr": [
+        "Sans cible",
+        "Charge"
+      ],
+      "tagsEn": [
+        "Nontarget",
+        "Charge"
+      ],
+      "image": "icon_cl_skill_012.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_012.webp",
+      "unlocked": 12,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710039",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720131",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730067",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740107",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "récupération radieuse radiant recovery clerc actif restaure pv de la lanceur et membres du groupe à moins de 25 m de x. restaure x quand fully charged. max 1 charge level retire jusqu’à x debuffs sur max charge\n+20 % de vitesse de compétence\ndevient utilisable en déplacement\n+x % soins reçus pendant x at max charge\nrestaure supplémentaires x % de pv max quand fully charged sans cible charge"
+    },
+    {
+      "id": "17750000",
+      "nameFr": "Voile immortel",
+      "nameEn": "Immortal Veil",
+      "slug": "immortal-veil",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Défense du lanceur de X et Résistance aux coups critiques de X.",
+      "descriptionEn": "Increases the caster's Defense by X% and Critical Hit Resist by X.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_011.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_011.webp",
+      "unlocked": 13,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710100",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710153",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730073",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740124",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "voile immortel immortal veil clerc passif augmente défense du lanceur de x et résistance aux coups critiques de x."
+    },
+    {
+      "id": "17060000",
+      "nameFr": "Éclair",
+      "nameEn": "Bolt",
+      "slug": "bolt",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X de vent dégâts à jusqu’à X ennemis dans un rayon de 4 m autour de lune cible. Max 3 Charge Level X dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Wind damage to up to X enemies within 4m of the target. Max 3 Charge Level X Stagger Gauge Damage",
+      "specialtyFr": "X % de chances d’infliger Étourdissement pendant X sur max Charge\nDevient utilisable en déplacement\n+30 % de vitesse de compétence\nMax +20% dégâts quand plus de cibles impact\nRéinitialise le temps de recharge de [Éclair] sur defeating an ennemi avec [Éclair]",
+      "specialtyEn": "X% chance to inflict Stun for X on max Charge\nChanges to mobile skill\n+30% Skill Speed\nMax +20% damage when more targets hit\nReset [Bolt] Cooldown on defeating an enemy with [Bolt]",
+      "tagsFr": [
+        "Charge"
+      ],
+      "tagsEn": [
+        "Charge"
+      ],
+      "image": "icon_cl_skill_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_006.webp",
+      "unlocked": 14,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710187",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720041",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730125",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740119",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "éclair bolt clerc actif sélectionne une cible à moins de 20 m et inflige x de vent dégâts à jusqu’à x ennemis dans un rayon de 4 m autour de lune cible. max 3 charge level x dégâts de jauge de déséquilibre x % de chances d’infliger étourdissement pendant x sur max charge\ndevient utilisable en déplacement\n+30 % de vitesse de compétence\nmax +20% dégâts quand plus de cibles impact\nréinitialise le temps de recharge de [éclair] sur defeating an ennemi avec [éclair] charge"
+    },
+    {
+      "id": "17760000",
+      "nameFr": "Blocage des soins",
+      "nameEn": "Heal Block",
+      "slug": "heal-block",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de réduire the cible's Soins reçus de X % pendant X en touchant avec an attack.",
+      "descriptionEn": "Has a X% chance to reduce the target's Incoming Heal by X% for X on landing an attack.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_005.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_005.webp",
+      "unlocked": 15,
+      "boardReferences": [
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720039",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720187",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730142",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740039",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "blocage des soins heal block clerc passif a x % chance de réduire the cible's soins reçus de x % pendant x en touchant avec an attack."
+    },
+    {
+      "id": "17240000",
+      "nameFr": "Défi",
+      "nameEn": "Defiance",
+      "slug": "defiance",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Retire Étourdissement, Renversement, et Projection de the lanceur et grants Ténacité pendant X. Ténacité: X % Étourdissement, Renversement, Projection Resist",
+      "descriptionEn": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialtyFr": "+X % Réduction des dégâts subis pendant Ténacité durée\nX % Dégâts Reflection pendant Ténacité durée\nRestaure X % PV sur casting [Défi]\n+2 s Ténacité durée\n25% chance de reset Temps de recharge sur casting [Défi]",
+      "specialtyEn": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_co_skill_002.webp",
+      "unlocked": 16,
+      "boardReferences": [
+        {
+          "boardId": 71,
+          "boardTitle": "Nezekan",
+          "nodeId": "710108",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720189",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730188",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740164",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "défi defiance clerc actif retire étourdissement, renversement, et projection de the lanceur et grants ténacité pendant x. ténacité: x % étourdissement, renversement, projection resist +x % réduction des dégâts subis pendant ténacité durée\nx % dégâts reflection pendant ténacité durée\nrestaure x % pv sur casting [défi]\n+2 s ténacité durée\n25% chance de reset temps de recharge sur casting [défi] sans cible"
+    },
+    {
+      "id": "17770000",
+      "nameFr": "Prière de concentration",
+      "nameEn": "Prayer of Concentration",
+      "slug": "prayer-of-concentration",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Forms a bouclier protecteur which blocks X dégâts et augmente the lanceur's Bonus de soins de X % pendant X quand PV is 50% ou less. Temps de recharge : X",
+      "descriptionEn": "Forms a Protective Shield which blocks X damage and increases the caster's Heal Boost by X% for X when HP is 50% or less. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_006.webp",
+      "unlocked": 17,
+      "boardReferences": [
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720100",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720154",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730153",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740102",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "prière de concentration prayer of concentration clerc passif forms a bouclier protecteur which blocks x dégâts et augmente the lanceur's bonus de soins de x % pendant x quand pv is 50% ou less. temps de recharge : x"
+    },
+    {
+      "id": "17780000",
+      "nameFr": "Grâce de la terre",
+      "nameEn": "Earth's Grace",
+      "slug": "earth-s-grace",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Attaque de la lanceur et membres du groupe à moins de 40 m de X % pendant X en touchant avec an attack pendant PV is 75% ou more. Temps de recharge : X",
+      "descriptionEn": "Increases Attack of the caster and party members within 40m by X% for X on landing an attack while HP is 75% or more. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_008.webp",
+      "unlocked": 21,
+      "boardReferences": [
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720082",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720176",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730084",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740187",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "grâce de la terre earth's grace clerc passif augmente attaque de la lanceur et membres du groupe à moins de 40 m de x % pendant x en touchant avec an attack pendant pv is 75% ou more. temps de recharge : x"
+    },
+    {
+      "id": "17790000",
+      "nameFr": "Volonté de survie",
+      "nameEn": "Survival Willpower",
+      "slug": "survival-willpower",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Résistance aux altérations du lanceur de X et quand the lanceur est affecté par an Impact-type Status, augmente Impact-type Resist et Réduction des dégâts subis de X % forX. Temps de recharge : X",
+      "descriptionEn": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_009.webp",
+      "unlocked": 23,
+      "boardReferences": [
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720072",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720126",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730096",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740189",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "volonté de survie survival willpower clerc passif augmente résistance aux altérations du lanceur de x et quand the lanceur est affecté par an impact-type status, augmente impact-type resist et réduction des dégâts subis de x % forx. temps de recharge : x"
+    },
+    {
+      "id": "17800000",
+      "nameFr": "Bénédiction radieuse",
+      "nameEn": "Radiant Benediction",
+      "slug": "radiant-benediction",
+      "classFr": "Clerc",
+      "classEn": "Cleric",
+      "classSlug": "cleric",
+      "classSlugFr": "clerc",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "A X % chance de restore X PV to the lanceur et membres du groupe à moins de 40 m en touchant avec an attack. Temps de recharge : X",
+      "descriptionEn": "Has a X% chance to restore X HP to the caster and party members within 40m on landing an attack. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_cl_skill_passive_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_cl_skill_passive_007.webp",
+      "unlocked": 25,
+      "boardReferences": [
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720050",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 72,
+          "boardTitle": "Zikel",
+          "nodeId": "720144",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 73,
+          "boardTitle": "Vaizel",
+          "nodeId": "730130",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 74,
+          "boardTitle": "Triniel",
+          "nodeId": "740037",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "bénédiction radieuse radiant benediction clerc passif a x % chance de restore x pv to the lanceur et membres du groupe à moins de 40 m en touchant avec an attack. temps de recharge : x"
+    }
+  ],
+  "notes": "Traduction française automatique/rule-based pour Aion2HUB. Conserver nameEn/descriptionEn comme référence interne, mais afficher les champs FR côté UI."
+}

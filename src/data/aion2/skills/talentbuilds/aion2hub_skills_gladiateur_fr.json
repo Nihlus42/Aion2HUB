@@ -1,0 +1,1404 @@
+{
+  "dataset": "talentbuilds-aion2-skills-gladiator-fr",
+  "source": "https://talentbuilds.com/aion2/skills",
+  "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+  "classFr": "Gladiateur",
+  "classEn": "Gladiator",
+  "classSlug": "gladiator",
+  "classSlugFr": "gladiateur",
+  "total": 21,
+  "records": [
+    {
+      "id": "11710000",
+      "nameFr": "Posture de survie",
+      "nameEn": "Survival Stance",
+      "slug": "survival-stance",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Augmente PV max de X et Régénération naturelle des PV de X.",
+      "descriptionEn": "Increases Max HP by X% and Natural HP Regen by X.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_001.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110063",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110189",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130035",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140161",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "posture de survie survival stance gladiateur actif augmente pv max de x et régénération naturelle des pv de x."
+    },
+    {
+      "id": "11190000",
+      "nameFr": "Fracas bondissant",
+      "nameEn": "Leaping Slam",
+      "slug": "leaping-slam",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Bondit vers une cible à moins de 20 m et inflige X dégâts. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Leaps to a target within 20m and deals X damage. 10 Stagger Gauge Damage",
+      "specialtyFr": "Prepare pendant Battle effect sur the lanceur pendant X\n50% chance de activer [Entaille des chevilles] en touchant avec [Fracas bondissant]\n[Fracas bondissant] réinitialisation du temps de recharge sur defeating the ennemi\n+20% Réduction des dégâts subis increase pendant X\nChanges to zone compétence et pulls in ennemis",
+      "specialtyEn": "Prepare for Battle effect on the caster for X\n50% chance to activate [Ankle Slice] on landing [Leaping Slam]\n[Leaping Slam] Cooldown Reset on defeating the enemy\n+20% Damage Tolerance increase for X\nChanges to AoE skill and pulls in enemies",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_019.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_019.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110068",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120069",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130064",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140184",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "fracas bondissant leaping slam gladiateur actif bondit vers une cible à moins de 20 m et inflige x dégâts. 10 dégâts de jauge de déséquilibre prepare pendant battle effect sur the lanceur pendant x\n50% chance de activer [entaille des chevilles] en touchant avec [fracas bondissant]\n[fracas bondissant] réinitialisation du temps de recharge sur defeating the ennemi\n+20% réduction des dégâts subis increase pendant x\nchanges to zone compétence et pulls in ennemis"
+    },
+    {
+      "id": "11010000",
+      "nameFr": "Coup déchirant",
+      "nameEn": "Rending Blow",
+      "slug": "rending-blow",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à jusqu’à 4 ennemis dans un rayon de 4 m et augmente hostilité. 2 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X damage to up to 4 enemies within 4m and increases Enmity. 2 Stagger Gauge Damage",
+      "specialtyFr": "-20 % de PM consommés\n+200 Blocage pendant en utilisant la compétence\nDevient utilisable en déplacement\nMax +12% dégâts quand there are moins de cibles impact\nRestaure 50 PM en touchant avec un coup critique",
+      "specialtyEn": "-20% MP consumed\n+200 Block while using skill\nChanges to mobile skill\nMax +12% damage when there are less targets hit\nRestores 50 MP on landing a Critical Hit",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_gl_skill_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_001.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110095",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120103",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130155",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140042",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "coup déchirant rending blow gladiateur actif inflige x dégâts à jusqu’à 4 ennemis dans un rayon de 4 m et augmente hostilité. 2 dégâts de jauge de déséquilibre -20 % de pm consommés\n+200 blocage pendant en utilisant la compétence\ndevient utilisable en déplacement\nmax +12% dégâts quand there are moins de cibles impact\nrestaure 50 pm en touchant avec un coup critique sans cible"
+    },
+    {
+      "id": "11020000",
+      "nameFr": "Frappe acérée",
+      "nameEn": "Keen Strike",
+      "slug": "keen-strike",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à jusqu’à 4 ennemis dans un rayon de 4 m et augmente hostilité. Restaure 100 PM.",
+      "descriptionEn": "Deals X damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+      "specialtyFr": "+20 % de PM restaurés\nAbsorbe X % des dégâts sous forme de PV\n+50 % de multi-coup à l’impact\n-X [Coup ruineux] Temps de recharge à l’impact\nAjoute la compétence enchaînée [Reckless Strike]",
+      "specialtyEn": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\n-X [Ruinous Blow] Cooldown on hit\nAdds [Reckless Strike] Chain Skill",
+      "tagsFr": [
+        "Sans cible",
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_gl_skill_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_003.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110131",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120063",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130118",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140192",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "frappe acérée keen strike gladiateur actif inflige x dégâts à jusqu’à 4 ennemis dans un rayon de 4 m et augmente hostilité. restaure 100 pm. +20 % de pm restaurés\nabsorbe x % des dégâts sous forme de pv\n+50 % de multi-coup à l’impact\n-x [coup ruineux] temps de recharge à l’impact\najoute la compétence enchaînée [reckless strike] sans cible mobile"
+    },
+    {
+      "id": "11290000",
+      "nameFr": "Lame provocatrice",
+      "nameEn": "Mocking Blade",
+      "slug": "mocking-blade",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible à moins de 4 m et inflige Renversement pendant X. Changes motion to cibles immunisées à l’incapacitation. 15 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X damage to a target within 4m and inflicts Knockdown for X. Changes motion to Incapacitated Immunity targets. 15 Stagger Gauge Damage",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nDevient des dégâts de zone sur down strike\nAdds 2 supplémentaire strikes\n+1 s Renversement durée\nIgnore Blocage et Esquive et touche en multi-coup",
+      "specialtyEn": "Absorbs X% of damage as HP\nChanges to AoE damage on down strike\nAdds 2 additional strikes\n+1s Knockdown duration\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_028.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_028.webp",
+      "unlocked": 3,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110158",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120095",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130159",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140034",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "lame provocatrice mocking blade gladiateur actif inflige x dégâts à une cible à moins de 4 m et inflige renversement pendant x. changes motion to cibles immunisées à l’incapacitation. 15 dégâts de jauge de déséquilibre absorbe x % des dégâts sous forme de pv\ndevient des dégâts de zone sur down strike\nadds 2 supplémentaire strikes\n+1 s renversement durée\nignore blocage et esquive et touche en multi-coup"
+    },
+    {
+      "id": "11170000",
+      "nameFr": "Fracas vertical",
+      "nameEn": "Overhead Slam",
+      "slug": "overhead-slam",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible affectée par Renversement à moins de 4 m.",
+      "descriptionEn": "Deals X damage to a Knockdown target within 4m.",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nDevient une compétence de zone\n7% chance de activer sur attacking an cible immunisée à l’incapacitation\nGuaranteed Crit à l’impact\nRemove Temps de recharge",
+      "specialtyEn": "Absorbs X% of damage as HP\nChanges to AoE Skill\n7% chance to activate on attacking an Incapacitated Immune target\nGuaranteed Crit on hit\nRemove Cooldown",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_017.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_017.webp",
+      "unlocked": 4,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110050",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120185",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130101",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140130",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "fracas vertical overhead slam gladiateur actif inflige x dégâts à une cible affectée par renversement à moins de 4 m. absorbe x % des dégâts sous forme de pv\ndevient une compétence de zone\n7% chance de activer sur attacking an cible immunisée à l’incapacitation\nguaranteed crit à l’impact\nremove temps de recharge"
+    },
+    {
+      "id": "11280000",
+      "nameFr": "Déchaînement d’aura d’épée",
+      "nameEn": "Sword Aura Rampage",
+      "slug": "sword-aura-rampage",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible en déséquilibre à moins de 4 m.",
+      "descriptionEn": "Deals X damage to a Stagger target within 4m.",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRestaure 120 PM\nDevient utilisable en déplacement\nMulti-coup garanti à l’impact\n-3 s Tous Skills Temps de recharge en touchant avec [Déchaînement d’aura d’épée]",
+      "specialtyEn": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-3s All Skills Cooldown on landing [Sword Aura Rampage]",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_026.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_026.webp",
+      "unlocked": 5,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110118",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120037",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130038",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140062",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "déchaînement d’aura d’épée sword aura rampage gladiateur actif inflige x dégâts à une cible en déséquilibre à moins de 4 m. absorbe x % des dégâts sous forme de pv\nrestaure 120 pm\ndevient utilisable en déplacement\nmulti-coup garanti à l’impact\n-3 s tous skills temps de recharge en touchant avec [déchaînement d’aura d’épée]"
+    },
+    {
+      "id": "11720000",
+      "nameFr": "Armure protectrice",
+      "nameEn": "Protection Armor",
+      "slug": "protection-armor",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Blocage de X et restaure X PV lors d’un blocage réussi. Temps de recharge : X",
+      "descriptionEn": "Increases Block by X and restores X HP on a successful Block. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_002.webp",
+      "unlocked": 6,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110037",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110163",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130191",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140065",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "armure protectrice protection armor gladiateur passif augmente blocage de x et restaure x pv lors d’un blocage réussi. temps de recharge : x"
+    },
+    {
+      "id": "11200000",
+      "nameFr": "Entaille des chevilles",
+      "nameEn": "Ankle Slice",
+      "slug": "ankle-slice",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "On a réussi Blocage, sélectionne une cible à moins de 4 m et deal X dégâts à jusqu’à 4 ennemis à moins de 4 m avec une X % de chances d’infliger Immobilisation pendant X. 100 % de chances d’appliquer Immobilisation aux cibles PNJ. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "On a successful Block, select a target within 4m and deal X damage to up to 4 enemies within 4m with a X% chance to inflict Root for X. 100% chance to land Root on NPC targets. 10 Stagger Gauge Damage",
+      "specialtyFr": "30 % de chances d’infliger Renversement pendant 3 s en touchant avec [Entaille des chevilles]\nAjoute la compétence enchaînée [Ankle Smash]\n+16 m [Entaille des chevilles] range\nIgnore Blocage et Esquive et touche en multi-coup\n25% chance de reset [Entaille des chevilles] Temps de recharge lors d’un blocage réussi",
+      "specialtyEn": "30% chance to inflict Knockdown for 3s on landing [Ankle Slice]\nAdds [Ankle Smash] Chain Skill\n+16m [Ankle Slice] range\nIgnores Block and Evasion and lands as Multi-Hit\n25% chance to reset [Ankle Slice] Cooldown on a successful Block",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_020.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_020.webp",
+      "unlocked": 7,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110176",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120163",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130108",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140156",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "entaille des chevilles ankle slice gladiateur actif on a réussi blocage, sélectionne une cible à moins de 4 m et deal x dégâts à jusqu’à 4 ennemis à moins de 4 m avec une x % de chances d’infliger immobilisation pendant x. 100 % de chances d’appliquer immobilisation aux cibles pnj. 10 dégâts de jauge de déséquilibre 30 % de chances d’infliger renversement pendant 3 s en touchant avec [entaille des chevilles]\najoute la compétence enchaînée [ankle smash]\n+16 m [entaille des chevilles] range\nignore blocage et esquive et touche en multi-coup\n25% chance de reset [entaille des chevilles] temps de recharge lors d’un blocage réussi"
+    },
+    {
+      "id": "11050000",
+      "nameFr": "Onde écrasante",
+      "nameEn": "Crushing Wave",
+      "slug": "crushing-wave",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à jusqu’à 4 ennemis dans un rayon de 5 m autour de soi. 5 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X damage to up to 4 enemies within 5m of self. 5 Stagger Gauge Damage",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRestaure 50 PM en touchant avec un coup critique\n+20% dégâts quand there are plus de cibles impact\nReset Temps de recharge en touchant avec un coup critique\nPull",
+      "specialtyEn": "Absorbs X% of damage as HP\nRestores 50 MP on landing a Critical Hit\n+20% damage when there are more targets hit\nReset Cooldown on landing a Critical Hit\nPull",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_gl_skill_005.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_005.webp",
+      "unlocked": 8,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110071",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120123",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130071",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140096",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "onde écrasante crushing wave gladiateur actif inflige x dégâts à jusqu’à 4 ennemis dans un rayon de 5 m autour de soi. 5 dégâts de jauge de déséquilibre absorbe x % des dégâts sous forme de pv\nrestaure 50 pm en touchant avec un coup critique\n+20% dégâts quand there are plus de cibles impact\nreset temps de recharge en touchant avec un coup critique\npull sans cible"
+    },
+    {
+      "id": "11730000",
+      "nameFr": "Absorption sanguine",
+      "nameEn": "Blood Absorption",
+      "slug": "blood-absorption",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Grants a vol de vie effect sur the lanceur pendant X.",
+      "descriptionEn": "Grants a Lifesteal effect on the caster for X.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [
+        "Régénération PV"
+      ],
+      "tagsEn": [
+        "HP Regen"
+      ],
+      "image": "icon_gl_skill_passive_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_003.webp",
+      "unlocked": 9,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110041",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110185",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130040",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140152",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "absorption sanguine blood absorption gladiateur actif grants a vol de vie effect sur the lanceur pendant x. régénération pv"
+    },
+    {
+      "id": "11360000",
+      "nameFr": "Frappe de charge",
+      "nameEn": "Rush Strike",
+      "slug": "rush-strike",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "After en utilisant [Dodge], se déplace à une cible à moins de 10 m et inflige X dégâts avec une X % de chances d’infliger Renversement pendant X. 100 % de chances d’appliquer Renversement aux cibles PNJ. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "After using [Dodge], moves to a target within 10m and deals X damage with a X% chance to inflict Knockdown for X. 100% chance to land Knockdown on NPC targets. 10 Stagger Gauge Damage",
+      "specialtyFr": "Restaure 300 Endurance à l’impact\n+10 m de portée\nChanges to compétence chargée, dégâts de zone\n-10 s [Frappe de charge] Temps de recharge\n+25% Renversement Chance",
+      "specialtyEn": "Restores 300 Stamina on hit\n+10m Range\nChanges to Charge Skill, AoE damage\n-10s [Rush Strike] Cooldown\n+25% Knockdown Chance",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_036.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_036.webp",
+      "unlocked": 10,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110155",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120157",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130162",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140070",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "frappe de charge rush strike gladiateur actif after en utilisant [dodge], se déplace à une cible à moins de 10 m et inflige x dégâts avec une x % de chances d’infliger renversement pendant x. 100 % de chances d’appliquer renversement aux cibles pnj. 10 dégâts de jauge de déséquilibre restaure 300 endurance à l’impact\n+10 m de portée\nchanges to compétence chargée, dégâts de zone\n-10 s [frappe de charge] temps de recharge\n+25% renversement chance"
+    },
+    {
+      "id": "11740000",
+      "nameFr": "Identification de faiblesse",
+      "nameEn": "Identify Weakness",
+      "slug": "identify-weakness",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Coup critique de X, Parfait de X %.",
+      "descriptionEn": "Increases Critical Hit by X, Perfect by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_004.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_004.webp",
+      "unlocked": 11,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110073",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110126",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130186",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140074",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "identification de faiblesse identify weakness gladiateur passif augmente coup critique de x, parfait de x %."
+    },
+    {
+      "id": "11300000",
+      "nameFr": "Entrave aérienne",
+      "nameEn": "Aerial Snare",
+      "slug": "aerial-snare",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts à une cible affectée par Renversement à moins de 4 m avec une X % de chances d’infliger Projection pendant X. 100 % de chances d’appliquer Projection aux cibles PNJ.",
+      "descriptionEn": "Deals X damage to a Knockdown target within 4m with a X% chance to inflict Airborne for X. 100% chance to land Airborne on NPC targets.",
+      "specialtyFr": "Multi-coup garanti à l’impact\n[Entrave aérienne] +25% Projection Chance\n5% chance de activer sur attacking cible immunisée à l’incapacitation\nAjoute la compétence enchaînée [Forced Fall]\n-50% [Entrave aérienne] Temps de recharge",
+      "specialtyEn": "Guaranteed Multi-Hit on hit\n[Aerial Snare] +25% Airborne Chance\n5% chance to activate on attacking Incapacitated Immune target\nAdds [Forced Fall] Chain Skill\n-50% [Aerial Snare] Cooldown",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_015.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_015.webp",
+      "unlocked": 12,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110039",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120131",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130067",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140107",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "entrave aérienne aerial snare gladiateur actif inflige x dégâts à une cible affectée par renversement à moins de 4 m avec une x % de chances d’infliger projection pendant x. 100 % de chances d’appliquer projection aux cibles pnj. multi-coup garanti à l’impact\n[entrave aérienne] +25% projection chance\n5% chance de activer sur attacking cible immunisée à l’incapacitation\najoute la compétence enchaînée [forced fall]\n-50% [entrave aérienne] temps de recharge"
+    },
+    {
+      "id": "11100000",
+      "nameFr": "Coup ruineux",
+      "nameEn": "Ruinous Blow",
+      "slug": "ruinous-blow",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Se rue at une cible à moins de 7.5 m to deal X dégâts et enters Prepare pendant Battle Status pendant X. Inflige dégâts à jusqu’à X ennemis quand fully charged. Prepare pendant Battle: +X % Bonus de dégâts, +X Coup critique Max 1 Charge Level 15 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Rushes at a target within 7.5m to deal X damage and enters Prepare for Battle Status for X. Deals damage to up to X enemies when fully charged. Prepare for Battle: +X% Damage Boost, +X Critical Hit Max 1 Charge Level 15 Stagger Gauge Damage",
+      "specialtyFr": "+20 % de vitesse de compétence\n+12.5 m Portée\nDevient utilisable en déplacement\n+5 s Prepare pendant Battle durée\nIgnore Blocage et Esquive et touche en multi-coup",
+      "specialtyEn": "+20% Skill Speed\n+12.5m Range\nChanges to mobile skill\n+5s Prepare for Battle duration\nIgnores Block and Evasion and lands as Multi-Hit",
+      "tagsFr": [
+        "Charge"
+      ],
+      "tagsEn": [
+        "Charge"
+      ],
+      "image": "icon_gl_skill_010.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_010.webp",
+      "unlocked": 14,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110187",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120041",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130125",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140119",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "coup ruineux ruinous blow gladiateur actif se rue at une cible à moins de 7.5 m to deal x dégâts et enters prepare pendant battle status pendant x. inflige dégâts à jusqu’à x ennemis quand fully charged. prepare pendant battle: +x % bonus de dégâts, +x coup critique max 1 charge level 15 dégâts de jauge de déséquilibre +20 % de vitesse de compétence\n+12.5 m portée\ndevient utilisable en déplacement\n+5 s prepare pendant battle durée\nignore blocage et esquive et touche en multi-coup charge"
+    },
+    {
+      "id": "11760000",
+      "nameFr": "Frappe d’impact",
+      "nameEn": "Impact Hit",
+      "slug": "impact-hit",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente the lanceur's Impact-type Chance(s) de X % et Frappe de X %.",
+      "descriptionEn": "Increases the caster's Impact-type Chance(s) by X% and Smite by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_006.webp",
+      "unlocked": 15,
+      "boardReferences": [
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120039",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120187",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130142",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140039",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "frappe d’impact impact hit gladiateur passif augmente the lanceur's impact-type chance(s) de x % et frappe de x %."
+    },
+    {
+      "id": "11260000",
+      "nameFr": "Défi",
+      "nameEn": "Defiance",
+      "slug": "defiance",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Retire Étourdissement, Renversement, et Projection de the lanceur et grants Ténacité pendant X. Ténacité: X % Étourdissement, Renversement, Projection Resist",
+      "descriptionEn": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialtyFr": "+X % Réduction des dégâts subis pendant Ténacité durée\nX % Dégâts Reflection pendant Ténacité durée\nRestaure X % PV sur casting [Défi]\n+2 s Ténacité durée\n25% chance de reset Temps de recharge sur casting [Défi]",
+      "specialtyEn": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_co_skill_002.webp",
+      "unlocked": 16,
+      "boardReferences": [
+        {
+          "boardId": 11,
+          "boardTitle": "Nezekan",
+          "nodeId": "110108",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120189",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130188",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140164",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "défi defiance gladiateur actif retire étourdissement, renversement, et projection de the lanceur et grants ténacité pendant x. ténacité: x % étourdissement, renversement, projection resist +x % réduction des dégâts subis pendant ténacité durée\nx % dégâts reflection pendant ténacité durée\nrestaure x % pv sur casting [défi]\n+2 s ténacité durée\n25% chance de reset temps de recharge sur casting [défi] sans cible"
+    },
+    {
+      "id": "11770000",
+      "nameFr": "Impulsion destructrice",
+      "nameEn": "Destructive Impulse",
+      "slug": "destructive-impulse",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Inflige X supplémentaires dégâts to targets affecté par Déséquilibre ou an Impact-type status.",
+      "descriptionEn": "Deals X extra damage to targets afflicted with Stagger or an Impact-type status.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_007.webp",
+      "unlocked": 17,
+      "boardReferences": [
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120100",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120154",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130153",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140102",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "impulsion destructrice destructive impulse gladiateur passif inflige x supplémentaires dégâts to targets affecté par déséquilibre ou an impact-type status."
+    },
+    {
+      "id": "11780000",
+      "nameFr": "Contre-attaque experte",
+      "nameEn": "Experienced Counterstrike",
+      "slug": "experienced-counterstrike",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Attaque de X pendant X lors d’un blocage réussi.",
+      "descriptionEn": "Increases Attack by X% for X on a successful Block.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_008.webp",
+      "unlocked": 21,
+      "boardReferences": [
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120082",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120176",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130084",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140187",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "contre-attaque experte experienced counterstrike gladiateur passif augmente attaque de x pendant x lors d’un blocage réussi."
+    },
+    {
+      "id": "11790000",
+      "nameFr": "Volonté de survie",
+      "nameEn": "Survival Willpower",
+      "slug": "survival-willpower",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Résistance aux altérations du lanceur de X et quand the lanceur est affecté par an Impact-type Status, augmente Impact-type Resist et Réduction des dégâts subis de X % forX. Temps de recharge : X",
+      "descriptionEn": "Increases the caster's Status Effect Resist by X% and when the caster is afflicted with an Impact-type Status, increases Impact-type Resist and Damage Tolerance by X% forX. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_009.webp",
+      "unlocked": 23,
+      "boardReferences": [
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120072",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120126",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130096",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140189",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "volonté de survie survival willpower gladiateur passif augmente résistance aux altérations du lanceur de x et quand the lanceur est affecté par an impact-type status, augmente impact-type resist et réduction des dégâts subis de x % forx. temps de recharge : x"
+    },
+    {
+      "id": "11800000",
+      "nameFr": "Explosion meurtrière",
+      "nameEn": "Murderous Burst",
+      "slug": "murderous-burst",
+      "classFr": "Gladiateur",
+      "classEn": "Gladiator",
+      "classSlug": "gladiator",
+      "classSlugFr": "gladiateur",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Receive a stack de Menace pendant X quand en touchant an attack. Remove Menace at 10 cumuls et deal X dégâts à jusqu’à 4 ennemis à moins de 5 m.",
+      "descriptionEn": "Receive a stack of Menace for X when landing an attack. Remove Menace at 10 stacks and deal X damage to up to 4 enemies within 5m.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_gl_skill_passive_010.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_gl_skill_passive_010.webp",
+      "unlocked": 25,
+      "boardReferences": [
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120050",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 12,
+          "boardTitle": "Zikel",
+          "nodeId": "120144",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 13,
+          "boardTitle": "Vaizel",
+          "nodeId": "130130",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 14,
+          "boardTitle": "Triniel",
+          "nodeId": "140037",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "explosion meurtrière murderous burst gladiateur passif receive a stack de menace pendant x quand en touchant an attack. remove menace at 10 cumuls et deal x dégâts à jusqu’à 4 ennemis à moins de 5 m."
+    }
+  ],
+  "notes": "Traduction française automatique/rule-based pour Aion2HUB. Conserver nameEn/descriptionEn comme référence interne, mais afficher les champs FR côté UI."
+}

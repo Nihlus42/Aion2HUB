@@ -1,0 +1,1473 @@
+{
+  "dataset": "talentbuilds-aion2-skills-sorcerer-fr",
+  "source": "https://talentbuilds.com/aion2/skills",
+  "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+  "classFr": "Sorcier",
+  "classEn": "Sorcerer",
+  "classSlug": "sorcerer",
+  "classSlugFr": "sorcier",
+  "total": 22,
+  "records": [
+    {
+      "id": "15710000",
+      "nameFr": "Marque de feu",
+      "nameEn": "Fire Mark",
+      "slug": "fire-mark",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "A X % de chances d’infliger Marque de feu pendant X en touchant avec a Fire attack. Marque de feu: Réduit Attaque de X %. A X % chance de take X supplémentaires dégâts quand subissant dégâts de feu pendant affecté par Marque de feu. Temps de recharge : X",
+      "descriptionEn": "Has a X% chance to inflict Fire Mark for X on landing a Fire attack. Fire Mark: Reduces Attack by X%. Has a X% chance to take X extra damage when taking Fire damage while afflicted with Fire Mark. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_029.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_029.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610063",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610189",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630035",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640161",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "marque de feu fire mark sorcier actif a x % de chances d’infliger marque de feu pendant x en touchant avec a fire attack. marque de feu: réduit attaque de x %. a x % chance de take x supplémentaires dégâts quand subissant dégâts de feu pendant affecté par marque de feu. temps de recharge : x"
+    },
+    {
+      "id": "15040000",
+      "nameFr": "Tempête de feu",
+      "nameEn": "Firestorm",
+      "slug": "firestorm",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X de feu dégâts à une cible à moins de 20 m. 5 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X Fire damage to a target within 20m. 5 Stagger Gauge Damage",
+      "specialtyFr": "-50 % de coût en PM\n+20 % de vitesse de compétence\nDevient utilisable en déplacement\n-1 s [Feu infernal] Temps de recharge par Fireball\n+10% Dégâts par fireball",
+      "specialtyEn": "-50% MP Cost\n+20% Skill Speed\nChanges to mobile skill\n-1s [Hellfire] Cooldown per Fireball\n+10% Damage per fireball",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_004.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_004.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610068",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620069",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630064",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640184",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "tempête de feu firestorm sorcier actif inflige x de feu dégâts à une cible à moins de 20 m. 5 dégâts de jauge de déséquilibre -50 % de coût en pm\n+20 % de vitesse de compétence\ndevient utilisable en déplacement\n-1 s [feu infernal] temps de recharge par fireball\n+10% dégâts par fireball"
+    },
+    {
+      "id": "15090000",
+      "nameFr": "Chaîne de glace",
+      "nameEn": "Ice Chain",
+      "slug": "ice-chain",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X d’eau dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et inflige Ralentissement which réduit Vitesse de déplacement de 40% pendant X. 2 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Water damage to up to 4 enemies within 4m of the target and inflicts Slowed which reduces Move Speed by 40% for X. 2 Stagger Gauge Damage",
+      "specialtyFr": "-20 % de coût en PM\n+2 s Ralentissement durée\nMax +12% dégâts quand there are moins de cibles impact\n-1 s Temps de recharge sur [Entraves de l’hiver] à l’impact\n5 % de chances d’infliger Gel pendant 2 s en touchant avec [Cold Wave]",
+      "specialtyEn": "-20% MP Cost\n+2s Slowed duration\nMax +12% damage when there are less targets hit\n-1s Cooldown on [Winter's Shackles] on hit\n5% chance to inflict Frost for 2s on landing [Cold Wave]",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_009.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610095",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620103",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630155",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640042",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "chaîne de glace ice chain sorcier actif sélectionne une cible à moins de 20 m et inflige x d’eau dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et inflige ralentissement which réduit vitesse de déplacement de 40% pendant x. 2 dégâts de jauge de déséquilibre -20 % de coût en pm\n+2 s ralentissement durée\nmax +12% dégâts quand there are moins de cibles impact\n-1 s temps de recharge sur [entraves de l’hiver] à l’impact\n5 % de chances d’infliger gel pendant 2 s en touchant avec [cold wave] mobile"
+    },
+    {
+      "id": "15210000",
+      "nameFr": "Flèche de flammes",
+      "nameEn": "Flame Arrow",
+      "slug": "flame-arrow",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X de feu dégâts à une cible à moins de 20 m et restaure 100 PM.",
+      "descriptionEn": "Deals X Fire damage to a target within 20m and restores 100 MP.",
+      "specialtyFr": "+20 % de PM restaurés\nAbsorbe X % des dégâts sous forme de PV\n+50 % de multi-coup à l’impact\nInflige Marque de feu pendant 5 s en touchant avec [Pyroclasm]\nRéinitialise le temps de recharge de [Brasier] en touchant avec [Pyroclasm]",
+      "specialtyEn": "+20% MP restored\nAbsorbs X% of damage as HP\n+50% Multi-Hit on hit\nInflicts Fire Mark for 5s on landing [Pyroclasm]\nReset [Blaze] Cooldown on landing [Pyroclasm]",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_020.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_020.webp",
+      "unlocked": 1,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610131",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620063",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630118",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640192",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "flèche de flammes flame arrow sorcier actif inflige x de feu dégâts à une cible à moins de 20 m et restaure 100 pm. +20 % de pm restaurés\nabsorbe x % des dégâts sous forme de pv\n+50 % de multi-coup à l’impact\ninflige marque de feu pendant 5 s en touchant avec [pyroclasm]\nréinitialise le temps de recharge de [brasier] en touchant avec [pyroclasm] mobile"
+    },
+    {
+      "id": "15280000",
+      "nameFr": "Vent glacial",
+      "nameEn": "Bittercold Wind",
+      "slug": "bittercold-wind",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et invoquer Vent glacial which dure pendant 2 s. Vent glacial inflige X dégâts d’eau à jusqu’à 4 ennemis à moins de 4 m de la lanceur avec une X % de chances d’infliger Immobilisation pendant X. 100 % de chances d’appliquer Immobilisation aux cibles PNJ. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and summon Bittercold Wind which lasts for 2s. Bittercold Wind deals X Water damage to up to 4 enemies within 4m of the caster with a X% chance to inflict Root for X. 100% chance to land Root on NPC targets. 10 Stagger Gauge Damage",
+      "specialtyFr": "+1 s [Vent glacial] Summoning durée\n-X % tolérance à l’eau pendant X\nEffet d’attraction\nIgnore Blocage et Esquive et touche en multi-coup\n25 % de chances d’infliger Gel pendant 2 s en touchant avec dernière attaque",
+      "specialtyEn": "+1s [Bittercold Wind] Summoning duration\n-X% Water Tolerance for X\nPull Effect\nIgnores Block and Evasion and lands as Multi-Hit\n25% chance to inflict Frost for 2s on landing last attack",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_025.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_025.webp",
+      "unlocked": 3,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610158",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620095",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630159",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640034",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "vent glacial bittercold wind sorcier actif sélectionne une cible à moins de 20 m et invoquer vent glacial which dure pendant 2 s. vent glacial inflige x dégâts d’eau à jusqu’à 4 ennemis à moins de 4 m de la lanceur avec une x % de chances d’infliger immobilisation pendant x. 100 % de chances d’appliquer immobilisation aux cibles pnj. 10 dégâts de jauge de déséquilibre +1 s [vent glacial] summoning durée\n-x % tolérance à l’eau pendant x\neffet d’attraction\nignore blocage et esquive et touche en multi-coup\n25 % de chances d’infliger gel pendant 2 s en touchant avec dernière attaque"
+    },
+    {
+      "id": "15050000",
+      "nameFr": "Brasier",
+      "nameEn": "Blaze",
+      "slug": "blaze",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts de feu to a Marque de feu cible à moins de 20 m et restaure 100 PM. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X Fire damage to a Fire Mark target within 20m and restores 100 MP. 7 Stagger Gauge Damage",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\n+50 % de PM restaurés\nDelayed Dégâts après X\nDevient utilisable en déplacement\n-3 s [Vœu de concentration] Temps de recharge à l’impact",
+      "specialtyEn": "Absorbs X% of damage as HP\n+50% MP restored\nDelayed Damage after X\nChanges to mobile skill\n-3s [Wish of Concentration] Cooldown on hit",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_005.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_005.webp",
+      "unlocked": 4,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610050",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620185",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630101",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640130",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "brasier blaze sorcier actif inflige x dégâts de feu to a marque de feu cible à moins de 20 m et restaure 100 pm. 7 dégâts de jauge de déséquilibre absorbe x % des dégâts sous forme de pv\n+50 % de pm restaurés\ndelayed dégâts après x\ndevient utilisable en déplacement\n-3 s [vœu de concentration] temps de recharge à l’impact"
+    },
+    {
+      "id": "15010000",
+      "nameFr": "Salve de flammes",
+      "nameEn": "Flame Scattershot",
+      "slug": "flame-scattershot",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts de feu à une cible à moins de 20 m affecté par Déséquilibre.",
+      "descriptionEn": "Deals X Fire damage to a target within 20m afflicted with Stagger.",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRestaure 120 PM\nDevient utilisable en déplacement\nMulti-coup garanti à l’impact\n-3 s Tous Skills Temps de recharge à l’impact",
+      "specialtyEn": "Absorbs X% of damage as HP\nRestores 120 MP\nChanges to mobile skill\nGuaranteed Multi-Hit on hit\n-3s All Skills Cooldown on hit",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_001.webp",
+      "unlocked": 5,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610118",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620037",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630038",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640062",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "salve de flammes flame scattershot sorcier actif inflige x dégâts de feu à une cible à moins de 20 m affecté par déséquilibre. absorbe x % des dégâts sous forme de pv\nrestaure 120 pm\ndevient utilisable en déplacement\nmulti-coup garanti à l’impact\n-3 s tous skills temps de recharge à l’impact"
+    },
+    {
+      "id": "15720000",
+      "nameFr": "Robe de terre",
+      "nameEn": "Robe of Earth",
+      "slug": "robe-of-earth",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente PM max de X et Régénération PM de X.",
+      "descriptionEn": "Increases Max MP by X% and MP Regen by X.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_006.webp",
+      "unlocked": 6,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610037",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610163",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630191",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640065",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "robe de terre robe of earth sorcier passif augmente pm max de x et régénération pm de x."
+    },
+    {
+      "id": "15150000",
+      "nameFr": "Gel",
+      "nameEn": "Frost",
+      "slug": "frost",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne une cible à moins de 20 m et inflige X d’eau dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et a X % de chances d’infliger Gel sur the cible pendant X. 100 % de chances d’appliquer Gel aux cibles PNJ. 10 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a target within 20m and deal X Water damage to up to 4 enemies within 4m of the target and has a X% chance to inflict Frost on the target for X. 100% chance to land Frost on NPC targets. 10 Stagger Gauge Damage",
+      "specialtyFr": "Restaure 200 PM\n-5 s Temps de recharge\nRéinitialise le temps de recharge de [Explosion de givre] en touchant avec Gel\n+20% cible joueur Gel Chance\n+1 s Gel durée",
+      "specialtyEn": "Restores 200 MP\n-5s Cooldown\nReset [Frost Burst] Cooldown on landing Frost\n+20% PC target Frost Chance\n+1s Frost duration",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_015.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_015.webp",
+      "unlocked": 7,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610176",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620163",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630108",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640156",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "gel frost sorcier actif sélectionne une cible à moins de 20 m et inflige x d’eau dégâts à jusqu’à 4 ennemis dans un rayon de 4 m autour de lune cible et a x % de chances d’infliger gel sur the cible pendant x. 100 % de chances d’appliquer gel aux cibles pnj. 10 dégâts de jauge de déséquilibre restaure 200 pm\n-5 s temps de recharge\nréinitialise le temps de recharge de [explosion de givre] en touchant avec gel\n+20% cible joueur gel chance\n+1 s gel durée"
+    },
+    {
+      "id": "15110000",
+      "nameFr": "Entraves de l’hiver",
+      "nameEn": "Winter's Shackles",
+      "slug": "winter-s-shackles",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts d’eau à jusqu’à 4 ennemis à moins de 5 m et inflige Ralentissement pendant X.",
+      "descriptionEn": "Deals X Water damage to up to 4 enemies within 5m and inflicts Slowed for X.",
+      "specialtyFr": "+2 s [Entraves de l’hiver] Ralentissement durée\n30% chance de infliger Gel en touchant avec [Entraves de l’hiver]\n-20% Réduction des dégâts subis pendant 5 s en touchant avec [Entraves de l’hiver]\nAjoute la compétence enchaînée [Winter's Illusion]\n-15 s [Entraves de l’hiver] Temps de recharge à l’impact",
+      "specialtyEn": "+2s [Winter's Shackles] Slowed duration\n30% chance to inflict Frost on landing [Winter's Shackles]\n-20% Damage Tolerance for 5s on landing [Winter's Shackles]\nAdds [Winter's Illusion] Chain Skill\n-15s [Winter's Shackles] Cooldown on hit",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_so_skill_011.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_011.webp",
+      "unlocked": 8,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610071",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620123",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630071",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640096",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "entraves de l’hiver winter's shackles sorcier actif inflige x dégâts d’eau à jusqu’à 4 ennemis à moins de 5 m et inflige ralentissement pendant x. +2 s [entraves de l’hiver] ralentissement durée\n30% chance de infliger gel en touchant avec [entraves de l’hiver]\n-20% réduction des dégâts subis pendant 5 s en touchant avec [entraves de l’hiver]\najoute la compétence enchaînée [winter's illusion]\n-15 s [entraves de l’hiver] temps de recharge à l’impact sans cible"
+    },
+    {
+      "id": "15730000",
+      "nameFr": "Coup de froid",
+      "nameEn": "Cold Snap",
+      "slug": "cold-snap",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X dégâts d’eau à une cible en déséquilibre à moins de 20 m.",
+      "descriptionEn": "Deals X Water damage to a Stagger target within 20m.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Mobile"
+      ],
+      "image": "icon_so_skill_passive_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_003.webp",
+      "unlocked": 9,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610041",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610185",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630040",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640152",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "coup de froid cold snap sorcier actif inflige x dégâts d’eau à une cible en déséquilibre à moins de 20 m. mobile"
+    },
+    {
+      "id": "15220000",
+      "nameFr": "Explosion de givre",
+      "nameEn": "Frost Burst",
+      "slug": "frost-burst",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Sélectionne a Gel cible à moins de 20 m et deal X dégâts d’eau à jusqu’à 4 ennemis à moins de 4 m de lune cible. 7 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Select a Frost target within 20m and deal X Water damage to up to 4 enemies within 4m of the target. 7 Stagger Gauge Damage",
+      "specialtyFr": "Absorbe X % des dégâts sous forme de PV\nRalentissement pendant X sur cible\n7% chance de activer sur attacking an cible immunisée à l’incapacitation\n300 PM dégâts à l’impact\n25% chance de reinflict Gel to cible pendant 3 s à l’impact",
+      "specialtyEn": "Absorbs X% of damage as HP\nSlowed for X on target\n7% chance to activate on attacking an Incapacitated Immune target\n300 MP damage on hit\n25% chance to reinflict Frost to target for 3s on hit",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_022.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_022.webp",
+      "unlocked": 10,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610155",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620157",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630162",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640070",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "explosion de givre frost burst sorcier actif sélectionne a gel cible à moins de 20 m et deal x dégâts d’eau à jusqu’à 4 ennemis à moins de 4 m de lune cible. 7 dégâts de jauge de déséquilibre absorbe x % des dégâts sous forme de pv\nralentissement pendant x sur cible\n7% chance de activer sur attacking an cible immunisée à l’incapacitation\n300 pm dégâts à l’impact\n25% chance de reinflict gel to cible pendant 3 s à l’impact"
+    },
+    {
+      "id": "15740000",
+      "nameFr": "Robe de flammes",
+      "nameEn": "Robe of Flame",
+      "slug": "robe-of-flame",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Précision de X et Attaque de X.",
+      "descriptionEn": "Increases Accuracy by X and Attack by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_004.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_004.webp",
+      "unlocked": 11,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610073",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610126",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630186",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640074",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "robe de flammes robe of flame sorcier passif augmente précision de x et attaque de x."
+    },
+    {
+      "id": "15310000",
+      "nameFr": "Vœu de concentration",
+      "nameEn": "Wish of Concentration",
+      "slug": "wish-of-concentration",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Augmente Attaque du lanceur de X, Précision de X pendant X.",
+      "descriptionEn": "Increases the caster's Attack by X%, Accuracy by X for X.",
+      "specialtyFr": "-10% compétence PM Cost\n+5% supplémentaire Attaque\n+500 PM max\n+10% Vitesse de combat\n-10 Tous Skills Temps de recharge",
+      "specialtyEn": "-10% Skill MP Cost\n+5% Additional Attack\n+500 Max MP\n+10% Combat Speed\n-10 All Skills Cooldown",
+      "tagsFr": [
+        "Sans cible",
+        "Mobile"
+      ],
+      "tagsEn": [
+        "Nontarget",
+        "Mobile"
+      ],
+      "image": "icon_so_skill_028.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_028.webp",
+      "unlocked": 12,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610039",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620131",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630067",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640107",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "vœu de concentration wish of concentration sorcier actif augmente attaque du lanceur de x, précision de x pendant x. -10% compétence pm cost\n+5% supplémentaire attaque\n+500 pm max\n+10% vitesse de combat\n-10 tous skills temps de recharge sans cible mobile"
+    },
+    {
+      "id": "15760000",
+      "nameFr": "Absorption d’essence",
+      "nameEn": "Absorb Essence",
+      "slug": "absorb-essence",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Restaure X PM quand en touchant an attack.",
+      "descriptionEn": "Restores X MP when landing an attack.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_001.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_001.webp",
+      "unlocked": 13,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610100",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610153",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 2,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630073",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640124",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "absorption d’essence absorb essence sorcier passif restaure x pm quand en touchant an attack."
+    },
+    {
+      "id": "15060000",
+      "nameFr": "Feu infernal",
+      "nameEn": "Hellfire",
+      "slug": "hellfire",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Inflige X de feu dégâts à une cible à moins de 20 m. Max 3 Charge Levels 20 dégâts de jauge de déséquilibre",
+      "descriptionEn": "Deals X Fire damage to a target within 20m. Max 3 Charge Levels 20 Stagger Gauge Damage",
+      "specialtyFr": "Inflige Marque de feu quand fully charged\nInvoquer Flame Zone quand fully charged\nDevient utilisable en déplacement\nIgnore Blocage et Esquive et touche en multi-coup quand fully charged\n-15 s Temps de recharge",
+      "specialtyEn": "Inflicts Fire Mark when fully charged\nSummon Flame Zone when fully charged\nChanges to mobile skill\nIgnores Block and Evasion and lands as Multi-Hit when fully charged\n-15s Cooldown",
+      "tagsFr": [
+        "Charge"
+      ],
+      "tagsEn": [
+        "Charge"
+      ],
+      "image": "icon_so_skill_006.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_006.webp",
+      "unlocked": 14,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610187",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620041",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630125",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640119",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "feu infernal hellfire sorcier actif inflige x de feu dégâts à une cible à moins de 20 m. max 3 charge levels 20 dégâts de jauge de déséquilibre inflige marque de feu quand fully charged\ninvoquer flame zone quand fully charged\ndevient utilisable en déplacement\nignore blocage et esquive et touche en multi-coup quand fully charged\n-15 s temps de recharge charge"
+    },
+    {
+      "id": "15770000",
+      "nameFr": "Grâce de résistance",
+      "nameEn": "Grace of Resistance",
+      "slug": "grace-of-resistance",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Mental-type Resist et Impact-type Resist du lanceur de X.",
+      "descriptionEn": "Increases the caster's Mental-type Resist and Impact-type Resist by X%.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_038.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_038.webp",
+      "unlocked": 15,
+      "boardReferences": [
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620039",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620187",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630142",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640039",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "grâce de résistance grace of resistance sorcier passif augmente mental-type resist et impact-type resist du lanceur de x."
+    },
+    {
+      "id": "15240000",
+      "nameFr": "Défi",
+      "nameEn": "Defiance",
+      "slug": "defiance",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Actif",
+      "typeEn": "Active",
+      "descriptionFr": "Retire Étourdissement, Renversement, et Projection de the lanceur et grants Ténacité pendant X. Ténacité: X % Étourdissement, Renversement, Projection Resist",
+      "descriptionEn": "Removes Stun, Knockdown, and Airborne from the caster and grants Tenacity for X. Tenacity: X% Stun, Knockdown, Airborne Resist",
+      "specialtyFr": "+X % Réduction des dégâts subis pendant Ténacité durée\nX % Dégâts Reflection pendant Ténacité durée\nRestaure X % PV sur casting [Défi]\n+2 s Ténacité durée\n25% chance de reset Temps de recharge sur casting [Défi]",
+      "specialtyEn": "+X% Damage Tolerance for Tenacity duration\nX% Damage Reflection for Tenacity duration\nRestores X% HP on casting [Defiance]\n+2s Tenacity duration\n25% chance to reset Cooldown on casting [Defiance]",
+      "tagsFr": [
+        "Sans cible"
+      ],
+      "tagsEn": [
+        "Nontarget"
+      ],
+      "image": "icon_co_skill_002.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_co_skill_002.webp",
+      "unlocked": 16,
+      "boardReferences": [
+        {
+          "boardId": 61,
+          "boardTitle": "Nezekan",
+          "nodeId": "610108",
+          "levels": 1,
+          "requiredLevel": 12,
+          "costPoints": 3,
+          "boardTitleFr": "Nezekan"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620189",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 3,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630188",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 3,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640164",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 3,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "défi defiance sorcier actif retire étourdissement, renversement, et projection de the lanceur et grants ténacité pendant x. ténacité: x % étourdissement, renversement, projection resist +x % réduction des dégâts subis pendant ténacité durée\nx % dégâts reflection pendant ténacité durée\nrestaure x % pv sur casting [défi]\n+2 s ténacité durée\n25% chance de reset temps de recharge sur casting [défi] sans cible"
+    },
+    {
+      "id": "15750000",
+      "nameFr": "Robe du froid",
+      "nameEn": "Robe of Cold",
+      "slug": "robe-of-cold",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Inflige Slow quand struck de an ennemi, which réduit cible's Vitesse de déplacement de X % pendant X. Temps de recharge : X",
+      "descriptionEn": "Inflicts Slow when struck by an enemy, which reduces target's Move Speed by X% for X. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_003.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_003.webp",
+      "unlocked": 17,
+      "boardReferences": [
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620100",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620154",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630153",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640102",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "robe du froid robe of cold sorcier passif inflige slow quand struck de an ennemi, which réduit cible's vitesse de déplacement de x % pendant x. temps de recharge : x"
+    },
+    {
+      "id": "15780000",
+      "nameFr": "Grâce d’amélioration",
+      "nameEn": "Grace of Enhancement",
+      "slug": "grace-of-enhancement",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Attaque de X quand PM is X % ou more.",
+      "descriptionEn": "Increases Attack by X% when MP is X% or more.",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_007.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_007.webp",
+      "unlocked": 21,
+      "boardReferences": [
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620082",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620176",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630084",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640187",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "grâce d’amélioration grace of enhancement sorcier passif augmente attaque de x quand pm is x % ou more."
+    },
+    {
+      "id": "15790000",
+      "nameFr": "Contrat de revitalisation",
+      "nameEn": "Revitalization Contract",
+      "slug": "revitalization-contract",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Augmente Résistance aux altérations du lanceur de X et immédiatement restaure X PV quand the lanceur's PV is 10% ou less. Temps de recharge : X",
+      "descriptionEn": "Increases the caster's Status Effect Resist by X% and immediately restores X HP when the caster's HP is 10% or less. Cooldown: X",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_as_skill_passive_009.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_as_skill_passive_009.webp",
+      "unlocked": 23,
+      "boardReferences": [
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620072",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620126",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630096",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640189",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "contrat de revitalisation revitalization contract sorcier passif augmente résistance aux altérations du lanceur de x et immédiatement restaure x pv quand the lanceur's pv is 10% ou less. temps de recharge : x"
+    },
+    {
+      "id": "15800000",
+      "nameFr": "Évaporation de vitalité",
+      "nameEn": "Vitality Evaporation",
+      "slug": "vitality-evaporation",
+      "classFr": "Sorcier",
+      "classEn": "Sorcerer",
+      "classSlug": "sorcerer",
+      "classSlugFr": "sorcier",
+      "typeFr": "Passif",
+      "typeEn": "Passive",
+      "descriptionFr": "Inflige X dégâts à l’impact if the cible's PV is more than X % .",
+      "descriptionEn": "Deals X damage on hit if the target's HP is more than X% .",
+      "specialtyFr": "",
+      "specialtyEn": "",
+      "tagsFr": [],
+      "tagsEn": [],
+      "image": "icon_so_skill_passive_008.webp",
+      "imageUrl": "https://talentbuilds.com/aion2/images/skills/icon_so_skill_passive_008.webp",
+      "unlocked": 25,
+      "boardReferences": [
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620050",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 62,
+          "boardTitle": "Zikel",
+          "nodeId": "620144",
+          "levels": 1,
+          "requiredLevel": 20,
+          "costPoints": 2,
+          "boardTitleFr": "Zikel"
+        },
+        {
+          "boardId": 63,
+          "boardTitle": "Vaizel",
+          "nodeId": "630130",
+          "levels": 1,
+          "requiredLevel": 30,
+          "costPoints": 2,
+          "boardTitleFr": "Vaizel"
+        },
+        {
+          "boardId": 64,
+          "boardTitle": "Triniel",
+          "nodeId": "640037",
+          "levels": 1,
+          "requiredLevel": 40,
+          "costPoints": 2,
+          "boardTitleFr": "Triniel"
+        }
+      ],
+      "totalPotentialLevelsFromBoards": 4,
+      "sourceUrl": "https://talentbuilds.com/aion2/skills",
+      "sourceFile": "https://talentbuilds.com/aion2/daevanionplanner/skills.json",
+      "extractedAt": "2026-05-10",
+      "translationStatus": "fr_auto_review_recommended",
+      "searchText": "évaporation de vitalité vitality evaporation sorcier passif inflige x dégâts à l’impact if the cible's pv is more than x % ."
+    }
+  ],
+  "notes": "Traduction française automatique/rule-based pour Aion2HUB. Conserver nameEn/descriptionEn comme référence interne, mais afficher les champs FR côté UI."
+}

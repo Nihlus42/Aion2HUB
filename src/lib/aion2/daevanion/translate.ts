@@ -1,4 +1,4 @@
-import boardsJson from "@/data/aion2/daevanion/boards.json";
+﻿import boardsJson from "@/data/aion2/daevanion/boards.json";
 import skillsJson from "@/data/aion2/daevanion/tb_daevanion_skills.json";
 import type { DaevanionBoard, DaevanionNode, DaevanionNodeEffect, DaevanionSkill } from "@/data/aion2/daevanion/types";
 import { assassinSkillNameFr, translateText } from "@/data/aion2/daevanion/translations/fr";
@@ -7,11 +7,11 @@ type SkillsByClass = Record<string, DaevanionSkill[]>;
 
 const classMap: Record<string, string> = {
   Assassin: "Assassin",
-  Chanter: "Aède",
+  Chanter: "Aede",
   Cleric: "Clerc",
-  Elementalist: "Élémentaliste",
+  Elementalist: "Spiritualiste",
   Gladiator: "Gladiateur",
-  Ranger: "Rôdeur",
+  Ranger: "Rodeur",
   Sorcerer: "Sorcier",
   Templar: "Templier",
 };
@@ -19,10 +19,7 @@ const classMap: Record<string, string> = {
 const boardData = boardsJson as DaevanionBoard[];
 const skillsData = skillsJson as SkillsByClass;
 
-export const daevanionClasses = Object.keys(classMap).map((en) => ({
-  en,
-  fr: classMap[en],
-}));
+export const daevanionClasses = Object.keys(classMap).map((en) => ({ en, fr: classMap[en] }));
 
 export const translateClassName = (className: string) => classMap[className] ?? className;
 export const translateNodeType = (nodeType: string) => translateText(nodeType);
@@ -34,7 +31,7 @@ export const translateDaevanionEffect = (effect: DaevanionNodeEffect | undefined
     return `${translateText(effect.stat ?? "Statistique")} +${effect.amount ?? 0}`;
   }
   if (effect.kind === "SkillLevel") {
-    const skillName = effect.skill_name ?? "Compétence";
+    const skillName = effect.skill_name ?? "Competence";
     const skillNameFr = assassinSkillNameFr[skillName] ?? translateText(skillName);
     const level = effect.levels ?? 1;
     return `${skillNameFr} +${level} niveau`;
@@ -68,7 +65,7 @@ export const translateDaevanionBoard = (board: DaevanionBoard) => ({
 export const translateDaevanionSkill = (skill: DaevanionSkill, index = 0) => {
   const translatedName = assassinSkillNameFr[skill.name] ?? translateText(skill.name);
   const looksUntranslated = translatedName.trim().toLowerCase() === skill.name.trim().toLowerCase();
-  const nameFr = looksUntranslated ? `Compétence ${index + 1}` : translatedName;
+  const nameFr = looksUntranslated ? `Competence ${index + 1}` : translatedName;
   return {
     ...skill,
     nameEn: skill.name,
@@ -87,3 +84,4 @@ export const daevanionSkillsByClass = Object.fromEntries(
     (skills ?? []).map((skill, index) => translateDaevanionSkill(skill, index)),
   ]),
 ) as Record<string, Array<ReturnType<typeof translateDaevanionSkill>>>;
+
