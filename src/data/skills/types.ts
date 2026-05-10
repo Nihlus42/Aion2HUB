@@ -10,7 +10,8 @@ export type SkillCategory =
   | "Crowd Control"
   | "Defensive"
   | "Utility"
-  | "Unknown";
+  | "Unknown"
+  | string;
 
 export type Skill = {
   id: string;
@@ -25,11 +26,11 @@ export type Skill = {
   descriptionFr: string;
   category: SkillCategory;
   categoryFr: string;
-  damageType: "Physical" | "Magical" | "Hybrid" | "Unknown";
+  damageType: "Physical" | "Magical" | "Hybrid" | "Unknown" | string;
   damageTypeFr: string;
-  range: "Melee" | "Ranged" | "Mid-range" | "Unknown";
+  range: "Melee" | "Ranged" | "Mid-range" | "Unknown" | string;
   rangeFr: string;
-  targetType: "Single Target" | "AoE" | "Cone" | "Line" | "Self" | "Unknown";
+  targetType: "Single Target" | "AoE" | "Cone" | "Line" | "Self" | "Unknown" | string;
   targetTypeFr: string;
   pveUse: string;
   pveUseFr: string;

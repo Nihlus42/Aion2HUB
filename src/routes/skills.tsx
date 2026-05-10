@@ -8,8 +8,12 @@ import {
   getSkillDisplayDescription,
   getSkillDisplayPveUse,
   getSkillDisplayPvpUse,
+  getSkillDisplayCooldown,
+  getSkillCategoryLabel,
+  getSkillTargetTypeLabel,
+  getSkillDamageTypeLabel,
+  getSkillRangeLabel,
   normalizeSkillClassSlug,
-  type SkillCategory,
   type Skill,
 } from "@/data";
 import { Eyebrow } from "@/components/Ornament";
@@ -24,62 +28,13 @@ export const Route = createFileRoute("/skills")({
   component: SkillsPage,
 });
 
-const categories: ("All" | SkillCategory)[] = [
-  "All",
-  "Basic Attack",
-  "Combo",
-  "AoE",
-  "Burst",
-  "Mobility",
-  "Crowd Control",
-  "Defensive",
-  "Utility",
-  "Unknown",
-];
-
-const categoryLabel: Record<SkillCategory, string> = {
-  "Basic Attack": "Attaque de base",
-  Combo: "Combo",
-  AoE: "Zone",
-  Burst: "Rafale",
-  Mobility: "Mobilite",
-  "Crowd Control": "Controle",
-  Defensive: "Defensif",
-  Utility: "Utilitaire",
-  Unknown: "Inconnu",
-};
-
-const targetTypes: ("All" | Skill["targetType"])[] = [
-  "All",
-  "Single Target",
-  "AoE",
-  "Cone",
-  "Line",
-  "Self",
-  "Unknown",
-];
-
-const targetTypeLabel: Record<Skill["targetType"], string> = {
-  "Single Target": "Cible unique",
-  AoE: "Zone",
-  Cone: "Cone",
-  Line: "Ligne",
-  Self: "Soi",
-  Unknown: "Inconnu",
-};
-
-const damageTypeLabel: Record<Skill["damageType"], string> = {
-  Physical: "Physique",
-  Magical: "Magique",
-  Hybrid: "Hybride",
-  Unknown: "Inconnu",
-};
-
 function SkillsPage() {
   const [query, setQuery] = useState("");
   const [classSlug, setClassSlug] = useState("All");
-  const [category, setCategory] = useState<(typeof categories)[number]>("All");
-  const [targetType, setTargetType] = useState<(typeof targetTypes)[number]>("All");
+  const [category, setCategory] = useState<string>("All");
+  const [targetType, setTargetType] = useState<string>("All");
+  const categories = useMemo(() => ["All", ...Array.from(new Set(skills.map((s) => s.category)))], []);
+  const targetTypes = useMemo(() => ["All", ...Array.from(new Set(skills.map((s) => s.targetType)))], []);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -130,14 +85,14 @@ function SkillsPage() {
             <option key={c.slug} value={c.slug}>{c.name}</option>
           ))}
         </select>
-        <select value={category} onChange={(e) => setCategory(e.target.value as (typeof categories)[number])} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
+        <select value={category} onChange={(e) => setCategory(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
           {categories.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Categorie" : categoryLabel[item]}</option>
+            <option key={item} value={item}>{item === "All" ? "Categorie" : cleanSkillText(item)}</option>
           ))}
         </select>
-        <select value={targetType} onChange={(e) => setTargetType(e.target.value as (typeof targetTypes)[number])} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
+        <select value={targetType} onChange={(e) => setTargetType(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
           {targetTypes.map((item) => (
-            <option key={item} value={item}>{item === "All" ? "Type de cible" : targetTypeLabel[item]}</option>
+            <option key={item} value={item}>{item === "All" ? "Type de cible" : cleanSkillText(item)}</option>
           ))}
         </select>
       </section>
@@ -158,7 +113,13 @@ function SkillsPage() {
               <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
               <p className="text-[11px] text-amber-300/90 mt-1">Traduction litterale non finale</p>
               <p className="text-xs text-muted-foreground mt-1">
-                {categoryLabel[skill.category]} - {targetTypeLabel[skill.targetType]} - {damageTypeLabel[skill.damageType]}
+                {getSkillCategoryLabel(skill)} - {getSkillTargetTypeLabel(skill)} - {getSkillDamageTypeLabel(skill)}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <span className="text-gold">Recharge :</span> {getSkillDisplayCooldown(skill)}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <span className="text-gold">Distance :</span> {getSkillRangeLabel(skill)}
               </p>
               <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">

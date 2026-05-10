@@ -8,6 +8,11 @@ import {
   getSkillDisplayDescription,
   getSkillDisplayPveUse,
   getSkillDisplayPvpUse,
+  getSkillDisplayCooldown,
+  getSkillCategoryLabel,
+  getSkillTargetTypeLabel,
+  getSkillDamageTypeLabel,
+  getSkillRangeLabel,
   normalizeSkillClassSlug,
 } from "@/data";
 import { Eyebrow } from "@/components/Ornament";
@@ -24,34 +29,6 @@ export const Route = createFileRoute("/skills/$classSlug")({
   },
   component: ClassSkillsPage,
 });
-
-const categoryLabel = {
-  "Basic Attack": "Attaque de base",
-  Combo: "Combo",
-  AoE: "Zone",
-  Burst: "Rafale",
-  Mobility: "Mobilite",
-  "Crowd Control": "Controle",
-  Defensive: "Defensif",
-  Utility: "Utilitaire",
-  Unknown: "Inconnu",
-} as const;
-
-const targetTypeLabel = {
-  "Single Target": "Cible unique",
-  AoE: "Zone",
-  Cone: "Cone",
-  Line: "Ligne",
-  Self: "Soi",
-  Unknown: "Inconnu",
-} as const;
-
-const damageTypeLabel = {
-  Physical: "Physique",
-  Magical: "Magique",
-  Hybrid: "Hybride",
-  Unknown: "Inconnu",
-} as const;
 
 const roleLabel = { Tank: "TANK", DPS: "DPS", Healer: "SOIGNEUR", Support: "SUPPORT" } as const;
 
@@ -102,7 +79,13 @@ function ClassSkillsPage() {
               <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
               <p className="text-[11px] text-amber-300/90 mt-1">Traduction litterale non finale</p>
               <p className="text-xs text-muted-foreground mt-1">
-                {categoryLabel[skill.category]} - {targetTypeLabel[skill.targetType]} - {damageTypeLabel[skill.damageType]}
+                {getSkillCategoryLabel(skill)} - {getSkillTargetTypeLabel(skill)} - {getSkillDamageTypeLabel(skill)}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <span className="text-gold">Recharge :</span> {getSkillDisplayCooldown(skill)}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <span className="text-gold">Distance :</span> {getSkillRangeLabel(skill)}
               </p>
               <p className="text-sm text-muted-foreground mt-3">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
               <div className="mt-4 text-xs text-muted-foreground">

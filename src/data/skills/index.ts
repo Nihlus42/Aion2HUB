@@ -1,553 +1,57 @@
-// Auto-generated from skills.cleaned.fr.ts
-export * from "./types";
+﻿export * from "./types";
 
-import { gladiatorSkills } from "./gladiator";
-import { templarSkills } from "./templar";
-import { assassinSkills } from "./assassin";
-import { rangerSkills } from "./ranger";
-import { sorcererSkills } from "./sorcerer";
-import { spiritmasterSkills } from "./spiritmaster";
-import { clericSkills } from "./cleric";
-import { chanterSkills } from "./chanter";
+import allSkillsDataset from "./json/aion2hub_skills_all_prod_fr_fixed.json";
 import type { Skill } from "./types";
 
-const extraSkills: Skill[] = [
-  {
-    "id": "1001",
-    "name": "Glide",
-    "nameFr": "Vol plane",
-    "slug": "glide",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Glide becomes available.",
-    "descriptionFr": "Vol plane devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Glide becomes available.",
-    "pveUseFr": "Vol plane devient disponible.",
-    "pvpUse": "Undeveloped Glide becomes available.",
-    "pvpUseFr": "Vol plane devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1002",
-    "name": "Flight",
-    "nameFr": "Vol",
-    "slug": "flight",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Flight becomes available.",
-    "descriptionFr": "Vol devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Flight becomes available.",
-    "pveUseFr": "Vol devient disponible.",
-    "pvpUse": "Undeveloped Flight becomes available.",
-    "pvpUseFr": "Vol devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1004",
-    "name": "Mount",
-    "nameFr": "Monture",
-    "slug": "mount",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Mount becomes available.",
-    "descriptionFr": "Monture devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Mount becomes available.",
-    "pveUseFr": "Monture devient disponible.",
-    "pvpUse": "Undeveloped Mount becomes available.",
-    "pvpUseFr": "Monture devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1005",
-    "name": "Substance Morph",
-    "nameFr": "Substance Transmutation",
-    "slug": "substance-morph",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Substance Morph becomes available.",
-    "descriptionFr": "Substance Mouph devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Substance Morph becomes available.",
-    "pveUseFr": "Substance Mouph devient disponible.",
-    "pvpUse": "Undeveloped Substance Morph becomes available.",
-    "pvpUseFr": "Substance Mouph devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1006",
-    "name": "Daevanion",
-    "nameFr": "Daevanion",
-    "slug": "daevanion",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Daevanion becomes available.",
-    "descriptionFr": "Daevanion devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Daevanion becomes available.",
-    "pveUseFr": "Daevanion devient disponible.",
-    "pvpUse": "Undeveloped Daevanion becomes available.",
-    "pvpUseFr": "Daevanion devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1008",
-    "name": "Sprint",
-    "nameFr": "Sprint",
-    "slug": "sprint",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Sprint becomes available.",
-    "descriptionFr": "Sprint devient disponible.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Sprint becomes available.",
-    "pveUseFr": "Sprint devient disponible.",
-    "pvpUse": "Undeveloped Sprint becomes available.",
-    "pvpUseFr": "Sprint devient disponible.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1009",
-    "name": "Divine Heal",
-    "nameFr": "Divin Soin",
-    "slug": "divine-heal",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Recover Divine Power when attacking monsters with Divine Power.",
-    "descriptionFr": "Récupère de la Puissance Divin en attaquant des monstres avec la Puissance Divin.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Recover Divine Power when attacking monsters with Divine Power.",
-    "pveUseFr": "Récupère de la Puissance Divin en attaquant des monstres avec la Puissance Divin.",
-    "pvpUse": "Undeveloped Recover Divine Power when attacking monsters with Divine Power.",
-    "pvpUseFr": "Récupère de la Puissance Divin en attaquant des monstres avec la Puissance Divin.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1101",
-    "name": "Dash",
-    "nameFr": "Ruée",
-    "slug": "dash",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Descend forward rapidly for 2s.",
-    "descriptionFr": "Descend rapidement vers l'avant pendant 2s.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Descend forward rapidly for 2s.",
-    "pveUseFr": "Descend rapidement vers l'avant pendant 2s.",
-    "pvpUse": "Descend forward rapidly for 2s.",
-    "pvpUseFr": "Descend rapidement vers l'avant pendant 2s.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1102",
-    "name": "Quick Gliding",
-    "nameFr": "Rapide Vol plané",
-    "slug": "quick-gliding",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Hold the W Key to descend forward rapidly. Acceleration is applied to gradually increase gliding speed. Adjusting the camera downward applies greater acceleration.",
-    "descriptionFr": "Maintenez la touche W pour descendre rapidement vers l'avant. Une accélération est appliquée pour augmenter progressivement la vitesse de vol plané. ouienter la caméra vers le bas applique une accélération plus pendantte.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Hold the W Key to descend forward rapidly. Acceleration is applied to gradually increase gliding speed. Adjusting the camera downward applies greater acceleration.",
-    "pveUseFr": "Maintenez la touche W pour descendre rapidement vers l'avant. Une accélération est appliquée pour augmenter progressivement la vitesse de vol plané. ouienter la caméra vers le bas applique une accélération plus pendantte.",
-    "pvpUse": "Hold the W Key to descend forward rapidly. Acceleration is applied to gradually increase gliding speed. Adjusting the camera downward applies greater acceleration.",
-    "pvpUseFr": "Maintenez la touche W pour descendre rapidement vers l'avant. Une accélération est appliquée pour augmenter progressivement la vitesse de vol plané. ouienter la caméra vers le bas applique une accélération plus pendantte.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1201",
-    "name": "Divine Power Increase",
-    "nameFr": "Divin Puissance Augmentation",
-    "slug": "divine-power-increase",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Increases Max Divine Power by 1,000.",
-    "descriptionFr": "Augmente la Puissance Divin maximale de 1,000.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Increases Max Divine Power by 1,000.",
-    "pveUseFr": "Augmente la Puissance Divin maximale de 1,000.",
-    "pvpUse": "Increases Max Divine Power by 1,000.",
-    "pvpUseFr": "Augmente la Puissance Divin maximale de 1,000.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1202",
-    "name": "Divine Heal Increase",
-    "nameFr": "Divin Soin Augmentation",
-    "slug": "divine-heal-increase",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Undeveloped Divine Power Regen amount increases when attacking monsters with Divine Power.",
-    "descriptionFr": "Puissance Divin Regen amount increases quet attacking monstres avec Puissance Divin.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Undeveloped Divine Power Regen amount increases when attacking monsters with Divine Power.",
-    "pveUseFr": "Puissance Divin Regen amount increases quet attacking monstres avec Puissance Divin.",
-    "pvpUse": "Undeveloped Divine Power Regen amount increases when attacking monsters with Divine Power.",
-    "pvpUseFr": "Puissance Divin Regen amount increases quet attacking monstres avec Puissance Divin.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "1203",
-    "name": "Divine Power Boost",
-    "nameFr": "Divin Puissance Bonus",
-    "slug": "divine-power-boost",
-    "classSlug": "unknown",
-    "classNameFr": "Inconnu",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Increases Max Divine Power by 500.",
-    "descriptionFr": "Augmente la Puissance Divin maximale de 500.",
-    "category": "Unknown",
-    "categoryFr": "Inconnu",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Increases Max Divine Power by 500.",
-    "pveUseFr": "Augmente la Puissance Divin maximale de 500.",
-    "pvpUse": "Increases Max Divine Power by 500.",
-    "pvpUseFr": "Augmente la Puissance Divin maximale de 500.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "9865",
-    "name": "Vicious Strike",
-    "nameFr": "Vicious Frappe",
-    "slug": "vicious-strike",
-    "classSlug": "tutorial",
-    "classNameFr": "Tutoriel",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Deals {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
-    "descriptionFr": "Inflige {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. restaure 100 PM.",
-    "category": "Basic Attack",
-    "categoryFr": "Attaque de base",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Melee",
-    "rangeFr": "Mêlée",
-    "targetType": "AoE",
-    "targetTypeFr": "Zone d'effet",
-    "pveUse": "Deals {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
-    "pveUseFr": "Inflige {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. restaure 100 PM.",
-    "pvpUse": "Deals {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
-    "pvpUseFr": "Inflige {se_dmg:1201000011:SkillUIMindmgsum}-{se_dmg:1201000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. restaure 100 PM.",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "9868",
-    "name": "Pummel",
-    "nameFr": "Pummel",
-    "slug": "pummel",
-    "classSlug": "tutorial",
-    "classNameFr": "Tutoriel",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Deals {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
-    "descriptionFr": "Inflige {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. 3 Stagger Gauge dégâts",
-    "category": "Basic Attack",
-    "categoryFr": "Attaque de base",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Melee",
-    "rangeFr": "Mêlée",
-    "targetType": "AoE",
-    "targetTypeFr": "Zone d'effet",
-    "pveUse": "Deals {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
-    "pveUseFr": "Inflige {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. 3 Stagger Gauge dégâts",
-    "pvpUse": "Deals {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} damage to up to 4 enemies within 4m and increases Enmity. 3 Stagger Gauge Damage",
-    "pvpUseFr": "Inflige {se_dmg:1204000011:SkillUIMindmgsum}-{se_dmg:1204000011:SkillUIMaxdmgsum} dégâts to up to 4 enemies avecin 4m et increases Enmity. 3 Stagger Gauge dégâts",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "Unknown",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  },
-  {
-    "id": "9871",
-    "name": "Punishing Benediction",
-    "nameFr": "Punishing Benediction",
-    "slug": "punishing-benediction",
-    "classSlug": "tutorial",
-    "classNameFr": "Tutoriel",
-    "rarity": "Unknown",
-    "rarityFr": "Inconnu",
-    "description": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} extra damage to the target when landing an attack. Cooldown: 1s",
-    "descriptionFr": "Augmente Coup critique de 100 et grants Punishing Benediction pendant 10s quet leting an Attaque. Punishing Benediction: A 50% de chance d'infliger {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} des dégâts supplémentaires à la cible quet leting an Attaque. Temps de recharge: 1s",
-    "category": "Defensive",
-    "categoryFr": "Défensif",
-    "damageType": "Unknown",
-    "damageTypeFr": "Inconnu",
-    "range": "Unknown",
-    "rangeFr": "Inconnu",
-    "targetType": "Unknown",
-    "targetTypeFr": "Inconnu",
-    "pveUse": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} extra damage to the target when landing an attack. Cooldown: 1s",
-    "pveUseFr": "Augmente Coup critique de 100 et grants Punishing Benediction pendant 10s quet leting an Attaque. Punishing Benediction: A 50% de chance d'infliger {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} des dégâts supplémentaires à la cible quet leting an Attaque. Temps de recharge: 1s",
-    "pvpUse": "Increases the caster's Critical Hit by 100 and grants Punishing Benediction for 10s when landing an attack. Punishing Benediction: Has a 50% chance to deal {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} extra damage to the target when landing an attack. Cooldown: 1s",
-    "pvpUseFr": "Augmente Coup critique de 100 et grants Punishing Benediction pendant 10s quet leting an Attaque. Punishing Benediction: A 50% de chance d'infliger {se_dmg:1273000111:SkillUIMindmgsum}-{se_dmg:1273000111:SkillUIMaxdmgsum} des dégâts supplémentaires à la cible quet leting an Attaque. Temps de recharge: 1s",
-    "strengths": [],
-    "weaknesses": [],
-    "estimatedCooldown": "1s",
-    "sourceUrl": "https://questlog.gg/aion-2/en/db/skills",
-    "sourceName": "Questlog.gg",
-    "sourceStatus": "community-database",
-    "sourceStatusFr": "Base communautaire",
-    "sourceType": "community-wiki",
-    "confidence": "medium",
-    "lastUpdated": "2026-04-24"
-  }
-];
+type SkillsDataset = {
+  dataset: string;
+  source: {
+    sourceName: string;
+    sourceUrl: string;
+    sourceStatus: string;
+  };
+  records: Skill[];
+};
 
-export const skills: Skill[] = [
-  ...gladiatorSkills,
-  ...templarSkills,
-  ...assassinSkills,
-  ...rangerSkills,
-  ...sorcererSkills,
-  ...spiritmasterSkills,
-  ...clericSkills,
-  ...chanterSkills,
-  ...extraSkills,
-];
+const dataset = allSkillsDataset as SkillsDataset;
+
+export const skills: Skill[] = Array.isArray(dataset.records) ? dataset.records : [];
 
 export const normalizeSkillClassSlug = (value: string) => {
-  if (value === "spiritmaster-elementalist" || value === "spiritmaster") {
-    return "elementalist";
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "spiritmaster-elementalist" || normalized === "elementalist") {
+    return "spiritmaster";
   }
-  return value;
+  if (normalized === "unknown") {
+    return "unknown";
+  }
+  return normalized;
 };
 
 export const getSkillsByClass = (classSlug: string) =>
-  skills.filter((skill) => skill.classSlug === normalizeSkillClassSlug(classSlug));
+  skills.filter((skill) => normalizeSkillClassSlug(skill.classSlug) === normalizeSkillClassSlug(classSlug));
 
 export const getSkillBySlug = (slug: string) =>
   skills.find((skill) => skill.slug === slug);
+
+export const cleanSkillText = (value: string) =>
+  value
+    .replace(/\{se_dmg:[^}]+\}/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const fixMojibake = (value: string) => {
+  if (!/[Ãâ€\uFFFD]/.test(value)) return value;
+  try {
+    const bytes = Uint8Array.from(Array.from(value).map((ch) => ch.charCodeAt(0) & 0xff));
+    const decoded = new TextDecoder("utf-8").decode(bytes);
+    return decoded.replace(/\uFFFD/g, "e");
+  } catch {
+    return value.replace(/\uFFFD/g, "e");
+  }
+};
+
+export const toFrenchUiText = (value: string) => cleanSkillText(fixMojibake(value));
 
 export const getSkillDisplayName = (skill: Skill, locale: "fr" | "en" = "fr") =>
   locale === "fr" ? toFrenchUiText(skill.nameFr || skill.name) : skill.name;
@@ -564,37 +68,17 @@ export const getSkillDisplayPvpUse = (skill: Skill, locale: "fr" | "en" = "fr") 
 export const getSkillDisplayCooldown = (skill: Skill, locale: "fr" | "en" = "fr") =>
   locale === "fr" ? toFrenchUiText(skill.estimatedCooldown) : skill.estimatedCooldown;
 
-export const cleanSkillText = (value: string) =>
-  value
-    .replace(/\{se_dmg:[^}]+\}/g, "damage")
-    .replace(/\s+/g, " ")
-    .trim();
+export const getSkillCategoryLabel = (skill: Skill) =>
+  toFrenchUiText(skill.categoryFr || skill.category || "Inconnu");
 
-export const toFrenchUiText = (value: string) =>
-  cleanSkillText(value)
-    .replace(/\bUnknown\b/gi, "Inconnu")
-    .replace(/\bUndeveloped\b/gi, "Non final")
-    .replace(/\bDeals\b/gi, "Inflige")
-    .replace(/\bdamage\b/gi, "degats")
-    .replace(/\bto up to\b/gi, "jusqu a")
-    .replace(/\benemies\b/gi, "ennemis")
-    .replace(/\bwithin\b/gi, "dans")
-    .replace(/\bincreases\b/gi, "augmente")
-    .replace(/\bRestores\b/gi, "restaure")
-    .replace(/\bCooldown\b/gi, "Recharge")
-    .replace(/\bCritical Hit\b/gi, "Coup critique")
-    .replace(/\bextra\b/gi, "supplementaires")
-    .replace(/\bwhen\b/gi, "quand")
-    .replace(/\blanding an attack\b/gi, "lors d une attaque")
-    .replace(/\bfor\b/gi, "pendant")
-    .replace(/\bbecomes available\b/gi, "devient disponible")
-    .replace(/\bRecover\b/gi, "Recupere")
-    .replace(/\bDivine Power\b/gi, "Puissance divine")
-    .replace(/\bHold the W Key\b/gi, "Maintenez la touche W")
-    .replace(/\bforward\b/gi, "vers l avant")
-    .replace(/\brapidly\b/gi, "rapidement")
-    .replace(/\bMouph\b/gi, "Transmutation")
-    .trim();
+export const getSkillTargetTypeLabel = (skill: Skill) =>
+  toFrenchUiText(skill.targetTypeFr || skill.targetType || "Inconnu");
+
+export const getSkillDamageTypeLabel = (skill: Skill) =>
+  toFrenchUiText(skill.damageTypeFr || skill.damageType || "Inconnu");
+
+export const getSkillRangeLabel = (skill: Skill) =>
+  toFrenchUiText(skill.rangeFr || skill.range || "Inconnu");
 
 export const toLiteralFrench = (value: string) => value;
 export const toLiteralFrenchStrict = (value: string) => value;

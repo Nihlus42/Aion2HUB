@@ -7,6 +7,7 @@ import {
   getSkillDisplayName,
   getSkillDisplayDescription,
   getSkillDisplayCooldown,
+  getSkillCategoryLabel,
   normalizeSkillClassSlug,
 } from "@/data";
 import { Trash2, Plus, Check, RotateCcw } from "lucide-react";
@@ -20,18 +21,6 @@ export const Route = createFileRoute("/builds")({
   }),
   component: BuildsPage,
 });
-
-const categoryLabel = {
-  "Basic Attack": "Attaque de base",
-  Combo: "Combo",
-  AoE: "Zone",
-  Burst: "Rafale",
-  Mobility: "Mobilite",
-  "Crowd Control": "Controle",
-  Defensive: "Defensif",
-  Utility: "Utilitaire",
-  Unknown: "Inconnu",
-} as const;
 
 const roleLabel = { Tank: "Tank", DPS: "DPS", Healer: "Soigneur", Support: "Support" } as const;
 const factionLabel = { Elyos: "Elyos", Asmodian: "Asmodien", Both: "Les deux" } as const;
@@ -132,7 +121,7 @@ function BuildsPage() {
                           <span className="font-display">{getSkillDisplayName(skill)}</span>
                           <span className="text-[10px] text-amber-300/90">Traduction litterale non finale</span>
                           <span className="text-[10px] tracking-widest px-1.5 py-0.5 rounded bg-accent/40 text-muted-foreground">
-                            {categoryLabel[skill.category].toUpperCase()}
+                            {getSkillCategoryLabel(skill).toUpperCase()}
                           </span>
                         </div>
                         <p className="text-xs text-muted-foreground">{cleanSkillText(getSkillDisplayDescription(skill))}</p>
@@ -177,7 +166,7 @@ function BuildsPage() {
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-medium truncate">{getSkillDisplayName(skill)}</div>
                     <div className="text-[10px] text-muted-foreground">
-                      {categoryLabel[skill.category]} - {getSkillDisplayCooldown(skill)}
+                      {getSkillCategoryLabel(skill)} - {getSkillDisplayCooldown(skill)}
                     </div>
                   </div>
                   <button onClick={() => toggleSkill(skill.slug)} className="p-1 text-muted-foreground hover:text-destructive">

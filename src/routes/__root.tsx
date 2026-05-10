@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
   Link,
@@ -52,10 +52,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aion 2 Hub - Guides, builds et timers" },
-      { name: "description", content: "Le hub fan de reference Aion 2 - guides de classes, planificateur de build et timers." },
+      { title: "Aion 2 Hub - Updates, classes, skills et outils" },
+      { name: "description", content: "Le hub fan de reference Aion 2 - actualites, classes, competences et planificateur de build." },
       { property: "og:title", content: "Aion 2 Hub" },
-      { property: "og:description", content: "Guides de classes, planificateur de build et timers pour Aion 2." },
+      { property: "og:description", content: "Actualites, classes, competences et outils pour Aion 2." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -91,5 +91,6 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
 
 
