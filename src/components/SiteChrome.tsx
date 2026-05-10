@@ -109,7 +109,8 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border/50 py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Aion 2 Hub - Site fan non affilie a NCSOFT.
+        <div>© {new Date().getFullYear()} Aion 2 Hub - Site fan non affilie a NCSOFT.</div>
+        <div className="mt-1">Aion 2 et les assets associes appartiennent a NCSoft. Aion2HUB est un projet fan non officiel.</div>
       </div>
     </footer>
   );

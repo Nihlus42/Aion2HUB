@@ -1,107 +1,67 @@
-﻿export type ItemStat = {
-  stat: string;
-  statFr?: string | null;
-  value: number | string;
-  enchantLevel?: number | null;
-};
-
-export type CraftIngredient = {
-  id?: string;
-  name?: string;
-  nameFr?: string;
-  quantity?: number;
-};
-
-export type ItemCrafting = {
-  isCraftable?: boolean;
-  ingredients?: CraftIngredient[];
-  normalOutput?: number | string | null;
-  comboOutput?: number | string | null;
-};
-
-export type ItemEquipmentInfo = {
-  weaponType?: string | null;
-  armorType?: string | null;
-  slot?: string | null;
-  range?: number | string | null;
-  attackSpeed?: number | string | null;
-};
-
-export type Item = {
+﻿export type ItemLight = {
   id: string;
-  name: string;
-  nameFr?: string;
   slug: string;
-  category: string;
-  categoryFr?: string;
-  subCategory?: string;
-  subCategoryFr?: string;
-  rarity?: string;
-  rarityFr?: string;
-  quality?: string;
-  qualityFr?: string;
-  description?: string;
-  descriptionFr?: string;
-  cooldown?: string;
-  cooldownFr?: string;
-  icon?: string;
-  sourceUrl?: string;
-  sourceName?: string;
-  sourceStatus?: string;
-  sourceStatusFr?: string;
-  lastUpdated?: string;
-
-  minLevelRequirement?: number | null;
-  maxLevelRequirement?: number | null;
-  raceId?: string | null;
-  itemTier?: string | null;
-  isSellable?: boolean;
-  sellPrice?: number | null;
-
-  equipmentInfo?: ItemEquipmentInfo | null;
-  itemStats?: ItemStat[] | null;
-  crafting?: ItemCrafting | null;
-
-  isCraftable?: boolean;
-  craftIngredients?: CraftIngredient[];
-  normalOutput?: number | string | null;
-  comboOutput?: number | string | null;
+  nameEn?: string | null;
+  nameFr?: string | null;
+  image?: string | null;
+  mainCategory?: string | null;
+  mainCategoryFr?: string | null;
+  categoryEn?: string | null;
+  categoryFr?: string | null;
+  gradeNameEn?: string | null;
+  gradeFr?: string | null;
+  tradable?: boolean;
+  sourceFr?: string[] | null;
+  topOptionsFr?: string[] | null;
+  optionsFr?: string[] | null;
+  searchText?: string | null;
 };
 
-export type DisplayStatGroup = {
-  enchantLevel: number;
-  lines: string[];
+export type ItemOption = {
+  key?: string;
+  labelEn?: string | null;
+  labelFr?: string | null;
+  value?: unknown;
+  isPercent?: boolean;
+  textEn?: string | null;
+  textFr?: string | null;
+};
+
+export type ItemFull = ItemLight & {
+  nameFrStatus?: string | null;
+  gradeRaw?: string | null;
+  inDatabase?: boolean;
+  options?: ItemOption[] | null;
+  descriptionEn?: string | null;
+  descriptionFr?: string | null;
+  descriptionStatus?: string | null;
+  sources?: Array<{ en?: string; fr?: string }> | null;
+};
+
+export type ItemsMeta = {
+  total?: number;
+  filters?: {
+    mainCategories?: Array<[string, string]>;
+    categories?: Array<[string, string]>;
+    grades?: Array<[string, string]>;
+    sources?: Array<[string, string]>;
+  };
 };
 
 export type DisplayItem = {
   id: string;
-  icon: string;
   name: string;
-  category: string;
-  subCategory: string;
-  rarity: string;
-  quality: string;
-  description: string | null;
-  cooldown: string | null;
-  minLevel: number | null;
-  race: string | null;
-  sellPrice: number | null;
-  tier: string | null;
-  equipment: {
-    weaponType: string | null;
-    armorType: string | null;
-    slot: string | null;
-    range: string | null;
-    attackSpeed: string | null;
-  };
-  statsByEnchant: DisplayStatGroup[];
-  crafting: {
-    isCraftable: boolean;
-    ingredients: Array<{ name: string; quantity: number | null }>;
-    normalOutput: string | null;
-    comboOutput: string | null;
-  };
-  sourceName: string | null;
-  sourceStatus: string | null;
-  lastUpdated: string | null;
+  nameEn: string | null;
+  image: string | null;
+  mainCategory: string | null;
+  mainCategoryFr: string | null;
+  categoryEn: string | null;
+  categoryFr: string | null;
+  gradeEn: string | null;
+  gradeFr: string | null;
+  tradable: boolean | null;
+  sourceFr: string[];
+  optionsFr: string[];
+  descriptionFr: string | null;
+  searchText: string;
 };

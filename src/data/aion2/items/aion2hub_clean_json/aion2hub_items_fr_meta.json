@@ -1,0 +1,661 @@
+{
+  "dataset": "aion2hub-items-fr-clean",
+  "sourceDataset": "talentbuilds-aion2-items",
+  "source": "https://talentbuilds.com/aion2/database",
+  "extractedAt": "2026-05-10",
+  "generatedAt": "2026-05-10",
+  "total": 7433,
+  "notes": [
+    "French translations are rule-based and should be reviewed for final editorial quality.",
+    "Original English names and descriptions are preserved.",
+    "Items with non-Latin descriptions are kept but marked as untranslated_non_latin.",
+    "The raw field from source files was removed to keep the frontend JSON lighter."
+  ],
+  "counts": {
+    "byMainCategory": {
+      "Armes": 1208,
+      "Accessoires": 477,
+      "Armures": 1470,
+      "Divers": 267,
+      "Consommables": 355,
+      "Matériaux": 418,
+      "Ailes": 755,
+      "Décoration": 140,
+      "Familiers": 437,
+      "Apparences": 1695,
+      "Titres": 156,
+      "Arcanes": 55
+    },
+    "byCategory": {
+      "Espadon": 145,
+      "Espadon extensible": 6,
+      "Épée longue": 145,
+      "Épée longue extensible": 6,
+      "Dague": 145,
+      "Dague extensible": 6,
+      "Arc": 145,
+      "Arc extensible": 6,
+      "Grimoire": 145,
+      "Grimoire extensible": 6,
+      "Orbe": 145,
+      "Orbe extensible": 6,
+      "Masse": 145,
+      "Masse extensible": 6,
+      "Bâton": 145,
+      "Bâton extensible": 6,
+      "Garde": 149,
+      "Torse": 210,
+      "Jambières": 210,
+      "Casque": 210,
+      "Épaulières": 210,
+      "Gants": 210,
+      "Chaussures": 210,
+      "Cape": 210,
+      "Ceinture": 3,
+      "Collier": 99,
+      "Boucles d’oreilles": 103,
+      "Anneau": 103,
+      "Bracelet": 16,
+      "Rune": 2,
+      "Amulet": 6,
+      "Potion": 29,
+      "Teleport": 7,
+      "Beverage": 38,
+      "Nourriture": 114,
+      "Transformation": 25,
+      "Parchemin": 54,
+      "Manastone": 36,
+      "Crafting Materials": 2,
+      "Points spéciaux": 8,
+      "Ticket de recharge": 35,
+      "Usage Duration Recharge Ticket": 5,
+      "Objet de déblocage d’ailes": 84,
+      "Power Shard": 6,
+      "Théostone": 153,
+      "Décoration du Panthéon": 143,
+      "Bon d’apparence": 1710,
+      "Kina Chest": 4,
+      "Miscellaneous": 14,
+      "Transformation de familier": 1,
+      "Substance Morph Design": 8,
+      "Kisk": 6,
+      "Cristal d’âme": 7,
+      "Quest Scroll": 10,
+      "Objet de titre": 638,
+      "Ticket de titre limité": 156,
+      "Resurrection Tool": 2,
+      "Customize": 8,
+      "Essence Extraction Learning Tool": 4,
+      "Crafting Skill Learning Tool": 20,
+      "Coffre de récompense": 88,
+      "Ascension": 5,
+      "Expansion Tool": 2,
+      "Familiers": 412,
+      "Unlock Character Slots": 1,
+      "Arcane": 46,
+      "Recharge Quna": 1,
+      "Spell Scroll": 1,
+      "Extract Skin": 1,
+      "Matériau d’artisanat": 135,
+      "Gathering Material": 4,
+      "Matériau récolté": 88,
+      "Valuables": 2,
+      "Key": 4,
+      "Special Material": 6,
+      "Special Substance Morph Materials": 4,
+      "Substance Morph Materials": 44,
+      "Upgrade": 52,
+      "Transmutation Materials": 1,
+      "Empyrean Trace": 3,
+      "Combine Skin": 4,
+      "Grail": 8,
+      "Parchment": 8,
+      "Compass": 8,
+      "Bell": 8,
+      "Mirror": 8,
+      "Materials": 3
+    },
+    "byGrade": {
+      "Héroïque": 2507,
+      "Unique": 1692,
+      "Épique": 2,
+      "Rare": 1340,
+      "Commun": 1557,
+      "Spécial": 335
+    },
+    "byOriginalType": {
+      "weapons": 755,
+      "unknown": 4479,
+      "armor": 630,
+      "accessories": 328,
+      "wings": 755,
+      "pets": 431,
+      "arcana": 55
+    },
+    "tradable": 2121,
+    "notTradable": 5312,
+    "withDescriptionFr": 4243,
+    "descriptionsToReview": 1038,
+    "autoTranslatedNames": 6106,
+    "namesSameAsEnglish": 1327
+  },
+  "filters": {
+    "mainCategories": [
+      [
+        "accessories",
+        "Accessoires"
+      ],
+      [
+        "wings",
+        "Ailes"
+      ],
+      [
+        "cosmetics",
+        "Apparences"
+      ],
+      [
+        "arcana",
+        "Arcanes"
+      ],
+      [
+        "weapons",
+        "Armes"
+      ],
+      [
+        "armor",
+        "Armures"
+      ],
+      [
+        "consumables",
+        "Consommables"
+      ],
+      [
+        "misc",
+        "Divers"
+      ],
+      [
+        "decor",
+        "Décoration"
+      ],
+      [
+        "pets",
+        "Familiers"
+      ],
+      [
+        "materials",
+        "Matériaux"
+      ],
+      [
+        "titles",
+        "Titres"
+      ]
+    ],
+    "categories": [
+      [
+        "Amulet",
+        "Amulet"
+      ],
+      [
+        "Ring",
+        "Anneau"
+      ],
+      [
+        "Bow",
+        "Arc"
+      ],
+      [
+        "Bow(Extend)",
+        "Arc extensible"
+      ],
+      [
+        "Arcana",
+        "Arcane"
+      ],
+      [
+        "Ascension",
+        "Ascension"
+      ],
+      [
+        "Bell",
+        "Bell"
+      ],
+      [
+        "Beverage",
+        "Beverage"
+      ],
+      [
+        "Skin Reward Voucher",
+        "Bon d’apparence"
+      ],
+      [
+        "Earrings",
+        "Boucles d’oreilles"
+      ],
+      [
+        "Bracelet",
+        "Bracelet"
+      ],
+      [
+        "Staff",
+        "Bâton"
+      ],
+      [
+        "Staff(Extend)",
+        "Bâton extensible"
+      ],
+      [
+        "Cloak",
+        "Cape"
+      ],
+      [
+        "Helm",
+        "Casque"
+      ],
+      [
+        "Belt",
+        "Ceinture"
+      ],
+      [
+        "Shoes",
+        "Chaussures"
+      ],
+      [
+        "Reward Chest",
+        "Coffre de récompense"
+      ],
+      [
+        "Necklace",
+        "Collier"
+      ],
+      [
+        "Combine Skin",
+        "Combine Skin"
+      ],
+      [
+        "Compass",
+        "Compass"
+      ],
+      [
+        "Crafting Materials",
+        "Crafting Materials"
+      ],
+      [
+        "Crafting Skill Learning Tool",
+        "Crafting Skill Learning Tool"
+      ],
+      [
+        "Soul Crystal",
+        "Cristal d’âme"
+      ],
+      [
+        "Customize",
+        "Customize"
+      ],
+      [
+        "Dagger",
+        "Dague"
+      ],
+      [
+        "Dagger(Extend)",
+        "Dague extensible"
+      ],
+      [
+        "Pantheon Decor",
+        "Décoration du Panthéon"
+      ],
+      [
+        "Empyrean Trace",
+        "Empyrean Trace"
+      ],
+      [
+        "Greatsword",
+        "Espadon"
+      ],
+      [
+        "Greatsword(Extend)",
+        "Espadon extensible"
+      ],
+      [
+        "Essence Extraction Learning Tool",
+        "Essence Extraction Learning Tool"
+      ],
+      [
+        "Expansion Tool",
+        "Expansion Tool"
+      ],
+      [
+        "Extract Skin",
+        "Extract Skin"
+      ],
+      [
+        "Pets",
+        "Familiers"
+      ],
+      [
+        "Gloves",
+        "Gants"
+      ],
+      [
+        "Guard",
+        "Garde"
+      ],
+      [
+        "Gathering Material",
+        "Gathering Material"
+      ],
+      [
+        "Grail",
+        "Grail"
+      ],
+      [
+        "Spellbook",
+        "Grimoire"
+      ],
+      [
+        "Spellbook(Extend)",
+        "Grimoire extensible"
+      ],
+      [
+        "Legs",
+        "Jambières"
+      ],
+      [
+        "Key",
+        "Key"
+      ],
+      [
+        "Kina Chest",
+        "Kina Chest"
+      ],
+      [
+        "Kisk",
+        "Kisk"
+      ],
+      [
+        "Manastone",
+        "Manastone"
+      ],
+      [
+        "Mace",
+        "Masse"
+      ],
+      [
+        "Mace(Extend)",
+        "Masse extensible"
+      ],
+      [
+        "Materials",
+        "Materials"
+      ],
+      [
+        "Crafting Material",
+        "Matériau d’artisanat"
+      ],
+      [
+        "Gathered Material",
+        "Matériau récolté"
+      ],
+      [
+        "Mirror",
+        "Mirror"
+      ],
+      [
+        "Miscellaneous",
+        "Miscellaneous"
+      ],
+      [
+        "Food",
+        "Nourriture"
+      ],
+      [
+        "Wings Unlocking Item",
+        "Objet de déblocage d’ailes"
+      ],
+      [
+        "Title Bestowing Item",
+        "Objet de titre"
+      ],
+      [
+        "Orb",
+        "Orbe"
+      ],
+      [
+        "Orb(Extend)",
+        "Orbe extensible"
+      ],
+      [
+        "Scroll",
+        "Parchemin"
+      ],
+      [
+        "Parchment",
+        "Parchment"
+      ],
+      [
+        "Special Points",
+        "Points spéciaux"
+      ],
+      [
+        "Potion",
+        "Potion"
+      ],
+      [
+        "Power Shard",
+        "Power Shard"
+      ],
+      [
+        "Quest Scroll",
+        "Quest Scroll"
+      ],
+      [
+        "Recharge Quna",
+        "Recharge Quna"
+      ],
+      [
+        "Resurrection Tool",
+        "Resurrection Tool"
+      ],
+      [
+        "Rune",
+        "Rune"
+      ],
+      [
+        "Special Material",
+        "Special Material"
+      ],
+      [
+        "Special Substance Morph Materials",
+        "Special Substance Morph Materials"
+      ],
+      [
+        "Spell Scroll",
+        "Spell Scroll"
+      ],
+      [
+        "Substance Morph Design",
+        "Substance Morph Design"
+      ],
+      [
+        "Substance Morph Materials",
+        "Substance Morph Materials"
+      ],
+      [
+        "Teleport",
+        "Teleport"
+      ],
+      [
+        "Theostone",
+        "Théostone"
+      ],
+      [
+        "Usage Count Recharge Ticket",
+        "Ticket de recharge"
+      ],
+      [
+        "Limited Title Ticket",
+        "Ticket de titre limité"
+      ],
+      [
+        "Top",
+        "Torse"
+      ],
+      [
+        "Transform",
+        "Transformation"
+      ],
+      [
+        "Pet Transformation",
+        "Transformation de familier"
+      ],
+      [
+        "Transmutation Materials",
+        "Transmutation Materials"
+      ],
+      [
+        "Unlock Character Slots",
+        "Unlock Character Slots"
+      ],
+      [
+        "Upgrade",
+        "Upgrade"
+      ],
+      [
+        "Usage Duration Recharge Ticket",
+        "Usage Duration Recharge Ticket"
+      ],
+      [
+        "Valuables",
+        "Valuables"
+      ],
+      [
+        "Pauldrons",
+        "Épaulières"
+      ],
+      [
+        "Longsword",
+        "Épée longue"
+      ],
+      [
+        "Longsword(Extend)",
+        "Épée longue extensible"
+      ]
+    ],
+    "grades": [
+      [
+        "Common",
+        "Commun"
+      ],
+      [
+        "Heroic",
+        "Héroïque"
+      ],
+      [
+        "Epic",
+        "Héroïque"
+      ],
+      [
+        "Rare",
+        "Rare"
+      ],
+      [
+        "Special",
+        "Spécial"
+      ],
+      [
+        "Unique",
+        "Unique"
+      ],
+      [
+        "Legend",
+        "Épique"
+      ]
+    ],
+    "sources": [
+      [
+        "Subscribe",
+        "Abonnement"
+      ],
+      [
+        "Crafting",
+        "Artisanat"
+      ],
+      [
+        "Shugo Shop",
+        "Boutique Shugo"
+      ],
+      [
+        "Trade Shop",
+        "Boutique d’échange"
+      ],
+      [
+        "Looted from monsters",
+        "Butin de monstres"
+      ],
+      [
+        "Ranking",
+        "Classement"
+      ],
+      [
+        "Pet Collection",
+        "Collection de familiers"
+      ],
+      [
+        "Daily Dungeon",
+        "Donjon quotidien"
+      ],
+      [
+        "Expedition",
+        "Expédition"
+      ],
+      [
+        "Shugo Festival",
+        "Festival Shugo"
+      ],
+      [
+        "Monolith",
+        "Monolithe"
+      ],
+      [
+        "Substance Morph",
+        "Morph de substance"
+      ],
+      [
+        "Merchant NPC",
+        "PNJ marchand"
+      ],
+      [
+        "Mechant NPC",
+        "PNJ marchand"
+      ],
+      [
+        "Quest",
+        "Quête"
+      ],
+      [
+        "Raid",
+        "Raid"
+      ],
+      [
+        "Gathering",
+        "Récolte"
+      ],
+      [
+        "Sanctuary",
+        "Sanctuaire"
+      ],
+      [
+        "Achievements",
+        "Succès"
+      ],
+      [
+        "Ascension Trial",
+        "Épreuve d’ascension"
+      ]
+    ]
+  },
+  "schema": {
+    "full": "Array<ItemFull>. Use for item detail pages.",
+    "light": "Array<ItemLight>. Use for search/list/card pages.",
+    "byId": "Object keyed by item id. Use for fast detail lookup."
+  }
+}
