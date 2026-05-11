@@ -49,13 +49,13 @@ Contenu attendu :
 
 - `robots.txt` doit autoriser le crawl (`User-agent: *` + `Allow: /`).
 - ne pas mettre `Disallow: /`.
-- `robots.txt` doit declarer `Sitemap: https://aion2-hub.vercel.app/sitemap.xml`.
+- `robots.txt` doit declarer `Sitemap: https://aion2frenchub.vercel.app/sitemap.xml`.
 - `sitemap.xml` doit contenir les pages principales du site.
 
 Verification rapide en prod :
 
-- `https://aion2-hub.vercel.app/robots.txt`
-- `https://aion2-hub.vercel.app/sitemap.xml`
+- `https://aion2frenchub.vercel.app/robots.txt`
+- `https://aion2frenchub.vercel.app/sitemap.xml`
 
 ## 5) Checklist avant push
 

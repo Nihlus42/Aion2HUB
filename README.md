@@ -87,8 +87,8 @@ Deux fichiers SEO statiques sont exposes depuis `public/` :
 
 URLs en production :
 
-- `https://aion2-hub.vercel.app/robots.txt`
-- `https://aion2-hub.vercel.app/sitemap.xml`
+- `https://aion2frenchub.vercel.app/robots.txt`
+- `https://aion2frenchub.vercel.app/sitemap.xml`
 
 Regles actuelles :
 

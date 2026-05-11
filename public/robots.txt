@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aion2-hub.vercel.app/sitemap.xml
+Sitemap: https://aion2frenchub.vercel.app/sitemap.xml
