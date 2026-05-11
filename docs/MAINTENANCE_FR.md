@@ -38,7 +38,26 @@ Guide rapide pour mettre à jour les données sans casser l’UI.
    - `src/lib/aion2/daevanion/translate.ts`
    - `src/data/aion2/daevanion/translations/fr.ts`
 
-## 4) Checklist avant push
+## 4) SEO de base
+
+Verifier que ces fichiers existent dans `public/` :
+
+- `robots.txt`
+- `sitemap.xml`
+
+Contenu attendu :
+
+- `robots.txt` doit autoriser le crawl (`User-agent: *` + `Allow: /`).
+- ne pas mettre `Disallow: /`.
+- `robots.txt` doit declarer `Sitemap: https://aion2-hub.vercel.app/sitemap.xml`.
+- `sitemap.xml` doit contenir les pages principales du site.
+
+Verification rapide en prod :
+
+- `https://aion2-hub.vercel.app/robots.txt`
+- `https://aion2-hub.vercel.app/sitemap.xml`
+
+## 5) Checklist avant push
 
 1. `npm run dev`
 2. vérifier navigation desktop + mobile

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aion2-hub.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/updates</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/classes</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/skills</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/items</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/daevanion-planner</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/planificateur-equipement</loc>
+  </url>
+  <url>
+    <loc>https://aion2-hub.vercel.app/contact</loc>
+  </url>
+</urlset>

@@ -78,6 +78,24 @@ Le site est ensuite disponible en local via Vite (URL affichée dans le terminal
 
 - `tsc --noEmit` peut remonter un warning/erreur de typage sur `vite.config.ts` (`customViteReactPlugin`) selon versions de dépendances, sans empêcher le fonctionnement applicatif local.
 
+## SEO de base
+
+Deux fichiers SEO statiques sont exposes depuis `public/` :
+
+- `public/robots.txt`
+- `public/sitemap.xml`
+
+URLs en production :
+
+- `https://aion2-hub.vercel.app/robots.txt`
+- `https://aion2-hub.vercel.app/sitemap.xml`
+
+Regles actuelles :
+
+- `robots.txt` autorise le crawl global (`User-agent: *`, `Allow: /`).
+- aucun blocage global (`Disallow: /` absent).
+- `sitemap.xml` reference les pages principales du site.
+
 ## Disclaimer
 
 **Aion 2 et les assets associés appartiennent à NCSoft. Aion2HUB est un projet fan non officiel.**
