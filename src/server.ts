@@ -1,5 +1,10 @@
 import "./lib/error-capture";
 
+import { POST as postCheckSteamNewsApiRoute } from "./app/api/admin/check-steam-news/route";
+import { POST as postDiscordTestApiRoute } from "./app/api/admin/test-discord/route";
+import { POST as postSteamNewsDiscordTestApiRoute } from "./app/api/admin/test-steam-news-discord/route";
+import { GET as getCronSteamNewsApiRoute } from "./app/api/cron/steam-news/route";
+import { GET as getSteamNewsApiRoute } from "./app/api/steam-news/route";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
@@ -68,6 +73,23 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    const requestUrl = new URL(request.url);
+    if (request.method === "GET" && requestUrl.pathname === "/api/steam-news") {
+      return getSteamNewsApiRoute();
+    }
+    if (request.method === "POST" && requestUrl.pathname === "/api/admin/test-discord") {
+      return postDiscordTestApiRoute(request);
+    }
+    if (request.method === "POST" && requestUrl.pathname === "/api/admin/test-steam-news-discord") {
+      return postSteamNewsDiscordTestApiRoute(request);
+    }
+    if (request.method === "POST" && requestUrl.pathname === "/api/admin/check-steam-news") {
+      return postCheckSteamNewsApiRoute(request);
+    }
+    if (request.method === "GET" && requestUrl.pathname === "/api/cron/steam-news") {
+      return getCronSteamNewsApiRoute(request);
+    }
+
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
