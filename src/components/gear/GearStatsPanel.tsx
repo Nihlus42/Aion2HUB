@@ -8,6 +8,14 @@ type Props = {
 export function GearStatsPanel({ title, stats }: Props) {
   const grouped = groupStats(stats);
   const hasAny = Object.values(grouped).some((arr) => arr.length > 0);
+  const formatValue = (label: string, value: number) => {
+    const percentLike =
+      label.includes("PvE") ||
+      label.includes("PvP") ||
+      label.toLowerCase().includes("vitesse") ||
+      label.toLowerCase().includes("degats critiques");
+    return percentLike ? `${value}%` : String(value);
+  };
 
   return (
     <section className="rune-border rounded-xl p-4">
@@ -25,7 +33,7 @@ export function GearStatsPanel({ title, stats }: Props) {
                   {entries.map(([label, value]) => (
                     <div key={label} className="flex justify-between text-sm">
                       <span className="text-muted-foreground">{label}</span>
-                      <span>{value}</span>
+                      <span>{formatValue(label, value)}</span>
                     </div>
                   ))}
                 </div>

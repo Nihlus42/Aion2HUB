@@ -1,4 +1,4 @@
-﻿import { getItemById, itemsById, itemsLight, type ItemLight } from "@/data";
+import { getFullItemById, type ItemFull, type ItemLight } from "@/data";
 import type { GearBuildSlots } from "@/lib/aion2/gear/buildStorage";
 import { gearSlots, type GearSlotId } from "@/lib/aion2/gear/slotDefinitions";
 import { GearSlot } from "./GearSlot";
@@ -28,11 +28,9 @@ type Props = {
 };
 
 export function GearPaperDoll({ build, onSelectSlot, onRemoveSlot, onFocusItem }: Props) {
-  const byLight = new Map(itemsLight.map((it) => [it.id, it]));
-
-  const getItem = (itemId?: string): ItemLight | null => {
+  const getItem = (itemId?: string): ItemLight | ItemFull | null => {
     if (!itemId) return null;
-    return (byLight.get(itemId) ?? (getItemById(itemId) as any) ?? (itemsById[itemId] as any) ?? null) as ItemLight | null;
+    return (getFullItemById(itemId) ?? null) as ItemLight | ItemFull | null;
   };
 
   return (

@@ -55,6 +55,7 @@ const lightRaw = lightJson as ItemLight[];
 const byIdRaw = byIdJson as Record<string, ItemFull>;
 const metaRaw = metaJson as ItemsMeta;
 const prodRaw = prodItemsJson as { records?: Array<{ id: string; minLevelRequirement?: number | null }> };
+type ProdRecord = NonNullable<typeof prodRaw.records>[number];
 
 export const itemsLight: ItemLight[] = Array.isArray(lightRaw) ? lightRaw : [];
 export const itemsById: Record<string, ItemFull> = byIdRaw ?? {};
@@ -62,7 +63,11 @@ export const itemsMeta: ItemsMeta = metaRaw ?? {};
 
 export const items = itemsLight;
 const minLevelById = new Map<string, number>();
+const prodRecordById = new Map<string, ProdRecord>();
 for (const rec of prodRaw.records ?? []) {
+  if (typeof rec?.id === "string") {
+    prodRecordById.set(rec.id, rec as ProdRecord);
+  }
   if (typeof rec?.id === "string" && typeof rec?.minLevelRequirement === "number" && Number.isFinite(rec.minLevelRequirement)) {
     minLevelById.set(rec.id, rec.minLevelRequirement);
   }
@@ -118,6 +123,19 @@ const toDisplayItem = (item: ItemLight | ItemFull): DisplayItem => {
 export const cleanItemForDisplay = (item: ItemLight | ItemFull): DisplayItem => toDisplayItem(item);
 
 export const getItemById = (id: string): ItemFull | undefined => itemsById[id];
+
+export const getFullItemById = (id: string): ItemFull | ItemLight | undefined => {
+  const full = itemsById[id];
+  if (full) {
+    const raw = prodRecordById.get(id);
+    return raw ? ({ ...full, raw } as ItemFull) : full;
+  }
+  const light = itemsLight.find((it) => it.id === id);
+  if (light && import.meta.env?.DEV) {
+    console.warn(`[gear] Full item not found for id=${id}. Falling back to light item.`);
+  }
+  return light;
+};
 
 export const getItemDetailDisplayById = (id: string): DisplayItem | null => {
   const item = getItemById(id);

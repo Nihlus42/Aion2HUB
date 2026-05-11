@@ -1,8 +1,8 @@
-﻿import { useEffect, useMemo, useState } from "react";
-import { getItemById, itemsById, itemsLight, type ItemLight } from "@/data";
+import { useEffect, useMemo, useState } from "react";
+import { getFullItemById, type ItemFull, type ItemLight } from "@/data";
 import { classOptions, gearSlots, type GearSlotId } from "@/lib/aion2/gear/slotDefinitions";
 import { sumStats } from "@/lib/aion2/gear/statParser";
-import { loadGearBuild, saveGearBuild, type EquippedItem, type GearBuildSlots, type GearBuildState } from "@/lib/aion2/gear/buildStorage";
+import { loadGearBuild, saveGearBuild, type GearBuildSlots, type GearBuildState } from "@/lib/aion2/gear/buildStorage";
 import { exportBuildJson, importBuildJson } from "@/lib/aion2/gear/buildEncoding";
 import { ItemPickerModal } from "./ItemPickerModal";
 import { GearPaperDoll } from "./GearPaperDoll";
@@ -10,15 +10,20 @@ import { GearModeToggle } from "./GearModeToggle";
 import { GearSidebar } from "./GearSidebar";
 
 const emptyBuild = (): GearBuildSlots => ({});
-
 type Mode = "current" | "target" | "comparison";
-
 const slotLabelById = new Map(gearSlots.map((s) => [s.id, s.label]));
 
-const resolveItem = (itemId?: string): ItemLight | null => {
+const resolveItem = (itemId?: string): ItemLight | ItemFull | null => {
   if (!itemId) return null;
-  return (itemsLight.find((it) => it.id === itemId) ?? (getItemById(itemId) as any) ?? (itemsById[itemId] as any) ?? null) as ItemLight | null;
+  return (getFullItemById(itemId) ?? null) as ItemLight | ItemFull | null;
 };
+
+const resolveBuildItems = (build: GearBuildSlots) =>
+  gearSlots
+    .map((slot) => build[slot.id])
+    .filter((entry): entry is { itemId: string; enchantLevel: number } => Boolean(entry?.itemId))
+    .map((entry) => ({ item: resolveItem(entry.itemId), enchantLevel: entry.enchantLevel ?? 0 }))
+    .filter((entry): entry is { item: ItemLight | ItemFull; enchantLevel: number } => Boolean(entry.item));
 
 export function GearPlanner() {
   const [classSlug, setClassSlug] = useState<string>(classOptions[0].slug);
@@ -45,68 +50,18 @@ export function GearPlanner() {
     saveGearBuild(state);
   }, [classSlug, activeMode, currentBuild, targetBuild]);
 
-  const currentItems = useMemo(
-    () =>
-      gearSlots
-        .map((slot) => currentBuild[slot.id])
-        .filter((entry): entry is EquippedItem => Boolean(entry?.itemId))
-        .map((entry) => ({ item: resolveItem(entry.itemId) }))
-        .filter((x): x is { item: ItemLight } => Boolean(x.item))
-        .map(({ item }) => ({ item: { ...item }, enchantLevel: gearSlots.map((s) => currentBuild[s.id]).find((e) => e?.itemId === item.id)?.enchantLevel ?? 0 }))
-    ,
-    [currentBuild],
-  );
-
-  const targetItems = useMemo(
-    () =>
-      gearSlots
-        .map((slot) => targetBuild[slot.id])
-        .filter((entry): entry is EquippedItem => Boolean(entry?.itemId))
-        .map((entry) => ({ item: resolveItem(entry.itemId) }))
-        .filter((x): x is { item: ItemLight } => Boolean(x.item))
-        .map(({ item }) => ({ item: { ...item }, enchantLevel: gearSlots.map((s) => targetBuild[s.id]).find((e) => e?.itemId === item.id)?.enchantLevel ?? 0 }))
-    ,
-    [targetBuild],
-  );
-
-  const currentStats = useMemo(
-    () =>
-      sumStats(
-        gearSlots
-          .map((slot) => ({ slot, entry: currentBuild[slot.id] }))
-          .filter(({ entry }) => Boolean(entry?.itemId))
-          .map(({ entry }) => ({ item: resolveItem(entry!.itemId) }))
-          .filter((x): x is { item: ItemLight } => Boolean(x.item))
-          .map(({ item }) => {
-            const slotEntry = Object.values(currentBuild).find((e) => e?.itemId === item.id);
-            return { item: item as any, enchantLevel: slotEntry?.enchantLevel ?? 0 };
-          }),
-      ),
-    [currentBuild],
-  );
-
-  const targetStats = useMemo(
-    () =>
-      sumStats(
-        gearSlots
-          .map((slot) => ({ slot, entry: targetBuild[slot.id] }))
-          .filter(({ entry }) => Boolean(entry?.itemId))
-          .map(({ entry }) => ({ item: resolveItem(entry!.itemId) }))
-          .filter((x): x is { item: ItemLight } => Boolean(x.item))
-          .map(({ item }) => {
-            const slotEntry = Object.values(targetBuild).find((e) => e?.itemId === item.id);
-            return { item: item as any, enchantLevel: slotEntry?.enchantLevel ?? 0 };
-          }),
-      ),
-    [targetBuild],
-  );
+  const currentStats = useMemo(() => sumStats(resolveBuildItems(currentBuild)), [currentBuild]);
+  const targetStats = useMemo(() => sumStats(resolveBuildItems(targetBuild)), [targetBuild]);
 
   const buildToDisplay = activeMode === "target" ? targetBuild : currentBuild;
   const editingMode: "current" | "target" = activeMode === "target" ? "target" : "current";
 
   const onPickItem = (itemId: string) => {
     if (!editing) return;
-    const update = (prev: GearBuildSlots) => ({ ...prev, [editing.slotId]: { itemId, enchantLevel: prev[editing.slotId]?.enchantLevel ?? 0 } });
+    const update = (prev: GearBuildSlots) => ({
+      ...prev,
+      [editing.slotId]: { itemId, enchantLevel: prev[editing.slotId]?.enchantLevel ?? 0 },
+    });
     if (editing.mode === "current") setCurrentBuild(update);
     else setTargetBuild(update);
     setFocusedSlot({ mode: editing.mode, slotId: editing.slotId });
@@ -124,9 +79,7 @@ export function GearPlanner() {
     setFocusedSlot(null);
   };
 
-  const onExport = () => {
-    setImportValue(exportBuildJson({ classSlug, activeMode, currentBuild, targetBuild }));
-  };
+  const onExport = () => setImportValue(exportBuildJson({ classSlug, activeMode, currentBuild, targetBuild }));
 
   const onImport = () => {
     const parsed = importBuildJson(importValue);
@@ -183,18 +136,28 @@ export function GearPlanner() {
     <div className="container mx-auto px-4 py-10">
       <header className="mb-6">
         <h1 className="font-display text-4xl mb-2">Planificateur d equipement</h1>
-        <p className="text-sm text-muted-foreground">Prepare ton build, compare tes equipements et visualise tes statistiques.</p>
+        <p className="text-sm text-muted-foreground">
+          Prepare ton build, compare tes equipements et visualise tes statistiques.
+        </p>
         <div className="mt-3 rounded-lg border border-amber-400/30 bg-amber-400/10 px-3 py-2 text-xs text-amber-100/90">
-          <span className="font-semibold">En cours de developpement.</span> Cet outil est encore en cours de developpement. Les statistiques, filtres et calculs peuvent evoluer avec les prochaines mises a jour des donnees Aion 2.
+          <span className="font-semibold">En cours de developpement.</span> Cet outil est encore en cours de
+          developpement. Les statistiques, filtres et calculs peuvent evoluer avec les prochaines mises a jour des
+          donnees Aion 2.
         </div>
       </header>
 
       <section className="rune-border rounded-xl p-4 mb-5 grid gap-3 lg:grid-cols-[1fr_auto] items-end">
         <label className="text-sm">
           <span className="block text-xs text-muted-foreground mb-1">Classe</span>
-          <select value={classSlug} onChange={(e) => setClassSlug(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 min-w-52">
+          <select
+            value={classSlug}
+            onChange={(e) => setClassSlug(e.target.value)}
+            className="bg-background/60 border border-border rounded-md px-3 py-2 min-w-52"
+          >
             {classOptions.map((c) => (
-              <option key={c.slug} value={c.slug}>{c.label}</option>
+              <option key={c.slug} value={c.slug}>
+                {c.label}
+              </option>
             ))}
           </select>
         </label>
@@ -223,8 +186,12 @@ export function GearPlanner() {
                   {slotDiffs.map((d) => (
                     <div key={d.slot} className="rounded-lg border border-border p-2 text-sm">
                       <p className="text-muted-foreground text-xs">{d.slot}</p>
-                      <p><span className="text-rose-300">Actuel:</span> {d.current}</p>
-                      <p><span className="text-emerald-300">Cible:</span> {d.target}</p>
+                      <p>
+                        <span className="text-rose-300">Actuel:</span> {d.current}
+                      </p>
+                      <p>
+                        <span className="text-emerald-300">Cible:</span> {d.target}
+                      </p>
                     </div>
                   ))}
                 </div>

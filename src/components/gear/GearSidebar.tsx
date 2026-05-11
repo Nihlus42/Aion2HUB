@@ -1,8 +1,8 @@
-﻿import { GearStatsPanel } from "./GearStatsPanel";
+import { GearStatsPanel } from "./GearStatsPanel";
 import { GearComparisonPanel } from "./GearComparisonPanel";
 import { SelectedItemPanel } from "./SelectedItemPanel";
 import type { ParsedStats } from "@/lib/aion2/gear/statParser";
-import type { ItemLight } from "@/data";
+import type { ItemFull, ItemLight } from "@/data";
 
 type Mode = "current" | "target" | "comparison";
 
@@ -11,7 +11,7 @@ type Props = {
   currentStats: ParsedStats;
   targetStats: ParsedStats;
   selectedSlotLabel: string;
-  selectedItem: ItemLight | null;
+  selectedItem: ItemLight | ItemFull | null;
   selectedEnchantLevel: number;
   onChangeEnchant: (level: number) => void;
   importValue: string;
@@ -50,11 +50,22 @@ export function GearSidebar({
 
       <section className="rune-border rounded-xl p-4">
         <div className="flex flex-wrap gap-2 mb-3">
-          <button onClick={onExport} className="px-3 py-2 rounded-md border border-gold/40 text-gold text-sm hover:bg-gold/10">Exporter le build</button>
-          <button onClick={onImport} className="px-3 py-2 rounded-md border border-border text-sm hover:bg-accent/20">Importer un build</button>
-          <button onClick={onReset} className="px-3 py-2 rounded-md border border-border text-sm hover:bg-accent/20">Reinitialiser</button>
+          <button onClick={onExport} className="px-3 py-2 rounded-md border border-gold/40 text-gold text-sm hover:bg-gold/10">
+            Exporter le build
+          </button>
+          <button onClick={onImport} className="px-3 py-2 rounded-md border border-border text-sm hover:bg-accent/20">
+            Importer un build
+          </button>
+          <button onClick={onReset} className="px-3 py-2 rounded-md border border-border text-sm hover:bg-accent/20">
+            Reinitialiser
+          </button>
         </div>
-        <textarea value={importValue} onChange={(e) => onImportValueChange(e.target.value)} placeholder="JSON exporte/importe..." className="w-full min-h-28 bg-background/60 border border-border rounded-md px-3 py-2 text-xs" />
+        <textarea
+          value={importValue}
+          onChange={(e) => onImportValueChange(e.target.value)}
+          placeholder="JSON exporte/importe..."
+          className="w-full min-h-28 bg-background/60 border border-border rounded-md px-3 py-2 text-xs"
+        />
       </section>
     </aside>
   );
