@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { Analytics } from "@vercel/analytics/react";
 import { SiteHeader, SiteFooter } from "@/components/SiteChrome";
 
 import appCss from "../styles.css?url";
@@ -73,6 +74,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <head><HeadContent /></head>
       <body>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>
