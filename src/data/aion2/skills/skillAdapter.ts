@@ -97,6 +97,7 @@ export const normalizeSkill = (skill: TalentbuildsSkill | QuestlogSkill, source:
   const id = clean((skill as any).id) || clean((skill as any).slug) || `${source}-${Math.random().toString(36).slice(2, 10)}`;
   const classSlug = normalizeClassSlug((skill as any).classSlug);
   const descriptionFr = clean((skill as any).descriptionFr);
+  const estimatedCooldown = clean((skill as any).estimatedCooldown);
   const sourceBoardRefs = Array.isArray((skill as any).boardReferences) ? (skill as any).boardReferences : [];
   const boardReferences = sourceBoardRefs.map((item: any) => ({
     boardId: Number(item.boardId ?? 0),
@@ -118,6 +119,7 @@ export const normalizeSkill = (skill: TalentbuildsSkill | QuestlogSkill, source:
     typeFr: normalizeSkillType((skill as any).typeFr || (skill as any).typeEn) || "Inconnu",
     typeEn: clean((skill as any).typeEn) || undefined,
     descriptionFr: notUnknown(descriptionFr) ? descriptionFr : undefined,
+    estimatedCooldown: notUnknown(estimatedCooldown) ? estimatedCooldown : undefined,
     specialtyFr: normalizeSpecialty((skill as any).specialtyFr),
     tagsFr: normalizeTags((skill as any).tagsFr),
     imageUrl: clean((skill as any).imageUrl) || undefined,
@@ -140,8 +142,6 @@ for (const rec of questRecords) {
   questByNameEn.get(key)!.push(rec);
 }
 
-const hasPlaceholder = (value: string) => /\bX\b|\{se_[^}]+\}/i.test(value);
-
 const pickQuestPreviewDescription = (nameEn?: string) => {
   const key = normalizeName(nameEn);
   if (!key) return null;
@@ -161,14 +161,30 @@ const pickQuestPreviewDescription = (nameEn?: string) => {
   return best || null;
 };
 
+const pickQuestPreviewCooldown = (nameEn?: string) => {
+  const key = normalizeName(nameEn);
+  if (!key) return null;
+  const candidates = questByNameEn.get(key) ?? [];
+  if (candidates.length === 0) return null;
+  for (const candidate of candidates) {
+    const value = clean(candidate.estimatedCooldown);
+    if (notUnknown(value)) return value;
+  }
+  return null;
+};
+
 const talentNormalized = talentRecords.map((skill) => {
   const normalized = normalizeSkill(skill, "talentbuilds");
   const currentDescription = clean(normalized.descriptionFr);
-  if (!notUnknown(currentDescription) || hasPlaceholder(currentDescription)) {
-    const previewDescription = pickQuestPreviewDescription(skill.nameEn);
-    if (previewDescription) {
-      return { ...normalized, descriptionFr: previewDescription };
-    }
+  const currentCooldown = clean(normalized.estimatedCooldown);
+  const previewDescription = !notUnknown(currentDescription) ? pickQuestPreviewDescription(skill.nameEn) : null;
+  const previewCooldown = !notUnknown(currentCooldown) ? pickQuestPreviewCooldown(skill.nameEn) : null;
+  if (previewDescription || previewCooldown) {
+    return {
+      ...normalized,
+      descriptionFr: previewDescription ?? normalized.descriptionFr,
+      estimatedCooldown: previewCooldown ?? normalized.estimatedCooldown,
+    };
   }
   return normalized;
 });
@@ -177,11 +193,15 @@ const talentByIdMap = Object.fromEntries(
     const raw = skill as TalentbuildsSkill;
     const normalized = normalizeSkill(raw, "talentbuilds");
     const currentDescription = clean(normalized.descriptionFr);
-    if (!notUnknown(currentDescription) || hasPlaceholder(currentDescription)) {
-      const previewDescription = pickQuestPreviewDescription(raw.nameEn);
-      if (previewDescription) {
-        return [id, { ...normalized, descriptionFr: previewDescription }];
-      }
+    const currentCooldown = clean(normalized.estimatedCooldown);
+    const previewDescription = !notUnknown(currentDescription) ? pickQuestPreviewDescription(raw.nameEn) : null;
+    const previewCooldown = !notUnknown(currentCooldown) ? pickQuestPreviewCooldown(raw.nameEn) : null;
+    if (previewDescription || previewCooldown) {
+      return [id, {
+        ...normalized,
+        descriptionFr: previewDescription ?? normalized.descriptionFr,
+        estimatedCooldown: previewCooldown ?? normalized.estimatedCooldown,
+      }];
     }
     return [id, normalized];
   }),

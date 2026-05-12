@@ -9,6 +9,7 @@ export type TalentbuildsSkill = {
   typeFr?: string;
   typeEn?: string;
   descriptionFr?: string;
+  estimatedCooldown?: string;
   specialtyFr?: string | string[];
   tagsFr?: string | string[] | Record<string, never> | null;
   imageUrl?: string;
@@ -36,6 +37,7 @@ export type NormalizedSkill = {
   typeFr: string;
   typeEn?: string;
   descriptionFr?: string;
+  estimatedCooldown?: string;
   specialtyFr?: string[];
   tagsFr?: string[];
   imageUrl?: string;

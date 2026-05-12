@@ -93,6 +93,9 @@ function SkillsPage() {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground mt-3">{skill.descriptionFr || "Description indisponible"}</p>
+              <p className="text-xs text-muted-foreground mt-2">
+                Temps de recharge : {skill.estimatedCooldown || "—"}
+              </p>
               {(skill.tagsFr?.length ?? 0) > 0 && (
                 <div className="flex flex-wrap gap-1 mt-3">
                   {skill.tagsFr!.map((tag) => (
