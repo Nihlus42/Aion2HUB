@@ -9,8 +9,12 @@ import { EventTimers } from "@/components/EventTimers";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aion 2 Hub - Hub utilitaire MMORPG dark fantasy" },
-      { name: "description", content: "Actualités, classes, compétences, planificateur et timers d’événements pour les joueurs Aion 2." },
+      { title: "AION 2 FR : actualités, classes, compétences et builds | Aion2FrenchHub" },
+      {
+        name: "description",
+        content:
+          "Suivez AION 2 en français avec des actualités vérifiées, les classes, les compétences, les builds et des outils utiles pour préparer votre aventure.",
+      },
     ],
   }),
   component: HomePage,
@@ -60,10 +64,10 @@ function HomePage() {
               <span className="text-xs tracking-[0.3em] text-gold font-medium">UNION DES DAEVAS</span>
             </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              Élève-toi dans <span className="shimmer-text">Aion 2</span>
+              Ton hub <span className="shimmer-text">AION 2 FR</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Actualités vérifiées, classes, compétences, planificateur de build et timers vraiment utiles.
+              Actualités AION 2 en français, classes, compétences, builds et timers vraiment utiles pour suivre le MMORPG sans perdre ton temps.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/updates" className="px-6 py-3 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all inline-flex items-center gap-2">
@@ -146,6 +150,22 @@ function HomePage() {
               Explorer les classes
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 pb-24">
+        <div className="mx-auto max-w-4xl rune-border rounded-2xl p-8 md:p-10">
+          <h2 className="font-display text-3xl md:text-4xl mb-4">Pourquoi utiliser Aion2FrenchHub ?</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Aion2FrenchHub est un hub fan AION 2 en français pensé pour aller à l’essentiel : suivre les news importantes,
+              comparer les classes, explorer les compétences et préparer ses builds sans devoir fouiller dix sources dispersées.
+            </p>
+            <p>
+              Le site met en avant les informations vérifiées, les pages de classes, les outils de theorycraft et les rappels
+              d’événements utiles pour les joueurs qui veulent un point d’entrée clair sur AION 2 FR.
+            </p>
           </div>
         </div>
       </section>
