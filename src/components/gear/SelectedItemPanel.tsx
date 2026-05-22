@@ -12,8 +12,8 @@ export function SelectedItemPanel({ slotLabel, item, enchantLevel, onEnchantChan
   if (!item) {
     return (
       <section className="rune-border rounded-xl p-4">
-        <h4 className="font-display text-lg mb-2">Item selectionne</h4>
-        <p className="text-sm text-muted-foreground">Selectionne un slot pour voir le detail.</p>
+        <h4 className="font-display text-lg mb-2">Objet sélectionné</h4>
+        <p className="text-sm text-muted-foreground">Sélectionne un slot pour voir le détail.</p>
       </section>
     );
   }
@@ -23,7 +23,7 @@ export function SelectedItemPanel({ slotLabel, item, enchantLevel, onEnchantChan
 
   return (
     <section className="rune-border rounded-xl p-4">
-      <h4 className="font-display text-lg mb-2">Item selectionne</h4>
+      <h4 className="font-display text-lg mb-2">Objet sélectionné</h4>
       <p className="text-xs text-muted-foreground mb-2">{slotLabel}</p>
       <div className="flex gap-3">
         {view.image ? (

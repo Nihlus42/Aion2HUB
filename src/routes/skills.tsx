@@ -40,11 +40,11 @@ function SkillsPage() {
       <header className="mb-10 animate-fade-up">
         <Eyebrow>ARCHIVES DE COMBAT</Eyebrow>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Base de compétences</h1>
-        <p className="text-sm text-muted-foreground max-w-2xl">Source principale Talentbuilds FR. Fallback Questlog en interne.</p>
+        <p className="text-sm text-muted-foreground max-w-2xl">Source principale : Talentbuilds FR, avec secours Questlog en interne.</p>
       </header>
 
       <section className="mb-8 rounded-xl border border-gold/30 bg-gold/5 p-4 md:p-5">
-        <p className="text-sm font-semibold text-gold">Traductions en cours d&apos;amélioration</p>
+        <p className="text-sm font-semibold text-gold">Traductions en cours d’amélioration</p>
         <p className="mt-2 text-sm text-muted-foreground">
           Les compétences sont traduites progressivement en français. Certaines descriptions, spécialités ou effets peuvent
           encore être approximatifs ou incomplets. Les corrections seront faites petit à petit, surtout lorsque des données
@@ -79,7 +79,7 @@ function SkillsPage() {
         <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((skill: NormalizedSkill) => (
             <article key={`${skill.source}-${skill.id}`} className="rune-border rounded-xl p-5">
-              <div className="mb-3"><span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">Base communautaire / Sujet à changement</span></div>
+              <div className="mb-3"><span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">Base communautaire / vérification en cours</span></div>
               <div className="flex items-start gap-3">
                 {skill.imageUrl ? (
                   <img src={skill.imageUrl} alt={skill.nameFr} className="w-12 h-12 rounded border border-border object-cover" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />

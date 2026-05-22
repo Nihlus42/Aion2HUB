@@ -4,8 +4,8 @@ import { GearPlanner } from "@/components/gear/GearPlanner";
 export const Route = createFileRoute("/planificateur-equipement")({
   head: () => ({
     meta: [
-      { title: "Planificateur d equipement - Aion 2 Hub" },
-      { name: "description", content: "Planificateur d equipement Aion 2 en francais." },
+      { title: "Planificateur d’équipement - Aion 2 Hub" },
+      { name: "description", content: "Planificateur d’équipement Aion 2 en français." },
     ],
   }),
   component: GearPlanner,

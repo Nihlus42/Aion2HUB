@@ -17,12 +17,12 @@ function NotFoundComponent() {
     <div className="flex min-h-[60vh] items-center justify-center px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-7xl font-bold text-gradient-gold">404</h1>
-        <h2 className="mt-4 text-xl font-semibold">Perdu dans l Abyss</h2>
+        <h2 className="mt-4 text-xl font-semibold">Perdu dans l’Abyss</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Cette page a derape dans la faille. Reviens vers une zone sure.
+          Cette page a dérapé dans la faille. Reviens vers une zone sûre.
         </p>
         <Link to="/" className="mt-6 inline-flex items-center justify-center rounded-md bg-gradient-arcane px-4 py-2 text-sm font-semibold text-primary-foreground">
-          Retour accueil
+          Retour à l’accueil
         </Link>
       </div>
     </div>
@@ -41,7 +41,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           onClick={() => { router.invalidate(); reset(); }}
           className="mt-6 inline-flex items-center justify-center rounded-md bg-gradient-arcane px-4 py-2 text-sm font-semibold text-primary-foreground"
         >
-          Reessayer
+          Réessayer
         </button>
       </div>
     </div>
@@ -54,9 +54,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Aion 2 Hub - Updates, classes, skills et outils" },
-      { name: "description", content: "Le hub fan de reference Aion 2 - actualites, classes, competences et planificateur de build." },
+      { name: "description", content: "Le hub fan de référence Aion 2 - actualités, classes, compétences et planificateur de build." },
       { property: "og:title", content: "Aion 2 Hub" },
-      { property: "og:description", content: "Actualites, classes, competences et outils pour Aion 2." },
+      { property: "og:description", content: "Actualités, classes, compétences et outils pour Aion 2." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

@@ -22,9 +22,9 @@ const gradeClassMap: Record<string, string> = {
   Commun: "border-slate-500/70",
   Rare: "border-blue-400/80",
   Unique: "border-violet-400/80",
-  Legendaire: "border-amber-400/80",
-  Epique: "border-rose-400/80",
-  Heroique: "border-red-500/80",
+  Légendaire: "border-amber-400/80",
+  Épique: "border-rose-400/80",
+  Héroïque: "border-red-500/80",
 };
 
 const statShortMap: Record<string, string> = {
@@ -34,12 +34,12 @@ const statShortMap: Record<string, string> = {
   "Max MP": "PM",
   Attack: "Attaque",
   "Attack Bonus": "Attaque",
-  Defense: "Defense",
-  "Defense Bonus": "Defense",
+  Defense: "Défense",
+  "Defense Bonus": "Défense",
   "Critical Hit": "Critique",
-  "Critical Hit Resist": "Resist. crit.",
-  "Critical Damage Boost": "Degats crit.",
-  Accuracy: "Precision",
+  "Critical Hit Resist": "Résist. crit.",
+  "Critical Damage Boost": "Dégâts crit.",
+  Accuracy: "Précision",
   "Combat Speed": "Vitesse",
   Evasion: "Esquive",
   Block: "Blocage",
@@ -58,8 +58,8 @@ const safeParseBuild = (value: string): PlannerBuild | null => {
 };
 
 const getNodeDisplayTitle = (node: BoardNode, skill?: NormalizedSkill | null) => {
-  if (node.type === "Start") return "Depart";
-  if (node.type === "SkillLevel") return skill?.nameFr || "Competence inconnue";
+  if (node.type === "Start") return "Départ";
+  if (node.type === "SkillLevel") return skill?.nameFr || "Compétence inconnue";
   if (node.type === "Stat") {
     const stat = statShortMap[node.effect?.stat ?? ""] ?? node.effect?.stat ?? "Stat";
     const amount = Number(node.effect?.amount ?? 0);
@@ -69,8 +69,8 @@ const getNodeDisplayTitle = (node: BoardNode, skill?: NormalizedSkill | null) =>
 };
 
 const getNodeDisplaySubtitle = (node: BoardNode) => {
-  if (node.type === "Start") return "Node initial";
-  if (node.type === "SkillLevel") return "Competence";
+  if (node.type === "Start") return "Nœud initial";
+  if (node.type === "SkillLevel") return "Compétence";
   if (node.type === "Stat") return "Stat";
   return "";
 };
@@ -335,9 +335,9 @@ export function DaevanionPlanner() {
   return (
     <div className="container mx-auto px-4 py-10">
       <header className="mb-6">
-        <p className="text-xs tracking-[0.2em] text-gold mb-2">THEORIECRAFT</p>
+        <p className="text-xs tracking-[0.2em] text-gold mb-2">THEORYCRAFT</p>
         <h1 className="font-display text-4xl mb-2">Planificateur Daevanion</h1>
-        <p className="text-sm text-muted-foreground">Source skills prioritaire: Talentbuilds FR.</p>
+        <p className="text-sm text-muted-foreground">Source prioritaire pour les compétences : Talentbuilds FR.</p>
       </header>
 
       <section className="rune-border rounded-xl p-4 grid gap-3 md:grid-cols-4 mb-4">
@@ -350,13 +350,13 @@ export function DaevanionPlanner() {
       <div className="mb-2 flex flex-wrap gap-2">
         <button onClick={() => setZoomLevel((z) => clamp(Number((z - ZOOM_STEP).toFixed(2)), ZOOM_MIN, ZOOM_MAX))} className="px-3 py-1.5 rounded-md text-sm border border-border hover:bg-accent/20">Zoom -</button>
         <button onClick={() => setZoomLevel((z) => clamp(Number((z + ZOOM_STEP).toFixed(2)), ZOOM_MIN, ZOOM_MAX))} className="px-3 py-1.5 rounded-md text-sm border border-border hover:bg-accent/20">Zoom +</button>
-        <button onClick={fitBoardToContainer} className="px-3 py-1.5 rounded-md text-sm border border-gold/50 text-gold hover:bg-gold/10">Ajuster a l ecran</button>
-        <button onClick={() => { setPanPosition({ x: 0, y: 0 }); setZoomLevel(1); }} className="px-3 py-1.5 rounded-md text-sm border border-border hover:bg-accent/20">Reinitialiser la vue</button>
+        <button onClick={fitBoardToContainer} className="px-3 py-1.5 rounded-md text-sm border border-gold/50 text-gold hover:bg-gold/10">Ajuster à l’écran</button>
+        <button onClick={() => { setPanPosition({ x: 0, y: 0 }); setZoomLevel(1); }} className="px-3 py-1.5 rounded-md text-sm border border-border hover:bg-accent/20">Réinitialiser la vue</button>
         <button onClick={() => setViewMode("compact")} className={`px-3 py-1.5 rounded-md text-sm border ${viewMode === "compact" ? "border-gold/60 text-gold bg-gold/10" : "border-border hover:bg-accent/20"}`}>Vue compacte</button>
         <button onClick={() => setViewMode("readable")} className={`px-3 py-1.5 rounded-md text-sm border ${viewMode === "readable" ? "border-gold/60 text-gold bg-gold/10" : "border-border hover:bg-accent/20"}`}>Vue lisible</button>
         <div className="px-3 py-1.5 rounded-md text-xs border border-border text-muted-foreground">Zoom {Math.round(zoomLevel * 100)}%</div>
       </div>
-      <p className="text-xs text-muted-foreground mb-4">Molette : zoomer / dezoomer · Clic maintenu : deplacer</p>
+      <p className="text-xs text-muted-foreground mb-4">Molette : zoomer / dézoomer · clic maintenu : déplacer</p>
 
       <div className="grid 2xl:grid-cols-[1fr_320px] gap-5">
         <section className="rune-border rounded-xl p-3">
@@ -427,7 +427,7 @@ export function DaevanionPlanner() {
                         ) : (
                           <>
                             {node.type === "Stat" ? <div className="text-[9px] font-semibold leading-tight line-clamp-2">{title}</div> : null}
-                            {node.type === "Start" ? <div className="text-[9px] font-semibold">Depart</div> : null}
+                            {node.type === "Start" ? <div className="text-[9px] font-semibold">Départ</div> : null}
                           </>
                         )}
                         <div className="mt-auto"><span className="inline-flex text-[8px] px-1 py-0.5 rounded border border-border bg-background/70 text-muted-foreground">{getNodeDisplayCost(node)}</span></div>
@@ -449,9 +449,9 @@ export function DaevanionPlanner() {
         </section>
 
         <aside className="rune-border rounded-xl p-4 space-y-3 h-fit">
-          <h2 className="font-display text-xl">Node selectionne</h2>
+          <h2 className="font-display text-xl">Nœud sélectionné</h2>
           {!selectedNode ? (
-            <p className="text-sm text-muted-foreground">Aucun node selectionne</p>
+            <p className="text-sm text-muted-foreground">Aucun nœud sélectionné</p>
           ) : (
             <div className="space-y-1.5 text-sm">
               {selectedNodeSkill?.imageUrl ? <img src={selectedNodeSkill.imageUrl} alt={selectedNodeSkill.nameFr} className="w-16 h-16 rounded border border-border object-cover" loading="lazy" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} /> : null}
@@ -459,35 +459,35 @@ export function DaevanionPlanner() {
               <p><span className="text-gold">Type :</span> {getNodeDisplaySubtitle(selectedNode)}</p>
               <p><span className="text-gold">Grade :</span> {selectedNode.gradeFr}</p>
               <p><span className="text-gold">Niveau requis :</span> {selectedNode.required_level}</p>
-              <p><span className="text-gold">Cout :</span> {getNodeDisplayCost(selectedNode)}</p>
+              <p><span className="text-gold">Coût :</span> {getNodeDisplayCost(selectedNode)}</p>
               <p><span className="text-gold">Remboursement en Kinah :</span> {selectedNode.refund_gold}</p>
               <p><span className="text-gold">Effet :</span> {selectedNode.type === "SkillLevel" && selectedNodeSkill ? `${selectedNodeSkill.nameFr} +${selectedNode.effect?.levels ?? 1} niveau` : selectedNode.effectFr}</p>
               {selectedNodeSkill && (
                 <>
                   <p><span className="text-gold">Description :</span> {selectedNodeSkill.descriptionFr || "Description indisponible"}</p>
-                  {(selectedNodeSkill.specialtyFr?.length ?? 0) > 0 && <p><span className="text-gold">Specialites :</span> {selectedNodeSkill.specialtyFr!.join(" | ")}</p>}
+                  {(selectedNodeSkill.specialtyFr?.length ?? 0) > 0 && <p><span className="text-gold">Spécialités :</span> {selectedNodeSkill.specialtyFr!.join(" | ")}</p>}
                   {(selectedNodeSkill.tagsFr?.length ?? 0) > 0 && <p><span className="text-gold">Tags :</span> {selectedNodeSkill.tagsFr!.join(", ")}</p>}
                 </>
               )}
             </div>
           )}
           <div className="grid grid-cols-2 gap-2">
-            <button onClick={resetBoard} className="px-3 py-2 rounded-md bg-accent/30 hover:bg-accent/50 text-sm">Reinitialiser le plateau</button>
-            <button onClick={resetAll} className="px-3 py-2 rounded-md bg-accent/30 hover:bg-accent/50 text-sm">Tout reinitialiser</button>
+            <button onClick={resetBoard} className="px-3 py-2 rounded-md bg-accent/30 hover:bg-accent/50 text-sm">Réinitialiser le plateau</button>
+            <button onClick={resetAll} className="px-3 py-2 rounded-md bg-accent/30 hover:bg-accent/50 text-sm">Tout réinitialiser</button>
           </div>
         </aside>
       </div>
 
       <section className="rune-border rounded-xl p-4 mt-5">
-        <h3 className="font-display text-xl mb-3">Resume du build</h3>
+        <h3 className="font-display text-xl mb-3">Résumé du build</h3>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
           <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Classe</span><div>{translateClassName(selectedClass)}</div></div>
-          <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Points utilises</span><div>{summary.pointsUsed}</div></div>
-          <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Cout total</span><div>{summary.totalCost} {summary.crystalType}</div></div>
+          <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Points utilisés</span><div>{summary.pointsUsed}</div></div>
+          <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Coût total</span><div>{summary.totalCost} {summary.crystalType}</div></div>
           <div className="bg-background/50 border border-border rounded-md p-3"><span className="text-muted-foreground">Remboursement en Kinah</span><div>{summary.refundGold}</div></div>
         </div>
         <div className="mt-4 grid lg:grid-cols-[1fr_auto_auto] gap-2">
-          <textarea value={importText} onChange={(e) => setImportText(e.target.value)} placeholder="Collez ici un JSON exporte..." className="min-h-20 bg-background/60 border border-border rounded-md px-3 py-2 text-xs" />
+          <textarea value={importText} onChange={(e) => setImportText(e.target.value)} placeholder="Colle ici un JSON exporté..." className="min-h-20 bg-background/60 border border-border rounded-md px-3 py-2 text-xs" />
           <button onClick={exportBuild} className="px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm">Exporter le build</button>
           <button onClick={importBuild} className="px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm">Importer un build</button>
         </div>

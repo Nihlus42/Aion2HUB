@@ -47,26 +47,26 @@ export function ItemPickerModal({ open, slotId, onClose, onPick }: Props) {
     <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="w-full max-w-6xl max-h-[92vh] overflow-hidden rounded-xl border border-border bg-card">
         <div className="p-4 border-b border-border flex items-center justify-between">
-          <h3 className="font-display text-2xl">Selection d objet</h3>
+          <h3 className="font-display text-2xl">Sélection d’objet</h3>
           <button onClick={onClose} className="px-3 py-1 rounded border border-border text-sm">Fermer</button>
         </div>
 
         <div className="p-4 grid gap-3 md:grid-cols-5">
           <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Rechercher..." className="md:col-span-2 bg-background/60 border border-border rounded-md px-3 py-2 text-sm" />
           <select value={grade} onChange={(e) => setGrade(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-            <option value="all">Rarete</option>
+            <option value="all">Rareté</option>
             <option value="common">Commun</option>
             <option value="rare">Rare</option>
             <option value="unique">Unique</option>
-            <option value="legend">Legendaire</option>
-            <option value="epic">Epique</option>
-            <option value="heroic">Heroique</option>
+            <option value="legend">Légendaire</option>
+            <option value="epic">Épique</option>
+            <option value="heroic">Héroïque</option>
           </select>
           <input value={minLevel} onChange={(e) => setMinLevel(e.target.value)} placeholder="Niveau min" className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm" />
           <select value={tradable} onChange={(e) => setTradable(e.target.value)} className="bg-background/60 border border-border rounded-md px-3 py-2 text-sm">
-            <option value="all">Echange</option>
-            <option value="yes">Echangeable</option>
-            <option value="no">Lie</option>
+            <option value="all">Échange</option>
+            <option value="yes">Échangeable</option>
+            <option value="no">Lié</option>
           </select>
         </div>
 

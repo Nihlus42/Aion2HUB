@@ -2,13 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   classes,
-  skills,
+  getNormalizedSkills,
   cleanSkillText,
   getSkillDisplayName,
   getSkillDisplayDescription,
   getSkillDisplayCooldown,
   getSkillCategoryLabel,
-  normalizeSkillClassSlug,
 } from "@/data";
 import { Trash2, Plus, Check, RotateCcw } from "lucide-react";
 
@@ -16,7 +15,7 @@ export const Route = createFileRoute("/builds")({
   head: () => ({
     meta: [
       { title: "Planificateur de build - Aion 2 Hub" },
-      { name: "description", content: "Planifie ton build Aion 2 en selectionnant des competences et en suivant le cout total." },
+      { name: "description", content: "Planifie ton build Aion 2 en sélectionnant des compétences et en suivant le coût total." },
     ],
   }),
   component: BuildsPage,
@@ -30,7 +29,7 @@ function BuildsPage() {
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
   const klass = classes.find((c) => c.id === classId)!;
-  const classSkills = skills.filter((s) => s.classSlug === normalizeSkillClassSlug(klass.slug));
+  const classSkills = getNormalizedSkills().filter((s) => s.classSlug === klass.slug || (s.classSlug === "spiritmaster" && klass.slug === "spiritmaster-elementalist"));
   const selectedSkills = classSkills.filter((s) => selectedSlugs.includes(s.slug));
   const totalCost = selectedSkills.length;
 
@@ -51,11 +50,11 @@ function BuildsPage() {
     <div className="container mx-auto px-4 py-12">
       <header className="mb-10 animate-fade-up">
         <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
-          <span className="h-px w-6 bg-gold/60" />THEORIECRAFT
+          <span className="h-px w-6 bg-gold/60" />THEORYCRAFT
         </div>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Planificateur de build</h1>
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
-          Selectionne une classe, ajoute ou retire des competences, puis suis ton cout total.
+          Sélectionne une classe, ajoute ou retire des compétences, puis suis ton coût total.
         </p>
       </header>
 
@@ -85,15 +84,15 @@ function BuildsPage() {
         <section className="rune-border rounded-xl p-6">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h2 className="font-display text-2xl">Competences {klass.name}</h2>
+              <h2 className="font-display text-2xl">Compétences {klass.name}</h2>
               <p className="text-xs text-muted-foreground">{klass.combatStyle}</p>
             </div>
-            <span className="text-xs text-muted-foreground">{classSkills.length} competences disponibles</span>
+            <span className="text-xs text-muted-foreground">{classSkills.length} compétences disponibles</span>
           </div>
 
           {classSkills.length === 0 ? (
             <div className="text-center py-12 text-sm text-muted-foreground border border-dashed border-border rounded-lg">
-              Donnees de competences pour {klass.name} a venir.
+              Données de compétences pour {klass.name} à venir.
             </div>
           ) : (
             <ul className="space-y-2">
@@ -119,7 +118,7 @@ function BuildsPage() {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="font-display">{getSkillDisplayName(skill)}</span>
-                          <span className="text-[10px] text-amber-300/90">Traduction litterale non finale</span>
+                          <span className="text-[10px] text-amber-300/90">Texte communautaire en cours d’affinage</span>
                           <span className="text-[10px] tracking-widest px-1.5 py-0.5 rounded bg-accent/40 text-muted-foreground">
                             {getSkillCategoryLabel(skill).toUpperCase()}
                           </span>
@@ -140,11 +139,11 @@ function BuildsPage() {
 
         <aside className="rune-border rounded-xl p-5 h-fit lg:sticky lg:top-20">
           <h3 className="font-display text-xl mb-1">Build {klass.name}</h3>
-          <div className="text-xs text-muted-foreground mb-4">Competences selectionnees et cout total</div>
+          <div className="text-xs text-muted-foreground mb-4">Compétences sélectionnées et coût total</div>
 
           <div className="mb-4">
             <div className="flex justify-between text-xs mb-1.5">
-              <span className="text-muted-foreground">Cout total</span>
+              <span className="text-muted-foreground">Coût total</span>
               <span className="text-gold">{totalCost}</span>
             </div>
             <div className="h-1.5 bg-background rounded overflow-hidden">
@@ -158,7 +157,7 @@ function BuildsPage() {
           <div className="space-y-2 mb-4 max-h-72 overflow-y-auto">
             {selectedSkills.length === 0 ? (
               <div className="text-xs text-muted-foreground text-center py-6 border border-dashed border-border rounded-md">
-                Aucune competence selectionnee
+                Aucune compétence sélectionnée
               </div>
             ) : (
               selectedSkills.map((skill) => (
@@ -182,7 +181,7 @@ function BuildsPage() {
             disabled={selectedSkills.length === 0}
             className="w-full py-2.5 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold inline-flex items-center justify-center gap-2 shadow-glow disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 transition"
           >
-            <RotateCcw className="w-4 h-4" /> Reinitialiser le build
+            <RotateCcw className="w-4 h-4" /> Réinitialiser le build
           </button>
         </aside>
       </div>

@@ -135,14 +135,14 @@ export function GearPlanner() {
   return (
     <div className="container mx-auto px-4 py-10">
       <header className="mb-6">
-        <h1 className="font-display text-4xl mb-2">Planificateur d equipement</h1>
+        <h1 className="font-display text-4xl mb-2">Planificateur d’équipement</h1>
         <p className="text-sm text-muted-foreground">
-          Prepare ton build, compare tes equipements et visualise tes statistiques.
+          Prépare ton build, compare tes équipements et visualise tes statistiques.
         </p>
         <div className="mt-3 rounded-lg border border-amber-400/30 bg-amber-400/10 px-3 py-2 text-xs text-amber-100/90">
-          <span className="font-semibold">En cours de developpement.</span> Cet outil est encore en cours de
-          developpement. Les statistiques, filtres et calculs peuvent evoluer avec les prochaines mises a jour des
-          donnees Aion 2.
+          <span className="font-semibold">En cours de développement.</span> Cet outil est encore en cours de
+          développement. Les statistiques, filtres et calculs peuvent évoluer avec les prochaines mises à jour des
+          données Aion 2.
         </div>
       </header>
 
@@ -180,7 +180,7 @@ export function GearPlanner() {
             <section className="rune-border rounded-xl p-4">
               <h3 className="font-display text-xl mb-3">Comparaison des slots</h3>
               {slotDiffs.length === 0 ? (
-                <p className="text-sm text-muted-foreground">Aucune difference a afficher.</p>
+                <p className="text-sm text-muted-foreground">Aucune différence à afficher.</p>
               ) : (
                 <div className="space-y-2">
                   {slotDiffs.map((d) => (

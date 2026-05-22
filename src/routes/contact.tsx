@@ -52,7 +52,7 @@ function ContactPage() {
         <section className="rounded-lg border border-amber-400/30 bg-amber-400/10 p-4">
           <h2 className="font-display text-xl mb-2">Important</h2>
           <p className="text-sm text-amber-100/90">
-            Merci de ne pas envoyer d informations personnelles sensibles. Aion2HUB est un projet fan non officiel.
+            Merci de ne pas envoyer d’informations personnelles sensibles. Aion2HUB est un projet fan non officiel.
           </p>
         </section>
 

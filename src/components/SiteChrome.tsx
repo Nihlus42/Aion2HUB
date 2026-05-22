@@ -4,11 +4,11 @@ import { Menu, X, Swords } from "lucide-react";
 
 const navItems = [
   { to: "/", label: "Accueil" },
-  { to: "/updates", label: "Actualites" },
+  { to: "/updates", label: "Actualités" },
   { to: "/classes", label: "Classes" },
-  { to: "/skills", label: "Competences" },
+  { to: "/skills", label: "Compétences" },
   { to: "/items", label: "Objets" },
-  { to: "/planificateur-equipement", label: "Equipement" },
+  { to: "/planificateur-equipement", label: "Équipement" },
   { to: "/daevanion-planner", label: "Daevanion" },
   { to: "/contact", label: "Contact" },
 ];
@@ -46,7 +46,7 @@ export function SiteHeader() {
           to="/updates"
           className="hidden md:inline-flex items-center px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold shadow-glow hover:opacity-90 transition"
         >
-          Voir les actus
+          Voir les actualités
         </Link>
 
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Ouvrir le menu">
@@ -71,7 +71,7 @@ export function SiteHeader() {
             onClick={() => setOpen(false)}
             className="mt-2 px-3 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold text-center"
           >
-            Voir les actus
+            Voir les actualités
           </Link>
         </nav>
       )}
@@ -89,30 +89,30 @@ export function SiteFooter() {
             <span className="font-display tracking-widest text-gradient-gold">AION 2</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            Hub fan non officiel pour Aion 2. Actualites, classes, competences et outils de planification pour la nouvelle generation de Daevas.
+            Hub fan non officiel pour Aion 2. Actualités, classes, compétences et outils de planification pour la nouvelle génération de Daevas.
           </p>
         </div>
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">EXPLORER</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/updates" className="hover:text-foreground">Actualites</Link></li>
+            <li><Link to="/updates" className="hover:text-foreground">Actualités</Link></li>
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
-            <li><Link to="/skills" className="hover:text-foreground">Competences</Link></li>
+            <li><Link to="/skills" className="hover:text-foreground">Compétences</Link></li>
             <li><Link to="/items" className="hover:text-foreground">Objets</Link></li>
             <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">OUTILS</h4>
-          <p className="text-sm text-muted-foreground mb-3">Planifie tes builds, verifie les timers et optimise ta prochaine session.</p>
+          <p className="text-sm text-muted-foreground mb-3">Planifie tes builds, vérifie les timers et optimise ta prochaine session.</p>
           <Link to="/daevanion-planner" className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
             Ouvrir les outils
           </Link>
         </div>
       </div>
       <div className="border-t border-border/50 py-4 text-center text-xs text-muted-foreground">
-        <div>© {new Date().getFullYear()} Aion 2 Hub - Site fan non affilie a NCSOFT.</div>
-        <div className="mt-1">Aion 2 et les assets associes appartiennent a NCSoft. Aion2HUB est un projet fan non officiel.</div>
+        <div>© {new Date().getFullYear()} Aion 2 Hub - Site fan non affilié à NCSOFT.</div>
+        <div className="mt-1">Aion 2 et les assets associés appartiennent à NCSoft. Aion2HUB est un projet fan non officiel.</div>
       </div>
     </footer>
   );

@@ -24,17 +24,17 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     id: "summer-game-fest-2026-trailer-2026-06-05",
-    title: "AION 2 sera present au Summer Game Fest avec un nouveau trailer",
+    title: "AION 2 sera présent au Summer Game Fest avec un nouveau trailer",
     excerpt:
-      "AION 2 sera presente pendant le Summer Game Fest 2026 avec un nouveau trailer. L evenement pourrait apporter de nouvelles informations sur la version globale du MMORPG.",
+      "AION 2 sera présenté pendant le Summer Game Fest 2026 avec un nouveau trailer. L’événement pourrait apporter de nouvelles informations sur la version globale du MMORPG.",
     summary:
-      "NCSoft confirme la presence d AION 2 au Summer Game Fest 2026.\n\nUn nouveau trailer est attendu le 5 juin, avec davantage d informations sur le MMORPG nouvelle generation. Cette apparition devrait permettre d en apprendre plus sur la version globale du jeu, son univers, ses systemes et les prochaines etapes de communication.\n\nPour le moment, il faut rester prudent : aucune date de sortie globale precise ne doit etre consideree comme confirmee tant qu elle n est pas annoncee officiellement par NCSoft ou les canaux officiels AION 2.\n\nLe Summer Game Fest 2026 aura lieu le 5 juin a 2 PM PT / 5 PM ET, soit 23h en France et en Slovaquie.\n\nAion2HUB suivra les annonces et mettra a jour les informations disponibles apres la diffusion du trailer.",
+      "NCSoft confirme la présence d’AION 2 au Summer Game Fest 2026.\n\nUn nouveau trailer est attendu le 5 juin, avec davantage d’informations sur le MMORPG nouvelle génération. Cette apparition devrait permettre d’en apprendre plus sur la version globale du jeu, son univers, ses systèmes et les prochaines étapes de communication.\n\nPour le moment, il faut rester prudent : aucune date de sortie globale précise ne doit être considérée comme confirmée tant qu’elle n’a pas été annoncée officiellement par NCSoft ou les canaux officiels AION 2.\n\nLe Summer Game Fest 2026 aura lieu le 5 juin à 2 PM PT / 5 PM ET, soit 23 h en France et en Slovaquie.\n\nAion2HUB suivra les annonces et mettra à jour les informations disponibles après la diffusion du trailer.",
     watchlist: [
       "Nouveau trailer",
       "Informations sur la version globale",
-      "Eventuelle fenetre de sortie",
-      "Plateformes confirmees",
-      "Details sur les classes, le contenu ou le modele economique",
+      "Éventuelle fenêtre de sortie",
+      "Plateformes confirmées",
+      "Détails sur les classes, le contenu ou le modèle économique",
     ],
     tags: ["Global", "Confirme", "Trailer"],
     category: "Events",
@@ -60,9 +60,9 @@ export const updates: UpdateEntry[] = [
     id: "steam-aion2-announcement-2026-05-09",
     title: "AION 2 arrive sur Steam : annonce officielle et ouverture de la wishlist",
     excerpt:
-      "NC annonce officiellement l arrive d AION 2 sur Steam. La page est en ligne et les joueurs peuvent deja ajouter le jeu a leur liste de souhaits.",
+      "NC annonce officiellement l’arrivée d’AION 2 sur Steam. La page est en ligne et les joueurs peuvent déjà ajouter le jeu à leur liste de souhaits.",
     summary:
-      "Selon l annonce officielle publiee sur Steam, AION 2 dispose desormais d une page dediee sur la plateforme. Les joueurs peuvent suivre le projet directement sur Steam et ajouter le jeu a leur wishlist pour etre informes des prochaines etapes officielles.",
+      "Selon l’annonce officielle publiée sur Steam, AION 2 dispose désormais d’une page dédiée sur la plateforme. Les joueurs peuvent suivre le projet directement sur Steam et ajouter le jeu à leur wishlist pour être informés des prochaines étapes officielles.",
     category: "News",
     region: "Global",
     publishDate: "2026-04-21",
@@ -74,11 +74,11 @@ export const updates: UpdateEntry[] = [
   },
   {
     id: "steam-aion2-world-scale-aerial-combat-2026-05-10",
-    title: "AION 2 detaille son echelle: un monde x36 et un vrai systeme de combat aerien",
+    title: "AION 2 détaille son échelle : un monde x36 et un vrai système de combat aérien",
     excerpt:
-      "La page Steam officielle confirme une orientation forte: un monde 36 fois plus vaste que l AION original, construit sous Unreal Engine 5, avec un combat aerien au coeur du gameplay.",
+      "La page Steam officielle confirme une orientation forte : un monde 36 fois plus vaste que l’AION original, construit sous Unreal Engine 5, avec un combat aérien au cœur du gameplay.",
     summary:
-      "D apres la page officielle AION 2 sur Steam, le jeu est developpe avec Unreal Engine 5 et prend place dans un monde annonce comme 36 fois plus grand que celui du premier AION. Le combat aerien n est pas presente comme une mecanique secondaire: il est decrit comme un pilier de conception du monde et des affrontements, avec des zones, des batailles et des conflits structures autour de la verticalite.",
+      "D’après la page officielle AION 2 sur Steam, le jeu est développé avec Unreal Engine 5 et prend place dans un monde annoncé comme 36 fois plus grand que celui du premier AION. Le combat aérien n’est pas présenté comme une mécanique secondaire : il est décrit comme un pilier de conception du monde et des affrontements, avec des zones, des batailles et des conflits structurés autour de la verticalité.",
     category: "News",
     region: "Global",
     publishDate: "2026-05-10",

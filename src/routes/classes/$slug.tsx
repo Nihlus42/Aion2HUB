@@ -31,8 +31,8 @@ export const Route = createFileRoute("/classes/$slug")({
         {
           name: "description",
           content: currentClass
-            ? `${currentClass.name} details de classe, role, notes et evaluations.`
-            : "Page de details de classe.",
+            ? `${currentClass.name} : détails de classe, rôle, notes et évaluations.`
+            : "Page de détails de classe.",
         },
       ],
     };
@@ -49,7 +49,7 @@ function ClassDetailPage() {
       <div className="container mx-auto px-4 py-16">
         <div className="rune-border rounded-xl p-8 text-center">
           <h1 className="font-display text-4xl mb-3">Classe introuvable</h1>
-          <p className="text-muted-foreground mb-6">Cette entree de classe n existe pas dans les donnees actuelles.</p>
+          <p className="text-muted-foreground mb-6">Cette entrée de classe n’existe pas dans les données actuelles.</p>
           <Link to="/classes" className="inline-flex items-center gap-2 rounded-md bg-gradient-arcane px-4 py-2 text-primary-foreground font-semibold">
             <ArrowLeft className="w-4 h-4" />
             Retour aux classes
@@ -82,7 +82,7 @@ function ClassDetailPage() {
               </div>
               <div>
                 <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-                  Infos communaute / Sujet a changement
+                  Infos communauté / vérification en cours
                 </span>
               </div>
             </div>
@@ -93,7 +93,7 @@ function ClassDetailPage() {
                 <div className="font-semibold">{roleLabel[currentClass.role]}</div>
               </div>
               <div className="rounded-lg border border-border p-3 bg-background/40">
-                <div className="text-[10px] tracking-[0.2em] text-muted-foreground mb-1">DIFFICULTE</div>
+                <div className="text-[10px] tracking-[0.2em] text-muted-foreground mb-1">DIFFICULTÉ</div>
                 <div className="font-semibold">{currentClass.difficulty}/5</div>
               </div>
             </div>
@@ -109,7 +109,7 @@ function ClassDetailPage() {
         </article>
 
         <article className="rune-border rounded-xl p-6 lg:col-span-2">
-          <h2 className="font-display text-2xl mb-4">Evaluations de performance</h2>
+          <h2 className="font-display text-2xl mb-4">Évaluations de performance</h2>
           <div className="grid sm:grid-cols-2 gap-5">
             <RatingBar label="PvE" value={currentClass.pveRating} />
             <RatingBar label="PvP" value={currentClass.pvpRating} />

@@ -6,8 +6,8 @@ import { Calendar, ExternalLink } from "lucide-react";
 export const Route = createFileRoute("/updates")({
   head: () => ({
     meta: [
-      { title: "Actualites - Aion 2 Hub" },
-      { name: "description", content: "Actualites AION 2 verifiees a partir de sources officielles." },
+      { title: "Actualités - Aion 2 Hub" },
+      { name: "description", content: "Actualités AION 2 vérifiées à partir de sources officielles." },
     ],
   }),
   component: UpdatesPage,
@@ -22,7 +22,7 @@ const categories: ("All" | UpdateCategory)[] = [
 ];
 const categoryLabel: Record<UpdateCategory, string> = {
   "Patch Notes": "Notes de patch",
-  News: "Actualites",
+  News: "Actualités",
   Events: "Événements",
   Maintenance: "Maintenance",
 };
@@ -63,9 +63,9 @@ function UpdatesPage() {
         <div className="inline-flex items-center gap-2 text-gold text-xs tracking-[0.3em] mb-3">
           <span className="h-px w-6 bg-gold/60" />FLUX D INFORMATIONS
         </div>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">Actualites et notes de patch</h1>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Actualités et notes de patch</h1>
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
-          Informations publiees avec lien source, en priorite depuis les canaux officiels.
+          Informations publiées avec lien source, en priorité depuis les canaux officiels.
         </p>
       </header>
 
@@ -132,7 +132,7 @@ function UpdatesPage() {
                 <div className="text-[10px] tracking-[0.2em] text-muted-foreground mb-2">VISUEL DE COUVERTURE</div>
                 {item.coverImage.startsWith("placeholder://") ? (
                   <div className="h-28 rounded-md border border-dashed border-border/70 bg-accent/20 flex items-center justify-center text-xs text-muted-foreground text-center px-3">
-                    Visuel de couverture a definir (annonce Steam officielle AION 2)
+                    Visuel de couverture à définir (annonce Steam officielle AION 2)
                   </div>
                 ) : (
                   <img
@@ -148,11 +148,11 @@ function UpdatesPage() {
                 <div className="space-y-1">
                   <div className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                     <Calendar className="w-3.5 h-3.5" />
-                    Publie le {item.publishDate}
+                    Publié le {item.publishDate}
                   </div>
                   <div className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
                     <Calendar className="w-3.5 h-3.5" />
-                    Mis a jour {item.lastUpdated}
+                    Mis à jour {item.lastUpdated}
                   </div>
                 </div>
                 <div className="flex flex-col items-end gap-2">

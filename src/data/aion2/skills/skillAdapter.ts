@@ -111,7 +111,7 @@ export const normalizeSkill = (skill: TalentbuildsSkill | QuestlogSkill, source:
   return {
     id,
     slug: clean((skill as any).slug) || id.toLowerCase(),
-    nameFr: clean((skill as any).nameFr) || "Competence inconnue",
+    nameFr: clean((skill as any).nameFr) || "Compétence inconnue",
     nameEn: clean((skill as any).nameEn) || undefined,
     classFr: normalizeClassName((skill as any).classFr || (skill as any).classEn || classSlug, classSlug),
     classEn: clean((skill as any).classEn) || undefined,
@@ -221,10 +221,6 @@ export const getSkillById = (id: string) => talentByIdMap[id] ?? mergedMap.get(i
 
 export const getSkillsByClass = (classSlug: string) => {
   const normalizedSlug = normalizeClassSlug(classSlug);
-  const fromTalentRaw = talentbuildsSkillsByClass[normalizedSlug];
-  if (Array.isArray(fromTalentRaw) && fromTalentRaw.length > 0) {
-    return fromTalentRaw.map((skill) => normalizeSkill(skill as TalentbuildsSkill, "talentbuilds"));
-  }
   return normalizedSkills.filter((skill) => normalizeClassSlug(skill.classSlug) === normalizedSlug);
 };
 

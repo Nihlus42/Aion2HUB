@@ -8,7 +8,7 @@ export const Route = createFileRoute("/classes")({
   head: () => ({
     meta: [
       { title: "Classes - Aion 2 Hub" },
-      { name: "description", content: "Parcours toutes les classes Aion 2 avec filtres role, faction et difficulte." },
+      { name: "description", content: "Parcours toutes les classes Aion 2 avec filtres rôle, faction et difficulté." },
     ],
   }),
   component: ClassesPage,
@@ -38,8 +38,8 @@ function ClassesPage() {
     <div className="container mx-auto px-4 py-14">
       <header className="mb-12 animate-fade-up">
         <Eyebrow>CHOISIS TA VOIE</Eyebrow>
-        <h1 className="font-display text-4xl md:text-5xl mb-3">Classes d Atreia</h1>
-        <p className="text-muted-foreground max-w-2xl leading-relaxed">Huit voies uniques t attendent. Filtre par role, faction, ou recherche pour trouver ton style.</p>
+        <h1 className="font-display text-4xl md:text-5xl mb-3">Classes d’Atreia</h1>
+        <p className="text-muted-foreground max-w-2xl leading-relaxed">Huit voies uniques t’attendent. Filtre par rôle, faction ou recherche pour trouver ton style.</p>
       </header>
 
       {/* Filters */}
@@ -84,7 +84,7 @@ function ClassesPage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-arcane flex items-center justify-center shadow-glow group-hover:animate-pulse-glow">
                   <Icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <div className="flex gap-1" title={`Difficulte ${c.difficulty}/5`}>
+                <div className="flex gap-1" title={`Difficulté ${c.difficulty}/5`}>
                   {[1, 2, 3, 4, 5].map((i) => (
                     <span key={i} className={`w-1.5 h-4 rounded-sm transition-colors ${i <= c.difficulty ? "bg-gradient-gold" : "bg-border"}`} />
                   ))}
@@ -93,7 +93,7 @@ function ClassesPage() {
               <h3 className="font-display text-2xl mb-1 group-hover:text-gold transition-colors">{c.name}</h3>
               <div className="mb-3">
                 <span className="inline-block text-[10px] tracking-[0.12em] px-2 py-1 rounded border border-amber-400/40 bg-amber-400/10 text-amber-300">
-                  Infos communaute / Sujet a changement
+                  Infos communauté / vérification en cours
                 </span>
               </div>
               <div className="flex gap-2 mb-4">
@@ -110,7 +110,7 @@ function ClassesPage() {
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-16 text-muted-foreground">Aucune classe ne correspond a tes filtres.</div>
+        <div className="text-center py-16 text-muted-foreground">Aucune classe ne correspond à tes filtres.</div>
       )}
     </div>
   );

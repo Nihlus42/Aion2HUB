@@ -57,13 +57,13 @@ export function GearSidebar({
             Importer un build
           </button>
           <button onClick={onReset} className="px-3 py-2 rounded-md border border-border text-sm hover:bg-accent/20">
-            Reinitialiser
+            Réinitialiser
           </button>
         </div>
         <textarea
           value={importValue}
           onChange={(e) => onImportValueChange(e.target.value)}
-          placeholder="JSON exporte/importe..."
+          placeholder="JSON exporté/importé..."
           className="w-full min-h-28 bg-background/60 border border-border rounded-md px-3 py-2 text-xs"
         />
       </section>

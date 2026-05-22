@@ -48,7 +48,7 @@ function ItemDetailPage() {
       <div className="container mx-auto px-4 py-14">
         <div className="rune-border rounded-xl p-10 text-center">
           <h1 className="font-display text-4xl mb-3">Objet introuvable</h1>
-          <p className="text-muted-foreground mb-6">Aucun objet ne correspond a cet identifiant.</p>
+          <p className="text-muted-foreground mb-6">Aucun objet ne correspond à cet identifiant.</p>
           <Link to="/items" className="inline-flex items-center gap-2 rounded-md bg-gradient-arcane px-4 py-2 text-primary-foreground font-semibold">
             <ArrowLeft className="w-4 h-4" /> Retour aux objets
           </Link>

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Aion 2 Hub - Hub utilitaire MMORPG dark fantasy" },
-      { name: "description", content: "Actualites, classes, competences, planificateur et timers d evenements pour les joueurs Aion 2." },
+      { name: "description", content: "Actualités, classes, compétences, planificateur et timers d’événements pour les joueurs Aion 2." },
     ],
   }),
   component: HomePage,
@@ -60,14 +60,14 @@ function HomePage() {
               <span className="text-xs tracking-[0.3em] text-gold font-medium">UNION DES DAEVAS</span>
             </div>
             <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05]">
-              Eleve-toi dans <span className="shimmer-text">Aion 2</span>
+              Élève-toi dans <span className="shimmer-text">Aion 2</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Actualites verifiees, classes, competences, planificateur de build et timers vraiment utiles.
+              Actualités vérifiées, classes, compétences, planificateur de build et timers vraiment utiles.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/updates" className="px-6 py-3 rounded-md bg-gradient-arcane text-primary-foreground font-semibold shadow-glow hover:shadow-gold-glow hover:scale-[1.03] transition-all inline-flex items-center gap-2">
-                Voir les actualites <ArrowRight className="w-4 h-4" />
+                Voir les actualités <ArrowRight className="w-4 h-4" />
               </Link>
               <Link to="/builds" className="px-6 py-3 rounded-md border border-gold/40 text-gold font-semibold hover:bg-gold/10 hover:border-gold transition-all">
                 Ouvrir le planificateur
@@ -85,7 +85,7 @@ function HomePage() {
             <div>
               <Eyebrow><Calendar className="w-3.5 h-3.5" /> PROCHAINE GRANDE ACTU</Eyebrow>
               <h2 className="font-display text-2xl md:text-3xl">Summer Game Fest - 5 juin</h2>
-              <p className="text-sm text-muted-foreground mt-1">Fenetre d annonce attendue pour les prochaines infos Aion 2.</p>
+              <p className="text-sm text-muted-foreground mt-1">Fenêtre d’annonce attendue pour les prochaines infos sur Aion 2.</p>
             </div>
             <div className="grid grid-cols-4 gap-3 md:gap-4">
               {[
@@ -108,9 +108,9 @@ function HomePage() {
         <RuneDivider className="mb-12" />
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { icon: Sword, title: "8 classes iconiques", desc: "Details des classes avec role, difficulte et competences signatures.", to: "/classes" as const },
-            { icon: Shield, title: "Planificateur Daevanion", desc: "Construit ton plateau, gere les points et optimise tes noeuds.", to: "/daevanion-planner" as const },
-            { icon: Calendar, title: "Suivi des updates", desc: "Reste cale sur les annonces officielles et infos verifiees.", to: "/updates" as const },
+            { icon: Sword, title: "8 classes iconiques", desc: "Détails des classes avec rôle, difficulté et compétences signatures.", to: "/classes" as const },
+            { icon: Shield, title: "Planificateur Daevanion", desc: "Construis ton plateau, gère les points et optimise tes nœuds.", to: "/daevanion-planner" as const },
+            { icon: Calendar, title: "Suivi des updates", desc: "Reste calé sur les annonces officielles et les infos vérifiées.", to: "/updates" as const },
           ].map((f, i) => (
             <Link
               key={f.title}
@@ -137,7 +137,7 @@ function HomePage() {
             <Sparkles className="w-10 h-10 text-gold mx-auto mb-4 animate-float-slow" />
             <h2 className="font-display text-3xl md:text-5xl mb-4">Explore les skills des classes</h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-              Theorycraft plus vite avec les classes, competences, updates et un planificateur pratique.
+              Theorycraft plus vite avec les classes, compétences, actualités et un planificateur pratique.
             </p>
             <Link
               to="/classes"

@@ -18,7 +18,7 @@ export function GearComparisonPanel({ current, target }: Props) {
     <section className="rune-border rounded-xl p-4">
       <h3 className="font-display text-xl mb-3">Comparaison</h3>
       {diffs.length === 0 ? (
-        <p className="text-sm text-muted-foreground">Aucune difference a afficher.</p>
+        <p className="text-sm text-muted-foreground">Aucune différence à afficher.</p>
       ) : (
         <div className="space-y-3">
           {improves.length > 0 && (
