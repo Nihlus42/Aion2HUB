@@ -35,7 +35,7 @@ function useCountdown(target: Date) {
 }
 
 function HomePage() {
-  const target = new Date(Date.UTC(2026, 5, 5, 21, 0, 0));
+  const target = new Date(Date.UTC(2026, 8, 1, 0, 0, 0));
   const { days, hours, minutes, seconds } = useCountdown(target);
 
   return (
@@ -87,9 +87,9 @@ function HomePage() {
         <div className="rune-border rune-border-hover rounded-2xl p-8 shadow-elevated relative overflow-hidden">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
             <div>
-              <Eyebrow><Calendar className="w-3.5 h-3.5" /> PROCHAINE GRANDE ACTU</Eyebrow>
-              <h2 className="font-display text-2xl md:text-3xl">Summer Game Fest - 5 juin</h2>
-              <p className="text-sm text-muted-foreground mt-1">Fenêtre d’annonce attendue pour les prochaines infos sur Aion 2.</p>
+              <Eyebrow><Calendar className="w-3.5 h-3.5" /> DERNIÈRE GRANDE ACTU</Eyebrow>
+              <h2 className="font-display text-2xl md:text-3xl">Lancement annoncé : septembre 2026</h2>
+              <p className="text-sm text-muted-foreground mt-1">La page Steam officielle affiche maintenant une fenêtre de sortie en septembre 2026. Compte à rebours vers l’ouverture de cette fenêtre.</p>
             </div>
             <div className="grid grid-cols-4 gap-3 md:gap-4">
               {[
