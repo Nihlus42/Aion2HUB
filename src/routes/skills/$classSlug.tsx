@@ -76,7 +76,7 @@ function ClassSkillsPage() {
           {classSkills.map((skill) => (
             <article key={skill.id} className="rune-border rounded-xl p-5">
               <h2 className="font-display text-2xl">{getSkillDisplayName(skill)}</h2>
-              <p className="text-[11px] text-amber-300/90 mt-1">Texte communautaire en cours d’affinage</p>
+              <p className="text-[11px] text-amber-300/90 mt-1">Données communautaires relues côté interface</p>
               <p className="text-xs text-muted-foreground mt-1">
                 {getSkillCategoryLabel(skill)} - {getSkillTargetTypeLabel(skill)} - {getSkillDamageTypeLabel(skill)}
               </p>

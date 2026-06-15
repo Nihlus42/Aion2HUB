@@ -1,0 +1,5 @@
+Contact: https://aion2frenchub.vercel.app/contact
+Canonical: https://aion2frenchub.vercel.app/.well-known/security.txt
+Preferred-Languages: fr, en
+Policy: https://aion2frenchub.vercel.app/contact
+Expires: 2027-06-16T00:00:00.000Z

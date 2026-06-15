@@ -118,7 +118,7 @@ function BuildsPage() {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="font-display">{getSkillDisplayName(skill)}</span>
-                          <span className="text-[10px] text-amber-300/90">Texte communautaire en cours d’affinage</span>
+                          <span className="text-[10px] text-amber-300/90">Données communautaires relues côté interface</span>
                           <span className="text-[10px] tracking-widest px-1.5 py-0.5 rounded bg-accent/40 text-muted-foreground">
                             {getSkillCategoryLabel(skill).toUpperCase()}
                           </span>

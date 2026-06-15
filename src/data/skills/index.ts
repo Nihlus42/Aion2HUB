@@ -32,7 +32,14 @@ export const getLegacySkillsByClass = (classSlug: string) =>
 
 export const getLegacySkillBySlug = (slug: string) => skills.find((skill) => skill.slug === slug);
 
-export const cleanSkillText = (value: string) => value.replace(/\{se_dmg:[^}]+\}/g, "").replace(/\s+/g, " ").trim();
+export const cleanSkillText = (value: unknown) => {
+  if (typeof value !== "string") return "";
+  return value
+    .replace(/\{se_dmg:[^}]+\}/g, "")
+    .replace(/[\u0018\u0019]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+};
 
 const fixMojibake = (value: string) => {
   if (!/[Ãâ€\uFFFD]/.test(value)) return value;
@@ -47,22 +54,63 @@ const fixMojibake = (value: string) => {
 
 export const toFrenchUiText = (value: string) => cleanSkillText(fixMojibake(value));
 
+const isLikelyLowQualityLocalizedText = (value: unknown) => {
+  const text = toFrenchUiText(typeof value === "string" ? value : "");
+  if (!text) return true;
+
+  const suspiciousPatterns = [
+    /\bgrants?\b/i,
+    /\bdeals?\b/i,
+    /\brush(?:es)?\b/i,
+    /\btargets?\b/i,
+    /\bthe lanceur\b/i,
+    /\bafter\b/i,
+    /\bwhen\b/i,
+    /\bfully charged\b/i,
+    /\bprepare pendant battle\b/i,
+    /\bincreases?\b/i,
+    /\bforx\b/i,
+  ];
+
+  const hits = suspiciousPatterns.reduce((count, pattern) => count + (pattern.test(text) ? 1 : 0), 0);
+  return hits >= 2;
+};
+
 export const getSkillDisplayName = (skill: Skill, locale: "fr" | "en" = "fr") =>
   locale === "fr" ? toFrenchUiText(skill.nameFr || skill.name) : skill.name;
 
 export const getSkillDisplayDescription = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? toFrenchUiText(skill.descriptionFr || skill.description) : skill.description;
+  locale === "fr"
+    ? (isLikelyLowQualityLocalizedText(skill.descriptionFr || skill.description)
+      ? "Description en cours de validation."
+      : toFrenchUiText(skill.descriptionFr || skill.description))
+    : skill.description;
 
 export const getSkillDisplayPveUse = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? toFrenchUiText(skill.pveUseFr || skill.pveUse) : skill.pveUse;
+  locale === "fr"
+    ? (isLikelyLowQualityLocalizedText(skill.pveUseFr || skill.pveUse)
+      ? "Utilisation PvE en cours de validation."
+      : toFrenchUiText(skill.pveUseFr || skill.pveUse))
+    : skill.pveUse;
 
 export const getSkillDisplayPvpUse = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? toFrenchUiText(skill.pvpUseFr || skill.pvpUse) : skill.pvpUse;
+  locale === "fr"
+    ? (isLikelyLowQualityLocalizedText(skill.pvpUseFr || skill.pvpUse)
+      ? "Utilisation PvP en cours de validation."
+      : toFrenchUiText(skill.pvpUseFr || skill.pvpUse))
+    : skill.pvpUse;
 
 export const getSkillDisplayCooldown = (skill: Skill, locale: "fr" | "en" = "fr") =>
-  locale === "fr" ? toFrenchUiText(skill.estimatedCooldown) : skill.estimatedCooldown;
+  locale === "fr" ? (toFrenchUiText(skill.estimatedCooldown) || "À confirmer") : (skill.estimatedCooldown || "TBD");
 
-export const getSkillCategoryLabel = (skill: Skill) => toFrenchUiText(skill.categoryFr || skill.category || "Inconnu");
+export const getSkillCategoryLabel = (skill: Skill) =>
+  toFrenchUiText(
+    skill.categoryFr ||
+    skill.category ||
+    (skill as Skill & { typeFr?: string; type?: string }).typeFr ||
+    (skill as Skill & { typeFr?: string; type?: string }).type ||
+    "Inconnu",
+  );
 export const getSkillTargetTypeLabel = (skill: Skill) => toFrenchUiText(skill.targetTypeFr || skill.targetType || "Inconnu");
 export const getSkillDamageTypeLabel = (skill: Skill) => toFrenchUiText(skill.damageTypeFr || skill.damageType || "Inconnu");
 export const getSkillRangeLabel = (skill: Skill) => toFrenchUiText(skill.rangeFr || skill.range || "Inconnu");
