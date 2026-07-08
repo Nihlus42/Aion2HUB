@@ -23,6 +23,30 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    id: "aion2-economic-model-approach-2026-07-08",
+    title: "AION 2 détaille son modèle économique : free-to-play, abonnement, pass et marché en jeu",
+    excerpt:
+      "NCSoft publie une annonce officielle dédiée au modèle économique d’AION 2. Le studio confirme une structure free-to-play avec monnaies en jeu, abonnement mensuel, boutique, pass de combat et packs de fondateur.",
+    summary:
+      "Dans une annonce officielle publiée le 8 juillet 2026, l’équipe AION 2 présente les grandes lignes du modèle économique du jeu. Le cadre affiché est clair : AION 2 sera proposé en free-to-play, avec deux monnaies mises en avant — le Kina et le Quna — ainsi qu’un marché en jeu et un système d’échange entre ces deux devises.\n\nLe visuel officiel mentionne aussi plusieurs briques de monétisation : un abonnement à 15 $ par mois, une boutique en jeu avec objets cosmétiques et consommables, un pass de combat décliné en version standard et voie Premium, ainsi que des packs de fondateur. Côté cosmétiques, NC cite notamment le teint, l’allure, l’apparence d’arme et les montures.\n\nÀ ce stade, l’annonce pose surtout l’architecture générale du modèle économique. En revanche, elle ne détaille pas encore dans le même niveau de précision les limites exactes, l’équilibrage, ni la manière dont chaque système influencera la progression ou l’économie long terme. Bref : la structure est officielle, les implications fines restent à surveiller de près — parce que oui, le diable adore se planquer dans les petites lignes.",
+    watchlist: [
+      "Détails précis sur le rôle du Quna et son acquisition",
+      "Fonctionnement exact du marché et de l’échange Kina ↔ Quna",
+      "Contenu concret de l’abonnement mensuel",
+      "Récompenses du pass standard et de la voie Premium",
+      "Composition et prix des packs de fondateur"
+    ],
+    tags: ["Global", "Confirmé", "Modèle économique", "Free-to-play"],
+    category: "News",
+    region: "Global",
+    publishDate: "2026-07-08",
+    coverImage: "https://fizz-download.playnccdn.com/download/v2/buckets/marketing-platform/files/19daa0916cf-44ee37e4-32f3-43fd-96f5-209f0afce2ad",
+    isOfficialSource: true,
+    sourceStatus: "confirmed",
+    lastUpdated: "2026-07-08",
+    sourceUrl: "https://aion2.plaync.com/fr-fr/board/notice/view?articleId=6a4d80fc84389f5bef890cfb",
+  },
+  {
     id: "aion2-september-2026-release-window-2026-06-05",
     title: "AION 2 annonce sa fenêtre de sortie : lancement prévu en septembre 2026",
     excerpt:
