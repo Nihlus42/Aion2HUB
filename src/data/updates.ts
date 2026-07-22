@@ -48,11 +48,11 @@ export const updates: UpdateEntry[] = [
   },
   {
     id: "aion2-september-2026-release-window-2026-06-05",
-    title: "AION 2 annonce sa fenêtre de sortie : lancement prévu en septembre 2026",
+    title: "AION 2 annonce sa date de sortie : lancement prévu le 30 septembre 2026",
     excerpt:
-      "La page Steam officielle d’AION 2 affiche désormais une fenêtre de sortie en septembre 2026. Le Summer Game Fest n’a donc pas servi qu’à teaser : on a enfin une période de lancement concrète.",
+      "La page Steam officielle d’AION 2 affiche désormais une date de sortie fixée au 30 septembre 2026. Le Summer Game Fest n’a donc pas servi qu’à teaser : on a enfin une échéance de lancement concrète.",
     summary:
-      "La page Steam officielle d’AION 2 indique désormais une date de parution fixée à septembre 2026. C’est la mise à jour concrète la plus importante issue de la communication autour du Summer Game Fest : on passe d’un simple trailer attendu à une vraie fenêtre de lancement publique.\n\nLa fiche confirme aussi plusieurs points déjà mis en avant par NC : AION 2 est présenté comme un MMORPG pensé pour le PC, développé sous Unreal Engine 5, avec un monde annoncé comme 36 fois plus vaste que celui du premier AION et un conflit de factions au cœur de l’expérience.\n\nÀ ce stade, il faut rester carré : septembre 2026 correspond à une fenêtre de sortie, pas à un jour exact confirmé. Tant qu’une date précise n’apparaît pas sur les canaux officiels, inutile d’inventer un calendrier magique.",
+      "La page Steam officielle d’AION 2 indique désormais une date de parution fixée au 30 septembre 2026. C’est la mise à jour concrète la plus importante issue de la communication autour du Summer Game Fest : on passe d’un simple trailer attendu à une vraie date de lancement publique.\n\nLa fiche confirme aussi plusieurs points déjà mis en avant par NC : AION 2 est présenté comme un MMORPG pensé pour le PC, développé sous Unreal Engine 5, avec un monde annoncé comme 36 fois plus vaste que celui du premier AION et un conflit de factions au cœur de l’expérience.\n\nÀ ce stade, la communication officielle affiche bien le 30 septembre 2026 comme date de sortie. Comme toujours, on surveillera quand même les canaux officiels au cas où NC ajusterait encore le calendrier.",
     watchlist: [
       "Date de sortie exacte",
       "Ouverture des préinscriptions ou bonus de lancement",
