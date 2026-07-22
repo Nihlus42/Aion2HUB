@@ -88,8 +88,8 @@ function HomePage() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative">
             <div>
               <Eyebrow><Calendar className="w-3.5 h-3.5" /> DERNIÈRE GRANDE ACTU</Eyebrow>
-              <h2 className="font-display text-2xl md:text-3xl">Lancement annoncé : 30 septembre 2026</h2>
-              <p className="text-sm text-muted-foreground mt-1">La date de sortie affichée pour AION 2 est désormais fixée au 30 septembre 2026. Compte à rebours vers le lancement.</p>
+              <h2 className="font-display text-2xl md:text-3xl">Early Access annoncé : 30 septembre 2026</h2>
+              <p className="text-sm text-muted-foreground mt-1">La date d’ouverture de l’Early Access d’AION 2 est désormais fixée au 30 septembre 2026. Compte à rebours vers l’accès anticipé.</p>
             </div>
             <div className="grid grid-cols-4 gap-3 md:gap-4">
               {[
