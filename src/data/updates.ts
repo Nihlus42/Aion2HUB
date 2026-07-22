@@ -26,26 +26,30 @@ export const updates: UpdateEntry[] = [
     id: "aion2-early-access-date-2026-07-22",
     title: "AION 2 fixe son Early Access au 30 septembre 2026",
     excerpt:
-      "La page Steam officielle d’AION 2 affiche désormais une date précise pour l’Early Access : le 30 septembre 2026. On passe donc d’une simple fenêtre de sortie à une échéance publique beaucoup plus concrète.",
+      "NCSoft détaille l’Early Access d’AION 2 et ses packs fondateur. La date du 30 septembre 2026 est désormais accompagnée de trois offres, de 24,99 $ à 99,99 $, avec accès anticipé, cosmétiques et bonus selon le palier.",
     summary:
-      "La page Steam officielle d’AION 2 indique maintenant une date d’ouverture de l’Early Access fixée au 30 septembre 2026. C’est un changement important, car la communication ne parle plus seulement d’un vague lancement en septembre 2026, mais d’un jour précis affiché publiquement.\n\nPour les joueurs qui suivent le projet, la nuance compte. Une fenêtre de sortie laisse de la marge et beaucoup de place aux ajustements. Une date d’Early Access donne au contraire un repère clair pour surveiller l’ouverture du jeu, les préchargements éventuels, les packs de fondateur et les annonces de serveurs.\n\nÀ ce stade, il faut rester propre dans la formulation : le 30 septembre 2026 correspond à l’ouverture de l’Early Access, pas forcément à un lancement final complet. En clair, la date devient plus solide, mais il faudra encore surveiller les détails pratiques publiés par NCSoft et Steam avant de crier victoire comme des sauvages.",
+      "NCSoft a publié une annonce officielle dédiée aux nouveaux produits d’AION 2, avec un point important pour les joueurs globaux : l’ouverture de l’Early Access reste calée au 30 septembre 2026 et s’accompagne maintenant de packs fondateur détaillés noir sur blanc. On n’est donc plus seulement sur une date affichée sur Steam, mais sur une communication commerciale complète qui donne plus de poids au calendrier annoncé.\n\nTrois packs sont proposés sur Steam et sur PURPLE. Le Standard Founder's Pack est affiché à 24,99 $ et comprend 5 jours d’Early Access, un Daeva's Campaign Supply Chest et le titre Vanguard of Atreia. Le Deluxe Founder's Pack monte à 49,99 $ et ajoute, en plus de la base, le skin set Ascended Daeva et le coffre d’apparence d’arme Eternal Sun. Enfin, l’Ultimate Founder's Pack est affiché à 99,99 $ avec tout le contenu précédent, plus un Daeva's Styling Chest, le skin set Moonlit Aria, le pet Black Dragon et les Blazing Sun Wings.\n\nL’annonce précise aussi plusieurs points pratiques utiles. Les prix sont listés en USD, avec variation possible dans les autres devises selon le taux de change. Les ventes ont commencé le 22 juillet 2026 à 6 h PDT et dureront jusqu’à la fin de la période d’Early Access. Autre point à ne pas louper : un seul pack fondateur peut être acheté par compte, en choisissant un seul des trois paliers, et le jeu doit être lancé sur la plateforme d’achat. En clair, un achat Steam reste lié à Steam, un achat PURPLE reste lié à PURPLE, même si tous les joueurs partagent les mêmes serveurs.\n\nÀ ce stade, il faut garder une formulation propre : le 30 septembre 2026 correspond bien à l’ouverture de l’Early Access, pas forcément au lancement final complet. Mais avec une date affichée, des packs listés et des prix publics, le dossier devient nettement plus concret qu’avant.",
     watchlist: [
       "Heure exacte d’ouverture de l’Early Access",
-      "Conditions d’accès et éventuels packs de fondateur",
+      "Détails complets du Daeva's Campaign Supply Chest",
+      "Éventuels bonus supplémentaires selon la plateforme",
       "Infos sur les serveurs globaux et leur disponibilité",
-      "Détails de préchargement sur Steam",
       "Clarification entre Early Access et lancement complet"
     ],
     tags: ["Global", "Confirmé", "Steam", "Early Access"],
     category: "News",
     region: "Global",
     publishDate: "2026-07-22",
-    coverImage: "/images/updates/summer-game-fest-2026.jpg",
+    coverImage: "https://fizz-download.playnccdn.com/lg/file/aion/download/19f88062596-032f89c9-42d5-4e2c-8292-e0244f29013e",
     isOfficialSource: true,
     sourceStatus: "confirmed",
     lastUpdated: "2026-07-22",
-    sourceUrl: "https://store.steampowered.com/app/3393110/AION_2/",
+    sourceUrl: "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a5fef1a2c2d9c52e6c79e6f",
     sourceUrls: [
+      {
+        label: "Annonce officielle NCSoft",
+        url: "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a5fef1a2c2d9c52e6c79e6f",
+      },
       {
         label: "Page Steam officielle",
         url: "https://store.steampowered.com/app/3393110/AION_2/",
