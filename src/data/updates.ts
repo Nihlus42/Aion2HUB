@@ -23,6 +23,36 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    id: "aion2-early-access-date-2026-07-22",
+    title: "AION 2 fixe son Early Access au 30 septembre 2026",
+    excerpt:
+      "La page Steam officielle d’AION 2 affiche désormais une date précise pour l’Early Access : le 30 septembre 2026. On passe donc d’une simple fenêtre de sortie à une échéance publique beaucoup plus concrète.",
+    summary:
+      "La page Steam officielle d’AION 2 indique maintenant une date d’ouverture de l’Early Access fixée au 30 septembre 2026. C’est un changement important, car la communication ne parle plus seulement d’un vague lancement en septembre 2026, mais d’un jour précis affiché publiquement.\n\nPour les joueurs qui suivent le projet, la nuance compte. Une fenêtre de sortie laisse de la marge et beaucoup de place aux ajustements. Une date d’Early Access donne au contraire un repère clair pour surveiller l’ouverture du jeu, les préchargements éventuels, les packs de fondateur et les annonces de serveurs.\n\nÀ ce stade, il faut rester propre dans la formulation : le 30 septembre 2026 correspond à l’ouverture de l’Early Access, pas forcément à un lancement final complet. En clair, la date devient plus solide, mais il faudra encore surveiller les détails pratiques publiés par NCSoft et Steam avant de crier victoire comme des sauvages.",
+    watchlist: [
+      "Heure exacte d’ouverture de l’Early Access",
+      "Conditions d’accès et éventuels packs de fondateur",
+      "Infos sur les serveurs globaux et leur disponibilité",
+      "Détails de préchargement sur Steam",
+      "Clarification entre Early Access et lancement complet"
+    ],
+    tags: ["Global", "Confirmé", "Steam", "Early Access"],
+    category: "News",
+    region: "Global",
+    publishDate: "2026-07-22",
+    coverImage: "/images/updates/summer-game-fest-2026.jpg",
+    isOfficialSource: true,
+    sourceStatus: "confirmed",
+    lastUpdated: "2026-07-22",
+    sourceUrl: "https://store.steampowered.com/app/3393110/AION_2/",
+    sourceUrls: [
+      {
+        label: "Page Steam officielle",
+        url: "https://store.steampowered.com/app/3393110/AION_2/",
+      }
+    ],
+  },
+  {
     id: "aion2-economic-model-approach-2026-07-08",
     title: "AION 2 détaille son modèle économique : free-to-play, abonnement, pass et marché en jeu",
     excerpt:
@@ -48,11 +78,11 @@ export const updates: UpdateEntry[] = [
   },
   {
     id: "aion2-september-2026-release-window-2026-06-05",
-    title: "AION 2 annonce son Early Access : ouverture prévue le 30 septembre 2026",
+    title: "AION 2 annonce sa fenêtre de sortie : lancement prévu en septembre 2026",
     excerpt:
-      "La page Steam officielle d’AION 2 affiche désormais une date d’ouverture de l’Early Access fixée au 30 septembre 2026. Le Summer Game Fest n’a donc pas servi qu’à teaser : on a enfin une échéance concrète pour l’accès anticipé.",
+      "La page Steam officielle d’AION 2 affiche désormais une fenêtre de sortie en septembre 2026. Le Summer Game Fest n’a donc pas servi qu’à teaser : on a enfin une période de lancement concrète.",
     summary:
-      "La page Steam officielle d’AION 2 indique désormais une date d’ouverture de l’Early Access fixée au 30 septembre 2026. C’est la mise à jour concrète la plus importante issue de la communication autour du Summer Game Fest : on passe d’un simple trailer attendu à une vraie date publique pour l’accès anticipé.\n\nLa fiche confirme aussi plusieurs points déjà mis en avant par NC : AION 2 est présenté comme un MMORPG pensé pour le PC, développé sous Unreal Engine 5, avec un monde annoncé comme 36 fois plus vaste que celui du premier AION et un conflit de factions au cœur de l’expérience.\n\nÀ ce stade, la communication officielle affiche bien le 30 septembre 2026 comme date d’ouverture de l’Early Access. Comme toujours, on surveillera quand même les canaux officiels au cas où NC ajusterait encore le calendrier.",
+      "La page Steam officielle d’AION 2 indique désormais une date de parution fixée à septembre 2026. C’est la mise à jour concrète la plus importante issue de la communication autour du Summer Game Fest : on passe d’un simple trailer attendu à une vraie fenêtre de lancement publique.\n\nLa fiche confirme aussi plusieurs points déjà mis en avant par NC : AION 2 est présenté comme un MMORPG pensé pour le PC, développé sous Unreal Engine 5, avec un monde annoncé comme 36 fois plus vaste que celui du premier AION et un conflit de factions au cœur de l’expérience.\n\nÀ ce stade, il faut rester carré : septembre 2026 correspond à une fenêtre de sortie, pas à un jour exact confirmé. Tant qu’une date précise n’apparaît pas sur les canaux officiels, inutile d’inventer un calendrier magique.",
     watchlist: [
       "Date de sortie exacte",
       "Ouverture des préinscriptions ou bonus de lancement",
