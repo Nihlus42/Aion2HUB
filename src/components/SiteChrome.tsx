@@ -10,6 +10,7 @@ const navItems = [
   { to: "/items", label: "Objets" },
   { to: "/planificateur-equipement", label: "Équipement" },
   { to: "/daevanion-planner", label: "Daevanion" },
+  { to: "/nebula-heaven", label: "Nebula Heaven" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -22,7 +23,9 @@ export function SiteHeader() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <Swords className="w-6 h-6 text-gold transition-transform group-hover:rotate-12" />
-          <span className="font-display text-xl font-bold tracking-widest text-gradient-gold">AION 2</span>
+          <span className="font-display text-xl font-bold tracking-widest text-gradient-gold">
+            AION 2
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -33,7 +36,9 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 className={`px-4 py-2 text-sm font-medium tracking-wide rounded-md transition-colors ${
-                  active ? "text-gold bg-accent/40" : "text-muted-foreground hover:text-foreground hover:bg-accent/20"
+                  active
+                    ? "text-gold bg-accent/40"
+                    : "text-muted-foreground hover:text-foreground hover:bg-accent/20"
                 }`}
               >
                 {item.label}
@@ -49,7 +54,11 @@ export function SiteHeader() {
           Voir les actualités
         </Link>
 
-        <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Ouvrir le menu">
+        <button
+          className="md:hidden p-2"
+          onClick={() => setOpen(!open)}
+          aria-label="Ouvrir le menu"
+        >
           {open ? <X /> : <Menu />}
         </button>
       </div>
@@ -89,30 +98,65 @@ export function SiteFooter() {
             <span className="font-display tracking-widest text-gradient-gold">AION 2</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            Hub fan non officiel pour Aion 2. Actualités, classes, compétences et outils de planification pour la nouvelle génération de Daevas.
+            Hub fan non officiel pour Aion 2. Actualités, classes, compétences et outils de
+            planification pour la nouvelle génération de Daevas.
           </p>
         </div>
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">EXPLORER</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/updates" className="hover:text-foreground">Actualités</Link></li>
-            <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
-            <li><Link to="/skills" className="hover:text-foreground">Compétences</Link></li>
-            <li><Link to="/items" className="hover:text-foreground">Objets</Link></li>
-            <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
+            <li>
+              <Link to="/updates" className="hover:text-foreground">
+                Actualités
+              </Link>
+            </li>
+            <li>
+              <Link to="/classes" className="hover:text-foreground">
+                Classes
+              </Link>
+            </li>
+            <li>
+              <Link to="/skills" className="hover:text-foreground">
+                Compétences
+              </Link>
+            </li>
+            <li>
+              <Link to="/items" className="hover:text-foreground">
+                Objets
+              </Link>
+            </li>
+            <li>
+              <Link to="/nebula-heaven" className="hover:text-foreground">
+                Nebula Heaven
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-foreground">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <h4 className="text-gold text-sm tracking-widest mb-3">OUTILS</h4>
-          <p className="text-sm text-muted-foreground mb-3">Planifie tes builds, vérifie les timers et optimise ta prochaine session.</p>
-          <Link to="/daevanion-planner" className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold">
+          <p className="text-sm text-muted-foreground mb-3">
+            Planifie tes builds, vérifie les timers ou teste Nebula Heaven directement dans ton
+            navigateur.
+          </p>
+          <Link
+            to="/nebula-heaven"
+            className="inline-block px-4 py-2 rounded-md bg-gradient-arcane text-primary-foreground text-sm font-semibold"
+          >
             Ouvrir les outils
           </Link>
         </div>
       </div>
       <div className="border-t border-border/50 py-4 text-center text-xs text-muted-foreground">
         <div>© {new Date().getFullYear()} Aion 2 Hub - Site fan non affilié à NCSOFT.</div>
-        <div className="mt-1">Aion 2 et les assets associés appartiennent à NCSoft. Aion2HUB est un projet fan non officiel.</div>
+        <div className="mt-1">
+          Aion 2 et les assets associés appartiennent à NCSoft. Aion2HUB est un projet fan non
+          officiel.
+        </div>
       </div>
     </footer>
   );

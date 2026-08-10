@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as UpdatesRouteImport } from './routes/updates'
 import { Route as SkillsRouteImport } from './routes/skills'
 import { Route as PlanificateurEquipementRouteImport } from './routes/planificateur-equipement'
+import { Route as NebulaHeavenRouteImport } from './routes/nebula-heaven'
 import { Route as ItemsRouteImport } from './routes/items'
 import { Route as DaevanionPlannerRouteImport } from './routes/daevanion-planner'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -35,6 +36,11 @@ const SkillsRoute = SkillsRouteImport.update({
 const PlanificateurEquipementRoute = PlanificateurEquipementRouteImport.update({
   id: '/planificateur-equipement',
   path: '/planificateur-equipement',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NebulaHeavenRoute = NebulaHeavenRouteImport.update({
+  id: '/nebula-heaven',
+  path: '/nebula-heaven',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ItemsRoute = ItemsRouteImport.update({
@@ -90,6 +96,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
+  '/nebula-heaven': typeof NebulaHeavenRoute
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
   '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
@@ -104,6 +111,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
+  '/nebula-heaven': typeof NebulaHeavenRoute
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
   '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
@@ -119,6 +127,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/daevanion-planner': typeof DaevanionPlannerRoute
   '/items': typeof ItemsRouteWithChildren
+  '/nebula-heaven': typeof NebulaHeavenRoute
   '/planificateur-equipement': typeof PlanificateurEquipementRoute
   '/skills': typeof SkillsRouteWithChildren
   '/updates': typeof UpdatesRoute
@@ -135,6 +144,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/daevanion-planner'
     | '/items'
+    | '/nebula-heaven'
     | '/planificateur-equipement'
     | '/skills'
     | '/updates'
@@ -149,6 +159,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/daevanion-planner'
     | '/items'
+    | '/nebula-heaven'
     | '/planificateur-equipement'
     | '/skills'
     | '/updates'
@@ -163,6 +174,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/daevanion-planner'
     | '/items'
+    | '/nebula-heaven'
     | '/planificateur-equipement'
     | '/skills'
     | '/updates'
@@ -178,6 +190,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DaevanionPlannerRoute: typeof DaevanionPlannerRoute
   ItemsRoute: typeof ItemsRouteWithChildren
+  NebulaHeavenRoute: typeof NebulaHeavenRoute
   PlanificateurEquipementRoute: typeof PlanificateurEquipementRoute
   SkillsRoute: typeof SkillsRouteWithChildren
   UpdatesRoute: typeof UpdatesRoute
@@ -204,6 +217,13 @@ declare module '@tanstack/react-router' {
       path: '/planificateur-equipement'
       fullPath: '/planificateur-equipement'
       preLoaderRoute: typeof PlanificateurEquipementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nebula-heaven': {
+      id: '/nebula-heaven'
+      path: '/nebula-heaven'
+      fullPath: '/nebula-heaven'
+      preLoaderRoute: typeof NebulaHeavenRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/items': {
@@ -311,6 +331,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DaevanionPlannerRoute: DaevanionPlannerRoute,
   ItemsRoute: ItemsRouteWithChildren,
+  NebulaHeavenRoute: NebulaHeavenRoute,
   PlanificateurEquipementRoute: PlanificateurEquipementRoute,
   SkillsRoute: SkillsRouteWithChildren,
   UpdatesRoute: UpdatesRoute,
