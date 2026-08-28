@@ -23,6 +23,74 @@ export interface UpdateEntry {
 
 export const updates: UpdateEntry[] = [
   {
+    id: "aion2-launch-scale-test-2026-08-26",
+    title: "AION 2 annonce son stress test global du 17 au 18 septembre",
+    excerpt:
+      "NCSoft ouvre un Launch Scale Test public sur Steam et PURPLE avant l’Early Access. Pré-téléchargement le 16 septembre, deux sessions de 6 heures, progression conservée entre les deux jours puis effacée à la fin du test.",
+    summary:
+      "Cette fois, on a enfin du concret pour la phase de chauffe avant l’ouverture de l’Early Access. NCSoft a confirmé un Launch Scale Test public sur AION 2 du 17 au 18 septembre 2026, avec accès via Steam et PURPLE. Pas de clé, pas d’invitation, pas de loterie obscure pour faire semblant de filtrer : tout le monde peut se connecter pendant la fenêtre prévue.\n\nLe calendrier officiel est découpé en trois temps. Le pré-téléchargement sera disponible du 16 septembre à 15 h CEST au 17 septembre à 15 h CEST. La première session du test aura lieu le 17 septembre de 15 h à 21 h CEST, puis la seconde le 18 septembre de 21 h CEST au 19 septembre à 3 h CEST. Au total, cela fait 12 heures de test avec une progression conservée entre le jour 1 et le jour 2. En revanche, NCSoft précise clairement que tout sera supprimé à la fin du test et que rien ne sera transféré vers l’Early Access ou le lancement.\n\nLe cadre du test est aussi très verrouillé, et c’est logique. Aucun achat ne sera disponible, le shop et les paiements seront coupés, le marketplace, l’échange Quna et le trade entre joueurs seront désactivés, les objets des packs fondateur ne seront pas actifs, le dressing sera bloqué et le niveau maximal sera limité à 37. En clair, ce stress test sert surtout à mesurer la charge, la stabilité et les flux d’accès, pas à laisser les joueurs vider la moitié du contenu avant l’heure.\n\nDernier détail utile pour éviter les pleurs le 30 septembre : NCSoft indique que les joueurs Steam devront désinstaller l’application Playtest puis télécharger la vraie version d’AION 2 pour l’Advanced Access, alors que les joueurs PURPLE n’auront pas d’étape supplémentaire à gérer.",
+    watchlist: [
+      "Qualité des serveurs pendant les deux fenêtres de test",
+      "Stabilité du client Steam et PURPLE au lancement",
+      "Précisions sur les horaires d’ouverture de l’Advanced Access",
+      "Éventuelles restrictions supplémentaires non listées dans l’annonce",
+      "Communication officielle après le test sur les performances et correctifs",
+    ],
+    tags: ["Global", "Confirmé", "Stress Test", "Steam", "PURPLE"],
+    category: "Events",
+    region: "Global",
+    publishDate: "2026-08-26",
+    coverImage:
+      "https://fizz-download.playnccdn.com/download/v2/buckets/marketing-platform/files/19daa0916cf-44ee37e4-32f3-43fd-96f5-209f0afce2ad",
+    isOfficialSource: true,
+    sourceStatus: "confirmed",
+    lastUpdated: "2026-08-26",
+    sourceUrl:
+      "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a8ded386b722c561dc6a1a0",
+    sourceUrls: [
+      {
+        label: "Annonce officielle NCSoft",
+        url: "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a8ded386b722c561dc6a1a0",
+      },
+      {
+        label: "Page Steam du playtest",
+        url: "https://store.steampowered.com/app/4972320",
+      },
+    ],
+  },
+  {
+    id: "aion2-special-quai-membership-2026-08-19",
+    title: "AION 2 détaille son abonnement Special Quai Membership à 15 $ par mois",
+    excerpt:
+      "NCSoft présente officiellement le Special Quai Membership, un abonnement mensuel à 15 $ qui débloque notamment le marché, l’échange Kina ↔ Quna, le trade personnel et plusieurs conforts de progression sur serveur.",
+    summary:
+      "NCSoft a publié les détails complets du Special Quai Membership, un abonnement mensuel vendu 15 $ et activable à partir du 5 octobre 2026. Dit autrement : le modèle économique d’AION 2 continue de se préciser, et cette fois on sort des grandes lignes un peu floues pour entrer dans les bonus concrets.\n\nSur le papier, l’abonnement accorde 30 jours d’avantages sur le serveur concerné. Parmi les éléments confirmés, on retrouve l’accès au Remote Storage, au personal trading, au marché, à l’échange Kina ↔ Quna, à la boutique Wind Breeze Merchants, ainsi qu’une augmentation de la capacité maximale d’Odyle Energy et une sélection supplémentaire de cubes d’énergie dans certaines activités comme Expedition, Transcendence et Sanctuary. Le point qui va faire parler, sans trop de suspense, c’est évidemment l’ouverture de fonctions économiques majeures derrière cet abonnement.\n\nNCSoft précise aussi plusieurs limites pratiques. Le membership peut être acheté quand il reste moins de 60 jours de bénéfices, jusqu’à trois achats par mois et par serveur. Les effets s’appliquent à tous les personnages du serveur concerné, mais pas aux autres serveurs. Le trade personnel reste en plus limité à cinq échanges par jour, et l’autre joueur doit lui aussi disposer d’un Special Quai Membership actif.\n\nCe que l’annonce change surtout, c’est le niveau de clarté autour de l’économie globale. On sait maintenant que le marché, l’échange Quna et une partie du confort de progression seront liés à une formule mensuelle distincte. Reste à voir comment la communauté recevra ce verrouillage au moment où le jeu approchera de son ouverture réelle, parce que ce genre de détail ne passe jamais exactement dans le calme et la tendresse.",
+    watchlist: [
+      "Montant exact du bonus de capacité d’Odyle Energy",
+      "Réaction de la communauté au verrouillage du marché et de l’échange",
+      "Équilibre entre abonnement, boutique et progression normale",
+      "Éventuelles variantes régionales de prix hors USD",
+      "Précisions futures sur les marchands Wind Breeze et Tsenka",
+    ],
+    tags: ["Global", "Confirmé", "Abonnement", "Économie", "Quna"],
+    category: "News",
+    region: "Global",
+    publishDate: "2026-08-19",
+    coverImage:
+      "https://fizz-download.playnccdn.com/download/v2/buckets/marketing-platform/files/19daa0916cf-44ee37e4-32f3-43fd-96f5-209f0afce2ad",
+    isOfficialSource: true,
+    sourceStatus: "confirmed",
+    lastUpdated: "2026-08-19",
+    sourceUrl:
+      "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a850010fa34c1011d6273b2",
+    sourceUrls: [
+      {
+        label: "Annonce officielle NCSoft",
+        url: "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a850010fa34c1011d6273b2",
+      },
+    ],
+  },
+  {
     id: "aion2-early-access-date-2026-07-22",
     title: "AION 2 fixe son Early Access au 30 septembre 2026",
     excerpt:
@@ -34,17 +102,19 @@ export const updates: UpdateEntry[] = [
       "Détails complets du Daeva's Campaign Supply Chest",
       "Éventuels bonus supplémentaires selon la plateforme",
       "Infos sur les serveurs globaux et leur disponibilité",
-      "Clarification entre Early Access et lancement complet"
+      "Clarification entre Early Access et lancement complet",
     ],
     tags: ["Global", "Confirmé", "Steam", "Early Access"],
     category: "News",
     region: "Global",
     publishDate: "2026-07-22",
-    coverImage: "https://fizz-download.playnccdn.com/lg/file/aion/download/19f88062596-032f89c9-42d5-4e2c-8292-e0244f29013e",
+    coverImage:
+      "https://fizz-download.playnccdn.com/lg/file/aion/download/19f88062596-032f89c9-42d5-4e2c-8292-e0244f29013e",
     isOfficialSource: true,
     sourceStatus: "confirmed",
     lastUpdated: "2026-07-22",
-    sourceUrl: "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a5fef1a2c2d9c52e6c79e6f",
+    sourceUrl:
+      "https://aion2.plaync.com/en-us/board/notice/view?articleId=6a5fef1a2c2d9c52e6c79e6f",
     sourceUrls: [
       {
         label: "Annonce officielle NCSoft",
@@ -53,12 +123,13 @@ export const updates: UpdateEntry[] = [
       {
         label: "Page Steam officielle",
         url: "https://store.steampowered.com/app/3393110/AION_2/",
-      }
+      },
     ],
   },
   {
     id: "aion2-economic-model-approach-2026-07-08",
-    title: "AION 2 détaille son modèle économique : free-to-play, abonnement, pass et marché en jeu",
+    title:
+      "AION 2 détaille son modèle économique : free-to-play, abonnement, pass et marché en jeu",
     excerpt:
       "NCSoft publie une annonce officielle dédiée au modèle économique d’AION 2. Le studio confirme une structure free-to-play avec monnaies en jeu, abonnement mensuel, boutique, pass de combat et packs de fondateur.",
     summary:
@@ -68,17 +139,19 @@ export const updates: UpdateEntry[] = [
       "Fonctionnement exact du marché et de l’échange Kina ↔ Quna",
       "Contenu concret de l’abonnement mensuel",
       "Récompenses du pass standard et de la voie Premium",
-      "Composition et prix des packs de fondateur"
+      "Composition et prix des packs de fondateur",
     ],
     tags: ["Global", "Confirmé", "Modèle économique", "Free-to-play"],
     category: "News",
     region: "Global",
     publishDate: "2026-07-08",
-    coverImage: "https://fizz-download.playnccdn.com/download/v2/buckets/marketing-platform/files/19daa0916cf-44ee37e4-32f3-43fd-96f5-209f0afce2ad",
+    coverImage:
+      "https://fizz-download.playnccdn.com/download/v2/buckets/marketing-platform/files/19daa0916cf-44ee37e4-32f3-43fd-96f5-209f0afce2ad",
     isOfficialSource: true,
     sourceStatus: "confirmed",
     lastUpdated: "2026-07-08",
-    sourceUrl: "https://aion2.plaync.com/fr-fr/board/notice/view?articleId=6a4d80fc84389f5bef890cfb",
+    sourceUrl:
+      "https://aion2.plaync.com/fr-fr/board/notice/view?articleId=6a4d80fc84389f5bef890cfb",
   },
   {
     id: "aion2-september-2026-release-window-2026-06-05",
@@ -92,7 +165,7 @@ export const updates: UpdateEntry[] = [
       "Ouverture des préinscriptions ou bonus de lancement",
       "Détails sur les serveurs globaux",
       "Nouvelles infos sur les classes, le PvP et le contenu endgame",
-      "Précisions sur le modèle économique"
+      "Précisions sur le modèle économique",
     ],
     tags: ["Global", "Confirmé", "Steam", "Sortie"],
     category: "News",
@@ -111,7 +184,7 @@ export const updates: UpdateEntry[] = [
       {
         label: "Événement Summer Game Fest",
         url: "https://www.summergamefest.com/events/summer-game-fest",
-      }
+      },
     ],
   },
   {
@@ -181,4 +254,3 @@ export const updates: UpdateEntry[] = [
     sourceUrl: "https://store.steampowered.com/app/3393110/AION_2/",
   },
 ];
-
